@@ -24,6 +24,8 @@
 - [../HANDOFF.md](../HANDOFF.md)
 - [../content/chapters/chapter-027.seed.json](../content/chapters/chapter-027.seed.json)
 - [../content/map/map-nodes.seed.json](../content/map/map-nodes.seed.json)
+- [../content/map/route-canon.candidates.json](../content/map/route-canon.candidates.json)
+- [../content/characters/sun-wukong.base.candidates.json](../content/characters/sun-wukong.base.candidates.json)
 
 ## 原著来源
 
@@ -31,6 +33,8 @@
 
 - [../data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt](../data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt)
 - [../data/raw/xiyouji/SOURCE.md](../data/raw/xiyouji/SOURCE.md)
+- [../data/processed/xiyouji/chapter-index.json](../data/processed/xiyouji/chapter-index.json)
+- [../data/processed/xiyouji/chapters](../data/processed/xiyouji/chapters)
 - [../data/processed/xiyouji/chapter-027.txt](../data/processed/xiyouji/chapter-027.txt)
 
 当前主源为 Project Gutenberg eBook #23962《西遊記》。项目内容必须以该文本为证据源，不使用影视、动画、漫画、网文或民间改编作为原著依据。

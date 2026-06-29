@@ -1,0 +1,708 @@
+{
+  "version": 1,
+  "status": "auto-extracted-candidates-not-final",
+  "id": "bailongma",
+  "name": "白龍馬",
+  "aliases": [
+    "白龍馬",
+    "龍馬",
+    "白馬",
+    "玉龍",
+    "意馬",
+    "小龍"
+  ],
+  "source": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+  "notes": [
+    "本文件用于人物基础设定考据，不能直接作为最终人物图设定。",
+    "同一称谓在原文中可能指代上下文人物，开发前应人工复核证据。",
+    "正式美术提示词应由基础设定、章节状态和场景动作共同生成。"
+  ],
+  "evidenceBuckets": {
+    "originIdentity": [
+      {
+        "chapterNumber": 3,
+        "rawLine": 672,
+        "excerptTraditional": "你看他弄神通，丟開解數，打轉水晶宮裏。諕得老龍王膽戰心驚，小龍子魂飛魄\n散，龜鱉黿鼉皆縮頸，魚蝦鰲蟹盡藏頭。悟空將寶貝執在手中，坐在水晶宮殿上",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 784,
+        "excerptTraditional": "「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，\n騁兇騁勢。驚傷水族，諕走龜鼉。南海龍戰戰兢兢，西海龍悽悽慘慘，北海龍縮",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1971,
+        "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3763,
+        "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3839,
+        "excerptTraditional": "「既如此，我且不打你。我問你：鷹愁澗裏，是那方來的怪龍？他怎麼搶了我師\n父的白馬吃了？」二神道：「大聖自來不曾有師父，原來是個不伏天不伏地混元\n上真，如何得有甚麼師父的馬來？」行者道：「你等是也不知。我只為那誑上的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3845,
+        "excerptTraditional": "飛過﹔因水清照見自己的形影，便認做同群之鳥，往往身擲於水內：故名『鷹愁\n陡澗』。只是向年間，觀音菩薩因為尋訪取經人去，救了一條玉龍，送他在此，\n教他等候那取經人，不許為非作歹。他只是饑了時，上岸來撲些鳥鵲吃，或是捉",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3889,
+        "excerptTraditional": "在此，專為求經人做個腳力。你想那東土來的凡馬，怎歷得這萬水千山？怎到得\n那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3890,
+        "excerptTraditional": "那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子\n，你出來，有南海菩薩在此。』他就出來了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 5028,
+        "excerptTraditional": "饑餐一缽千家飯，寒著千針一衲袍。\n　　　　意馬胸頭休放蕩，心猿乖劣莫教嚎。\n　　　　情和性定諸緣合，月滿金華是伐毛。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 5939,
+        "excerptTraditional": "行者道：「你說他是馬哩，他不是凡馬，本是西海龍王敖閏之子，喚名龍馬三太\n子。只因縱火燒了殿上明珠，被他父親告了忤逆，身犯天條，多虧觀音菩薩救了",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7732,
+        "excerptTraditional": "第三○回     邪魔侵正法　意馬憶心猿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7859,
+        "excerptTraditional": "裏面受用，外面人盡傳道：「唐僧是個虎精。」亂傳亂嚷，嚷到金亭館驛。此時\n驛裏無人，止有白馬在槽上吃草吃料。他本是西海小龍王，因犯天條，鋸角退\n鱗，變白馬，馱唐僧往西方取經。忽聞人講唐僧是個虎精，他也心中暗想道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      }
+    ],
+    "appearanceBody": [
+      {
+        "chapterNumber": 3,
+        "rawLine": 672,
+        "excerptTraditional": "你看他弄神通，丟開解數，打轉水晶宮裏。諕得老龍王膽戰心驚，小龍子魂飛魄\n散，龜鱉黿鼉皆縮頸，魚蝦鰲蟹盡藏頭。悟空將寶貝執在手中，坐在水晶宮殿上",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 783,
+        "excerptTraditional": "拜畢，傍有引奏仙童接上表文。玉皇從頭看過。表曰：\n「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 784,
+        "excerptTraditional": "「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，\n騁兇騁勢。驚傷水族，諕走龜鼉。南海龍戰戰兢兢，西海龍悽悽慘慘，北海龍縮",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1971,
+        "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1980,
+        "excerptTraditional": "賜與貧僧，教他與取經人做個腳力。」玉帝聞言，即傳旨赦宥，差天將解放，送\n與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1981,
+        "excerptTraditional": "與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3530,
+        "excerptTraditional": "，又承大哥替我臉上薅草。」謝畢，就去收拾行李，扣背馬匹。那馬見了他，腰\n軟蹄矬，戰兢兢的立站不住。蓋因那猴原是弼馬溫，在天上看養龍馬的，有些法\n則，故此凡馬見他害怕。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3763,
+        "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3776,
+        "excerptTraditional": "，就搶長老。慌得個行者丟了行李，把師父抱下馬來，回頭便走。那條龍就趕不\n上，把他的白馬連鞍轡一口吞下肚去，依然伏水潛蹤。行者把師父送在那高阜上\n坐了，卻來牽馬挑擔，止存得一擔行李，不見了馬匹。他將行李擔送到師父面前",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3805,
+        "excerptTraditional": "卻說那龍吃了三藏的白馬，伏在那澗底中間，潛靈養性，只聽得有人叫罵索馬。\n他按不住心中火發，急縱身躍浪翻波，跳將上來道：「是那個敢在這裏海口傷吾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3830,
+        "excerptTraditional": "出來？不還你，便待怎的？」行者道「不還馬時看棍，只打殺你，償了我馬的性\n命便罷。」他兩個又在那山崖下苦鬥。鬥不數合，小龍委實難搪，將身一幌，變\n作一條水蛇兒，鑽入草科中去了。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3839,
+        "excerptTraditional": "「既如此，我且不打你。我問你：鷹愁澗裏，是那方來的怪龍？他怎麼搶了我師\n父的白馬吃了？」二神道：「大聖自來不曾有師父，原來是個不伏天不伏地混元\n上真，如何得有甚麼師父的馬來？」行者道：「你等是也不知。我只為那誑上的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      }
+    ],
+    "clothingProps": [
+      {
+        "chapterNumber": 15,
+        "rawLine": 3763,
+        "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3776,
+        "excerptTraditional": "，就搶長老。慌得個行者丟了行李，把師父抱下馬來，回頭便走。那條龍就趕不\n上，把他的白馬連鞍轡一口吞下肚去，依然伏水潛蹤。行者把師父送在那高阜上\n坐了，卻來牽馬挑擔，止存得一擔行李，不見了馬匹。他將行李擔送到師父面前",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3964,
+        "excerptTraditional": "馬，好生問老人家討條繩子，如何就扯斷他的衣索？──老先生，休怪，休怪。\n我這馬，實不瞞你說，不是偷的。昨日東來，至鷹愁陡澗，原有騎的一匹白馬，\n鞍轡俱全。不期那澗裏有條孽龍，在彼成精，他把我的馬連鞍轡一口吞之。幸虧",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3966,
+        "excerptTraditional": "鞍轡俱全。不期那澗裏有條孽龍，在彼成精，他把我的馬連鞍轡一口吞之。幸虧\n我徒弟有些本事，又感得觀音菩薩來澗邊擒住那龍，教他就變做我原騎的白馬，\n毛片俱同，馱我上西天拜佛。今此過澗，未經一日，卻到了老先的聖祠，還不曾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5245,
+        "excerptTraditional": "說不了，只見那山坡下剪尾跑蹄，跳出一隻斑斕猛虎。慌得那三藏坐不穩雕鞍，\n翻根頭跌下白馬，斜倚在路傍，真個是魂飛魄散。八戒丟了行李，掣釘鈀，不讓\n行者走上前，大喝一聲道：「孽畜，那裏走！」趕將去，劈頭就築。那隻虎直挺",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7866,
+        "excerptTraditional": "三藏西來拜世尊，途中偏有惡妖氛。\n　　　　今宵化虎災難脫，白馬垂韁救主人。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 32,
+        "rawLine": 8349,
+        "excerptTraditional": "空。那時節，自然而然，卻不是身閑也？」長老聞言，只得樂以忘憂。放轡催銀\n濁，兜韁趲玉龍。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-032.txt"
+      },
+      {
+        "chapterNumber": 43,
+        "rawLine": 11717,
+        "excerptTraditional": "呵，如今還在東岸，如何渡此河也？」河神道：「老爺勿慮，且請上馬，小神\n開路，引老爺過河。」那師父才騎了白馬，八戒採著韁繩，沙和尚挑了行李，\n孫行者扶持左右。只見河神作起阻水的法術，將上流擋住，須臾，下流撤乾，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-043.txt"
+      },
+      {
+        "chapterNumber": 57,
+        "rawLine": 15385,
+        "excerptTraditional": "二人歡歡喜喜回至路上，只見三藏面磕地，倒在塵埃；白馬撒韁，在路傍長嘶跑\n跳；行李擔不見蹤影。慌得八戒跌腳搥胸，大呼小叫道：「不消講，不消講，這",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-057.txt"
+      },
+      {
+        "chapterNumber": 77,
+        "rawLine": 20845,
+        "excerptTraditional": "你看他輕手輕腳，走到金鑾殿下，見那些大小群妖俱睡著了。卻解了韁繩，更\n不驚動。那馬原是龍馬，若是生人，飛踢兩腳，便嘶幾聲。行者曾養過馬，授\n弼馬溫之官，又是自家一夥，所以不跳不叫。悄悄的牽來，束緊了肚帶，扣備",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-077.txt"
+      },
+      {
+        "chapterNumber": 83,
+        "rawLine": 22323,
+        "excerptTraditional": "三人急回來，果然沒了師父，連行李、白馬一並無蹤。慌得個八戒兩頭亂跑，沙\n僧前後跟尋，孫大聖亦心焦性燥。正尋覓處，只見那路傍邊斜著半截兒韁繩。他",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-083.txt"
+      },
+      {
+        "chapterNumber": 99,
+        "rawLine": 26496,
+        "excerptTraditional": "問了，就將身一幌，唿喇的淬下水去，把他四眾連馬并經，通皆落水。咦！還喜\n得唐僧脫了胎，成了道﹔若似前番，已經沉底。又幸白馬是龍，八戒、沙僧會\n水，行者笑微微顯大神通，把唐僧扶駕出水，登彼東岸。只是經包、衣服、鞍轡",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-099.txt"
+      }
+    ],
+    "weaponsOrTools": [
+      {
+        "chapterNumber": 3,
+        "rawLine": 672,
+        "excerptTraditional": "你看他弄神通，丟開解數，打轉水晶宮裏。諕得老龍王膽戰心驚，小龍子魂飛魄\n散，龜鱉黿鼉皆縮頸，魚蝦鰲蟹盡藏頭。悟空將寶貝執在手中，坐在水晶宮殿上",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 783,
+        "excerptTraditional": "拜畢，傍有引奏仙童接上表文。玉皇從頭看過。表曰：\n「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 784,
+        "excerptTraditional": "「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，\n騁兇騁勢。驚傷水族，諕走龜鼉。南海龍戰戰兢兢，西海龍悽悽慘慘，北海龍縮",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1971,
+        "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1980,
+        "excerptTraditional": "賜與貧僧，教他與取經人做個腳力。」玉帝聞言，即傳旨赦宥，差天將解放，送\n與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1981,
+        "excerptTraditional": "與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3530,
+        "excerptTraditional": "，又承大哥替我臉上薅草。」謝畢，就去收拾行李，扣背馬匹。那馬見了他，腰\n軟蹄矬，戰兢兢的立站不住。蓋因那猴原是弼馬溫，在天上看養龍馬的，有些法\n則，故此凡馬見他害怕。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3763,
+        "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3776,
+        "excerptTraditional": "，就搶長老。慌得個行者丟了行李，把師父抱下馬來，回頭便走。那條龍就趕不\n上，把他的白馬連鞍轡一口吞下肚去，依然伏水潛蹤。行者把師父送在那高阜上\n坐了，卻來牽馬挑擔，止存得一擔行李，不見了馬匹。他將行李擔送到師父面前",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3805,
+        "excerptTraditional": "卻說那龍吃了三藏的白馬，伏在那澗底中間，潛靈養性，只聽得有人叫罵索馬。\n他按不住心中火發，急縱身躍浪翻波，跳將上來道：「是那個敢在這裏海口傷吾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3830,
+        "excerptTraditional": "出來？不還你，便待怎的？」行者道「不還馬時看棍，只打殺你，償了我馬的性\n命便罷。」他兩個又在那山崖下苦鬥。鬥不數合，小龍委實難搪，將身一幌，變\n作一條水蛇兒，鑽入草科中去了。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3839,
+        "excerptTraditional": "「既如此，我且不打你。我問你：鷹愁澗裏，是那方來的怪龍？他怎麼搶了我師\n父的白馬吃了？」二神道：「大聖自來不曾有師父，原來是個不伏天不伏地混元\n上真，如何得有甚麼師父的馬來？」行者道：「你等是也不知。我只為那誑上的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      }
+    ],
+    "personalityActions": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1980,
+        "excerptTraditional": "賜與貧僧，教他與取經人做個腳力。」玉帝聞言，即傳旨赦宥，差天將解放，送\n與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1981,
+        "excerptTraditional": "與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3830,
+        "excerptTraditional": "出來？不還你，便待怎的？」行者道「不還馬時看棍，只打殺你，償了我馬的性\n命便罷。」他兩個又在那山崖下苦鬥。鬥不數合，小龍委實難搪，將身一幌，變\n作一條水蛇兒，鑽入草科中去了。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3893,
+        "excerptTraditional": "那揭諦果去澗邊叫了兩遍。那小龍翻波跳浪，跳出水來，變作一個人像，踏了雲\n頭，到空中對菩薩禮拜道：「向蒙菩薩解脫活命之恩，在此久等，更不聞取經人",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3903,
+        "excerptTraditional": "行者歡喜領教。菩薩上前，把那小龍的項下明珠摘了，將楊柳枝蘸出甘露，往他\n身上拂了一拂，吹口仙氣，喝聲叫：「變！」那龍即變做他原來的馬匹毛片。又",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3966,
+        "excerptTraditional": "鞍轡俱全。不期那澗裏有條孽龍，在彼成精，他把我的馬連鞍轡一口吞之。幸虧\n我徒弟有些本事，又感得觀音菩薩來澗邊擒住那龍，教他就變做我原騎的白馬，\n毛片俱同，馱我上西天拜佛。今此過澗，未經一日，卻到了老先的聖祠，還不曾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 18,
+        "rawLine": 4652,
+        "excerptTraditional": "行者看罷道：「師父請行，定是一村好人家，正可借宿。」那長老催動白馬，早\n到街衢之口。又見一個少年，頭裹綿布，身穿藍襖，持傘背包，斂褌劄褲，腳踏",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7859,
+        "excerptTraditional": "裏面受用，外面人盡傳道：「唐僧是個虎精。」亂傳亂嚷，嚷到金亭館驛。此時\n驛裏無人，止有白馬在槽上吃草吃料。他本是西海小龍王，因犯天條，鋸角退\n鱗，變白馬，馱唐僧往西方取經。忽聞人講唐僧是個虎精，他也心中暗想道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7860,
+        "excerptTraditional": "驛裏無人，止有白馬在槽上吃草吃料。他本是西海小龍王，因犯天條，鋸角退\n鱗，變白馬，馱唐僧往西方取經。忽聞人講唐僧是個虎精，他也心中暗想道：\n「我師父分明是個好人，必然被怪把他變做虎精，害了師父。怎的好？怎的好？",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7901,
+        "excerptTraditional": "卻說那小龍潛於水底，半個時辰聽不見聲息，方才咬著牙，忍著腿疼跳將起去。\n踏著烏雲，徑轉館驛，還變作依舊馬匹，伏於槽下。可憐渾身是水，腿有傷痕。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 31,
+        "rawLine": 8066,
+        "excerptTraditional": "那怪神通廣大，將沙僧又捉了。我敗陣而走，伏在草中。那怪變做個俊俏文人入\n朝，與國王認親，把師父變作老虎。又虧了白龍馬夜現龍身，去尋師父，師父倒\n不曾尋見，卻遇著那怪在銀安殿飲酒。他變一宮娥，與他巡酒、舞刀，欲乘機而",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-031.txt"
+      },
+      {
+        "chapterNumber": 31,
+        "rawLine": 8130,
+        "excerptTraditional": "忍。」沙僧見身道：「二哥，你從那裏來？」八戒道：「我昨日敗陣，夜間進\n城，會了白馬，知師父有難，被黃袍使法，變做個老虎。那白馬與我商議，請師\n兄來的。」行者道：「獃子，且休敘闊。把這兩個孩子，各抱著一個，先進那寶",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-031.txt"
+      }
+    ],
+    "relationships": [
+      {
+        "chapterNumber": 3,
+        "rawLine": 672,
+        "excerptTraditional": "你看他弄神通，丟開解數，打轉水晶宮裏。諕得老龍王膽戰心驚，小龍子魂飛魄\n散，龜鱉黿鼉皆縮頸，魚蝦鰲蟹盡藏頭。悟空將寶貝執在手中，坐在水晶宮殿上",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1971,
+        "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1980,
+        "excerptTraditional": "賜與貧僧，教他與取經人做個腳力。」玉帝聞言，即傳旨赦宥，差天將解放，送\n與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1981,
+        "excerptTraditional": "與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3776,
+        "excerptTraditional": "，就搶長老。慌得個行者丟了行李，把師父抱下馬來，回頭便走。那條龍就趕不\n上，把他的白馬連鞍轡一口吞下肚去，依然伏水潛蹤。行者把師父送在那高阜上\n坐了，卻來牽馬挑擔，止存得一擔行李，不見了馬匹。他將行李擔送到師父面前",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3805,
+        "excerptTraditional": "卻說那龍吃了三藏的白馬，伏在那澗底中間，潛靈養性，只聽得有人叫罵索馬。\n他按不住心中火發，急縱身躍浪翻波，跳將上來道：「是那個敢在這裏海口傷吾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3830,
+        "excerptTraditional": "出來？不還你，便待怎的？」行者道「不還馬時看棍，只打殺你，償了我馬的性\n命便罷。」他兩個又在那山崖下苦鬥。鬥不數合，小龍委實難搪，將身一幌，變\n作一條水蛇兒，鑽入草科中去了。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3839,
+        "excerptTraditional": "「既如此，我且不打你。我問你：鷹愁澗裏，是那方來的怪龍？他怎麼搶了我師\n父的白馬吃了？」二神道：「大聖自來不曾有師父，原來是個不伏天不伏地混元\n上真，如何得有甚麼師父的馬來？」行者道：「你等是也不知。我只為那誑上的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3842,
+        "excerptTraditional": "勾當，整受了這五百年的苦難。今蒙觀音菩薩勸善，著唐朝駕下真僧救出我來，\n教我跟他做徒弟，往西天去拜佛求經。因路過此處，失了我師父的白馬。」二神\n道：「原來是如此。這澗中自來無邪，只是深陡寬闊，水光徹底澄清，鴉鵲不敢",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3845,
+        "excerptTraditional": "飛過﹔因水清照見自己的形影，便認做同群之鳥，往往身擲於水內：故名『鷹愁\n陡澗』。只是向年間，觀音菩薩因為尋訪取經人去，救了一條玉龍，送他在此，\n教他等候那取經人，不許為非作歹。他只是饑了時，上岸來撲些鳥鵲吃，或是捉",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3889,
+        "excerptTraditional": "在此，專為求經人做個腳力。你想那東土來的凡馬，怎歷得這萬水千山？怎到得\n那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      },
+      {
+        "chapterNumber": 15,
+        "rawLine": 3890,
+        "excerptTraditional": "那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子\n，你出來，有南海菩薩在此。』他就出來了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+      }
+    ]
+  },
+  "earlyMentions": [
+    {
+      "chapterNumber": 3,
+      "rawLine": 672,
+      "excerptTraditional": "你看他弄神通，丟開解數，打轉水晶宮裏。諕得老龍王膽戰心驚，小龍子魂飛魄\n散，龜鱉黿鼉皆縮頸，魚蝦鰲蟹盡藏頭。悟空將寶貝執在手中，坐在水晶宮殿上",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "rawLine": 783,
+      "excerptTraditional": "拜畢，傍有引奏仙童接上表文。玉皇從頭看過。表曰：\n「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "rawLine": 784,
+      "excerptTraditional": "「水元下界東勝神洲東海小龍臣敖廣啟奏大天聖主玄穹高上帝君：近因花果山生\n、水簾洞住妖仙孫悟空者，欺虐小龍，強坐水宅，索兵器，施法施威﹔要披掛，\n騁兇騁勢。驚傷水族，諕走龜鼉。南海龍戰戰兢兢，西海龍悽悽慘慘，北海龍縮",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1971,
+      "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1980,
+      "excerptTraditional": "賜與貧僧，教他與取經人做個腳力。」玉帝聞言，即傳旨赦宥，差天將解放，送\n與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1981,
+      "excerptTraditional": "與菩薩。菩薩謝恩而出。這小龍叩頭謝活命之恩，聽從菩薩使喚。菩薩把他送在\n深澗之中，只等取經人來，變做白馬，上西方立功。小龍領命潛身不題。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "rawLine": 3530,
+      "excerptTraditional": "，又承大哥替我臉上薅草。」謝畢，就去收拾行李，扣背馬匹。那馬見了他，腰\n軟蹄矬，戰兢兢的立站不住。蓋因那猴原是弼馬溫，在天上看養龍馬的，有些法\n則，故此凡馬見他害怕。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3763,
+      "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3776,
+      "excerptTraditional": "，就搶長老。慌得個行者丟了行李，把師父抱下馬來，回頭便走。那條龍就趕不\n上，把他的白馬連鞍轡一口吞下肚去，依然伏水潛蹤。行者把師父送在那高阜上\n坐了，卻來牽馬挑擔，止存得一擔行李，不見了馬匹。他將行李擔送到師父面前",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3805,
+      "excerptTraditional": "卻說那龍吃了三藏的白馬，伏在那澗底中間，潛靈養性，只聽得有人叫罵索馬。\n他按不住心中火發，急縱身躍浪翻波，跳將上來道：「是那個敢在這裏海口傷吾",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3830,
+      "excerptTraditional": "出來？不還你，便待怎的？」行者道「不還馬時看棍，只打殺你，償了我馬的性\n命便罷。」他兩個又在那山崖下苦鬥。鬥不數合，小龍委實難搪，將身一幌，變\n作一條水蛇兒，鑽入草科中去了。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3839,
+      "excerptTraditional": "「既如此，我且不打你。我問你：鷹愁澗裏，是那方來的怪龍？他怎麼搶了我師\n父的白馬吃了？」二神道：「大聖自來不曾有師父，原來是個不伏天不伏地混元\n上真，如何得有甚麼師父的馬來？」行者道：「你等是也不知。我只為那誑上的",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3842,
+      "excerptTraditional": "勾當，整受了這五百年的苦難。今蒙觀音菩薩勸善，著唐朝駕下真僧救出我來，\n教我跟他做徒弟，往西天去拜佛求經。因路過此處，失了我師父的白馬。」二神\n道：「原來是如此。這澗中自來無邪，只是深陡寬闊，水光徹底澄清，鴉鵲不敢",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3845,
+      "excerptTraditional": "飛過﹔因水清照見自己的形影，便認做同群之鳥，往往身擲於水內：故名『鷹愁\n陡澗』。只是向年間，觀音菩薩因為尋訪取經人去，救了一條玉龍，送他在此，\n教他等候那取經人，不許為非作歹。他只是饑了時，上岸來撲些鳥鵲吃，或是捉",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3889,
+      "excerptTraditional": "在此，專為求經人做個腳力。你想那東土來的凡馬，怎歷得這萬水千山？怎到得\n那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3890,
+      "excerptTraditional": "那靈山佛地？須是得這個龍馬，方才去得。」行者道：「像他這般懼怕老孫，潛\n躲不出，如之奈何？」菩薩叫揭諦道：「你去澗邊叫一聲『敖閏龍王玉龍三太子\n，你出來，有南海菩薩在此。』他就出來了。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3893,
+      "excerptTraditional": "那揭諦果去澗邊叫了兩遍。那小龍翻波跳浪，跳出水來，變作一個人像，踏了雲\n頭，到空中對菩薩禮拜道：「向蒙菩薩解脫活命之恩，在此久等，更不聞取經人",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3895,
+      "excerptTraditional": "頭，到空中對菩薩禮拜道：「向蒙菩薩解脫活命之恩，在此久等，更不聞取經人\n的音信。」菩薩指著行者道：「這不是取經人的大徒弟？」小龍見了道：「菩薩\n，這是我的對頭。我昨日腹中饑餒，果然吃了他的馬匹。他倚著有些力量，將我",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3898,
+      "excerptTraditional": "鬥得力怯而回，又罵得我閉門不敢出來。他更不曾提著一個『取經』的字樣。」\n行者道：「你又不曾問我姓甚名誰，我怎麼就說？」小龍道：「我不曾問你是那\n裏來的潑魔？你嚷道：『管甚麼那裏不那裏，只還我馬來。』何曾說出半個『唐』",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3903,
+      "excerptTraditional": "行者歡喜領教。菩薩上前，把那小龍的項下明珠摘了，將楊柳枝蘸出甘露，往他\n身上拂了一拂，吹口仙氣，喝聲叫：「變！」那龍即變做他原來的馬匹毛片。又",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3906,
+      "excerptTraditional": "將言語吩咐道：「你須用心還了業障，功成後超越凡龍，還你個金身正果。」那\n小龍口啣著橫骨，心心領諾。菩薩教悟空領他去見三藏。「我回海上去也。」行\n者扯住菩薩不放道：「我不去了，我不去了。西方路這等崎嶇，保這個凡僧，幾",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3917,
+      "excerptTraditional": "這行者才按落雲頭，揪著那龍馬的頂鬃，來見三藏道：「師父，馬有了也。」三\n藏一見，大喜道：「徒弟，這馬怎麼比前反肥盛了些？在何處尋著的？」行者道",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3964,
+      "excerptTraditional": "馬，好生問老人家討條繩子，如何就扯斷他的衣索？──老先生，休怪，休怪。\n我這馬，實不瞞你說，不是偷的。昨日東來，至鷹愁陡澗，原有騎的一匹白馬，\n鞍轡俱全。不期那澗裏有條孽龍，在彼成精，他把我的馬連鞍轡一口吞之。幸虧",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 3966,
+      "excerptTraditional": "鞍轡俱全。不期那澗裏有條孽龍，在彼成精，他把我的馬連鞍轡一口吞之。幸虧\n我徒弟有些本事，又感得觀音菩薩來澗邊擒住那龍，教他就變做我原騎的白馬，\n毛片俱同，馱我上西天拜佛。今此過澗，未經一日，卻到了老先的聖祠，還不曾",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "rawLine": 4010,
+      "excerptTraditional": "「悟空，你看那裏是甚麼去處？」行者抬頭看了道：「不是殿宇，定是寺院。我\n們趕起些，那裏借宿去。」三藏欣然從之，放開龍馬，徑奔前來。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt"
+    },
+    {
+      "chapterNumber": 16,
+      "rawLine": 4136,
+      "excerptTraditional": "路的人，辛苦之甚，如今已睡著了。我們想幾個有力量的，拿了槍刀，打開禪堂\n，將他殺了，把屍首埋在後園，只我一家知道，卻又謀了他的白馬、行囊，卻把\n那袈裟留下，以為傳家之寶，豈非子孫長久之計耶？」老和尚見說，滿心歡喜，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt"
+    },
+    {
+      "chapterNumber": 16,
+      "rawLine": 4177,
+      "excerptTraditional": "行者拿了，按著雲頭，徑到禪堂房脊上，罩住了唐僧與白馬、行李。他卻去那後\n面老和尚住的方丈房上頭坐著，保護那袈裟。看那些人放起火來，他轉捻訣念咒",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt"
+    },
+    {
+      "chapterNumber": 16,
+      "rawLine": 4279,
+      "excerptTraditional": "神靈保護，明中等我叫那些和尚伏侍。」即喚眾和尚過來，道：「汝等著幾個去\n埋那老鬼；著幾個伏侍我師父，看守我白馬。」眾僧領諾。行者又道：「汝等莫\n順口兒答應，等我去了，你就不來奉承。看師父的，要怡顏悅色；養白馬的，要",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt"
+    },
+    {
+      "chapterNumber": 16,
+      "rawLine": 4280,
+      "excerptTraditional": "埋那老鬼；著幾個伏侍我師父，看守我白馬。」眾僧領諾。行者又道：「汝等莫\n順口兒答應，等我去了，你就不來奉承。看師父的，要怡顏悅色；養白馬的，要\n水草調勻。假有一毫兒差了，照依這個樣棍，與你們看看。」他掣出棍子，照那",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt"
+    },
+    {
+      "chapterNumber": 18,
+      "rawLine": 4652,
+      "excerptTraditional": "行者看罷道：「師父請行，定是一村好人家，正可借宿。」那長老催動白馬，早\n到街衢之口。又見一個少年，頭裹綿布，身穿藍襖，持傘背包，斂褌劄褲，腳踏",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+    },
+    {
+      "chapterNumber": 18,
+      "rawLine": 4706,
+      "excerptTraditional": "好事，何必諄諄以相貌為言？」太公見說，戰兢兢的，只得強打精神，叫聲：\n「請進。」這行者見請，才牽了白馬，教高才挑著行李，與三藏進去。他也不管\n好歹，就把馬拴在敞廳柱上，扯過一張退光漆交椅，叫師父坐下。他又扯過一張",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5024,
+      "excerptTraditional": "三藏道：「少題閑話，我們趕早兒去來。」遂此收拾了一擔行李，八戒擔著；背\n了白馬，三藏騎著；行者肩擔鐵棒，前面引路。一行三眾，辭別高老及眾親友，\n投西而去。有詩為證。詩曰：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5028,
+      "excerptTraditional": "饑餐一缽千家飯，寒著千針一衲袍。\n　　　　意馬胸頭休放蕩，心猿乖劣莫教嚎。\n　　　　情和性定諸緣合，月滿金華是伐毛。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5170,
+      "excerptTraditional": "那老者正在門前與三個和尚相講，只見那莊南邊有兩個少年人，帶著一個老媽媽\n、三四個小男女，斂衣赤腳，插秧而回。他看見一匹白馬、一擔行李，都在他家\n門首喧嘩，不知是甚來歷，都一擁上前問道：「做甚麼的？」八戒調過頭來，把",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5185,
+      "excerptTraditional": "收拾了。」那八戒真個把嘴揣了，把耳貼了，拱著頭，立於左右。行者將行李拿\n入門裏，將白馬拴在樁上。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5245,
+      "excerptTraditional": "說不了，只見那山坡下剪尾跑蹄，跳出一隻斑斕猛虎。慌得那三藏坐不穩雕鞍，\n翻根頭跌下白馬，斜倚在路傍，真個是魂飛魄散。八戒丟了行李，掣釘鈀，不讓\n行者走上前，大喝一聲道：「孽畜，那裏走！」趕將去，劈頭就築。那隻虎直挺",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 21,
+      "rawLine": 5506,
+      "excerptTraditional": "行者道：「這夥強神，自換了龍馬，一向不曾點他，他倒又來弄虛頭。」八戒道\n：「哥哥莫扯架子，他怎麼伏你點札？」行者道：「兄弟，你還不知哩。這護教",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-021.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5889,
+      "excerptTraditional": "當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持\n，右有悟淨捧托﹔孫行者在後面牽了龍馬，半雲半霧相跟﹔頭直上又有木叉擁護\n。那師父才飄然穩渡流沙河界，浪靜風平過弱河。真個也如飛似箭，不多時，身",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5939,
+      "excerptTraditional": "行者道：「你說他是馬哩，他不是凡馬，本是西海龍王敖閏之子，喚名龍馬三太\n子。只因縱火燒了殿上明珠，被他父親告了忤逆，身犯天條，多虧觀音菩薩救了",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 28,
+      "rawLine": 7386,
+      "excerptTraditional": "怎麼就不曾走那條路？塔下必有寺院，院內必有僧家，且等我走走。這行李、\n白馬，料此處無人行走，卻也無事。那裏若有方便處，待徒弟們來，一同借\n歇。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt"
+    }
+  ]
+}

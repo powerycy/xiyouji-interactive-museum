@@ -27,6 +27,17 @@
 - ...
 - `data/processed/xiyouji/chapters/chapter-100.txt`
 
+当前已生成：
+
+- `data/processed/xiyouji/chapter-index.json`
+- `data/processed/xiyouji/chapters/chapter-001.txt` 到 `chapter-100.txt`
+
+复跑脚本：
+
+```bash
+python3 scripts/extract_xiyouji_fulltext.py
+```
+
 ## 3. 角色基础设定抽取
 
 每个核心角色需要建立基础设定文件。
@@ -38,6 +49,16 @@
 - `content/characters/zhu-bajie.base.json`
 - `content/characters/sha-seng.base.json`
 - `content/characters/bailongma.base.json`
+
+当前已生成自动候选文件：
+
+- `content/characters/sun-wukong.base.candidates.json`
+- `content/characters/tang-seng.base.candidates.json`
+- `content/characters/zhu-bajie.base.candidates.json`
+- `content/characters/sha-seng.base.candidates.json`
+- `content/characters/bailongma.base.candidates.json`
+
+这些候选文件只做证据池，不能直接当最终设定。
 
 每个角色基础设定包含：
 
@@ -97,6 +118,15 @@
 
 - `content/map/route-canon.seed.json`
 
+当前已生成：
+
+- `content/map/route-canon.candidates.json`
+
+其中：
+
+- `priorityNodes`：重点路线候选，所有节点已扫描全文证据，适合作为人工确认主表
+- `autoNodes`：宽泛地点候选池，可能有噪声，只用于补漏
+
 ## 6. 地图节点分层
 
 大地图至少分三层：
@@ -152,4 +182,3 @@
 - 孙悟空、唐僧、猪八戒、沙僧的正式图纸不能只参考第二七回
 - 大地图不能只使用当前概念测试图
 - 白虎岭节点可以保留为 Demo 节点，但路线位置应以后续 `route-canon.seed.json` 为准
-

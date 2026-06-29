@@ -1,0 +1,710 @@
+{
+  "version": 1,
+  "status": "auto-extracted-candidates-not-final",
+  "id": "tang-seng",
+  "name": "唐三藏",
+  "aliases": [
+    "唐三藏",
+    "三藏",
+    "唐僧",
+    "玄奘",
+    "長老",
+    "聖僧",
+    "御弟",
+    "江流"
+  ],
+  "source": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+  "notes": [
+    "本文件用于人物基础设定考据，不能直接作为最终人物图设定。",
+    "同一称谓在原文中可能指代上下文人物，开发前应人工复核证据。",
+    "正式美术提示词应由基础设定、章节状态和场景动作共同生成。"
+  ],
+  "evidenceBuckets": {
+    "originIdentity": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1869,
+        "excerptTraditional": "背了。菩薩將金箍藏了，執了錫杖，徑下靈山。這一去，有分教：\n佛子還來歸本願，金蟬長老裹栴檀。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2029,
+        "excerptTraditional": "第九回     陳光蕊赴任逢災　江流僧復讎報本",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2126,
+        "excerptTraditional": "和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心\n動，急到江邊觀看，只見涯邊一片木板上，睡著一個嬰兒。長老慌忙救起，見了\n懷中血書，方知來歷。取個乳名，叫做江流，託人撫養。血書緊緊收藏。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2127,
+        "excerptTraditional": "動，急到江邊觀看，只見涯邊一片木板上，睡著一個嬰兒。長老慌忙救起，見了\n懷中血書，方知來歷。取個乳名，叫做江流，託人撫養。血書緊緊收藏。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2129,
+        "excerptTraditional": "光陰似箭，日月如梭。不覺江流年長一十八歲。長老就叫他削髮修行，取法名為\n玄奘，摩頂受戒，堅心修道。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2130,
+        "excerptTraditional": "光陰似箭，日月如梭。不覺江流年長一十八歲。長老就叫他削髮修行，取法名為\n玄奘，摩頂受戒，堅心修道。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2132,
+        "excerptTraditional": "一日，暮春天氣，眾人同在松陰之下講經參禪，談說奧妙，那酒肉和尚恰被玄奘\n難倒。和尚大怒，罵道：「你這業畜，姓名也不知，父母也不識，還在此搗甚麼",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2134,
+        "excerptTraditional": "難倒。和尚大怒，罵道：「你這業畜，姓名也不知，父母也不識，還在此搗甚麼\n鬼？」玄奘被他罵出這般言語，入寺跪告師父，眼淚雙流道：「人生於天地之間\n，稟陰陽而資五行，盡由父生母養，豈有為人在世而無父母者乎？」再三哀告，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2136,
+        "excerptTraditional": "，稟陰陽而資五行，盡由父生母養，豈有為人在世而無父母者乎？」再三哀告，\n求問父母姓名。長老道：「你真個要尋父母，可隨我到方丈裏來。」玄奘就跟到\n方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2137,
+        "excerptTraditional": "求問父母姓名。長老道：「你真個要尋父母，可隨我到方丈裏來。」玄奘就跟到\n方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，\n付與玄奘。玄奘將血書拆開讀之，才備細曉得父母姓名，並冤仇事跡。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2138,
+        "excerptTraditional": "方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，\n付與玄奘。玄奘將血書拆開讀之，才備細曉得父母姓名，並冤仇事跡。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2140,
+        "excerptTraditional": "玄奘讀罷，不覺哭倒在地道：「父母之仇，不能報復，何以為人？十八年來，不\n識生身父母，至今日方知有母親。此身若非師父撈救撫養，安有今日？容弟子去",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      }
+    ],
+    "appearanceBody": [
+      {
+        "chapterNumber": 7,
+        "rawLine": 1774,
+        "excerptTraditional": "惡貫滿盈身受困，善根不絕氣還昇。\n　　　　果然脫得如來手，且待唐朝出聖僧。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2134,
+        "excerptTraditional": "難倒。和尚大怒，罵道：「你這業畜，姓名也不知，父母也不識，還在此搗甚麼\n鬼？」玄奘被他罵出這般言語，入寺跪告師父，眼淚雙流道：「人生於天地之間\n，稟陰陽而資五行，盡由父生母養，豈有為人在世而無父母者乎？」再三哀告，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2140,
+        "excerptTraditional": "玄奘讀罷，不覺哭倒在地道：「父母之仇，不能報復，何以為人？十八年來，不\n識生身父母，至今日方知有母親。此身若非師父撈救撫養，安有今日？容弟子去",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2160,
+        "excerptTraditional": "，哀哀大哭：「我娘若不信，見有血書、汗衫為證。」溫嬌取過一看，果然是真\n，母子相抱而哭。就叫：「我兒快去。」玄奘道：「十八年不識生身父母，今朝\n才見母親，教孩兒如何割捨？」小姐道：「我兒，你火速抽身前去。劉賊若回，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2178,
+        "excerptTraditional": "俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫\n了鞋襪看時，那左腳上果然少了一個小指頭。當時兩個又抱住而哭，拜謝長老養\n育之恩。法明道：「汝今母子相會，恐奸賊知之，可速速抽身回去，庶免其禍。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2189,
+        "excerptTraditional": "我店中。後來昏了眼，三四年並無店租還我。如今在南門頭一個破瓦?裏，每日\n上街叫化度日。那客官一去許久，到如今杳無信息，不知為何。」玄奘聽罷，即\n時問到南門頭破瓦?，尋著婆婆。婆婆道：「你聲音好似我兒陳光蕊。」玄奘道",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2196,
+        "excerptTraditional": "道他背義忘恩，那知他被人謀死。且喜得皇天憐念，不絕我兒之後，今日還有孫\n子來尋我。」玄奘問：「婆婆的眼，如何都昏了？」婆婆道：「我因思量你父親\n，終日懸望，不見他來，因此上哭得兩眼都昏了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2199,
+        "excerptTraditional": "玄奘便跪倒向天禱告道：「今玄奘一十八歲，父母之仇不能報復。今日領母命來\n尋婆婆，天若憐鑒弟子誠意，保我婆婆雙眼復明。」祝罷，就將舌尖與婆婆舔眼",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2202,
+        "excerptTraditional": "。須臾之間，雙眼舔開，仍復如初。婆婆覷了小和尚道：「你果是我的孫子，恰\n和我兒子光蕊形容無二。」婆婆又喜又悲。玄奘就領婆婆出了?門，還到劉小二\n店內。將些房錢賃屋一間，與婆婆棲身。又將盤纏與婆婆道：「我此去，只月餘",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2230,
+        "excerptTraditional": "，有何面目相見？惟有一死以報丈夫耳。」丞相道：「此非我兒以盛衰改節，皆\n因出乎不得已，何得為恥？」父子相抱而哭，玄奘亦哀哀不止。丞相拭淚道：\n「你二人且休煩惱﹔我今已擒捉仇賊，且去發落去來。」即起身到法場。恰好江",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2244,
+        "excerptTraditional": "卻說殷小姐哭奠丈夫一番，又欲將身赴水而死，慌得玄奘拚命扯住。正在倉皇之\n際，忽見水面上一個死屍浮來，靠近江岸之傍。小姐忙向前認看，認得是丈夫的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2249,
+        "excerptTraditional": "小和尚俱在身邊啼哭。光蕊道：「你們為何在此？」小姐道：「因汝被賊人打死\n，後來妾身生下此子，幸遇金山寺長老撫養長大，尋我相會，我教他去尋外公。\n父親得知，奏聞朝廷，統兵到此，拿住賊人，適才生取心肝，望空祭奠我夫。不",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      }
+    ],
+    "clothingProps": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1869,
+        "excerptTraditional": "背了。菩薩將金箍藏了，執了錫杖，徑下靈山。這一去，有分教：\n佛子還來歸本願，金蟬長老裹栴檀。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 2998,
+        "excerptTraditional": "曰：「臣正是。」太宗喜道：「果然舉之不錯，誠為有德行有禪心的和尚。朕賜\n你左僧綱，右僧綱，天下大闡都僧綱之職。」玄奘頓首謝恩，受了大闡官爵。又\n賜五彩織金袈裟一件、毘盧帽一頂。教他用心再拜明僧，排次闍黎班首，書辦旨",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3066,
+        "excerptTraditional": "個善緣，這便是不要錢。」蕭瑀聞言，倍添春色，知他是個好人。即便下馬，與\n菩薩以禮相見，口稱：「大法長老，恕我蕭瑀之罪。我大唐皇帝十分好善，滿朝\n的文武無不奉行。即今起建水陸大會，這袈裟正好與大都闡陳玄奘法師穿用。我",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3067,
+        "excerptTraditional": "菩薩以禮相見，口稱：「大法長老，恕我蕭瑀之罪。我大唐皇帝十分好善，滿朝\n的文武無不奉行。即今起建水陸大會，這袈裟正好與大都闡陳玄奘法師穿用。我\n和你入朝見駕去來。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3072,
+        "excerptTraditional": "著兩個疥癩僧人，立於階下，唐王問曰：「蕭瑀來奏何事？」蕭瑀俯伏階前道：\n「臣出了東華門前，偶遇二僧，乃賣袈裟與錫杖者。臣思法師玄奘可著此服，故\n領僧人啟見。」太宗大喜，便問那袈裟價值幾何。菩薩與木叉侍立階下，更不行",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3092,
+        "excerptTraditional": "唐王聞言，即命展開袈裟，從頭細看，果然是件好物。道：「大法長老，實不瞞\n你。朕今大開善教，廣種福田，見在那化生寺聚集多僧，敷演經法。內中有一個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3107,
+        "excerptTraditional": "酬謝。早間蕭瑀迎著二僧，願送錦襴異寶袈裟一件，九環錫杖一條。今特召法師\n領去受用。」玄奘叩頭謝恩。太宗道：「法師如不棄，可穿上與朕看看。」長老\n遂將袈裟抖開，披在身上，手持錫杖，侍立階前。君臣個個忻然。誠為如來佛子",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3127,
+        "excerptTraditional": "玄奘直至寺裏，僧人下榻來迎。一見他披此袈裟，執此錫杖，都道是地藏王來了\n，各各歸依，侍於左右。玄奘上殿，炷香禮佛。又對眾感述聖恩已畢，各歸禪座",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3128,
+        "excerptTraditional": "玄奘直至寺裏，僧人下榻來迎。一見他披此袈裟，執此錫杖，都道是地藏王來了\n，各各歸依，侍於左右。玄奘上殿，炷香禮佛。又對眾感述聖恩已畢，各歸禪座\n。又不覺紅輪西墜。正是那：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3671,
+        "excerptTraditional": "那長老只得收拾行李，捎在馬上，也不騎馬，一隻手拄著錫杖，一隻手揪著韁繩\n，淒淒涼涼，往西前進。行不多時，只見山路前面有一個年高的老母，捧一件綿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3673,
+        "excerptTraditional": "，淒淒涼涼，往西前進。行不多時，只見山路前面有一個年高的老母，捧一件綿\n衣，綿衣上有一頂花帽。三藏見他來得至近，慌忙牽馬，立於右側讓行。那老母\n問道：「你是那裏來的長老，孤孤恓恓獨行於此？」三藏道：「弟子乃東土大唐",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3674,
+        "excerptTraditional": "衣，綿衣上有一頂花帽。三藏見他來得至近，慌忙牽馬，立於右側讓行。那老母\n問道：「你是那裏來的長老，孤孤恓恓獨行於此？」三藏道：「弟子乃東土大唐\n奉差往西天拜活佛求真經者。」老母道：「西方佛乃大雷音寺天竺國界，此去有",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      }
+    ],
+    "weaponsOrTools": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1869,
+        "excerptTraditional": "背了。菩薩將金箍藏了，執了錫杖，徑下靈山。這一去，有分教：\n佛子還來歸本願，金蟬長老裹栴檀。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 2998,
+        "excerptTraditional": "曰：「臣正是。」太宗喜道：「果然舉之不錯，誠為有德行有禪心的和尚。朕賜\n你左僧綱，右僧綱，天下大闡都僧綱之職。」玄奘頓首謝恩，受了大闡官爵。又\n賜五彩織金袈裟一件、毘盧帽一頂。教他用心再拜明僧，排次闍黎班首，書辦旨",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3066,
+        "excerptTraditional": "個善緣，這便是不要錢。」蕭瑀聞言，倍添春色，知他是個好人。即便下馬，與\n菩薩以禮相見，口稱：「大法長老，恕我蕭瑀之罪。我大唐皇帝十分好善，滿朝\n的文武無不奉行。即今起建水陸大會，這袈裟正好與大都闡陳玄奘法師穿用。我",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3067,
+        "excerptTraditional": "菩薩以禮相見，口稱：「大法長老，恕我蕭瑀之罪。我大唐皇帝十分好善，滿朝\n的文武無不奉行。即今起建水陸大會，這袈裟正好與大都闡陳玄奘法師穿用。我\n和你入朝見駕去來。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3072,
+        "excerptTraditional": "著兩個疥癩僧人，立於階下，唐王問曰：「蕭瑀來奏何事？」蕭瑀俯伏階前道：\n「臣出了東華門前，偶遇二僧，乃賣袈裟與錫杖者。臣思法師玄奘可著此服，故\n領僧人啟見。」太宗大喜，便問那袈裟價值幾何。菩薩與木叉侍立階下，更不行",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3092,
+        "excerptTraditional": "唐王聞言，即命展開袈裟，從頭細看，果然是件好物。道：「大法長老，實不瞞\n你。朕今大開善教，廣種福田，見在那化生寺聚集多僧，敷演經法。內中有一個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3107,
+        "excerptTraditional": "酬謝。早間蕭瑀迎著二僧，願送錦襴異寶袈裟一件，九環錫杖一條。今特召法師\n領去受用。」玄奘叩頭謝恩。太宗道：「法師如不棄，可穿上與朕看看。」長老\n遂將袈裟抖開，披在身上，手持錫杖，侍立階前。君臣個個忻然。誠為如來佛子",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3127,
+        "excerptTraditional": "玄奘直至寺裏，僧人下榻來迎。一見他披此袈裟，執此錫杖，都道是地藏王來了\n，各各歸依，侍於左右。玄奘上殿，炷香禮佛。又對眾感述聖恩已畢，各歸禪座",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3128,
+        "excerptTraditional": "玄奘直至寺裏，僧人下榻來迎。一見他披此袈裟，執此錫杖，都道是地藏王來了\n，各各歸依，侍於左右。玄奘上殿，炷香禮佛。又對眾感述聖恩已畢，各歸禪座\n。又不覺紅輪西墜。正是那：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3208,
+        "excerptTraditional": "次早，太宗設朝，聚集文武，寫了取經文牒，用了通行寶印。有欽天監奏曰：\n「今日是人專吉星，堪宜出行遠路。」唐王大喜。又見黃門官奏道：「御弟法師\n朝門外候旨。」隨即宣上寶殿道：「御弟，今日是出行吉日。這是通關文牒。朕",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3209,
+        "excerptTraditional": "「今日是人專吉星，堪宜出行遠路。」唐王大喜。又見黃門官奏道：「御弟法師\n朝門外候旨。」隨即宣上寶殿道：「御弟，今日是出行吉日。這是通關文牒。朕\n又有一個紫金缽盂，送你途中化齋而用。再選兩個長行的從者。又銀騔的馬一匹",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3671,
+        "excerptTraditional": "那長老只得收拾行李，捎在馬上，也不騎馬，一隻手拄著錫杖，一隻手揪著韁繩\n，淒淒涼涼，往西前進。行不多時，只見山路前面有一個年高的老母，捧一件綿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      }
+    ],
+    "personalityActions": [
+      {
+        "chapterNumber": 9,
+        "rawLine": 2124,
+        "excerptTraditional": "卻說此子在木板上順水流去，一直流到金山寺腳下停住。那金山寺長老叫做法明\n和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2126,
+        "excerptTraditional": "和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心\n動，急到江邊觀看，只見涯邊一片木板上，睡著一個嬰兒。長老慌忙救起，見了\n懷中血書，方知來歷。取個乳名，叫做江流，託人撫養。血書緊緊收藏。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2140,
+        "excerptTraditional": "玄奘讀罷，不覺哭倒在地道：「父母之仇，不能報復，何以為人？十八年來，不\n識生身父母，至今日方知有母親。此身若非師父撈救撫養，安有今日？容弟子去",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2150,
+        "excerptTraditional": "私衙前有人念經，連叫「抄化」，小姐又乘便出來問道：「你是何處來的？」玄\n奘答道：「貧僧乃是金山寺法明長老的徒弟。」小姐道：「你既是金山寺長老的\n徒弟……」叫進衙來，將齋飯與玄奘吃。仔細看他舉止言談，好似與丈夫一般。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2158,
+        "excerptTraditional": "：「我母姓殷，名喚溫嬌。我父姓陳，名光蕊。我小名叫做江流，法名取為玄奘\n。」小姐道：「溫嬌就是我。但你今有何憑據？」玄奘聽說是他母親，雙膝跪下\n，哀哀大哭：「我娘若不信，見有血書、汗衫為證。」溫嬌取過一看，果然是真",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2160,
+        "excerptTraditional": "，哀哀大哭：「我娘若不信，見有血書、汗衫為證。」溫嬌取過一看，果然是真\n，母子相抱而哭。就叫：「我兒快去。」玄奘道：「十八年不識生身父母，今朝\n才見母親，教孩兒如何割捨？」小姐道：「我兒，你火速抽身前去。劉賊若回，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2163,
+        "excerptTraditional": "他必害你性命。我明日假裝一病，只說先年曾許捨百雙僧鞋，來你寺中還願。那\n時節，我有話與你說。」玄奘依言拜別。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2176,
+        "excerptTraditional": "先到，說夫人來寺還願。眾僧都出寺迎接。小姐徑進寺門，參了菩薩，大設齋襯\n。喚丫鬟將僧鞋暑襪托於盤內，來到法堂，小姐復拈心香禮拜，就教法明長老分\n俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2177,
+        "excerptTraditional": "。喚丫鬟將僧鞋暑襪托於盤內，來到法堂，小姐復拈心香禮拜，就教法明長老分\n俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫\n了鞋襪看時，那左腳上果然少了一個小指頭。當時兩個又抱住而哭，拜謝長老養",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2178,
+        "excerptTraditional": "俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫\n了鞋襪看時，那左腳上果然少了一個小指頭。當時兩個又抱住而哭，拜謝長老養\n育之恩。法明道：「汝今母子相會，恐奸賊知之，可速速抽身回去，庶免其禍。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2186,
+        "excerptTraditional": "玄奘哭回寺中，告過師父，即時拜別，徑往洪州。來到萬花店，問那店主劉小二\n道：「昔年江州陳客官有一母親住在你店中，如今好麼？」劉小二道：「他原在",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2193,
+        "excerptTraditional": "娘怎麼不來？」玄奘道：「我爹爹被強盜打死了，我娘被強盜霸占為妻。」婆婆\n道：「你怎麼曉得來尋我？」玄奘道：「是我娘著我來尋婆婆。我娘有書在此，\n又有香環一隻。」那婆婆接了書並香環，放聲痛哭道：「我兒為功名到此，我只",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      }
+    ],
+    "relationships": [
+      {
+        "chapterNumber": 9,
+        "rawLine": 2150,
+        "excerptTraditional": "私衙前有人念經，連叫「抄化」，小姐又乘便出來問道：「你是何處來的？」玄\n奘答道：「貧僧乃是金山寺法明長老的徒弟。」小姐道：「你既是金山寺長老的\n徒弟……」叫進衙來，將齋飯與玄奘吃。仔細看他舉止言談，好似與丈夫一般。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2151,
+        "excerptTraditional": "奘答道：「貧僧乃是金山寺法明長老的徒弟。」小姐道：「你既是金山寺長老的\n徒弟……」叫進衙來，將齋飯與玄奘吃。仔細看他舉止言談，好似與丈夫一般。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2266,
+        "excerptTraditional": "次日早朝，唐王登殿。殷丞相出班，將前後事情備細啟奏，並薦光蕊才可大用。\n唐王准奏，即命陞陳萼為學士之職，隨朝理政。玄奘立意安禪，送在洪福寺內修\n行。後來，殷小姐畢竟從容自盡。玄奘自到金山寺中報答法明長老。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 9,
+        "rawLine": 2267,
+        "excerptTraditional": "唐王准奏，即命陞陳萼為學士之職，隨朝理政。玄奘立意安禪，送在洪福寺內修\n行。後來，殷小姐畢竟從容自盡。玄奘自到金山寺中報答法明長老。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3027,
+        "excerptTraditional": "太宗文武俱各拈香，拜了佛祖金身，參了羅漢。又見那大闡都綱陳玄奘法師引眾\n僧羅拜唐王。禮畢，分班各安禪位。法師獻上濟孤榜文與太宗看。榜曰：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3044,
+        "excerptTraditional": "未逢真實有德行者。忽聞得太宗宣揚善果，選舉高僧，開建大會。又見得法師壇\n主，乃是江流兒和尚，正是極樂中降來的佛子，又是他原引送投胎的長老。菩薩\n十分歡喜，就將佛賜的寶貝捧上長街，與木叉貨賣。你道他是何寶貝？有一件錦",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3072,
+        "excerptTraditional": "著兩個疥癩僧人，立於階下，唐王問曰：「蕭瑀來奏何事？」蕭瑀俯伏階前道：\n「臣出了東華門前，偶遇二僧，乃賣袈裟與錫杖者。臣思法師玄奘可著此服，故\n領僧人啟見。」太宗大喜，便問那袈裟價值幾何。菩薩與木叉侍立階下，更不行",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3092,
+        "excerptTraditional": "唐王聞言，即命展開袈裟，從頭細看，果然是件好物。道：「大法長老，實不瞞\n你。朕今大開善教，廣種福田，見在那化生寺聚集多僧，敷演經法。內中有一個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3094,
+        "excerptTraditional": "你。朕今大開善教，廣種福田，見在那化生寺聚集多僧，敷演經法。內中有一個\n大有德行者，法名玄奘。朕買你這兩件寶物，賜他受用。你端的要價幾何？」菩\n薩聞言，與木叉合掌皈依，道聲佛號，躬身上啟道：「既有德行，貧僧情願送他",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3133,
+        "excerptTraditional": "光陰撚指，卻當七日正會。玄奘又具表，請唐王拈香。此時善聲遍滿天下。太宗\n即排駕，率文武多官、后妃國戚，早赴寺裏。那一城人，無論大小尊卑，俱詣寺",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3192,
+        "excerptTraditional": "真經，祈保我王江山永固。」唐王大喜，上前將御手扶起道：「法師果能盡此忠\n賢，不怕程途遙遠，跋涉山川，朕情願與你拜為兄弟。」玄奘頓首謝恩。唐王果\n是十分賢德，就去那寺裏佛前，與玄奘拜了四拜，口稱「御弟聖僧」。玄奘感謝",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      },
+      {
+        "chapterNumber": 12,
+        "rawLine": 3193,
+        "excerptTraditional": "賢，不怕程途遙遠，跋涉山川，朕情願與你拜為兄弟。」玄奘頓首謝恩。唐王果\n是十分賢德，就去那寺裏佛前，與玄奘拜了四拜，口稱「御弟聖僧」。玄奘感謝\n不盡道：「陛下，貧僧有何德何能，敢蒙天恩眷顧如此？我這一去，定要捐軀努",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+      }
+    ]
+  },
+  "earlyMentions": [
+    {
+      "chapterNumber": 5,
+      "rawLine": 1141,
+      "excerptTraditional": "恕罪。」大聖聞言，回嗔作喜道：「仙娥請起。王母開閣設宴，請的是誰？」\n仙女道：「上會自有舊規，請的是西天佛老、菩薩、聖僧、羅漢，南方南極觀\n音，東方崇恩聖帝、十洲三島仙翁，北方北極玄靈，中央黃極黃角大仙，這個",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-005.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "rawLine": 1774,
+      "excerptTraditional": "惡貫滿盈身受困，善根不絕氣還昇。\n　　　　果然脫得如來手，且待唐朝出聖僧。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1840,
+      "excerptTraditional": "我西牛賀洲者，不貪不殺，養氣潛靈，雖無上真，人人固壽﹔但那南贍部洲者，\n貪淫樂禍，多殺多爭，正所謂口舌兇場，是非惡海。我今有三藏真經，可以勸人\n為善。」諸菩薩聞言，合掌皈依，向佛前問曰：「如來有那三藏真經？」如來曰",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1841,
+      "excerptTraditional": "貪淫樂禍，多殺多爭，正所謂口舌兇場，是非惡海。我今有三藏真經，可以勸人\n為善。」諸菩薩聞言，合掌皈依，向佛前問曰：「如來有那三藏真經？」如來曰\n：「我有法一藏，談天﹔論一藏，說地﹔經一藏，度鬼。三藏共計三十五部，該",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1842,
+      "excerptTraditional": "為善。」諸菩薩聞言，合掌皈依，向佛前問曰：「如來有那三藏真經？」如來曰\n：「我有法一藏，談天﹔論一藏，說地﹔經一藏，度鬼。三藏共計三十五部，該\n一萬五千一百四十四卷，乃是修真之經，正善之門。我待要送上東土，叵耐那方",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1869,
+      "excerptTraditional": "背了。菩薩將金箍藏了，執了錫杖，徑下靈山。這一去，有分教：\n佛子還來歸本願，金蟬長老裹栴檀。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2029,
+      "excerptTraditional": "第九回     陳光蕊赴任逢災　江流僧復讎報本",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2124,
+      "excerptTraditional": "卻說此子在木板上順水流去，一直流到金山寺腳下停住。那金山寺長老叫做法明\n和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2126,
+      "excerptTraditional": "和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心\n動，急到江邊觀看，只見涯邊一片木板上，睡著一個嬰兒。長老慌忙救起，見了\n懷中血書，方知來歷。取個乳名，叫做江流，託人撫養。血書緊緊收藏。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2127,
+      "excerptTraditional": "動，急到江邊觀看，只見涯邊一片木板上，睡著一個嬰兒。長老慌忙救起，見了\n懷中血書，方知來歷。取個乳名，叫做江流，託人撫養。血書緊緊收藏。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2129,
+      "excerptTraditional": "光陰似箭，日月如梭。不覺江流年長一十八歲。長老就叫他削髮修行，取法名為\n玄奘，摩頂受戒，堅心修道。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2130,
+      "excerptTraditional": "光陰似箭，日月如梭。不覺江流年長一十八歲。長老就叫他削髮修行，取法名為\n玄奘，摩頂受戒，堅心修道。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2132,
+      "excerptTraditional": "一日，暮春天氣，眾人同在松陰之下講經參禪，談說奧妙，那酒肉和尚恰被玄奘\n難倒。和尚大怒，罵道：「你這業畜，姓名也不知，父母也不識，還在此搗甚麼",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2134,
+      "excerptTraditional": "難倒。和尚大怒，罵道：「你這業畜，姓名也不知，父母也不識，還在此搗甚麼\n鬼？」玄奘被他罵出這般言語，入寺跪告師父，眼淚雙流道：「人生於天地之間\n，稟陰陽而資五行，盡由父生母養，豈有為人在世而無父母者乎？」再三哀告，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2136,
+      "excerptTraditional": "，稟陰陽而資五行，盡由父生母養，豈有為人在世而無父母者乎？」再三哀告，\n求問父母姓名。長老道：「你真個要尋父母，可隨我到方丈裏來。」玄奘就跟到\n方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2137,
+      "excerptTraditional": "求問父母姓名。長老道：「你真個要尋父母，可隨我到方丈裏來。」玄奘就跟到\n方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，\n付與玄奘。玄奘將血書拆開讀之，才備細曉得父母姓名，並冤仇事跡。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2138,
+      "excerptTraditional": "方丈。長老到重梁之上，取下一個小匣兒，打開來，取出血書一紙、汗衫一件，\n付與玄奘。玄奘將血書拆開讀之，才備細曉得父母姓名，並冤仇事跡。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2140,
+      "excerptTraditional": "玄奘讀罷，不覺哭倒在地道：「父母之仇，不能報復，何以為人？十八年來，不\n識生身父母，至今日方知有母親。此身若非師父撈救撫養，安有今日？容弟子去",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2145,
+      "excerptTraditional": "玄奘領了師父言語，就做化緣的和尚，徑至江州。適值劉洪有事出外，也是天叫\n他母子相會，玄奘就直至私衙門口抄化。那殷小姐原來夜間得了一夢，夢見月缺",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2146,
+      "excerptTraditional": "玄奘領了師父言語，就做化緣的和尚，徑至江州。適值劉洪有事出外，也是天叫\n他母子相會，玄奘就直至私衙門口抄化。那殷小姐原來夜間得了一夢，夢見月缺\n再圓，暗想道：「我婆婆不知音信﹔我丈夫被這賊謀殺﹔我的兒子拋在江中，倘",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2150,
+      "excerptTraditional": "私衙前有人念經，連叫「抄化」，小姐又乘便出來問道：「你是何處來的？」玄\n奘答道：「貧僧乃是金山寺法明長老的徒弟。」小姐道：「你既是金山寺長老的\n徒弟……」叫進衙來，將齋飯與玄奘吃。仔細看他舉止言談，好似與丈夫一般。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2151,
+      "excerptTraditional": "奘答道：「貧僧乃是金山寺法明長老的徒弟。」小姐道：「你既是金山寺長老的\n徒弟……」叫進衙來，將齋飯與玄奘吃。仔細看他舉止言談，好似與丈夫一般。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2154,
+      "excerptTraditional": "小姐將從婢打發開去，問道：「你這小師父，還是自幼出家的，還是中年出家的\n？姓甚名誰？可有父母否？」玄奘答道：「我也不是自幼出家，我也不是中年出\n家，我說起來，冤有天來大，仇有海樣深：我父被人謀死，我母卻被賊人占了。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2156,
+      "excerptTraditional": "家，我說起來，冤有天來大，仇有海樣深：我父被人謀死，我母卻被賊人占了。\n我師父法明長老教我在江州衙內尋取母親。」小姐問道：「你母姓甚？」玄奘道\n：「我母姓殷，名喚溫嬌。我父姓陳，名光蕊。我小名叫做江流，法名取為玄奘",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2157,
+      "excerptTraditional": "我師父法明長老教我在江州衙內尋取母親。」小姐問道：「你母姓甚？」玄奘道\n：「我母姓殷，名喚溫嬌。我父姓陳，名光蕊。我小名叫做江流，法名取為玄奘\n。」小姐道：「溫嬌就是我。但你今有何憑據？」玄奘聽說是他母親，雙膝跪下",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2158,
+      "excerptTraditional": "：「我母姓殷，名喚溫嬌。我父姓陳，名光蕊。我小名叫做江流，法名取為玄奘\n。」小姐道：「溫嬌就是我。但你今有何憑據？」玄奘聽說是他母親，雙膝跪下\n，哀哀大哭：「我娘若不信，見有血書、汗衫為證。」溫嬌取過一看，果然是真",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2160,
+      "excerptTraditional": "，哀哀大哭：「我娘若不信，見有血書、汗衫為證。」溫嬌取過一看，果然是真\n，母子相抱而哭。就叫：「我兒快去。」玄奘道：「十八年不識生身父母，今朝\n才見母親，教孩兒如何割捨？」小姐道：「我兒，你火速抽身前去。劉賊若回，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2163,
+      "excerptTraditional": "他必害你性命。我明日假裝一病，只說先年曾許捨百雙僧鞋，來你寺中還願。那\n時節，我有話與你說。」玄奘依言拜別。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2174,
+      "excerptTraditional": "卻說玄奘回寺，見法明長老，把前項說了一遍。長老甚喜。次日，只見一個丫鬟\n先到，說夫人來寺還願。眾僧都出寺迎接。小姐徑進寺門，參了菩薩，大設齋襯",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2176,
+      "excerptTraditional": "先到，說夫人來寺還願。眾僧都出寺迎接。小姐徑進寺門，參了菩薩，大設齋襯\n。喚丫鬟將僧鞋暑襪托於盤內，來到法堂，小姐復拈心香禮拜，就教法明長老分\n俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2177,
+      "excerptTraditional": "。喚丫鬟將僧鞋暑襪托於盤內，來到法堂，小姐復拈心香禮拜，就教法明長老分\n俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫\n了鞋襪看時，那左腳上果然少了一個小指頭。當時兩個又抱住而哭，拜謝長老養",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2178,
+      "excerptTraditional": "俵與眾僧去訖。玄奘見眾僧散了，法堂上更無一人，他卻近前跪下。小姐叫他脫\n了鞋襪看時，那左腳上果然少了一個小指頭。當時兩個又抱住而哭，拜謝長老養\n育之恩。法明道：「汝今母子相會，恐奸賊知之，可速速抽身回去，庶免其禍。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2186,
+      "excerptTraditional": "玄奘哭回寺中，告過師父，即時拜別，徑往洪州。來到萬花店，問那店主劉小二\n道：「昔年江州陳客官有一母親住在你店中，如今好麼？」劉小二道：「他原在",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2189,
+      "excerptTraditional": "我店中。後來昏了眼，三四年並無店租還我。如今在南門頭一個破瓦?裏，每日\n上街叫化度日。那客官一去許久，到如今杳無信息，不知為何。」玄奘聽罷，即\n時問到南門頭破瓦?，尋著婆婆。婆婆道：「你聲音好似我兒陳光蕊。」玄奘道",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2190,
+      "excerptTraditional": "上街叫化度日。那客官一去許久，到如今杳無信息，不知為何。」玄奘聽罷，即\n時問到南門頭破瓦?，尋著婆婆。婆婆道：「你聲音好似我兒陳光蕊。」玄奘道\n：「我不是陳光蕊，我是陳光蕊的兒子。溫嬌小姐是我的娘。」婆婆道：「你爹",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2192,
+      "excerptTraditional": "：「我不是陳光蕊，我是陳光蕊的兒子。溫嬌小姐是我的娘。」婆婆道：「你爹\n娘怎麼不來？」玄奘道：「我爹爹被強盜打死了，我娘被強盜霸占為妻。」婆婆\n道：「你怎麼曉得來尋我？」玄奘道：「是我娘著我來尋婆婆。我娘有書在此，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2193,
+      "excerptTraditional": "娘怎麼不來？」玄奘道：「我爹爹被強盜打死了，我娘被強盜霸占為妻。」婆婆\n道：「你怎麼曉得來尋我？」玄奘道：「是我娘著我來尋婆婆。我娘有書在此，\n又有香環一隻。」那婆婆接了書並香環，放聲痛哭道：「我兒為功名到此，我只",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2196,
+      "excerptTraditional": "道他背義忘恩，那知他被人謀死。且喜得皇天憐念，不絕我兒之後，今日還有孫\n子來尋我。」玄奘問：「婆婆的眼，如何都昏了？」婆婆道：「我因思量你父親\n，終日懸望，不見他來，因此上哭得兩眼都昏了。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2199,
+      "excerptTraditional": "玄奘便跪倒向天禱告道：「今玄奘一十八歲，父母之仇不能報復。今日領母命來\n尋婆婆，天若憐鑒弟子誠意，保我婆婆雙眼復明。」祝罷，就將舌尖與婆婆舔眼",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "rawLine": 2202,
+      "excerptTraditional": "。須臾之間，雙眼舔開，仍復如初。婆婆覷了小和尚道：「你果是我的孫子，恰\n和我兒子光蕊形容無二。」婆婆又喜又悲。玄奘就領婆婆出了?門，還到劉小二\n店內。將些房錢賃屋一間，與婆婆棲身。又將盤纏與婆婆道：「我此去，只月餘",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt"
+    }
+  ]
+}

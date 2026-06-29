@@ -5,10 +5,12 @@
 本仓库已经完成《西游记》原著还原型互动博物馆的开发前准备：
 
 - 原著主源已下载
-- 第二七回已切分
+- 全书 100 回已机械切分
+- 第二七回已单独保留为 demo 原文
 - 产品、技术、内容、美术、AI 流程文档已完成
 - 三打白骨精 demo 的结构化 seed 数据已生成
 - 大地图 seed 节点已生成
+- 主角基础设定和大地图路线的全文证据候选已生成
 
 ## 下一位开发者先读
 
@@ -22,8 +24,14 @@
 6. `docs/FULL_TEXT_EVIDENCE_WORKFLOW.md`
 7. `content/chapters/chapter-027.seed.json`
 8. `content/map/map-nodes.seed.json`
-9. `content/map/route-canon.seed.json`
-10. `docs/IMPLEMENTATION_PLAN.md`
+9. `content/map/route-canon.candidates.json`
+10. `content/characters/sun-wukong.base.candidates.json`
+11. `content/characters/tang-seng.base.candidates.json`
+12. `content/characters/zhu-bajie.base.candidates.json`
+13. `content/characters/sha-seng.base.candidates.json`
+14. `content/characters/bailongma.base.candidates.json`
+15. `content/map/route-canon.seed.json`
+16. `docs/IMPLEMENTATION_PLAN.md`
 
 ## 核心约束
 
@@ -63,6 +71,21 @@
 
 主角基础形象必须从全书提取，不能只依据第二七回生成。大地图也必须从全书路线线索提取，不能让 AI 自由画路线。
 
+全文切分和证据候选已生成：
+
+- `data/processed/xiyouji/chapter-index.json`
+- `data/processed/xiyouji/chapters/chapter-001.txt` 到 `chapter-100.txt`
+- `content/map/route-canon.candidates.json`
+- `content/characters/*.base.candidates.json`
+
+可复跑脚本：
+
+```bash
+python3 scripts/extract_xiyouji_fulltext.py
+```
+
+路线开发时优先审核 `route-canon.candidates.json` 的 `priorityNodes`。`autoNodes` 只是补漏搜索池，可能有噪声，不能直接变成地图节点。
+
 提示词见：
 
 - `docs/assets/CHAPTER_027_ASSET_PROMPTS.md`
@@ -79,6 +102,8 @@
 展签和小游戏内容是第一版 seed，开发时可以先直接使用；上线前应人工复核原文摘录和白话解释。
 
 `map-nodes.seed.json` 是 MVP 演示节点，不是全书考据路线。正式大地图应以后续 `route-canon.seed.json` 的全书抽取结果为准。
+
+`*.base.candidates.json` 是人物证据候选，不是最终人物设定。正式美术资源生成前，需要从候选证据中整理出 `*.base.json`，再叠加章节状态。
 
 ## 验收目标
 

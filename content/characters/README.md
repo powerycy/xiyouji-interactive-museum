@@ -16,6 +16,16 @@
 - `sha-seng.base.json`
 - `bailongma.base.json`
 
+当前已生成自动证据候选：
+
+- `sun-wukong.base.candidates.json`
+- `tang-seng.base.candidates.json`
+- `zhu-bajie.base.candidates.json`
+- `sha-seng.base.candidates.json`
+- `bailongma.base.candidates.json`
+
+这些文件来自全文机械扫描，包含别名、原文片段、章节号和源文件路径。它们不是最终人物设定，作用是给人工考据和美术提示词提供证据池。
+
 ### 章节状态设定
 
 章节状态从当前章节提取，描述角色在本章的环境、动作、情绪和衣着变化。
@@ -34,3 +44,9 @@
 
 不能只根据第二七回生成孙悟空、唐僧、八戒、沙僧的基础形象。
 
+## 使用顺序
+
+1. 先读对应角色的 `.base.candidates.json`
+2. 挑选可信证据，整理成 `.base.json`
+3. 再结合章节状态生成 `content/chapters/027/characters/*.state.json`
+4. 最后生成正式人物图 prompt 和资产

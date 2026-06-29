@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "status": "auto-extracted-candidates-not-final",
+  "id": "sun-wukong",
+  "name": "孫悟空",
+  "aliases": [
+    "孫悟空",
+    "悟空",
+    "孫行者",
+    "行者",
+    "大聖",
+    "美猴王",
+    "猴王",
+    "石猴",
+    "齊天大聖",
+    "弼馬溫"
+  ],
+  "source": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+  "notes": [
+    "本文件用于人物基础设定考据，不能直接作为最终人物图设定。",
+    "同一称谓在原文中可能指代上下文人物，开发前应人工复核证据。",
+    "正式美术提示词应由基础设定、章节状态和场景动作共同生成。"
+  ],
+  "evidenceBuckets": {
+    "originIdentity": [
+      {
+        "chapterNumber": 1,
+        "rawLine": 82,
+        "excerptTraditional": "蓋自開闢以來，每受天真地秀，日精月華，感之既久，遂有靈通之意。內育仙胞\n，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢\n皆全。便就學爬學走，拜了四方。目運兩道金光，射沖斗府。驚動高天上聖大慈",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 87,
+        "excerptTraditional": "臾回報道：「臣奉旨觀聽金光之處，乃東勝神洲海東傲來小國之界，有一座花果\n山，山上有一仙石，石產一卵，見風化一石猴，在那裏拜四方，眼運金光，射沖\n斗府。如今服餌水食，金光將潛息矣。」玉帝垂賜恩慈曰：「下方之物，乃天地",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 110,
+        "excerptTraditional": "道：「那一個有本事的，鑽進去尋個源頭出來，不傷身體者，我等即拜他為王。」\n連呼了三聲，忽見叢雜中跳出一個石猴，應聲高叫道：「我進去，我進去。」好\n猴！也是他：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 128,
+        "excerptTraditional": "石猿喜不自勝，急抽身往外便走，復瞑目蹲身，跳出水外，打了兩個呵呵道：\n「大造化！大造化！」眾猴把他圍住，問道：「裏面怎麼樣？水有多深？」石猴\n道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 130,
+        "excerptTraditional": "道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴\n道：「怎見得是個家當？」石猴笑道：「這股水乃是橋下沖貫石橋，倒掛下來遮\n閉門戶的。橋邊有花有樹，乃是一座石房。房內有石窩、石灶、石碗、石盆、石",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 140,
+        "excerptTraditional": "眾猴聽得，個個歡喜。都道：「你還先走，帶我們進去，進去。」石猴卻又瞑目\n蹲身，往裏一跳，叫道：「都隨我進來，進來。」那些猴有膽大的，都跳進去了",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 148,
+        "excerptTraditional": "我為王？」眾猴聽說，即拱伏無違，一個個序齒排班，朝上禮拜，都稱「千歲大\n王」。自此，石猿高登王位，將「石」字兒隱了，遂稱「美猴王」。有詩為證。\n詩曰：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 155,
+        "excerptTraditional": "美猴王領一群猿猴、獼猴、馬猴等，分派了君臣佐使。朝遊花果山，暮宿水簾洞\n，合契同情，不入飛鳥之叢，不從走獸之類，獨自為王，不勝歡樂。是以：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 160,
+        "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 161,
+        "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一\n點兒遠慮，故此煩惱。」眾猴又笑道：「大王好不知足。我等日日歡會，在仙山",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 164,
+        "excerptTraditional": "福地，古洞神洲，不伏麒麟轄，不伏鳳凰管，又不伏人間王位所拘束，自由自在\n，乃無量之福，為何遠慮而憂也？」猴王道：「今日雖不歸人王法律，不懼禽獸\n威嚴，將來年老血衰，暗中有閻王老子管著，一旦身亡，可不枉生世界之中，不",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 169,
+        "excerptTraditional": "只見那班部中，忽跳出一個通背猿猴，厲聲高叫道：「大王若是這般遠慮，真所\n謂道心開發也。如今五蟲之內，惟有三等名色不伏閻王老子所管。」猴王道：\n「你知那三等人？」猿猴道：「乃是佛與仙與神聖三者，躲過輪迴，不生不滅，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      }
+    ],
+    "appearanceBody": [
+      {
+        "chapterNumber": 1,
+        "rawLine": 87,
+        "excerptTraditional": "臾回報道：「臣奉旨觀聽金光之處，乃東勝神洲海東傲來小國之界，有一座花果\n山，山上有一仙石，石產一卵，見風化一石猴，在那裏拜四方，眼運金光，射沖\n斗府。如今服餌水食，金光將潛息矣。」玉帝垂賜恩慈曰：「下方之物，乃天地",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 110,
+        "excerptTraditional": "道：「那一個有本事的，鑽進去尋個源頭出來，不傷身體者，我等即拜他為王。」\n連呼了三聲，忽見叢雜中跳出一個石猴，應聲高叫道：「我進去，我進去。」好\n猴！也是他：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 128,
+        "excerptTraditional": "石猿喜不自勝，急抽身往外便走，復瞑目蹲身，跳出水外，打了兩個呵呵道：\n「大造化！大造化！」眾猴把他圍住，問道：「裏面怎麼樣？水有多深？」石猴\n道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 140,
+        "excerptTraditional": "眾猴聽得，個個歡喜。都道：「你還先走，帶我們進去，進去。」石猴卻又瞑目\n蹲身，往裏一跳，叫道：「都隨我進來，進來。」那些猴有膽大的，都跳進去了",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 164,
+        "excerptTraditional": "福地，古洞神洲，不伏麒麟轄，不伏鳳凰管，又不伏人間王位所拘束，自由自在\n，乃無量之福，為何遠慮而憂也？」猴王道：「今日雖不歸人王法律，不懼禽獸\n威嚴，將來年老血衰，暗中有閻王老子管著，一旦身亡，可不枉生世界之中，不",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 224,
+        "excerptTraditional": "美猴王聽得此言，滿心歡喜道：「神仙原來藏在這裏！」即忙跳入裏面，仔細再\n看，乃是一個樵子，在那裏舉斧砍柴。但看他打扮非常：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 231,
+        "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 232,
+        "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神\n仙，如何說出神仙的話來？」樵夫道：「我說甚麼神仙話？」猴王道：「我才來",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 253,
+        "excerptTraditional": "猴王聽說，只得相辭。出深林，找上路徑，過一山坡，約有七八里遠，果然望見\n一座洞府。挺身觀看，真好去處！但見：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 273,
+        "excerptTraditional": "那童子出得門來，高叫道：「甚麼人在此搔擾？」猴王撲的跳下樹來，上前躬身\n道：「仙童，我是個訪道學仙之弟子，更不敢在此搔擾。」仙童笑道：「你是個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 275,
+        "excerptTraditional": "道：「仙童，我是個訪道學仙之弟子，更不敢在此搔擾。」仙童笑道：「你是個\n訪道的麼？」猴王道：「是。」童子道：「我家師父正才下榻，登壇講道，還未\n說出原由，就教我出來開門。說：『外面有個修行的來了，可去接待接待。』想",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 277,
+        "excerptTraditional": "說出原由，就教我出來開門。說：『外面有個修行的來了，可去接待接待。』想\n必就是你了？」猴王笑道：「是我，是我。」童子道：「你跟我進來。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      }
+    ],
+    "clothingProps": [
+      {
+        "chapterNumber": 1,
+        "rawLine": 231,
+        "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 232,
+        "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神\n仙，如何說出神仙的話來？」樵夫道：「我說甚麼神仙話？」猴王道：「我才來",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 233,
+        "excerptTraditional": "當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神\n仙，如何說出神仙的話來？」樵夫道：「我說甚麼神仙話？」猴王道：「我才來\n至林邊，只聽的你說：『相逢處，非仙即道，靜坐講《黃庭》。』《黃庭》乃道",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 279,
+        "excerptTraditional": "這猴王整衣端肅，隨童子徑入洞天深處觀看：一層層深閣瓊樓，一進進珠宮貝闕\n，說不盡那靜室幽居。直至瑤臺之下，見那菩提祖師端坐在臺上，兩邊有三十個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 391,
+        "excerptTraditional": "悟空應聲叫道：「師父，弟子在此跪候多時。」祖師聞得聲音是悟空，即起披衣\n，盤坐喝道：「這猢猻，你不在前邊去睡，卻來我這後邊作甚？」悟空道：「師",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 392,
+        "excerptTraditional": "悟空應聲叫道：「師父，弟子在此跪候多時。」祖師聞得聲音是悟空，即起披衣\n，盤坐喝道：「這猢猻，你不在前邊去睡，卻來我這後邊作甚？」悟空道：「師\n父昨日壇前對眾相允，教弟子三更時候，從後門裏傳我道理，故此大膽徑拜老爺",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 469,
+        "excerptTraditional": "師。祖師急拽杖出門來問道：「是何人在此喧嘩？」大眾聞呼，慌忙檢束，整衣\n向前。悟空也現了本相，雜在叢中道：「啟上尊師：我等在此會講，更無外姓喧\n嘩。」祖師怒喝道：「你等大呼小叫，全不像個修行的體段！修行的人，口開神",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 663,
+        "excerptTraditional": "龍王果引導至海藏中間，忽見金光萬道。龍王指定道：「那放光的便是。」悟空\n撩衣上前，摸了一把，乃是一根鐵柱子，約有斗來粗，二丈有餘長。他儘力兩手",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 666,
+        "excerptTraditional": "撾過道：「忒粗忒長些，再短細些方可用。」說畢，那寶貝就短了幾尺，細了一\n圍。悟空又顛一顛道：「再細些更好。」那寶貝真個又細了幾分。悟空十分歡喜\n，拿出海藏看時，原來兩頭是兩個金箍，中間乃一段烏鐵。緊挨箍有鐫成的一行",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 675,
+        "excerptTraditional": "，對龍王笑道：「多謝賢鄰厚意。」龍王道：「不敢，不敢。」悟空道：「這塊\n鐵雖然好用，還有一說。」龍王道：「上仙還有甚說？」悟空道：「當時若無此\n鐵，倒也罷了﹔如今手中既拿著他，身上更無衣服相趁，奈何？你這裏若有披掛",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 677,
+        "excerptTraditional": "鐵，倒也罷了﹔如今手中既拿著他，身上更無衣服相趁，奈何？你這裏若有披掛\n，索性送我一副，一總奉謝。」龍王道：「這個卻是沒有。」悟空道：「一客不\n煩二主。若沒有，我也定不出此門。」龍王道：「煩上仙再轉一海，或者有之。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 748,
+        "excerptTraditional": "慌得那十代冥王急整衣來看，見他相貌兇惡，即排下班次，應聲高叫道：「上仙\n留名！上仙留名！」猴王道：「你既認不得我，怎麼差人來勾我？」十王道：\n「不敢，不敢。想是差人差了。」猴王道：「我本是花果山水簾洞天生聖人孫悟",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      }
+    ],
+    "weaponsOrTools": [
+      {
+        "chapterNumber": 2,
+        "rawLine": 450,
+        "excerptTraditional": "「凡諸仙騰雲，皆跌足而起，你卻不是這般。我才見你去，連扯方才跳上。我今\n只就你這個勢，傳你個觔斗雲罷。」悟空又禮拜懇求，祖師卻又傳個口訣道：\n「這朵雲，捻著訣，念動真言，攢緊了拳，將身一抖，跳將起來，一觔斗就有十",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 452,
+        "excerptTraditional": "「這朵雲，捻著訣，念動真言，攢緊了拳，將身一抖，跳將起來，一觔斗就有十\n萬八千里路哩。」大眾聽說，一個個嘻嘻笑道：「悟空造化，若會這個法兒，與\n人家當鋪兵、送文書、遞報單，不管那裏都尋了飯吃。」師徒們天昏各歸洞府。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 455,
+        "excerptTraditional": "這一夜，悟空即運神煉法，會了觔斗雲。逐日家無拘無束，自在逍遙，此亦長生\n之美。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 490,
+        "excerptTraditional": "悟空謝了，即抽身，捻著訣，丟個連扯，縱起觔斗雲，徑回東勝。那裏消一個時\n辰，早看見花果山水簾洞。美猴王自知快樂，暗暗的自稱道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 491,
+        "excerptTraditional": "悟空謝了，即抽身，捻著訣，丟個連扯，縱起觔斗雲，徑回東勝。那裏消一個時\n辰，早看見花果山水簾洞。美猴王自知快樂，暗暗的自稱道：\n　　　　去時凡骨凡胎重，得道身輕體亦輕。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 509,
+        "excerptTraditional": "好猴王，將身一縱，跳起去，一路觔斗，直至北下觀看，見一座高山，真是十分\n險峻。好山：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 545,
+        "excerptTraditional": "一撞。原來長拳空大，短簇堅牢。那魔王被悟空掏短脅，撞了襠，幾下觔節，把\n他打重了。他閃過，拿起那板大的鋼刀，望悟空劈頭就砍。悟空急撤身，他砍了\n一個空。悟空見他兇猛，即使身外身法，拔一把毫毛，丟在口中嚼碎，望空噴去",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 546,
+        "excerptTraditional": "他打重了。他閃過，拿起那板大的鋼刀，望悟空劈頭就砍。悟空急撤身，他砍了\n一個空。悟空見他兇猛，即使身外身法，拔一把毫毛，丟在口中嚼碎，望空噴去\n，叫一聲：「變！」即變做三、二百個小猴，週圍攢簇。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 555,
+        "excerptTraditional": "滅。卻把毫毛一抖，收上身來，又見那收不上身者，卻是那魔王在水簾洞擒去的\n小猴。悟空道：「汝等何為到此？」約有三五十個，都含淚道：「我等因大王修\n仙去後，這兩年被他爭吵，把我們都攝將來。那不是我們洞中的家火？石盆、石",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 597,
+        "excerptTraditional": "好猴王，急縱觔斗雲，霎時間過了二百里水面。果見那廂有座城池，六街三市，\n萬戶千門，來來往往，人都在光天化日之下。悟空心中想道：「這裏定有現成的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 598,
+        "excerptTraditional": "好猴王，急縱觔斗雲，霎時間過了二百里水面。果見那廂有座城池，六街三市，\n萬戶千門，來來往往，人都在光天化日之下。悟空心中想道：「這裏定有現成的\n兵器，我待下去買他幾件，還不如使個神通覓他幾件倒好。」他就捻起訣來，念",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      },
+      {
+        "chapterNumber": 3,
+        "rawLine": 610,
+        "excerptTraditional": "器械：刀、槍、劍、戟、斧、鉞、毛、鐮、鞭、鈀、撾、簡、弓、弩、叉、矛，\n件件俱備。一見甚喜道：「我一人能拿幾何？還使個分身法搬將去罷。」好猴王\n，即拔一把毫毛，入口嚼爛，噴將出去，念動咒語，叫聲：「變！」變做千百個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt"
+      }
+    ],
+    "personalityActions": [
+      {
+        "chapterNumber": 1,
+        "rawLine": 82,
+        "excerptTraditional": "蓋自開闢以來，每受天真地秀，日精月華，感之既久，遂有靈通之意。內育仙胞\n，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢\n皆全。便就學爬學走，拜了四方。目運兩道金光，射沖斗府。驚動高天上聖大慈",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 87,
+        "excerptTraditional": "臾回報道：「臣奉旨觀聽金光之處，乃東勝神洲海東傲來小國之界，有一座花果\n山，山上有一仙石，石產一卵，見風化一石猴，在那裏拜四方，眼運金光，射沖\n斗府。如今服餌水食，金光將潛息矣。」玉帝垂賜恩慈曰：「下方之物，乃天地",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 110,
+        "excerptTraditional": "道：「那一個有本事的，鑽進去尋個源頭出來，不傷身體者，我等即拜他為王。」\n連呼了三聲，忽見叢雜中跳出一個石猴，應聲高叫道：「我進去，我進去。」好\n猴！也是他：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 130,
+        "excerptTraditional": "道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴\n道：「怎見得是個家當？」石猴笑道：「這股水乃是橋下沖貫石橋，倒掛下來遮\n閉門戶的。橋邊有花有樹，乃是一座石房。房內有石窩、石灶、石碗、石盆、石",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 140,
+        "excerptTraditional": "眾猴聽得，個個歡喜。都道：「你還先走，帶我們進去，進去。」石猴卻又瞑目\n蹲身，往裏一跳，叫道：「都隨我進來，進來。」那些猴有膽大的，都跳進去了",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 148,
+        "excerptTraditional": "我為王？」眾猴聽說，即拱伏無違，一個個序齒排班，朝上禮拜，都稱「千歲大\n王」。自此，石猿高登王位，將「石」字兒隱了，遂稱「美猴王」。有詩為證。\n詩曰：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 160,
+        "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 161,
+        "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一\n點兒遠慮，故此煩惱。」眾猴又笑道：「大王好不知足。我等日日歡會，在仙山",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 171,
+        "excerptTraditional": "「你知那三等人？」猿猴道：「乃是佛與仙與神聖三者，躲過輪迴，不生不滅，\n與天地山川齊壽。」猴王道：「此三者居於何所？」猿猴道：「他只在閻浮世界\n之中，古洞仙山之內。」猴王聞之，滿心歡喜道：「我明日就辭汝等下山，雲遊",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 172,
+        "excerptTraditional": "與天地山川齊壽。」猴王道：「此三者居於何所？」猿猴道：「他只在閻浮世界\n之中，古洞仙山之內。」猴王聞之，滿心歡喜道：「我明日就辭汝等下山，雲遊\n海角，遠涉天涯，務必訪此三者，學一個不老長生，常躲過閻君之難。」噫！這",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 224,
+        "excerptTraditional": "美猴王聽得此言，滿心歡喜道：「神仙原來藏在這裏！」即忙跳入裏面，仔細再\n看，乃是一個樵子，在那裏舉斧砍柴。但看他打扮非常：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 244,
+        "excerptTraditional": "猴王道：「據你說起來，乃是一個行孝的君子，向後必有好處。但望你指與我那\n神仙住處，卻好拜訪去也。」樵夫道：「不遠，不遠。此山叫做靈臺方寸山，山",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      }
+    ],
+    "relationships": [
+      {
+        "chapterNumber": 1,
+        "rawLine": 275,
+        "excerptTraditional": "道：「仙童，我是個訪道學仙之弟子，更不敢在此搔擾。」仙童笑道：「你是個\n訪道的麼？」猴王道：「是。」童子道：「我家師父正才下榻，登壇講道，還未\n說出原由，就教我出來開門。說：『外面有個修行的來了，可去接待接待。』想",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 285,
+        "excerptTraditional": "美猴王一見，倒身下拜，磕頭不計其數，口中只道：「師父，師父，我弟子志心\n朝禮，志心朝禮。」祖師道：「你是那方人氏？且說個鄉貫、姓名明白，再拜。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 1,
+        "rawLine": 302,
+        "excerptTraditional": "老陰不能化育，教你姓『猻』倒好。猻字去了獸傍，乃是個子系。子者，兒男也﹔\n系者。嬰細也，正合嬰兒之本論。教你姓『孫』罷。」猴王聽說，滿心歡喜，朝\n上叩頭道：「好！好！好！今日方知姓也。萬望師父慈悲，既然有姓，再乞賜個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 329,
+        "excerptTraditional": "孫悟空在傍聞講，喜得他抓耳撓腮，眉花眼笑，忍不住手之舞之，足之蹈之。忽\n被祖師看見，叫孫悟空道：「你在班中，怎麼顛狂躍舞，不聽我講？」悟空道：\n「弟子誠心聽講，聽到老師父妙音處，喜不自勝，故不覺作此踴躍之狀。望師父",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 331,
+        "excerptTraditional": "「弟子誠心聽講，聽到老師父妙音處，喜不自勝，故不覺作此踴躍之狀。望師父\n恕罪。」祖師道：「你既識妙音，我且問你，你到洞中多少時了？」悟空道：\n「弟子本來懵懂，不知多少時節。只記得灶下無火，常去山後打柴，見一山好桃",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 345,
+        "excerptTraditional": "？」祖師道：「流字門中，乃是儒家、釋家、道家、陰陽家、墨家、醫家，或看\n經，或念佛，並朝真降聖之類。」悟空道：「似這般可得長生麼？」祖師道：\n「若要長生，也似壁裏安柱。」悟空道：「師父，我是個老實人，不曉得打市語",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 346,
+        "excerptTraditional": "經，或念佛，並朝真降聖之類。」悟空道：「似這般可得長生麼？」祖師道：\n「若要長生，也似壁裏安柱。」悟空道：「師父，我是個老實人，不曉得打市語\n。怎麼謂之『壁裏安柱』？」祖師道：「人家蓋房，欲圖堅固，將牆壁之間立一",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 353,
+        "excerptTraditional": "祖師道：「此是休糧守谷、清靜無為、參禪打坐、戒語持齋，或睡功，或立功，\n並入定、坐關之類。」悟空道：「這般也能長生麼？」祖師道：「也似?頭土坯\n。」悟空笑道：「師父果有些滴?。一行說我不會打市語。怎麼謂之『?頭土坯』",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 354,
+        "excerptTraditional": "並入定、坐關之類。」悟空道：「這般也能長生麼？」祖師道：「也似?頭土坯\n。」悟空笑道：「師父果有些滴?。一行說我不會打市語。怎麼謂之『?頭土坯』\n？」祖師道：「就如那?頭上造成磚瓦之坯，雖已成形，尚未經水火鍛煉，一朝",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 360,
+        "excerptTraditional": "祖師道：「此是有為有作：採陰補陽、攀弓踏弩、摩臍過氣、用方炮製、燒茅打\n鼎、進紅鉛、煉秋石，並服婦乳之類。」悟空道：「似這等也得長生麼？」祖師\n道：「此欲長生，亦如水中撈月。」悟空道：「師父又來了。怎麼叫做『水中撈",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 361,
+        "excerptTraditional": "鼎、進紅鉛、煉秋石，並服婦乳之類。」悟空道：「似這等也得長生麼？」祖師\n道：「此欲長生，亦如水中撈月。」悟空道：「師父又來了。怎麼叫做『水中撈\n月』？」祖師道：「月在長空，水中有影，雖然看見，只是無撈摸處，到底只成",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      },
+      {
+        "chapterNumber": 2,
+        "rawLine": 367,
+        "excerptTraditional": "學，那般不學，卻待怎麼？」走上前，將悟空頭上打了三下。倒背著手，走入裏\n面，將中門關了，撇下大眾而去。諕得那一班聽講的人人驚懼，皆怨悟空道：\n「你這潑猴，十分無狀。師父傳你道法，如何不學，卻與師父頂嘴？這番衝撞了",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt"
+      }
+    ]
+  },
+  "earlyMentions": [
+    {
+      "chapterNumber": 1,
+      "rawLine": 82,
+      "excerptTraditional": "蓋自開闢以來，每受天真地秀，日精月華，感之既久，遂有靈通之意。內育仙胞\n，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢\n皆全。便就學爬學走，拜了四方。目運兩道金光，射沖斗府。驚動高天上聖大慈",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 87,
+      "excerptTraditional": "臾回報道：「臣奉旨觀聽金光之處，乃東勝神洲海東傲來小國之界，有一座花果\n山，山上有一仙石，石產一卵，見風化一石猴，在那裏拜四方，眼運金光，射沖\n斗府。如今服餌水食，金光將潛息矣。」玉帝垂賜恩慈曰：「下方之物，乃天地",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 110,
+      "excerptTraditional": "道：「那一個有本事的，鑽進去尋個源頭出來，不傷身體者，我等即拜他為王。」\n連呼了三聲，忽見叢雜中跳出一個石猴，應聲高叫道：「我進去，我進去。」好\n猴！也是他：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 128,
+      "excerptTraditional": "石猿喜不自勝，急抽身往外便走，復瞑目蹲身，跳出水外，打了兩個呵呵道：\n「大造化！大造化！」眾猴把他圍住，問道：「裏面怎麼樣？水有多深？」石猴\n道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 130,
+      "excerptTraditional": "道：「沒水！沒水！原來是一座鐵板橋，橋那邊是一座天造地設的家當。」眾猴\n道：「怎見得是個家當？」石猴笑道：「這股水乃是橋下沖貫石橋，倒掛下來遮\n閉門戶的。橋邊有花有樹，乃是一座石房。房內有石窩、石灶、石碗、石盆、石",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 140,
+      "excerptTraditional": "眾猴聽得，個個歡喜。都道：「你還先走，帶我們進去，進去。」石猴卻又瞑目\n蹲身，往裏一跳，叫道：「都隨我進來，進來。」那些猴有膽大的，都跳進去了",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 148,
+      "excerptTraditional": "我為王？」眾猴聽說，即拱伏無違，一個個序齒排班，朝上禮拜，都稱「千歲大\n王」。自此，石猿高登王位，將「石」字兒隱了，遂稱「美猴王」。有詩為證。\n詩曰：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 155,
+      "excerptTraditional": "美猴王領一群猿猴、獼猴、馬猴等，分派了君臣佐使。朝遊花果山，暮宿水簾洞\n，合契同情，不入飛鳥之叢，不從走獸之類，獨自為王，不勝歡樂。是以：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 160,
+      "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 161,
+      "excerptTraditional": "美猴王享樂天真，何期有三五百載。一日，與群猴喜宴之間，忽然憂惱，墮下淚\n來。眾猴慌忙羅拜道：「大王何為煩惱？」猴王道：「我雖在歡喜之時，卻有一\n點兒遠慮，故此煩惱。」眾猴又笑道：「大王好不知足。我等日日歡會，在仙山",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 164,
+      "excerptTraditional": "福地，古洞神洲，不伏麒麟轄，不伏鳳凰管，又不伏人間王位所拘束，自由自在\n，乃無量之福，為何遠慮而憂也？」猴王道：「今日雖不歸人王法律，不懼禽獸\n威嚴，將來年老血衰，暗中有閻王老子管著，一旦身亡，可不枉生世界之中，不",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 169,
+      "excerptTraditional": "只見那班部中，忽跳出一個通背猿猴，厲聲高叫道：「大王若是這般遠慮，真所\n謂道心開發也。如今五蟲之內，惟有三等名色不伏閻王老子所管。」猴王道：\n「你知那三等人？」猿猴道：「乃是佛與仙與神聖三者，躲過輪迴，不生不滅，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 171,
+      "excerptTraditional": "「你知那三等人？」猿猴道：「乃是佛與仙與神聖三者，躲過輪迴，不生不滅，\n與天地山川齊壽。」猴王道：「此三者居於何所？」猿猴道：「他只在閻浮世界\n之中，古洞仙山之內。」猴王聞之，滿心歡喜道：「我明日就辭汝等下山，雲遊",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 172,
+      "excerptTraditional": "與天地山川齊壽。」猴王道：「此三者居於何所？」猿猴道：「他只在閻浮世界\n之中，古洞仙山之內。」猴王聞之，滿心歡喜道：「我明日就辭汝等下山，雲遊\n海角，遠涉天涯，務必訪此三者，學一個不老長生，常躲過閻君之難。」噫！這",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 174,
+      "excerptTraditional": "海角，遠涉天涯，務必訪此三者，學一個不老長生，常躲過閻君之難。」噫！這\n句話，頓教跳出輪迴網，致使齊天大聖成。眾猴鼓掌稱揚，都道：「善哉，善哉\n！我等明日越嶺登山，廣尋些果品，大設筵宴送大王也。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 186,
+      "excerptTraditional": "群猴尊美猴王上坐，各依齒肩排於下邊，一個個輪流上前奉酒、奉花、奉果，痛\n飲了一日。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 189,
+      "excerptTraditional": "次日，美猴王早起，教：「小的們，替我折些枯松，編作?子，取個竹竿作篙，\n收拾些果品之類，我將去也。」果獨自登?，儘力撐開，飄飄蕩蕩，徑向大海波",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 208,
+      "excerptTraditional": "猴王參訪仙道，無緣得遇。在於南贍部洲，串長城，遊小縣，不覺八九年餘。忽\n行至西洋大海，他想著海外必有神仙。獨自個依前作?，又飄過西海，直至西牛",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 224,
+      "excerptTraditional": "美猴王聽得此言，滿心歡喜道：「神仙原來藏在這裏！」即忙跳入裏面，仔細再\n看，乃是一個樵子，在那裏舉斧砍柴。但看他打扮非常：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 231,
+      "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 232,
+      "excerptTraditional": "猴王近前叫道：「老神仙，弟子起手。」那樵漢慌忙丟了斧，轉身答禮道：「不\n當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神\n仙，如何說出神仙的話來？」樵夫道：「我說甚麼神仙話？」猴王道：「我才來",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 233,
+      "excerptTraditional": "當人，不當人。我拙漢衣食不全，怎敢當『神仙』二字？」猴王道：「你不是神\n仙，如何說出神仙的話來？」樵夫道：「我說甚麼神仙話？」猴王道：「我才來\n至林邊，只聽的你說：『相逢處，非仙即道，靜坐講《黃庭》。』《黃庭》乃道",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 238,
+      "excerptTraditional": "時，即把這詞兒念念，一則散心，二則解困。我才有些不足處思慮，故此念念，\n不期被你聽了。」猴王道：「你家既與神仙相鄰，何不從他修行？學得個不老之\n方，卻不是好？」樵夫道：「我一生命苦：自幼蒙父母養育至八九歲，才知人事",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 244,
+      "excerptTraditional": "猴王道：「據你說起來，乃是一個行孝的君子，向後必有好處。但望你指與我那\n神仙住處，卻好拜訪去也。」樵夫道：「不遠，不遠。此山叫做靈臺方寸山，山",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 248,
+      "excerptTraditional": "也不計其數，見今還有三四十人從他修行。你順那條小路兒，向南行七八里遠近\n，即是他家了。」猴王用手扯住樵夫道：「老兄，你便同我去去，若還得了好處\n，決不忘你指引之恩。」樵夫道：「你這漢子甚不通變，我方才這般與你說了，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 253,
+      "excerptTraditional": "猴王聽說，只得相辭。出深林，找上路徑，過一山坡，約有七八里遠，果然望見\n一座洞府。挺身觀看，真好去處！但見：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 262,
+      "excerptTraditional": "又見那洞門緊閉，靜悄悄杳無人跡。忽回頭，見崖頭立一石碑，約有三丈餘高，\n八尺餘闊，上有一行十個大字，乃是「靈臺方寸山，斜月三星洞」。美猴王十分\n歡喜道：「此間人果是樸實，果有此山此洞。」看勾多時，不敢敲門。且去跳上",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 273,
+      "excerptTraditional": "那童子出得門來，高叫道：「甚麼人在此搔擾？」猴王撲的跳下樹來，上前躬身\n道：「仙童，我是個訪道學仙之弟子，更不敢在此搔擾。」仙童笑道：「你是個",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 275,
+      "excerptTraditional": "道：「仙童，我是個訪道學仙之弟子，更不敢在此搔擾。」仙童笑道：「你是個\n訪道的麼？」猴王道：「是。」童子道：「我家師父正才下榻，登壇講道，還未\n說出原由，就教我出來開門。說：『外面有個修行的來了，可去接待接待。』想",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 277,
+      "excerptTraditional": "說出原由，就教我出來開門。說：『外面有個修行的來了，可去接待接待。』想\n必就是你了？」猴王笑道：「是我，是我。」童子道：「你跟我進來。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 279,
+      "excerptTraditional": "這猴王整衣端肅，隨童子徑入洞天深處觀看：一層層深閣瓊樓，一進進珠宮貝闕\n，說不盡那靜室幽居。直至瑤臺之下，見那菩提祖師端坐在臺上，兩邊有三十個",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 285,
+      "excerptTraditional": "美猴王一見，倒身下拜，磕頭不計其數，口中只道：「師父，師父，我弟子志心\n朝禮，志心朝禮。」祖師道：「你是那方人氏？且說個鄉貫、姓名明白，再拜。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 287,
+      "excerptTraditional": "朝禮，志心朝禮。」祖師道：「你是那方人氏？且說個鄉貫、姓名明白，再拜。」\n猴王道：「弟子乃東勝神洲傲來國花果山水簾洞人氏。」祖師喝令：「趕出去！\n他本是個撒詐搗虛之徒，那裏修甚麼道果！」猴王慌忙磕頭不住道：「弟子是老",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 288,
+      "excerptTraditional": "猴王道：「弟子乃東勝神洲傲來國花果山水簾洞人氏。」祖師喝令：「趕出去！\n他本是個撒詐搗虛之徒，那裏修甚麼道果！」猴王慌忙磕頭不住道：「弟子是老\n實之言，決無虛詐。」祖師道：「你既老實，怎麼說東勝神洲？那去處到我這裏",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 290,
+      "excerptTraditional": "實之言，決無虛詐。」祖師道：「你既老實，怎麼說東勝神洲？那去處到我這裏\n隔兩重大海，一座南贍部洲，如何就得到此？」猴王叩頭道：「弟子飄洋過海，\n登界遊方，有十數個年頭，方才訪到此處。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 293,
+      "excerptTraditional": "祖師道：「既是逐漸行來的也罷。你姓甚麼？」猴王又道：「我無性。人若罵我\n，我也不惱﹔若打我，我也不嗔。只是陪個禮兒就罷了。一生無性。」祖師道：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 295,
+      "excerptTraditional": "，我也不惱﹔若打我，我也不嗔。只是陪個禮兒就罷了。一生無性。」祖師道：\n「不是這個性。你父母原來姓甚麼？」猴王道：「我也無父母。」祖師道：「既\n無父母，想是樹上生的？」猴王道：「我雖不是樹上生，卻是石裏長的。我只記",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 296,
+      "excerptTraditional": "「不是這個性。你父母原來姓甚麼？」猴王道：「我也無父母。」祖師道：「既\n無父母，想是樹上生的？」猴王道：「我雖不是樹上生，卻是石裏長的。我只記\n得花果山上有一塊仙石，其年石破，我便生也。」祖師聞言暗喜，道：「這等說",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 298,
+      "excerptTraditional": "得花果山上有一塊仙石，其年石破，我便生也。」祖師聞言暗喜，道：「這等說\n，卻是個天地生成的。你起來走走我看。」猴王縱身跳起，拐呀拐的走了兩遍。\n祖師笑道：「你身軀雖是鄙陋，卻像個食松果的猢猻。我與你就身上取個姓氏，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    },
+    {
+      "chapterNumber": 1,
+      "rawLine": 302,
+      "excerptTraditional": "老陰不能化育，教你姓『猻』倒好。猻字去了獸傍，乃是個子系。子者，兒男也﹔\n系者。嬰細也，正合嬰兒之本論。教你姓『孫』罷。」猴王聽說，滿心歡喜，朝\n上叩頭道：「好！好！好！今日方知姓也。萬望師父慈悲，既然有姓，再乞賜個",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt"
+    }
+  ]
+}

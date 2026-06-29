@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "status": "auto-extracted-candidates-not-final",
+  "id": "zhu-bajie",
+  "name": "豬八戒",
+  "aliases": [
+    "豬八戒",
+    "八戒",
+    "悟能",
+    "獃子",
+    "老豬",
+    "天蓬",
+    "豬剛鬣"
+  ],
+  "source": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+  "notes": [
+    "本文件用于人物基础设定考据，不能直接作为最终人物图设定。",
+    "同一称谓在原文中可能指代上下文人物，开发前应人工复核证据。",
+    "正式美术提示词应由基础设定、章节状态和场景动作共同生成。"
+  ],
+  "evidenceBuckets": {
+    "originIdentity": [
+      {
+        "chapterNumber": 7,
+        "rawLine": 1694,
+        "excerptTraditional": "如來佛祖殄滅了妖猴，即喚阿儺、迦葉同轉西方極樂世界。時有天蓬、天佑急\n出靈霄寶殿道：「請如來少待，我主大駕來也。」佛祖聞言，回首瞻仰。須臾",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1951,
+        "excerptTraditional": "觀音按下雲頭，前來問道：「你是那裏成精的野豕，何方作怪的老彘，敢在此間\n擋我？」那怪道：「我不是野豕，亦不是老彘，我本是天河裏天蓬元帥。只因帶\n酒戲弄嫦娥，玉帝把我打了二千鎚，貶下塵凡。一靈真性，徑來奪舍投胎，不期",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1968,
+        "excerptTraditional": "，將功折罪，管教你脫離災瘴。」那怪滿口道：「願隨，願隨。」菩薩才與他摩\n頂受戒，指身為姓，就姓了豬﹔替他起了法名，就叫做豬悟能。遂此領命歸真，\n持齋把素，斷絕了五葷三厭，專候那取經人。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1971,
+        "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 18,
+        "rawLine": 4801,
+        "excerptTraditional": "陋，若要俊，卻也不難。我一來時，曾與他講過，他願意方才招我。今日怎麼又\n說起這話？我家住在福陵山雲棧洞。我以相貌為姓，故姓豬，官名叫做豬剛鬣。\n他若再來問你，你就以此話與他說便了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4826,
+        "excerptTraditional": "第十九回     雲棧洞悟空收八戒　浮屠山玄奘受心經",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4863,
+        "excerptTraditional": "放生遭貶出天關，福陵山下圖家業。\n　　　　我因有罪錯投胎，俗名喚做豬剛鬣。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4865,
+        "excerptTraditional": "行者聞言道：「你這廝原來是天蓬水神下界，怪道知我老孫名號。」那怪道聲：\n「哏！你這誑上的弼馬溫，當年撞那禍時，不知帶累我等多少，今日又來此欺人",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4884,
+        "excerptTraditional": "，謝道：「多勞，多勞。」三藏問道：「悟空，你去這一夜，拿得妖精在那裏？」\n行者道：「師父，那妖不是凡間的邪祟，也不是山間的怪獸。他本是天蓬元帥臨\n凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4886,
+        "excerptTraditional": "凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名\n豬剛鬣。是老孫從後宅裏掣棒就打，他化一陣狂風走了。被老孫著風一棒，他就\n化道火光，徑轉他那本山洞裏，取出一柄九齒釘鈀，與老孫戰了一夜。適才天色",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4922,
+        "excerptTraditional": "因我修成大羅仙，為吾養就長生客。\n　　　　敕封元帥號天蓬，欽賜釘鈀為御節。\n　　　　舉起烈焰並毫光，落下猛風飄瑞雪。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4985,
+        "excerptTraditional": "三藏道：「既從吾善果，要做徒弟，我與你起個法名，早晚好呼喚。」他道：\n「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      }
+    ],
+    "appearanceBody": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1968,
+        "excerptTraditional": "，將功折罪，管教你脫離災瘴。」那怪滿口道：「願隨，願隨。」菩薩才與他摩\n頂受戒，指身為姓，就姓了豬﹔替他起了法名，就叫做豬悟能。遂此領命歸真，\n持齋把素，斷絕了五葷三厭，專候那取經人。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 18,
+        "rawLine": 4724,
+        "excerptTraditional": "實也好。只是一件，有些會變嘴臉。」行者道：「怎麼樣變？」高老道：「初來\n時是一條黑胖漢，後來就變做一個長嘴大耳朵的獃子，腦後又有一溜鬃毛，身體\n粗糙怕人，頭臉就像個豬的模樣。食腸卻又甚大：一頓要吃三五斗米飯，早間點",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 18,
+        "rawLine": 4801,
+        "excerptTraditional": "陋，若要俊，卻也不難。我一來時，曾與他講過，他願意方才招我。今日怎麼又\n說起這話？我家住在福陵山雲棧洞。我以相貌為姓，故姓豬，官名叫做豬剛鬣。\n他若再來問你，你就以此話與他說便了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4863,
+        "excerptTraditional": "放生遭貶出天關，福陵山下圖家業。\n　　　　我因有罪錯投胎，俗名喚做豬剛鬣。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4884,
+        "excerptTraditional": "，謝道：「多勞，多勞。」三藏問道：「悟空，你去這一夜，拿得妖精在那裏？」\n行者道：「師父，那妖不是凡間的邪祟，也不是山間的怪獸。他本是天蓬元帥臨\n凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4886,
+        "excerptTraditional": "凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名\n豬剛鬣。是老孫從後宅裏掣棒就打，他化一陣狂風走了。被老孫著風一棒，他就\n化道火光，徑轉他那本山洞裏，取出一柄九齒釘鈀，與老孫戰了一夜。適才天色",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4909,
+        "excerptTraditional": "大門打破？你且去看看律條，打進大門而入，該個雜犯死罪哩。」行者笑道：\n「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4910,
+        "excerptTraditional": "「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」\n行者使棒支住道：「你這鈀可是與高老家做長工築地種菜的？有何好處怕你？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4938,
+        "excerptTraditional": "行者聞言，收了鐵棒道：「獃子不要說嘴，老孫把這頭伸在那裏，你且築一下兒\n，看可能魂消氣泄？」那怪真個舉起鈀，著氣力築將來，撲的一下，鑽起鈀的火",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4985,
+        "excerptTraditional": "三藏道：「既從吾善果，要做徒弟，我與你起個法名，早晚好呼喚。」他道：\n「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4986,
+        "excerptTraditional": "「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：\n「師父，我受了菩薩戒行，斷了五葷三厭，在我丈人家持齋把素，更不曾動葷。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4989,
+        "excerptTraditional": "今日見了師父，我開了齋罷。」三藏道：「不可，不可。你既是不吃五葷三厭，\n我再與你起個別名，喚為八戒。」那獃子歡歡喜喜道：「謹遵師命。」因此又叫\n做豬八戒。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      }
+    ],
+    "clothingProps": [
+      {
+        "chapterNumber": 19,
+        "rawLine": 5014,
+        "excerptTraditional": "八戒在傍邊道：「師父、師兄，你們不要便罷，我與他家做了這幾年女婿，就是\n掛腳糧也該三石哩。──丈人呵，我的直裰，昨晚被師兄扯破了，與我一件青錦",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 5017,
+        "excerptTraditional": "袈裟；鞋子綻了，與我一雙好新鞋子。」高老聞言，不敢不與，隨買一雙新鞋，\n將一領褊衫，換下舊時衣物。那八戒搖搖擺擺，對高老唱個喏道：「上覆丈母、\n大姨、二姨並姨夫、姑舅諸親：我今日去做和尚了，不及面辭，休怪。丈人呵，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5171,
+        "excerptTraditional": "、三四個小男女，斂衣赤腳，插秧而回。他看見一匹白馬、一擔行李，都在他家\n門首喧嘩，不知是甚來歷，都一擁上前問道：「做甚麼的？」八戒調過頭來，把\n耳朵擺了幾擺，長嘴伸了一伸，嚇得那些人東倒西歪，亂蹡亂跌。慌得那三藏滿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 21,
+        "rawLine": 5561,
+        "excerptTraditional": "八戒望見大喜道：「師兄，常言道：『要知山下路，須問去來人。』你上前問他\n一聲，何如？」真個大聖藏了鐵棒，放下衣襟，上前叫道：「老公公，問訊了。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-021.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5694,
+        "excerptTraditional": "撈去耶？」行者道：「你若到他水中與他交戰，卻不要戀戰，許敗不許勝，把他\n引將出來，等老孫下手助你。」八戒道：「言得是，我去耶。」說聲去，就剝了\n青錦直裰，脫了鞋，雙手舞鈀，分開水路，使出那當年舊手段，躍浪翻波，撞將",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5878,
+        "excerptTraditional": "那悟淨才收了寶杖，整一整黃錦直裰，跳上岸來，對唐僧雙膝跪下道：「師父，\n弟子有眼無珠，不認得師父的尊容，多有沖撞，萬望恕罪。」八戒道：「你這膿\n包，怎的早不皈依，只管要與我打？是何說話？」行者笑道：「兄弟，你莫怪他",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 6148,
+        "excerptTraditional": "，把三件兒都拿來我穿了看，若都穿得，就教都招了罷。」那婦人轉進房裏，止\n取出一件來，遞與八戒。那獃子脫下青錦布直裰，取過衫兒，就穿在身上。還未\n曾繫上帶子，撲的一蹻，跌倒在地。原來是幾條繩緊緊繃住。那獃子疼痛難禁，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 6149,
+        "excerptTraditional": "取出一件來，遞與八戒。那獃子脫下青錦布直裰，取過衫兒，就穿在身上。還未\n曾繫上帶子，撲的一蹻，跌倒在地。原來是幾條繩緊緊繃住。那獃子疼痛難禁，\n這些人早已不見了。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 24,
+        "rawLine": 6389,
+        "excerptTraditional": "裏去。那八戒笑道：「哥哥，可有麼？」行者道：「這不是？老孫的手到擒來。\n這個果子，也莫背了沙僧，可叫他一聲。」八戒即招手叫道：「悟淨，你來。」\n那沙僧搬下行李，跑進廚房道：「哥哥，叫我怎的？」行者放開衣兜道：「兄弟",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6591,
+        "excerptTraditional": "「袖裏乾坤」的手段，在雲端裏把袍袖迎風輕輕的一展，刷地前來，把四僧連馬\n一袖子籠住。八戒道：「不好了，我們都裝在縺裏了。」行者道：「獃子，不是\n縺，我們被他籠在衣袖中哩。」八戒道：「這個不打緊，等我一頓釘鈀，築他個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6592,
+        "excerptTraditional": "一袖子籠住。八戒道：「不好了，我們都裝在縺裏了。」行者道：「獃子，不是\n縺，我們被他籠在衣袖中哩。」八戒道：「這個不打緊，等我一頓釘鈀，築他個\n窟窿，脫將下去，只說他不小心，籠不牢，吊的了罷。」那獃子使鈀亂築，那裏",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6593,
+        "excerptTraditional": "縺，我們被他籠在衣袖中哩。」八戒道：「這個不打緊，等我一頓釘鈀，築他個\n窟窿，脫將下去，只說他不小心，籠不牢，吊的了罷。」那獃子使鈀亂築，那裏\n築得動：手捻著雖然是個軟的，築起來就比鐵還硬。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      }
+    ],
+    "weaponsOrTools": [
+      {
+        "chapterNumber": 19,
+        "rawLine": 4886,
+        "excerptTraditional": "凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名\n豬剛鬣。是老孫從後宅裏掣棒就打，他化一陣狂風走了。被老孫著風一棒，他就\n化道火光，徑轉他那本山洞裏，取出一柄九齒釘鈀，與老孫戰了一夜。適才天色",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4909,
+        "excerptTraditional": "大門打破？你且去看看律條，打進大門而入，該個雜犯死罪哩。」行者笑道：\n「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4910,
+        "excerptTraditional": "「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」\n行者使棒支住道：「你這鈀可是與高老家做長工築地種菜的？有何好處怕你？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4922,
+        "excerptTraditional": "因我修成大羅仙，為吾養就長生客。\n　　　　敕封元帥號天蓬，欽賜釘鈀為御節。\n　　　　舉起烈焰並毫光，落下猛風飄瑞雪。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4938,
+        "excerptTraditional": "行者聞言，收了鐵棒道：「獃子不要說嘴，老孫把這頭伸在那裏，你且築一下兒\n，看可能魂消氣泄？」那怪真個舉起鈀，著氣力築將來，撲的一下，鑽起鈀的火",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4977,
+        "excerptTraditional": "人家，我就來拜接，怎麼又受到許多周折？」三藏道：「悟空，你怎麼降得他來\n拜我？」行者才放了手，拿釘鈀柄兒打著，喝道：「獃子，你說麼。」那怪把菩\n薩勸善事情，細陳了一遍。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5245,
+        "excerptTraditional": "說不了，只見那山坡下剪尾跑蹄，跳出一隻斑斕猛虎。慌得那三藏坐不穩雕鞍，\n翻根頭跌下白馬，斜倚在路傍，真個是魂飛魄散。八戒丟了行李，掣釘鈀，不讓\n行者走上前，大喝一聲道：「孽畜，那裏走！」趕將去，劈頭就築。那隻虎直挺",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5259,
+        "excerptTraditional": "路，休驚了我師父，饒你性命﹔若似前猖獗，鈀舉處，卻不留情。」那妖精那容\n分說，急近步，丟一個架子，望八戒劈臉來抓﹔這八戒忙閃過，掄鈀就築。那怪\n手無兵器，回身就走﹔八戒隨後趕來﹔那怪到了山坡下亂石叢中，取出兩口赤銅",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5260,
+        "excerptTraditional": "分說，急近步，丟一個架子，望八戒劈臉來抓﹔這八戒忙閃過，掄鈀就築。那怪\n手無兵器，回身就走﹔八戒隨後趕來﹔那怪到了山坡下亂石叢中，取出兩口赤銅\n刀，急掄起,轉身來迎。兩個在這坡前一往一來，一沖一撞的賭鬥。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5266,
+        "excerptTraditional": "那行者掣了鐵棒，喝聲叫：「拿了！」此時八戒抖搜精神，那怪敗下陣去。行者\n道：「莫饒他，務要趕上。」他兩個掄起鈀，舉鐵棒，趕下山來。那怪慌了手腳",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5268,
+        "excerptTraditional": "道：「莫饒他，務要趕上。」他兩個掄起鈀，舉鐵棒，趕下山來。那怪慌了手腳\n，使個金蟬脫殼計，打個滾，現了原身，依然是一隻猛虎。行者與八戒那裏肯捨\n，趕著那虎，定要除根。那怪見他趕得至近，卻又摳著胸膛，剝下皮來，苫蓋在",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5296,
+        "excerptTraditional": "卻說那行者、八戒趕那虎下山坡，只見那虎跑倒了，塌伏在崖前。行者舉棒儘力\n一打，轉震得自己手疼。八戒復築了一鈀，亦將鈀齒迸起。原來是一張虎皮，蓋",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      }
+    ],
+    "personalityActions": [
+      {
+        "chapterNumber": 18,
+        "rawLine": 4724,
+        "excerptTraditional": "實也好。只是一件，有些會變嘴臉。」行者道：「怎麼樣變？」高老道：「初來\n時是一條黑胖漢，後來就變做一個長嘴大耳朵的獃子，腦後又有一溜鬃毛，身體\n粗糙怕人，頭臉就像個豬的模樣。食腸卻又甚大：一頓要吃三五斗米飯，早間點",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4909,
+        "excerptTraditional": "大門打破？你且去看看律條，打進大門而入，該個雜犯死罪哩。」行者笑道：\n「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4910,
+        "excerptTraditional": "「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」\n行者使棒支住道：「你這鈀可是與高老家做長工築地種菜的？有何好處怕你？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4985,
+        "excerptTraditional": "三藏道：「既從吾善果，要做徒弟，我與你起個法名，早晚好呼喚。」他道：\n「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4986,
+        "excerptTraditional": "「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：\n「師父，我受了菩薩戒行，斷了五葷三厭，在我丈人家持齋把素，更不曾動葷。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4992,
+        "excerptTraditional": "高老見這等去邪歸正，更十分喜悅，遂命家僮安排筵宴，酬謝唐僧。八戒上前扯\n住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 5020,
+        "excerptTraditional": "你還好生看待我渾家，只怕我們取不成經時，好來還俗，照舊與你做女婿過活。」\n行者喝道：「夯貨，卻莫胡說。」八戒道：「不是胡說，只恐一時間有些兒差池\n，卻不是和尚誤了做，老婆誤了娶，兩下裏都耽擱了？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 5090,
+        "excerptTraditional": "「他罵了我兄弟兩個一場去了。」三藏道：「他講的西天路徑，何嘗罵你？」行\n者道：「你那裏曉得？他說『野豬挑擔子』是罵的八戒；『多年老石猴』是罵的\n老孫。你怎麼解得此意？」八戒道：「師兄息怒。這禪師也曉得過去未來之事，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 5091,
+        "excerptTraditional": "者道：「你那裏曉得？他說『野豬挑擔子』是罵的八戒；『多年老石猴』是罵的\n老孫。你怎麼解得此意？」八戒道：「師兄息怒。這禪師也曉得過去未來之事，\n但看他『水怪前頭遇』這句話，不知驗否？饒他去罷。」行者見蓮花祥霧，近那",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5129,
+        "excerptTraditional": "三藏聞之道：「悟能，你若是在家心重呵，不是個出家的了，你還回去罷。」那\n獃子慌得跪下道：「師父，你莫聽師兄之言，他有些贓埋人。我不曾報怨甚的，\n他就說我報怨。我是個直腸的痴漢，我說道肚內饑了，好尋個人家化齋，他就罵",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5166,
+        "excerptTraditional": "：「老兒莫怕，他不是妖怪，是我師弟。」老者戰兢兢的道：「好好好，一個醜\n似一個的和尚。」八戒上前道：「老官兒，你若以相貌取人，乾淨差了。我們醜\n自醜，卻都有用。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5181,
+        "excerptTraditional": "自從跟了你，這些時俊了許多哩。若像往常在高老莊時，把嘴朝前一掬，把耳兩\n頭一擺，常嚇殺二三十人哩。」行者笑道：「獃子不要亂說，把那醜也收拾起些\n。」三藏道：「你看悟空說的話，相貌是生成的，你教他怎麼收拾？」行者道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      }
+    ],
+    "relationships": [
+      {
+        "chapterNumber": 18,
+        "rawLine": 4724,
+        "excerptTraditional": "實也好。只是一件，有些會變嘴臉。」行者道：「怎麼樣變？」高老道：「初來\n時是一條黑胖漢，後來就變做一個長嘴大耳朵的獃子，腦後又有一溜鬃毛，身體\n粗糙怕人，頭臉就像個豬的模樣。食腸卻又甚大：一頓要吃三五斗米飯，早間點",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4865,
+        "excerptTraditional": "行者聞言道：「你這廝原來是天蓬水神下界，怪道知我老孫名號。」那怪道聲：\n「哏！你這誑上的弼馬溫，當年撞那禍時，不知帶累我等多少，今日又來此欺人",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4884,
+        "excerptTraditional": "，謝道：「多勞，多勞。」三藏問道：「悟空，你去這一夜，拿得妖精在那裏？」\n行者道：「師父，那妖不是凡間的邪祟，也不是山間的怪獸。他本是天蓬元帥臨\n凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4909,
+        "excerptTraditional": "大門打破？你且去看看律條，打進大門而入，該個雜犯死罪哩。」行者笑道：\n「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4910,
+        "excerptTraditional": "「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」\n行者使棒支住道：「你這鈀可是與高老家做長工築地種菜的？有何好處怕你？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4938,
+        "excerptTraditional": "行者聞言，收了鐵棒道：「獃子不要說嘴，老孫把這頭伸在那裏，你且築一下兒\n，看可能魂消氣泄？」那怪真個舉起鈀，著氣力築將來，撲的一下，鑽起鈀的火",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4977,
+        "excerptTraditional": "人家，我就來拜接，怎麼又受到許多周折？」三藏道：「悟空，你怎麼降得他來\n拜我？」行者才放了手，拿釘鈀柄兒打著，喝道：「獃子，你說麼。」那怪把菩\n薩勸善事情，細陳了一遍。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4985,
+        "excerptTraditional": "三藏道：「既從吾善果，要做徒弟，我與你起個法名，早晚好呼喚。」他道：\n「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4986,
+        "excerptTraditional": "「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：\n「師父，我受了菩薩戒行，斷了五葷三厭，在我丈人家持齋把素，更不曾動葷。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4989,
+        "excerptTraditional": "今日見了師父，我開了齋罷。」三藏道：「不可，不可。你既是不吃五葷三厭，\n我再與你起個別名，喚為八戒。」那獃子歡歡喜喜道：「謹遵師命。」因此又叫\n做豬八戒。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4992,
+        "excerptTraditional": "高老見這等去邪歸正，更十分喜悅，遂命家僮安排筵宴，酬謝唐僧。八戒上前扯\n住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4996,
+        "excerptTraditional": "居道士，那裏有個火居的和尚？我們且來敘了坐次，吃頓齋飯，趕早兒往西天走\n路。」高老兒擺了桌席，請三藏上坐；行者與八戒坐於左右兩傍；諸親下坐。高\n老把素酒開樽，滿斟一杯，奠了天地，然後奉與三藏。三藏道：「不瞞太公說，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      }
+    ]
+  },
+  "earlyMentions": [
+    {
+      "chapterNumber": 7,
+      "rawLine": 1694,
+      "excerptTraditional": "如來佛祖殄滅了妖猴，即喚阿儺、迦葉同轉西方極樂世界。時有天蓬、天佑急\n出靈霄寶殿道：「請如來少待，我主大駕來也。」佛祖聞言，回首瞻仰。須臾",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1951,
+      "excerptTraditional": "觀音按下雲頭，前來問道：「你是那裏成精的野豕，何方作怪的老彘，敢在此間\n擋我？」那怪道：「我不是野豕，亦不是老彘，我本是天河裏天蓬元帥。只因帶\n酒戲弄嫦娥，玉帝把我打了二千鎚，貶下塵凡。一靈真性，徑來奪舍投胎，不期",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1968,
+      "excerptTraditional": "，將功折罪，管教你脫離災瘴。」那怪滿口道：「願隨，願隨。」菩薩才與他摩\n頂受戒，指身為姓，就姓了豬﹔替他起了法名，就叫做豬悟能。遂此領命歸真，\n持齋把素，斷絕了五葷三厭，專候那取經人。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1971,
+      "excerptTraditional": "菩薩卻與木叉辭了悟能，半興雲霧前來。正走處，只見空中有一條玉龍叫喚。菩\n薩近前問曰：「你是何龍，在此受罪？」那龍道：「我是西海龍王敖閏之子，因",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 18,
+      "rawLine": 4724,
+      "excerptTraditional": "實也好。只是一件，有些會變嘴臉。」行者道：「怎麼樣變？」高老道：「初來\n時是一條黑胖漢，後來就變做一個長嘴大耳朵的獃子，腦後又有一溜鬃毛，身體\n粗糙怕人，頭臉就像個豬的模樣。食腸卻又甚大：一頓要吃三五斗米飯，早間點",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+    },
+    {
+      "chapterNumber": 18,
+      "rawLine": 4801,
+      "excerptTraditional": "陋，若要俊，卻也不難。我一來時，曾與他講過，他願意方才招我。今日怎麼又\n說起這話？我家住在福陵山雲棧洞。我以相貌為姓，故姓豬，官名叫做豬剛鬣。\n他若再來問你，你就以此話與他說便了。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4826,
+      "excerptTraditional": "第十九回     雲棧洞悟空收八戒　浮屠山玄奘受心經",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4863,
+      "excerptTraditional": "放生遭貶出天關，福陵山下圖家業。\n　　　　我因有罪錯投胎，俗名喚做豬剛鬣。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4865,
+      "excerptTraditional": "行者聞言道：「你這廝原來是天蓬水神下界，怪道知我老孫名號。」那怪道聲：\n「哏！你這誑上的弼馬溫，當年撞那禍時，不知帶累我等多少，今日又來此欺人",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4884,
+      "excerptTraditional": "，謝道：「多勞，多勞。」三藏問道：「悟空，你去這一夜，拿得妖精在那裏？」\n行者道：「師父，那妖不是凡間的邪祟，也不是山間的怪獸。他本是天蓬元帥臨\n凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4886,
+      "excerptTraditional": "凡，只因錯投了胎，嘴臉像一個野豬模樣，其實性靈尚存。他說以相為姓，喚名\n豬剛鬣。是老孫從後宅裏掣棒就打，他化一陣狂風走了。被老孫著風一棒，他就\n化道火光，徑轉他那本山洞裏，取出一柄九齒釘鈀，與老孫戰了一夜。適才天色",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4909,
+      "excerptTraditional": "大門打破？你且去看看律條，打進大門而入，該個雜犯死罪哩。」行者笑道：\n「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4910,
+      "excerptTraditional": "「這個獃子！我就打了大門，還有個辨處。像你強占人家女子，又沒個三媒六證\n，又無些茶紅酒禮，該問個真犯斬罪哩。」那怪道：「且休閑講，看老豬這鈀。」\n行者使棒支住道：「你這鈀可是與高老家做長工築地種菜的？有何好處怕你？」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4922,
+      "excerptTraditional": "因我修成大羅仙，為吾養就長生客。\n　　　　敕封元帥號天蓬，欽賜釘鈀為御節。\n　　　　舉起烈焰並毫光，落下猛風飄瑞雪。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4938,
+      "excerptTraditional": "行者聞言，收了鐵棒道：「獃子不要說嘴，老孫把這頭伸在那裏，你且築一下兒\n，看可能魂消氣泄？」那怪真個舉起鈀，著氣力築將來，撲的一下，鑽起鈀的火",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4977,
+      "excerptTraditional": "人家，我就來拜接，怎麼又受到許多周折？」三藏道：「悟空，你怎麼降得他來\n拜我？」行者才放了手，拿釘鈀柄兒打著，喝道：「獃子，你說麼。」那怪把菩\n薩勸善事情，細陳了一遍。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4985,
+      "excerptTraditional": "三藏道：「既從吾善果，要做徒弟，我與你起個法名，早晚好呼喚。」他道：\n「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4986,
+      "excerptTraditional": "「師父，我是菩薩已與我摩頂受戒，起了法名，叫做豬悟能也。」三藏笑道：\n「好，好。你師兄叫做悟空，你叫做悟能，其實是我法門中的宗派。」悟能道：\n「師父，我受了菩薩戒行，斷了五葷三厭，在我丈人家持齋把素，更不曾動葷。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4989,
+      "excerptTraditional": "今日見了師父，我開了齋罷。」三藏道：「不可，不可。你既是不吃五葷三厭，\n我再與你起個別名，喚為八戒。」那獃子歡歡喜喜道：「謹遵師命。」因此又叫\n做豬八戒。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4990,
+      "excerptTraditional": "我再與你起個別名，喚為八戒。」那獃子歡歡喜喜道：「謹遵師命。」因此又叫\n做豬八戒。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4992,
+      "excerptTraditional": "高老見這等去邪歸正，更十分喜悅，遂命家僮安排筵宴，酬謝唐僧。八戒上前扯\n住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4996,
+      "excerptTraditional": "居道士，那裏有個火居的和尚？我們且來敘了坐次，吃頓齋飯，趕早兒往西天走\n路。」高老兒擺了桌席，請三藏上坐；行者與八戒坐於左右兩傍；諸親下坐。高\n老把素酒開樽，滿斟一杯，奠了天地，然後奉與三藏。三藏道：「不瞞太公說，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5014,
+      "excerptTraditional": "八戒在傍邊道：「師父、師兄，你們不要便罷，我與他家做了這幾年女婿，就是\n掛腳糧也該三石哩。──丈人呵，我的直裰，昨晚被師兄扯破了，與我一件青錦",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5017,
+      "excerptTraditional": "袈裟；鞋子綻了，與我一雙好新鞋子。」高老聞言，不敢不與，隨買一雙新鞋，\n將一領褊衫，換下舊時衣物。那八戒搖搖擺擺，對高老唱個喏道：「上覆丈母、\n大姨、二姨並姨夫、姑舅諸親：我今日去做和尚了，不及面辭，休怪。丈人呵，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5020,
+      "excerptTraditional": "你還好生看待我渾家，只怕我們取不成經時，好來還俗，照舊與你做女婿過活。」\n行者喝道：「夯貨，卻莫胡說。」八戒道：「不是胡說，只恐一時間有些兒差池\n，卻不是和尚誤了做，老婆誤了娶，兩下裏都耽擱了？」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5023,
+      "excerptTraditional": "三藏道：「少題閑話，我們趕早兒去來。」遂此收拾了一擔行李，八戒擔著；背\n了白馬，三藏騎著；行者肩擔鐵棒，前面引路。一行三眾，辭別高老及眾親友，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5032,
+      "excerptTraditional": "三眾進西路途，有個月平穩。行過了烏斯藏界，猛抬頭見一座高山。三藏停鞭勒\n馬道：「悟空、悟能，前面山高，須索仔細仔細。」八戒道：「沒事。這山喚做\n浮屠山，山中有一個烏巢禪師，在此修行，老豬也曾會他。」三藏道：「他有些",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5033,
+      "excerptTraditional": "馬道：「悟空、悟能，前面山高，須索仔細仔細。」八戒道：「沒事。這山喚做\n浮屠山，山中有一個烏巢禪師，在此修行，老豬也曾會他。」三藏道：「他有些\n甚麼勾當？」八戒道：「他倒也有些道行。他曾勸我跟他修行，我不曾去罷了。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5034,
+      "excerptTraditional": "浮屠山，山中有一個烏巢禪師，在此修行，老豬也曾會他。」三藏道：「他有些\n甚麼勾當？」八戒道：「他倒也有些道行。他曾勸我跟他修行，我不曾去罷了。」\n師徒們說著話，不多時，到了山上。好山！但見那：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5041,
+      "excerptTraditional": "那師父在馬上遙觀，見香檜樹前有一柴草窩，左邊有麋鹿啣花，右邊有山猴獻果\n，樹梢頭有青鸞、彩鳳齊鳴，玄鶴、錦雞咸集。八戒指道：「那不是烏巢禪師？」\n三藏縱馬加鞭，直至樹下。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5045,
+      "excerptTraditional": "卻說那禪師見他三眾前來，即便離了巢穴，跳下樹來。三藏下馬奉拜，那禪師用\n手攙道：「聖僧請起。失迎，失迎。」八戒道：「老禪師，作揖了。」禪師驚問\n道：「你是福陵山豬剛鬣，怎麼有此大緣，得與聖僧同行？」八戒道：「前年蒙",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5046,
+      "excerptTraditional": "手攙道：「聖僧請起。失迎，失迎。」八戒道：「老禪師，作揖了。」禪師驚問\n道：「你是福陵山豬剛鬣，怎麼有此大緣，得與聖僧同行？」八戒道：「前年蒙\n觀音菩薩勸善，願隨他做個徒弟。」禪師大喜道：「好，好，好！」又指定行者",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5090,
+      "excerptTraditional": "「他罵了我兄弟兩個一場去了。」三藏道：「他講的西天路徑，何嘗罵你？」行\n者道：「你那裏曉得？他說『野豬挑擔子』是罵的八戒；『多年老石猴』是罵的\n老孫。你怎麼解得此意？」八戒道：「師兄息怒。這禪師也曉得過去未來之事，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 5091,
+      "excerptTraditional": "者道：「你那裏曉得？他說『野豬挑擔子』是罵的八戒；『多年老石猴』是罵的\n老孫。你怎麼解得此意？」八戒道：「師兄息怒。這禪師也曉得過去未來之事，\n但看他『水怪前頭遇』這句話，不知驗否？饒他去罷。」行者見蓮花祥霧，近那",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5102,
+      "excerptTraditional": "第二○回     黃風嶺唐僧有難　半山中八戒爭先",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5125,
+      "excerptTraditional": "西山藏火鏡，月升東海現冰輪。幸而道傍有一人家，我們且借宿一宵，明日再走\n。」八戒道：「說得是，我老豬也有些餓了，且到人家化些齋吃，有力氣，好挑\n行李。」行者道：「這個戀家鬼，你離了家幾日，就生報怨。」八戒道：「哥呵",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5126,
+      "excerptTraditional": "。」八戒道：「說得是，我老豬也有些餓了，且到人家化些齋吃，有力氣，好挑\n行李。」行者道：「這個戀家鬼，你離了家幾日，就生報怨。」八戒道：「哥呵\n，比不得你這喝風呵煙的人。我從跟了師父這幾日，長忍半肚饑，你可曉得？」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5128,
+      "excerptTraditional": "，比不得你這喝風呵煙的人。我從跟了師父這幾日，長忍半肚饑，你可曉得？」\n三藏聞之道：「悟能，你若是在家心重呵，不是個出家的了，你還回去罷。」那\n獃子慌得跪下道：「師父，你莫聽師兄之言，他有些贓埋人。我不曾報怨甚的，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5129,
+      "excerptTraditional": "三藏聞之道：「悟能，你若是在家心重呵，不是個出家的了，你還回去罷。」那\n獃子慌得跪下道：「師父，你莫聽師兄之言，他有些贓埋人。我不曾報怨甚的，\n他就說我報怨。我是個直腸的痴漢，我說道肚內饑了，好尋個人家化齋，他就罵",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5135,
+      "excerptTraditional": "那獃子縱身跳起，口裏絮絮叨叨的，挑著擔子，只得死心塌地，跟著前來。早到\n了路傍人家門首。三藏下馬，行者接了韁繩，八戒歇了行李，都佇立綠蔭之下。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    }
+  ]
+}

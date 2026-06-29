@@ -1,0 +1,708 @@
+{
+  "version": 1,
+  "status": "auto-extracted-candidates-not-final",
+  "id": "sha-seng",
+  "name": "沙悟淨",
+  "aliases": [
+    "沙僧",
+    "沙和尚",
+    "悟淨",
+    "沙悟淨",
+    "捲簾",
+    "沙門"
+  ],
+  "source": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+  "notes": [
+    "本文件用于人物基础设定考据，不能直接作为最终人物图设定。",
+    "同一称谓在原文中可能指代上下文人物，开发前应人工复核证据。",
+    "正式美术提示词应由基础设定、章节状态和场景动作共同生成。"
+  ],
+  "evidenceBuckets": {
+    "originIdentity": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1910,
+        "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 8,
+        "rawLine": 1923,
+        "excerptTraditional": "怪物道：「既然如此，願領教誨。」菩薩方與他摩頂受戒，指沙為姓，就姓了沙\n﹔起個法名，叫做個沙悟淨。當時入了沙門，送菩薩過了河，他洗心滌慮，再不\n傷生，專等取經人。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 10,
+        "rawLine": 2495,
+        "excerptTraditional": "違遲君命，只得急急整衣束帶，同旨入朝，在御前叩頭請罪。唐王道：「赦卿無\n罪。」那時諸臣尚未退朝，至此，卻命捲簾散朝。獨留魏徵，宣上金鑾，召入便\n殿，先議論安邦之策，定國之謀。將近巳末午初時候，卻命宮人：「取過大棋來",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-010.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5637,
+        "excerptTraditional": "第二二回     八戒大戰流沙河　木叉奉法收悟淨",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5665,
+        "excerptTraditional": "河岸，各逞英雄。這一場好鬥：\n九齒鈀，降妖杖，二人相敵河岸上。這個是總督大天蓬，那個是謫下捲簾將。昔\n年曾會在靈霄，今日爭持賭猛壯。這一個鈀去探爪龍，那一個杖架磨牙象。伸開",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5713,
+        "excerptTraditional": "三千功滿拜天顏，志心朝禮明華向。\n　　　　玉皇大帝便加陞，親口封為捲簾將。\n　　　　南天門裏我為尊，靈霄殿前吾稱上。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5735,
+        "excerptTraditional": "各人踏浪登波。這一場賭鬥，比前不同，你看那：\n捲簾將，天蓬帥，各顯神通真可愛。那個降妖寶杖著頭輪，這個九齒釘鈀隨手快\n。躍浪振山川，推波昏世界。兇如太歲撞幢幡，惡似喪門掀寶蓋。這一個赤心凜",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5792,
+        "excerptTraditional": "也曾護駕宴蟠桃，也曾隨朝居上界。\n　　　　值殿曾經眾聖參，捲簾曾見諸仙拜。\n　　　　養成靈性一神兵，不是人間凡器械。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5841,
+        "excerptTraditional": "父渡河。水裏事，我又弄不得精細。只是悟能尋著他窩巢，與他打話，想是不曾\n說出取經的勾當。」菩薩道：「那流沙河的妖怪，乃是捲簾大將臨凡，也是我勸\n化的善信，教他保護取經之輩。你若肯說出是東土取經人時，他決不與你爭持，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5845,
+        "excerptTraditional": "歸順？我師如何得渡弱水？」菩薩即喚惠岸，袖中取出一個紅葫蘆兒，吩咐道：\n「你可將此葫蘆，同孫悟空到流沙河水面上，只叫『悟淨』，他就出來了。先要\n引他歸依了唐僧。然後把他那九個骷髏穿在一處，按九宮佈列，卻把這葫蘆安在",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5860,
+        "excerptTraditional": "罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道\n：「老孫見菩薩，備陳前事。菩薩說，這流沙河的妖怪，乃是捲簾大將臨凡，因\n為在天有罪，墮落此河，忘形作怪。他曾被菩薩勸化，願歸師父往西天去的。但",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5865,
+        "excerptTraditional": "速一行。」那木叉捧定葫蘆，半雲半霧，徑到了流沙河水面上，厲聲高叫道：\n「悟淨，悟淨，取經人在此久矣，你怎麼還不歸順？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      }
+    ],
+    "appearanceBody": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1910,
+        "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5845,
+        "excerptTraditional": "歸順？我師如何得渡弱水？」菩薩即喚惠岸，袖中取出一個紅葫蘆兒，吩咐道：\n「你可將此葫蘆，同孫悟空到流沙河水面上，只叫『悟淨』，他就出來了。先要\n引他歸依了唐僧。然後把他那九個骷髏穿在一處，按九宮佈列，卻把這葫蘆安在",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5865,
+        "excerptTraditional": "速一行。」那木叉捧定葫蘆，半雲半霧，徑到了流沙河水面上，厲聲高叫道：\n「悟淨，悟淨，取經人在此久矣，你怎麼還不歸順？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5871,
+        "excerptTraditional": "「我師未來，先差我來吩咐你早跟唐僧做個徒弟。叫把你項下掛的骷髏與這個葫\n蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5881,
+        "excerptTraditional": "，還是我們不曾說出取經的事情與姓名耳。」長老道：「你果肯誠心皈依吾教麼\n？」悟淨道：「弟子向蒙菩薩教化，指沙為姓，與我起個法名，喚做沙悟淨，豈\n有不從師父之理？」三藏道：「既如此，」叫：「悟空，取戒刀來，與他落了髮",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5887,
+        "excerptTraditional": "那悟淨不敢怠慢，即將頸項下掛的骷髏取下，用索子結作九宮，把菩薩葫蘆安在\n當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5889,
+        "excerptTraditional": "當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持\n，右有悟淨捧托﹔孫行者在後面牽了龍馬，半雲半霧相跟﹔頭直上又有木叉擁護\n。那師父才飄然穩渡流沙河界，浪靜風平過弱河。真個也如飛似箭，不多時，身",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 5943,
+        "excerptTraditional": "項下珠，才變做這匹馬，願馱師父往西天拜佛。這個都是各人的功果，你莫攀他\n。」那沙僧聞言道：「哥哥，真個是龍麼？」行者道：「是龍。」八戒道：「哥\n呵，我聞得古人云：龍能噴雲噯霧，播土揚沙﹔有巴山嶺的手段，有翻江攪海的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 5967,
+        "excerptTraditional": "，你我出家人，各自避些嫌疑，切莫擅入。且自等他有人出來，以禮求宿，方可\n。」八戒拴了馬，斜倚牆根之下﹔三藏坐在石鼓上﹔行者、沙僧坐在臺基邊。久\n無人出，行者性急，跳起身入門裏看處，原來有向南的三間大廳，簾櫳高控。屏",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 6099,
+        "excerptTraditional": "那三藏合掌低頭，孫大聖佯佯不睬，這沙僧轉背回身。你看那豬八戒眼不轉睛，\n淫心紊亂，色膽縱橫，扭捏出悄語，低聲道：「有勞仙子下降。娘，請姐姐們去",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6461,
+        "excerptTraditional": "計，教他大家都吃不成。」好行者，把腦後的毫毛拔了一根，吹口仙氣，叫：\n「變！」變做個假行者，跟定唐僧，陪著悟能、悟淨，忍受著道童嚷罵。他的真\n身出一個神，縱雲頭，跳將起去，徑到人參園裏，掣金箍棒，往樹上乒乓一下，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6510,
+        "excerptTraditional": "你老子做官，也說不通。」行者道：「師父莫鬧，那童兒都睡去了，只等他睡著\n了，我們連夜起身。」沙僧道：「哥呵，幾層門都上了鎖，閉得甚緊，如何走\n麼？」行者笑道：「莫管，莫管，老孫自有法兒。」八戒道：「愁你沒有法兒",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      }
+    ],
+    "clothingProps": [
+      {
+        "chapterNumber": 10,
+        "rawLine": 2495,
+        "excerptTraditional": "違遲君命，只得急急整衣束帶，同旨入朝，在御前叩頭請罪。唐王道：「赦卿無\n罪。」那時諸臣尚未退朝，至此，卻命捲簾散朝。獨留魏徵，宣上金鑾，召入便\n殿，先議論安邦之策，定國之謀。將近巳末午初時候，卻命宮人：「取過大棋來",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-010.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5845,
+        "excerptTraditional": "歸順？我師如何得渡弱水？」菩薩即喚惠岸，袖中取出一個紅葫蘆兒，吩咐道：\n「你可將此葫蘆，同孫悟空到流沙河水面上，只叫『悟淨』，他就出來了。先要\n引他歸依了唐僧。然後把他那九個骷髏穿在一處，按九宮佈列，卻把這葫蘆安在",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5871,
+        "excerptTraditional": "「我師未來，先差我來吩咐你早跟唐僧做個徒弟。叫把你項下掛的骷髏與這個葫\n蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5887,
+        "excerptTraditional": "那悟淨不敢怠慢，即將頸項下掛的骷髏取下，用索子結作九宮，把菩薩葫蘆安在\n當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 5943,
+        "excerptTraditional": "項下珠，才變做這匹馬，願馱師父往西天拜佛。這個都是各人的功果，你莫攀他\n。」那沙僧聞言道：「哥哥，真個是龍麼？」行者道：「是龍。」八戒道：「哥\n呵，我聞得古人云：龍能噴雲噯霧，播土揚沙﹔有巴山嶺的手段，有翻江攪海的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 24,
+        "rawLine": 6389,
+        "excerptTraditional": "裏去。那八戒笑道：「哥哥，可有麼？」行者道：「這不是？老孫的手到擒來。\n這個果子，也莫背了沙僧，可叫他一聲。」八戒即招手叫道：「悟淨，你來。」\n那沙僧搬下行李，跑進廚房道：「哥哥，叫我怎的？」行者放開衣兜道：「兄弟",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt"
+      },
+      {
+        "chapterNumber": 24,
+        "rawLine": 6390,
+        "excerptTraditional": "這個果子，也莫背了沙僧，可叫他一聲。」八戒即招手叫道：「悟淨，你來。」\n那沙僧搬下行李，跑進廚房道：「哥哥，叫我怎的？」行者放開衣兜道：「兄弟\n，你看這個是甚的東西？」沙僧見了道：「是人參果。」行者道：「好呵！你倒",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt"
+      },
+      {
+        "chapterNumber": 24,
+        "rawLine": 6391,
+        "excerptTraditional": "那沙僧搬下行李，跑進廚房道：「哥哥，叫我怎的？」行者放開衣兜道：「兄弟\n，你看這個是甚的東西？」沙僧見了道：「是人參果。」行者道：「好呵！你倒\n認得，你曾在那裏吃過的？」沙僧道：「小弟雖不曾吃，但舊時做捲簾大將，扶",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt"
+      },
+      {
+        "chapterNumber": 30,
+        "rawLine": 7776,
+        "excerptTraditional": "的衣服，取了一口寶刀，佩在腰裏，轉過手，摸著公主道：「渾家，你且在家吃\n酒，看著兩個孩兒，不要放了沙和尚。趁那唐僧在那國裏，我也趕早兒去認認親\n也。」公主道：「你認甚親？」老妖道：「認你父王。我是他駙馬，他是我丈",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt"
+      },
+      {
+        "chapterNumber": 33,
+        "rawLine": 8701,
+        "excerptTraditional": "淋下來，臊氣不堪，且污了我的衣服，沒人漿洗。」那怪道：「我這般一把子年\n紀，豈不知你的話說？」行者才拉將起來，背在身上，同長老、沙僧，奔大路西\n行。那山上高低不平之處，行者留心慢走，讓唐僧前去。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-033.txt"
+      },
+      {
+        "chapterNumber": 39,
+        "rawLine": 10340,
+        "excerptTraditional": "三藏甚不過意，攙起那皇帝來，同入禪堂。又與八戒、行者、沙僧拜見了，方才\n按座。只見那本寺的僧人整頓了早齋，卻欲來奉獻，忽見那個水衣皇帝，個個驚",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-039.txt"
+      },
+      {
+        "chapterNumber": 41,
+        "rawLine": 11012,
+        "excerptTraditional": "八戒與沙僧聽得呼他聖號，急忙解了馬，挑著擔，奔出林來，也不顧泥濘，順\n澗邊找尋。只見那上溜頭翻波滾浪，急流中淌下一個人來。沙僧見了，連衣跳",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-041.txt"
+      }
+    ],
+    "weaponsOrTools": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1910,
+        "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5665,
+        "excerptTraditional": "河岸，各逞英雄。這一場好鬥：\n九齒鈀，降妖杖，二人相敵河岸上。這個是總督大天蓬，那個是謫下捲簾將。昔\n年曾會在靈霄，今日爭持賭猛壯。這一個鈀去探爪龍，那一個杖架磨牙象。伸開",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5735,
+        "excerptTraditional": "各人踏浪登波。這一場賭鬥，比前不同，你看那：\n捲簾將，天蓬帥，各顯神通真可愛。那個降妖寶杖著頭輪，這個九齒釘鈀隨手快\n。躍浪振山川，推波昏世界。兇如太歲撞幢幡，惡似喪門掀寶蓋。這一個赤心凜",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5877,
+        "excerptTraditional": "那悟淨才收了寶杖，整一整黃錦直裰，跳上岸來，對唐僧雙膝跪下道：「師父，\n弟子有眼無珠，不認得師父的尊容，多有沖撞，萬望恕罪。」八戒道：「你這膿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 25,
+        "rawLine": 6657,
+        "excerptTraditional": "對頭又來了。」行者道：「師父，且把善字兒包起，讓我們使些兇惡，一發結果\n了他，脫身去罷。」唐僧聞言，戰戰兢兢，未曾答應。沙僧掣寶杖，八戒舉釘\n鈀，大聖使鐵棒，一齊上前，把大仙圍住在空中，亂打亂築。這場惡鬥，有詩為",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt"
+      },
+      {
+        "chapterNumber": 28,
+        "rawLine": 7375,
+        "excerptTraditional": "裏，等我去尋他來。」三藏道：「正是，正是。有齋沒齋罷了，只是尋下處要\n緊。」沙僧綽了寶杖，徑出松林來找八戒。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt"
+      },
+      {
+        "chapterNumber": 28,
+        "rawLine": 7443,
+        "excerptTraditional": "且不言三藏逢災。卻說那沙僧出林找八戒，直有十餘里遠近，不曾見個莊村。\n他卻站在高埠上正然觀看，只聽得草中有人言語，急使杖撥開深草看時，原來",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt"
+      },
+      {
+        "chapterNumber": 28,
+        "rawLine": 7445,
+        "excerptTraditional": "他卻站在高埠上正然觀看，只聽得草中有人言語，急使杖撥開深草看時，原來\n是獃子在裏面說夢話哩。被沙僧揪著耳朵，方叫醒了。道：「好獃子呵！師父\n教你化齋，許你在此睡覺的？」那獃子冒冒失失的醒來道：「兄弟，有甚時候",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt"
+      },
+      {
+        "chapterNumber": 28,
+        "rawLine": 7486,
+        "excerptTraditional": "哩？」獃子卻才省悟，掣釘鈀，望妖怪劈臉就築﹔那怪物側身躲過，使鋼刀急架\n相迎。兩個都顯神通，縱雲頭，跳在空中廝殺。沙僧撇了行李、白馬，舉寶杖，\n急急幫攻。此時兩個狠和尚，一個潑妖魔，在雲端裏，這一場好殺。正是那：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt"
+      },
+      {
+        "chapterNumber": 29,
+        "rawLine": 7707,
+        "excerptTraditional": "言，十分發怒。你看他屹迸迸，咬響鋼牙﹔滴溜溜，睜圓環眼﹔雄糾糾，舉起刀\n來﹔赤淋淋，攔頭便砍。八戒側身躲過，使釘鈀劈面迎來﹔隨後又有沙僧舉寶杖\n趕上前齊打。這一場在山頭上賭鬥，比前不同。真個是：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-029.txt"
+      },
+      {
+        "chapterNumber": 29,
+        "rawLine": 7710,
+        "excerptTraditional": "言差語錯招人惱，意毒情傷怒氣生。這魔王大鋼刀，著頭便砍﹔那八戒九齒鈀，\n對面來迎。沙悟淨丟開寶杖，那魔王抵架神兵。一猛怪，二神僧，來來往往甚消\n停。這個說：「你騙國理該死罪。」那個說：「你羅閑事報不平。」這個說：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-029.txt"
+      },
+      {
+        "chapterNumber": 33,
+        "rawLine": 8725,
+        "excerptTraditional": "那魔十分兇猛，使口寶劍，流星的解數滾來，把個沙僧戰得軟弱難搪，回頭要\n走。早被他逼住寶杖，掄開大手，撾住沙僧，挾在左脅下﹔將右手去馬上拿了三",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-033.txt"
+      }
+    ],
+    "personalityActions": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1910,
+        "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3508,
+        "excerptTraditional": "，與你做個徒弟。」三藏聞言，滿心歡喜道：「你雖有此善心，又蒙菩薩教誨，\n願入沙門，只是我又沒斧鑿，如何救得你出？」那猴道：「不用斧鑿，你但肯救\n我，我自出來也。」三藏道：「我自救你，你怎得出來？」那猴道：「這山頂上",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3695,
+        "excerptTraditional": "做了和尚了。」龍王道：「做甚和尚？」行者道：「我虧了南海菩薩勸善，教我\n正果，隨東土唐僧上西方拜佛，皈依沙門，又喚為行者了。」龍王道：「這等真\n是可賀，可賀。這才叫做改邪歸正，懲創善心。既如此，怎麼不西去，復東回何",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4994,
+        "excerptTraditional": "住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，\n你既入了沙門，做了和尚，從今後，再莫題起那『拙荊』的話說。世間只有個火\n居道士，那裏有個火居的和尚？我們且來敘了坐次，吃頓齋飯，趕早兒往西天走",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5153,
+        "excerptTraditional": "簾洞居住。自小兒學做妖怪，稱名悟空。憑本事，做了一個齊天大聖。只因不受\n天錄，大反天宮，惹了一場災愆。如今脫難消災，轉拜沙門，前求正果。保我這\n唐朝駕下的師父，上西天拜佛走遭，怕甚麼山高路險，水闊波狂？我老孫也捉得",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5713,
+        "excerptTraditional": "三千功滿拜天顏，志心朝禮明華向。\n　　　　玉皇大帝便加陞，親口封為捲簾將。\n　　　　南天門裏我為尊，靈霄殿前吾稱上。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5792,
+        "excerptTraditional": "也曾護駕宴蟠桃，也曾隨朝居上界。\n　　　　值殿曾經眾聖參，捲簾曾見諸仙拜。\n　　　　養成靈性一神兵，不是人間凡器械。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5841,
+        "excerptTraditional": "父渡河。水裏事，我又弄不得精細。只是悟能尋著他窩巢，與他打話，想是不曾\n說出取經的勾當。」菩薩道：「那流沙河的妖怪，乃是捲簾大將臨凡，也是我勸\n化的善信，教他保護取經之輩。你若肯說出是東土取經人時，他決不與你爭持，",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5858,
+        "excerptTraditional": "前迎接。那木叉與三藏禮畢，又與八戒相見。八戒道：「向蒙尊者指示，得見菩\n薩，我老豬果遵法教，今喜拜了沙門。這一向在途中奔碌，未及致謝，恕罪，恕\n罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5884,
+        "excerptTraditional": "。」大聖依言，即將戒刀與他剃了頭。又來拜了三藏，拜了行者與八戒，分了大\n小。三藏見他行禮真像個和尚家風，故又叫他做沙和尚。木叉道：「既秉了迦持\n，不必絮煩，早與作法船去來。」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 5943,
+        "excerptTraditional": "項下珠，才變做這匹馬，願馱師父往西天拜佛。這個都是各人的功果，你莫攀他\n。」那沙僧聞言道：「哥哥，真個是龍麼？」行者道：「是龍。」八戒道：「哥\n呵，我聞得古人云：龍能噴雲噯霧，播土揚沙﹔有巴山嶺的手段，有翻江攪海的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      },
+      {
+        "chapterNumber": 23,
+        "rawLine": 6105,
+        "excerptTraditional": "首說合的停停當當，娘都叫了，又有甚麼計較？師父做個男親家，這婆兒做個女\n親家，等老孫做個保親，沙僧做個媒人。也不必看通書，今朝是個天恩上吉日，\n你來拜了師父，進去做了女婿罷。」八戒道：「弄不成，弄不成，那裏好幹這個",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+      }
+    ],
+    "relationships": [
+      {
+        "chapterNumber": 8,
+        "rawLine": 1910,
+        "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+      },
+      {
+        "chapterNumber": 14,
+        "rawLine": 3695,
+        "excerptTraditional": "做了和尚了。」龍王道：「做甚和尚？」行者道：「我虧了南海菩薩勸善，教我\n正果，隨東土唐僧上西方拜佛，皈依沙門，又喚為行者了。」龍王道：「這等真\n是可賀，可賀。這才叫做改邪歸正，懲創善心。既如此，怎麼不西去，復東回何",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+      },
+      {
+        "chapterNumber": 19,
+        "rawLine": 4994,
+        "excerptTraditional": "住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，\n你既入了沙門，做了和尚，從今後，再莫題起那『拙荊』的話說。世間只有個火\n居道士，那裏有個火居的和尚？我們且來敘了坐次，吃頓齋飯，趕早兒往西天走",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+      },
+      {
+        "chapterNumber": 20,
+        "rawLine": 5153,
+        "excerptTraditional": "簾洞居住。自小兒學做妖怪，稱名悟空。憑本事，做了一個齊天大聖。只因不受\n天錄，大反天宮，惹了一場災愆。如今脫難消災，轉拜沙門，前求正果。保我這\n唐朝駕下的師父，上西天拜佛走遭，怕甚麼山高路險，水闊波狂？我老孫也捉得",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5637,
+        "excerptTraditional": "第二二回     八戒大戰流沙河　木叉奉法收悟淨",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5858,
+        "excerptTraditional": "前迎接。那木叉與三藏禮畢，又與八戒相見。八戒道：「向蒙尊者指示，得見菩\n薩，我老豬果遵法教，今喜拜了沙門。這一向在途中奔碌，未及致謝，恕罪，恕\n罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5860,
+        "excerptTraditional": "罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道\n：「老孫見菩薩，備陳前事。菩薩說，這流沙河的妖怪，乃是捲簾大將臨凡，因\n為在天有罪，墮落此河，忘形作怪。他曾被菩薩勸化，願歸師父往西天去的。但",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5865,
+        "excerptTraditional": "速一行。」那木叉捧定葫蘆，半雲半霧，徑到了流沙河水面上，厲聲高叫道：\n「悟淨，悟淨，取經人在此久矣，你怎麼還不歸順？」",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5871,
+        "excerptTraditional": "「我師未來，先差我來吩咐你早跟唐僧做個徒弟。叫把你項下掛的骷髏與這個葫\n蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5872,
+        "excerptTraditional": "蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的\n個潑物，與我整鬥了這兩日，何曾言著一個取經的字兒？」又看見行者，道：",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5877,
+        "excerptTraditional": "那悟淨才收了寶杖，整一整黃錦直裰，跳上岸來，對唐僧雙膝跪下道：「師父，\n弟子有眼無珠，不認得師父的尊容，多有沖撞，萬望恕罪。」八戒道：「你這膿",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      },
+      {
+        "chapterNumber": 22,
+        "rawLine": 5881,
+        "excerptTraditional": "，還是我們不曾說出取經的事情與姓名耳。」長老道：「你果肯誠心皈依吾教麼\n？」悟淨道：「弟子向蒙菩薩教化，指沙為姓，與我起個法名，喚做沙悟淨，豈\n有不從師父之理？」三藏道：「既如此，」叫：「悟空，取戒刀來，與他落了髮",
+        "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+      }
+    ]
+  },
+  "earlyMentions": [
+    {
+      "chapterNumber": 8,
+      "rawLine": 1910,
+      "excerptTraditional": "怪物聞言，連聲喏喏，收了寶杖。讓木叉揪了去見觀音，納頭下拜，告道：「菩\n薩，恕我之罪，待我訴告：我不是妖邪，我是靈霄殿下侍鑾輿的捲簾大將。只因\n在蟠桃會上失手打碎了玻璃盞，玉帝把我打了八百，貶下界來，變得這般模樣。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "rawLine": 1923,
+      "excerptTraditional": "怪物道：「既然如此，願領教誨。」菩薩方與他摩頂受戒，指沙為姓，就姓了沙\n﹔起個法名，叫做個沙悟淨。當時入了沙門，送菩薩過了河，他洗心滌慮，再不\n傷生，專等取經人。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "rawLine": 2495,
+      "excerptTraditional": "違遲君命，只得急急整衣束帶，同旨入朝，在御前叩頭請罪。唐王道：「赦卿無\n罪。」那時諸臣尚未退朝，至此，卻命捲簾散朝。獨留魏徵，宣上金鑾，召入便\n殿，先議論安邦之策，定國之謀。將近巳末午初時候，卻命宮人：「取過大棋來",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-010.txt"
+    },
+    {
+      "chapterNumber": 12,
+      "rawLine": 2987,
+      "excerptTraditional": "復謁當今受主恩，凌煙閣上賢名響。\n　　　　恩官不受願為僧，洪福沙門將道訪。\n　　　　小字江流古佛兒，法名喚做陳玄奘。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "rawLine": 3508,
+      "excerptTraditional": "，與你做個徒弟。」三藏聞言，滿心歡喜道：「你雖有此善心，又蒙菩薩教誨，\n願入沙門，只是我又沒斧鑿，如何救得你出？」那猴道：「不用斧鑿，你但肯救\n我，我自出來也。」三藏道：「我自救你，你怎得出來？」那猴道：「這山頂上",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "rawLine": 3533,
+      "excerptTraditional": "三藏見他意思，實有好心，真個像沙門中的人物，便叫：「徒弟呵，你姓甚麼？」\n猴王道：「我姓孫。」三藏道：「我與你起個法名，卻好呼喚。」猴王道：「不",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "rawLine": 3660,
+      "excerptTraditional": "多少人。假似你說這般到官，倒也得些狀告是。」三藏道：「只因你沒收沒管，\n暴橫人間，欺天誑上，才受這五百年前之難。今既入了沙門，若是還像當時行兇\n，一味傷生，去不得西天，做不得和尚。忒惡！忒惡！」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "rawLine": 3695,
+      "excerptTraditional": "做了和尚了。」龍王道：「做甚和尚？」行者道：「我虧了南海菩薩勸善，教我\n正果，隨東土唐僧上西方拜佛，皈依沙門，又喚為行者了。」龍王道：「這等真\n是可賀，可賀。這才叫做改邪歸正，懲創善心。既如此，怎麼不西去，復東回何",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "rawLine": 4994,
+      "excerptTraditional": "住老高道：「爺，請我拙荊出來拜見公公、伯伯，如何？」行者笑道：「賢弟，\n你既入了沙門，做了和尚，從今後，再莫題起那『拙荊』的話說。世間只有個火\n居道士，那裏有個火居的和尚？我們且來敘了坐次，吃頓齋飯，趕早兒往西天走",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5153,
+      "excerptTraditional": "簾洞居住。自小兒學做妖怪，稱名悟空。憑本事，做了一個齊天大聖。只因不受\n天錄，大反天宮，惹了一場災愆。如今脫難消災，轉拜沙門，前求正果。保我這\n唐朝駕下的師父，上西天拜佛走遭，怕甚麼山高路險，水闊波狂？我老孫也捉得",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "rawLine": 5351,
+      "excerptTraditional": "三五年前歸正宗，持齋把素悟真空。\n　　　　誠心要保唐三藏，初秉沙門立此功。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5637,
+      "excerptTraditional": "第二二回     八戒大戰流沙河　木叉奉法收悟淨",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5665,
+      "excerptTraditional": "河岸，各逞英雄。這一場好鬥：\n九齒鈀，降妖杖，二人相敵河岸上。這個是總督大天蓬，那個是謫下捲簾將。昔\n年曾會在靈霄，今日爭持賭猛壯。這一個鈀去探爪龍，那一個杖架磨牙象。伸開",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5713,
+      "excerptTraditional": "三千功滿拜天顏，志心朝禮明華向。\n　　　　玉皇大帝便加陞，親口封為捲簾將。\n　　　　南天門裏我為尊，靈霄殿前吾稱上。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5735,
+      "excerptTraditional": "各人踏浪登波。這一場賭鬥，比前不同，你看那：\n捲簾將，天蓬帥，各顯神通真可愛。那個降妖寶杖著頭輪，這個九齒釘鈀隨手快\n。躍浪振山川，推波昏世界。兇如太歲撞幢幡，惡似喪門掀寶蓋。這一個赤心凜",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5792,
+      "excerptTraditional": "也曾護駕宴蟠桃，也曾隨朝居上界。\n　　　　值殿曾經眾聖參，捲簾曾見諸仙拜。\n　　　　養成靈性一神兵，不是人間凡器械。",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5841,
+      "excerptTraditional": "父渡河。水裏事，我又弄不得精細。只是悟能尋著他窩巢，與他打話，想是不曾\n說出取經的勾當。」菩薩道：「那流沙河的妖怪，乃是捲簾大將臨凡，也是我勸\n化的善信，教他保護取經之輩。你若肯說出是東土取經人時，他決不與你爭持，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5845,
+      "excerptTraditional": "歸順？我師如何得渡弱水？」菩薩即喚惠岸，袖中取出一個紅葫蘆兒，吩咐道：\n「你可將此葫蘆，同孫悟空到流沙河水面上，只叫『悟淨』，他就出來了。先要\n引他歸依了唐僧。然後把他那九個骷髏穿在一處，按九宮佈列，卻把這葫蘆安在",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5858,
+      "excerptTraditional": "前迎接。那木叉與三藏禮畢，又與八戒相見。八戒道：「向蒙尊者指示，得見菩\n薩，我老豬果遵法教，今喜拜了沙門。這一向在途中奔碌，未及致謝，恕罪，恕\n罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5860,
+      "excerptTraditional": "罪。」行者道：「且莫敘闊，我們叫喚那廝去來。」三藏道：「叫誰？」行者道\n：「老孫見菩薩，備陳前事。菩薩說，這流沙河的妖怪，乃是捲簾大將臨凡，因\n為在天有罪，墮落此河，忘形作怪。他曾被菩薩勸化，願歸師父往西天去的。但",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5865,
+      "excerptTraditional": "速一行。」那木叉捧定葫蘆，半雲半霧，徑到了流沙河水面上，厲聲高叫道：\n「悟淨，悟淨，取經人在此久矣，你怎麼還不歸順？」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5871,
+      "excerptTraditional": "「我師未來，先差我來吩咐你早跟唐僧做個徒弟。叫把你項下掛的骷髏與這個葫\n蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5872,
+      "excerptTraditional": "蘆，按九宮結做一隻法船，渡他過此弱水。」悟淨道：「取經人卻在那裏？」木\n叉用手指道：「那東岸上坐的不是？」悟淨看見了八戒道：「他不知是那裏來的\n個潑物，與我整鬥了這兩日，何曾言著一個取經的字兒？」又看見行者，道：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5877,
+      "excerptTraditional": "那悟淨才收了寶杖，整一整黃錦直裰，跳上岸來，對唐僧雙膝跪下道：「師父，\n弟子有眼無珠，不認得師父的尊容，多有沖撞，萬望恕罪。」八戒道：「你這膿",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5881,
+      "excerptTraditional": "，還是我們不曾說出取經的事情與姓名耳。」長老道：「你果肯誠心皈依吾教麼\n？」悟淨道：「弟子向蒙菩薩教化，指沙為姓，與我起個法名，喚做沙悟淨，豈\n有不從師父之理？」三藏道：「既如此，」叫：「悟空，取戒刀來，與他落了髮",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5884,
+      "excerptTraditional": "。」大聖依言，即將戒刀與他剃了頭。又來拜了三藏，拜了行者與八戒，分了大\n小。三藏見他行禮真像個和尚家風，故又叫他做沙和尚。木叉道：「既秉了迦持\n，不必絮煩，早與作法船去來。」",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5887,
+      "excerptTraditional": "那悟淨不敢怠慢，即將頸項下掛的骷髏取下，用索子結作九宮，把菩薩葫蘆安在\n當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "rawLine": 5889,
+      "excerptTraditional": "當中，請師父下岸。那長老遂登法船，坐於上面，果然穩似輕舟。左有八戒扶持\n，右有悟淨捧托﹔孫行者在後面牽了龍馬，半雲半霧相跟﹔頭直上又有木叉擁護\n。那師父才飄然穩渡流沙河界，浪靜風平過弱河。真個也如飛似箭，不多時，身",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5925,
+      "excerptTraditional": "，二則養養精神，才是個道理。」行者道：「獃子，你這般言語，似有報怨之心\n。還像在高老莊倚懶不求福的自在，恐不能也。既是秉正沙門，須是要吃辛受苦\n，才做得徒弟哩。」八戒道：「哥哥，你看這擔行李多重？」行者道：「兄弟，",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5927,
+      "excerptTraditional": "，才做得徒弟哩。」八戒道：「哥哥，你看這擔行李多重？」行者道：「兄弟，\n自從有了你與沙僧，我又不曾挑著，那知多重？」八戒道：「哥呵，你看看數兒\n麼：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5934,
+      "excerptTraditional": "。」行者笑道：「獃子，你和誰說哩？」八戒道：「哥哥，與你說哩。」行者道\n：「錯和我說了。老孫只管師父好歹，你與沙僧專管行李、馬匹。但若怠慢了些\n兒，孤拐上先是一頓粗棍。」八戒道：「哥呵，不要說打，打就是以力欺人。我",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5943,
+      "excerptTraditional": "項下珠，才變做這匹馬，願馱師父往西天拜佛。這個都是各人的功果，你莫攀他\n。」那沙僧聞言道：「哥哥，真個是龍麼？」行者道：「是龍。」八戒道：「哥\n呵，我聞得古人云：龍能噴雲噯霧，播土揚沙﹔有巴山嶺的手段，有翻江攪海的",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5955,
+      "excerptTraditional": "那師父正按轡徐觀，又見悟空兄弟方到。悟淨道：「師父不曾跌下馬來麼？」長\n老罵道：「悟空這潑猴，他把馬兒驚了，早是我還騎得住哩。」行者陪笑道：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5964,
+      "excerptTraditional": "長老連忙下馬。見一座門樓，乃是垂蓮象鼻，畫棟雕梁。沙僧歇了擔子，八戒牽\n了馬匹道：「這個人家，是過當的富實之家。」行者就要進去，三藏道：「不可",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5967,
+      "excerptTraditional": "，你我出家人，各自避些嫌疑，切莫擅入。且自等他有人出來，以禮求宿，方可\n。」八戒拴了馬，斜倚牆根之下﹔三藏坐在石鼓上﹔行者、沙僧坐在臺基邊。久\n無人出，行者性急，跳起身入門裏看處，原來有向南的三間大廳，簾櫳高控。屏",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 5977,
+      "excerptTraditional": "檀府，告借一宵。」那婦人笑語相迎道：「長老，那三位在那裏？請來。」行者\n高聲叫道：「師父，請進來耶。」三藏才與八戒、沙僧牽馬挑擔而入，只見那婦\n人出廳迎接。八戒餳眼偷看，你道他怎生打扮：",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 6035,
+      "excerptTraditional": "幹那般事，教八戒在這裏罷。」八戒道：「哥呵，不要栽人麼，大家從長計較。」\n三藏道：「你兩個不肯，便教悟淨在這裏罷。」沙僧道：「你看師父說的話。弟\n子蒙菩薩勸化，受了戒行，等候師父。自蒙師父收了我，又承教誨，跟著師父還",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 6046,
+      "excerptTraditional": "悟淨道：「二哥，你在他家做個女婿罷。」八戒道：「兄弟，不要栽人，從長計\n較。」行者道：「計較甚的？你要肯，便就教師父與那婦人做個親家，你就做個",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 6050,
+      "excerptTraditional": "落些受用，你在此間還俗，卻不是兩全其美？」八戒道：「話便也是這等說，卻\n只是我脫俗又還俗，停妻再娶妻了。」沙僧道：「二哥原來是有嫂子的？」行者\n道：「你還不知他哩。他本是烏斯藏高老兒莊高太公的女婿，因被老孫降了。他",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    },
+    {
+      "chapterNumber": 23,
+      "rawLine": 6060,
+      "excerptTraditional": "那獃子虎急急的解了韁繩，拉出馬去。行者道：「沙僧，你且陪師父坐這裏，等\n老孫跟他去，看他往那裏放馬。」三藏道：「悟空，你看便去看他，但只不可只",
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-023.txt"
+    }
+  ]
+}
