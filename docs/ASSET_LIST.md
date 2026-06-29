@@ -6,6 +6,12 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 但不提前生成全书资源。只生成大地图和三打白骨精 demo 所需核心包，开发中允许替换更好的版本。
 
+当前已有 v1 资源见：
+
+- `public/assets/README.md`
+- `public/assets/map/ASSET_QA.md`
+- `public/assets/chapters/027/ASSET_QA.md`
+
 ## 2. 大地图资源
 
 必需：

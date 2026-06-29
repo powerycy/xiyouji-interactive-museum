@@ -2,22 +2,33 @@
 
 本目录用于放置开发和运行时使用的实际美术资源。
 
-当前仓库只建立目录和资源路径约定，不放纯占位图。MVP 开发前应按 `docs/ASSET_LIST.md` 与 `docs/assets/CHAPTER_027_ASSET_PROMPTS.md` 生成真实资源。
+当前仓库已生成一批可用于 MVP 开发的真实 v1 资源。后续可以替换为更高分辨率或更严格考据版本。
 
-## 必需资源
+## 当前推荐开发用资源
 
-- `map/journey-map.jpg`
+- `map/journey-map-v2.png`
+- `chapters/027/cover-v1.png`
+- `chapters/027/scenes/baihuling-main-v1.png`
+- `chapters/027/characters/sun-wukong-v1.png`
+- `chapters/027/characters/tang-seng-v1.png`
+- `chapters/027/characters/zhu-bajie-v1.png`
+- `chapters/027/characters/sha-seng-v1.png`
+- `chapters/027/characters/baigu-furen-v1.png`
+- `chapters/027/rewards/baihuling-360-v1.png`
+- `badges/chapter-027-locked-v1.png`
+- `badges/chapter-027-unlocked-v1.png`
+
+QA 说明：
+
+- `map/ASSET_QA.md`
+- `chapters/027/ASSET_QA.md`
+
+## 仍需补齐资源
+
 - `map/nodes/baihuling.jpg`
-- `chapters/027/cover.jpg`
-- `chapters/027/scenes/baihuling-main.jpg`
-- `chapters/027/characters/sun-wukong.jpg`
-- `chapters/027/characters/tang-seng.jpg`
-- `chapters/027/characters/zhu-bajie.jpg`
-- `chapters/027/characters/sha-seng.jpg`
-- `chapters/027/characters/baigu-furen.jpg`
-- `chapters/027/rewards/baihuling-360.jpg`
-- `badges/chapter-027-locked.png`
-- `badges/chapter-027-unlocked.png`
+- `map/nodes/locked-preview-*.jpg`
+- 单枚裁切版 `badges/chapter-027-locked.png`
+- 单枚裁切版 `badges/chapter-027-unlocked.png`
 
 ## 风格测试
 

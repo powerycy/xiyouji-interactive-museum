@@ -15,14 +15,21 @@
     "rawLineEnd": 7247
   },
   "assets": {
-    "cover": "/assets/chapters/027/cover.jpg",
-    "mainScene": "/assets/chapters/027/scenes/baihuling-main.jpg"
+    "cover": "/assets/chapters/027/cover-v1.png",
+    "mainScene": "/assets/chapters/027/scenes/baihuling-main-v1.png",
+    "characters": {
+      "sunWukong": "/assets/chapters/027/characters/sun-wukong-v1.png",
+      "tangSeng": "/assets/chapters/027/characters/tang-seng-v1.png",
+      "zhuBajie": "/assets/chapters/027/characters/zhu-bajie-v1.png",
+      "shaSeng": "/assets/chapters/027/characters/sha-seng-v1.png",
+      "baiguFuren": "/assets/chapters/027/characters/baigu-furen-v1.png"
+    }
   },
   "scene": {
     "id": "baihuling-main",
     "title": "白虎岭",
-    "image": "/assets/chapters/027/scenes/baihuling-main.jpg",
-    "coordinateStatus": "draft-before-final-art",
+    "image": "/assets/chapters/027/scenes/baihuling-main-v1.png",
+    "coordinateStatus": "needs-studio-calibration-for-baihuling-main-v1",
     "hotspots": [
       {
         "id": "hotspot-baihuling",
@@ -354,7 +361,7 @@
     "id": "reward-027-baihuling",
     "title": "白虎岭全景",
     "type": "panorama",
-    "src": "/assets/chapters/027/rewards/baihuling-360.jpg",
+    "src": "/assets/chapters/027/rewards/baihuling-360-v1.png",
     "thumbnail": "/assets/chapters/027/rewards/baihuling-360-thumb.jpg",
     "fallback": {
       "type": "video",
@@ -365,8 +372,8 @@
   "badge": {
     "id": "badge-027",
     "title": "白虎岭",
-    "lockedImage": "/assets/badges/chapter-027-locked.png",
-    "unlockedImage": "/assets/badges/chapter-027-unlocked.png",
+    "lockedImage": "/assets/badges/chapter-027-locked-v1.png",
+    "unlockedImage": "/assets/badges/chapter-027-unlocked-v1.png",
     "unlockCondition": "complete-minigame-and-view-reward"
   },
   "nextUnlock": {
