@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "id": "chapter-027",
+  "title": "三打白骨精",
+  "originalTitle": "屍魔三戲唐三藏　聖僧恨逐美猴王",
+  "chapterNumber": 27,
+  "mapNodeId": "baihuling",
+  "status": "available",
+  "explorationThreshold": 70,
+  "source": {
+    "work": "西遊記",
+    "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+    "processedFile": "data/processed/xiyouji/chapter-027.txt",
+    "rawLineStart": 6988,
+    "rawLineEnd": 7247
+  },
+  "assets": {
+    "cover": "/assets/chapters/027/cover.jpg",
+    "mainScene": "/assets/chapters/027/scenes/baihuling-main.jpg"
+  },
+  "scene": {
+    "id": "baihuling-main",
+    "title": "白虎岭",
+    "image": "/assets/chapters/027/scenes/baihuling-main.jpg",
+    "coordinateStatus": "draft-before-final-art",
+    "hotspots": [
+      {
+        "id": "hotspot-baihuling",
+        "type": "location",
+        "title": "白虎岭山路",
+        "position": { "x": 42, "y": 58 },
+        "radius": 8,
+        "labelIds": ["label-027-baihuling"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-sun-wukong",
+        "type": "character",
+        "title": "孙悟空",
+        "position": { "x": 32, "y": 61 },
+        "radius": 7,
+        "labelIds": ["label-027-wukong-eyes", "label-027-final-kill"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-tang-seng",
+        "type": "character",
+        "title": "唐僧",
+        "position": { "x": 49, "y": 62 },
+        "radius": 7,
+        "labelIds": ["label-027-hunger", "label-027-curse-banish"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-zhu-bajie",
+        "type": "character",
+        "title": "猪八戒",
+        "position": { "x": 58, "y": 65 },
+        "radius": 7,
+        "labelIds": ["label-027-bajie-instigation"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-sha-seng",
+        "type": "character",
+        "title": "沙僧",
+        "position": { "x": 66, "y": 65 },
+        "radius": 6,
+        "labelIds": ["label-027-sha-seng"],
+        "isKey": false
+      },
+      {
+        "id": "hotspot-baigu-furen",
+        "type": "character",
+        "title": "白骨夫人",
+        "position": { "x": 72, "y": 48 },
+        "radius": 8,
+        "labelIds": ["label-027-demon-motive", "label-027-final-kill"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-food",
+        "type": "object",
+        "title": "青砂罐与绿磁瓶",
+        "position": { "x": 69, "y": 69 },
+        "radius": 6,
+        "labelIds": ["label-027-first-disguise"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-jingubang",
+        "type": "object",
+        "title": "金箍棒",
+        "position": { "x": 28, "y": 66 },
+        "radius": 5,
+        "labelIds": ["label-027-wukong-eyes", "label-027-final-kill"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-jinguzhou",
+        "type": "object",
+        "title": "紧箍咒",
+        "position": { "x": 50, "y": 47 },
+        "radius": 5,
+        "labelIds": ["label-027-curse-banish"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-old-woman",
+        "type": "event",
+        "title": "第二次变化：老妇人",
+        "position": { "x": 79, "y": 57 },
+        "radius": 6,
+        "labelIds": ["label-027-second-disguise"],
+        "isKey": true
+      },
+      {
+        "id": "hotspot-old-man",
+        "type": "event",
+        "title": "第三次变化：老公公",
+        "position": { "x": 83, "y": 50 },
+        "radius": 6,
+        "labelIds": ["label-027-third-disguise"],
+        "isKey": true
+      }
+    ]
+  },
+  "labels": [
+    {
+      "id": "label-027-baihuling",
+      "title": "白虎岭：险山生怪",
+      "type": "location",
+      "source": { "chapterNumber": 27, "rawLineStart": 6994, "rawLineEnd": 7009 },
+      "originalTraditional": "峰巖重疊，澗壑彎環。虎狼成陣走，麂鹿作群行。無數獐鑽簇簇，滿山狐兔聚叢叢。千尺大蟒，萬丈長蛇。大蟒噴愁霧，長蛇吐怪風。",
+      "plainSimplified": "这一段先把白虎岭写成险恶之地：山峰重叠、沟壑弯曲，猛兽成群，蟒蛇吐雾生风。它不是普通山路，而是妖怪容易潜伏的荒山险境。",
+      "explorationWeight": 8,
+      "requiredForGame": false,
+      "relatedIds": ["hotspot-baihuling"]
+    },
+    {
+      "id": "label-027-hunger",
+      "title": "唐僧饥饿，悟空离队",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7012, "rawLineEnd": 7030 },
+      "originalTraditional": "三藏道：「悟空，我這一日，肚中饑了，你去那裏化些齋吃。」行者陪笑道：「師父好不聰明。這等半山之中，前不巴村，後不著店，有錢也沒買處，教往那裏尋齋？」",
+      "plainSimplified": "唐僧肚饿，让悟空去化斋。悟空指出这里前不着村、后不着店，根本难找食物。正因为悟空离开去摘桃，白骨精才有机会接近唐僧。",
+      "explorationWeight": 8,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-tang-seng"]
+    },
+    {
+      "id": "label-027-demon-motive",
+      "title": "妖怪为何盯上唐僧",
+      "type": "character",
+      "source": { "chapterNumber": 27, "rawLineStart": 7031, "rawLineEnd": 7041 },
+      "originalTraditional": "他在雲端裏踏著陰風，看見長老坐在地下，就不勝歡喜道：「造化，造化。幾年家人都講東土的唐和尚取大乘，他本是金蟬子化身，十世修行的原體，有人吃他一塊肉，長壽長生。」",
+      "plainSimplified": "白骨精看见唐僧后大喜，因为她知道唐僧是金蝉子化身，传说吃他一块肉可以长寿长生。这就是她三次变化、反复接近唐僧的动机。",
+      "explorationWeight": 8,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-baigu-furen"]
+    },
+    {
+      "id": "label-027-first-disguise",
+      "title": "第一次变化：送斋女子",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7042, "rawLineEnd": 7094 },
+      "originalTraditional": "好妖精，停下陰風，在那山凹裏搖身一變，變做個月貌花容的女兒。左手提著一個青砂罐兒，右手提著一個綠磁瓶兒，從西向東，徑奔唐僧。",
+      "plainSimplified": "白骨精第一次变成漂亮女子，手里提着饭罐和瓶子，假装来斋僧。她利用唐僧饥饿和八戒贪吃的弱点，制造接近唐僧的机会。",
+      "explorationWeight": 12,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-food", "hotspot-baigu-furen"]
+    },
+    {
+      "id": "label-027-wukong-eyes",
+      "title": "火眼金睛识破妖精",
+      "type": "character",
+      "source": { "chapterNumber": 27, "rawLineStart": 7095, "rawLineEnd": 7114 },
+      "originalTraditional": "只見那行者自南山頂上摘了幾個桃子，托著缽盂，一觔斗，點將回來，睜火眼金睛觀看，認得那女子是個妖精，放下缽盂，掣鐵棒，當頭就打。",
+      "plainSimplified": "悟空摘桃回来后，用火眼金睛看出女子其实是妖精，于是立刻放下钵盂，拿出铁棒要打。这里体现了悟空判断准确，但行动方式直接，也埋下师徒冲突。",
+      "explorationWeight": 9,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-sun-wukong", "hotspot-jingubang"]
+    },
+    {
+      "id": "label-027-bajie-instigation",
+      "title": "八戒挑唆唐僧",
+      "type": "character",
+      "source": { "chapterNumber": 27, "rawLineStart": 7119, "rawLineEnd": 7132 },
+      "originalTraditional": "怎禁豬八戒氣不忿，在傍漏八分兒唆嘴道：「師父，說起這個女子，他是此間農婦，因為送飯下田，路遇我等，卻怎麼栽他是個妖怪？」",
+      "plainSimplified": "悟空打倒假尸后，饭菜现出蛆虫和青蛙，唐僧已有几分相信。但八戒在旁边挑唆，说这是悟空怕念咒而变出的障眼法，使唐僧再次动摇。",
+      "explorationWeight": 9,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-zhu-bajie"]
+    },
+    {
+      "id": "label-027-second-disguise",
+      "title": "第二次变化：寻女老妇",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7148, "rawLineEnd": 7186 },
+      "originalTraditional": "好妖精，按落陰雲，在那前山坡下搖身一變，變作個老婦人，年滿八旬，手拄著一根彎頭竹杖，一步一聲的哭著走來。",
+      "plainSimplified": "白骨精第二次变成八旬老妇，假装来寻找被打死的女儿。这个变化是接着第一次骗局设计的，让唐僧更相信悟空误伤平民。",
+      "explorationWeight": 9,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-old-woman"]
+    },
+    {
+      "id": "label-027-third-disguise",
+      "title": "第三次变化：念经老公公",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7187, "rawLineEnd": 7213 },
+      "originalTraditional": "好妖精，按聳陰風，在山坡下搖身一變，變做一個老公公。白髮如彭祖，蒼髯賽壽星。耳中鳴玉磬，眼裏幌金星。",
+      "plainSimplified": "白骨精第三次变成老公公，继续补全“女儿、母亲、父亲”这一家人的假象。她每次变化都围绕同一个骗局加深唐僧的误判。",
+      "explorationWeight": 10,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-old-man"]
+    },
+    {
+      "id": "label-027-final-kill",
+      "title": "白骨夫人现出本相",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7214, "rawLineEnd": 7225 },
+      "originalTraditional": "卻是一堆粉骷髏在那裏。唐僧大驚道：「悟空，這個人才死了，怎麼就化作一堆骷髏？」行者道：「他是個潛靈作怪的僵尸，在此迷人敗本，被我打殺，他就現了本相。他那脊梁上有一行字，叫做『白骨夫人』。」",
+      "plainSimplified": "悟空第三次打倒妖魔后，地上显出一堆粉骷髅，脊梁上有“白骨夫人”字样。到这里，原文明确交代她的妖怪本相。",
+      "explorationWeight": 12,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-baigu-furen", "hotspot-sun-wukong"]
+    },
+    {
+      "id": "label-027-curse-banish",
+      "title": "唐僧写下贬书",
+      "type": "event",
+      "source": { "chapterNumber": 27, "rawLineStart": 7225, "rawLineEnd": 7244 },
+      "originalTraditional": "唐僧見他言言語語，越添惱怒，滾鞍下馬來，叫沙僧包袱內取出紙筆，即於澗下取水，石上磨墨，寫了一紙貶書，遞於行者道：「猴頭，執此為照，再不要你做徒弟了。」",
+      "plainSimplified": "虽然白骨夫人已经现出本相，唐僧仍因八戒挑唆和对悟空连杀三人的恐惧，最终写下贬书，逐走悟空。这也是本回题目“圣僧恨逐美猴王”的落点。",
+      "explorationWeight": 12,
+      "requiredForGame": true,
+      "relatedIds": ["hotspot-tang-seng", "hotspot-jinguzhou"]
+    },
+    {
+      "id": "label-027-sha-seng",
+      "title": "沙僧的被动见证",
+      "type": "character",
+      "source": { "chapterNumber": 27, "rawLineStart": 7236, "rawLineEnd": 7242 },
+      "originalTraditional": "大聖跳起來，把身一抖，收上毫毛，卻又吩咐沙僧道：「賢弟，你是個好人，卻只要留心防著八戒詀言詀語，途中更要仔細。」",
+      "plainSimplified": "沙僧在本回不是冲突中心，但悟空临走前专门嘱咐他防着八戒搬弄是非、路上多加小心。这让沙僧成为师徒矛盾的见证者。",
+      "explorationWeight": 3,
+      "requiredForGame": false,
+      "relatedIds": ["hotspot-sha-seng"]
+    }
+  ],
+  "minigame": {
+    "id": "game-027-timeline",
+    "type": "timeline-evidence-match",
+    "title": "白虎岭真相时间线",
+    "unlockExplorationPercent": 70,
+    "copyStyle": "simplified-plain-chinese",
+    "instructions": "把事件卡拖到正确顺序，并为关键节点选择对应线索卡。游戏内容使用简体白话，证据来自你已经读过的展签。",
+    "eventCards": [
+      {
+        "id": "event-027-01",
+        "text": "唐僧在白虎岭饥饿，悟空离开去找食物。",
+        "correctOrder": 1,
+        "requiredEvidenceIds": ["evidence-027-hunger"]
+      },
+      {
+        "id": "event-027-02",
+        "text": "白骨精第一次变成送饭女子，试图接近唐僧。",
+        "correctOrder": 2,
+        "requiredEvidenceIds": ["evidence-027-first-disguise"]
+      },
+      {
+        "id": "event-027-03",
+        "text": "悟空回来后识破妖精，打倒她留下的假尸。",
+        "correctOrder": 3,
+        "requiredEvidenceIds": ["evidence-027-wukong-eyes"]
+      },
+      {
+        "id": "event-027-04",
+        "text": "八戒挑唆唐僧，说悟空是在用障眼法骗人。",
+        "correctOrder": 4,
+        "requiredEvidenceIds": ["evidence-027-bajie"]
+      },
+      {
+        "id": "event-027-05",
+        "text": "白骨精第二次变成老妇人，假装寻找女儿。",
+        "correctOrder": 5,
+        "requiredEvidenceIds": ["evidence-027-second-disguise"]
+      },
+      {
+        "id": "event-027-06",
+        "text": "白骨精第三次变成老公公，继续加深骗局。",
+        "correctOrder": 6,
+        "requiredEvidenceIds": ["evidence-027-third-disguise"]
+      },
+      {
+        "id": "event-027-07",
+        "text": "悟空打倒妖魔，白骨夫人现出骷髅本相。",
+        "correctOrder": 7,
+        "requiredEvidenceIds": ["evidence-027-final-kill"]
+      },
+      {
+        "id": "event-027-08",
+        "text": "唐僧写下贬书，逐走孙悟空。",
+        "correctOrder": 8,
+        "requiredEvidenceIds": ["evidence-027-banish"]
+      }
+    ],
+    "evidenceCards": [
+      {
+        "id": "evidence-027-hunger",
+        "text": "唐僧肚饿，悟空离队寻找食物。",
+        "sourceLabelId": "label-027-hunger"
+      },
+      {
+        "id": "evidence-027-first-disguise",
+        "text": "白骨精变成女子，提着青砂罐和绿磁瓶来见唐僧。",
+        "sourceLabelId": "label-027-first-disguise"
+      },
+      {
+        "id": "evidence-027-wukong-eyes",
+        "text": "悟空用火眼金睛认出女子是妖精。",
+        "sourceLabelId": "label-027-wukong-eyes"
+      },
+      {
+        "id": "evidence-027-bajie",
+        "text": "八戒说悟空是怕念咒，故意用障眼法骗人。",
+        "sourceLabelId": "label-027-bajie-instigation"
+      },
+      {
+        "id": "evidence-027-second-disguise",
+        "text": "妖精第二次变成八旬老妇，一路哭着走来。",
+        "sourceLabelId": "label-027-second-disguise"
+      },
+      {
+        "id": "evidence-027-third-disguise",
+        "text": "妖精第三次变成老公公，继续伪装成寻亲之人。",
+        "sourceLabelId": "label-027-third-disguise"
+      },
+      {
+        "id": "evidence-027-final-kill",
+        "text": "地上现出粉骷髅，脊梁上写着白骨夫人。",
+        "sourceLabelId": "label-027-final-kill"
+      },
+      {
+        "id": "evidence-027-banish",
+        "text": "唐僧取纸笔写下贬书，不再要悟空做徒弟。",
+        "sourceLabelId": "label-027-curse-banish"
+      }
+    ],
+    "successFeedback": "你已经还原了白虎岭这一难的关键顺序：妖怪三次设局，悟空三次识破，唐僧却在误判和挑唆中逐走悟空。",
+    "mistakeFeedback": "再看一眼事件之间的因果：悟空为什么离开？白骨精每次变化想补上哪一层骗局？唐僧为什么越来越不信悟空？"
+  },
+  "reward": {
+    "id": "reward-027-baihuling",
+    "title": "白虎岭全景",
+    "type": "panorama",
+    "src": "/assets/chapters/027/rewards/baihuling-360.jpg",
+    "thumbnail": "/assets/chapters/027/rewards/baihuling-360-thumb.jpg",
+    "fallback": {
+      "type": "video",
+      "src": "/assets/chapters/027/rewards/baihuling-ending.mp4",
+      "poster": "/assets/chapters/027/rewards/baihuling-ending-poster.jpg"
+    }
+  },
+  "badge": {
+    "id": "badge-027",
+    "title": "白虎岭",
+    "lockedImage": "/assets/badges/chapter-027-locked.png",
+    "unlockedImage": "/assets/badges/chapter-027-unlocked.png",
+    "unlockCondition": "complete-minigame-and-view-reward"
+  },
+  "nextUnlock": {
+    "nodeId": "heisonglin",
+    "stateAfterCompletion": "preview"
+  }
+}

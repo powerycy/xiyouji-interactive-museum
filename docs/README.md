@@ -15,11 +15,20 @@
 9. [AI_CONTENT_PIPELINE.md](./AI_CONTENT_PIPELINE.md)：AI 辅助内容生产与人工确认流程
 10. [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md)：开发任务拆解和验收顺序
 
+## 开发交接
+
+交给另一个对话开发时，优先让它读取：
+
+- [../HANDOFF.md](../HANDOFF.md)
+- [../content/chapters/chapter-027.seed.json](../content/chapters/chapter-027.seed.json)
+- [../content/map/map-nodes.seed.json](../content/map/map-nodes.seed.json)
+
 ## 原著来源
 
 原著文本已保存到：
 
 - [../data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt](../data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt)
 - [../data/raw/xiyouji/SOURCE.md](../data/raw/xiyouji/SOURCE.md)
+- [../data/processed/xiyouji/chapter-027.txt](../data/processed/xiyouji/chapter-027.txt)
 
 当前主源为 Project Gutenberg eBook #23962《西遊記》。项目内容必须以该文本为证据源，不使用影视、动画、漫画、网文或民间改编作为原著依据。

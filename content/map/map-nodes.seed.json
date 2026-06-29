@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "title": "取经大地图节点 Seed",
+  "coordinateSystem": "percentage",
+  "notes": [
+    "节点坐标为大地图开发前草案，需在真实大地图资源确定后通过 /studio 精修。",
+    "MVP 只有 chapter-027 完整开放，其他节点用于锁定或预览空壳。"
+  ],
+  "nodes": [
+    {
+      "id": "chang-an",
+      "name": "长安",
+      "chapterId": null,
+      "position": { "x": 12, "y": 64 },
+      "state": "completed",
+      "previewText": "取经故事的东土起点。MVP 中作为路线背景节点展示。",
+      "thumbnail": "/assets/map/nodes/chang-an.jpg"
+    },
+    {
+      "id": "wuzhuang-guan",
+      "name": "五庄观",
+      "chapterId": null,
+      "position": { "x": 36, "y": 49 },
+      "state": "preview",
+      "previewText": "前序章节节点，用于说明三打白骨精发生前师徒已离开五庄观。",
+      "thumbnail": "/assets/map/nodes/wuzhuang-guan.jpg"
+    },
+    {
+      "id": "baihuling",
+      "name": "白虎岭",
+      "chapterId": "chapter-027",
+      "position": { "x": 48, "y": 55 },
+      "state": "available",
+      "previewText": "屍魔三戲唐三藏，聖僧恨逐美猴王。",
+      "thumbnail": "/assets/map/nodes/baihuling.jpg"
+    },
+    {
+      "id": "heisonglin",
+      "name": "黑松林",
+      "chapterId": "chapter-028-preview",
+      "position": { "x": 57, "y": 50 },
+      "state": "locked",
+      "previewText": "完成白虎岭后解锁下一段预览。",
+      "thumbnail": "/assets/map/nodes/heisonglin.jpg",
+      "unlockRequirement": { "chapterCompleted": "chapter-027" }
+    },
+    {
+      "id": "baoxiangguo",
+      "name": "宝象国",
+      "chapterId": null,
+      "position": { "x": 66, "y": 57 },
+      "state": "locked",
+      "previewText": "后续章节预览节点。",
+      "thumbnail": "/assets/map/nodes/baoxiangguo.jpg"
+    },
+    {
+      "id": "chechiguo",
+      "name": "车迟国",
+      "chapterId": null,
+      "position": { "x": 76, "y": 45 },
+      "state": "locked",
+      "previewText": "后续可扩展为斗法章节。",
+      "thumbnail": "/assets/map/nodes/chechiguo.jpg"
+    },
+    {
+      "id": "nuer-guo",
+      "name": "女儿国",
+      "chapterId": null,
+      "position": { "x": 84, "y": 60 },
+      "state": "locked",
+      "previewText": "后续可扩展为成人重读向章节。",
+      "thumbnail": "/assets/map/nodes/nuer-guo.jpg"
+    },
+    {
+      "id": "lingshan",
+      "name": "灵山",
+      "chapterId": null,
+      "position": { "x": 93, "y": 38 },
+      "state": "locked",
+      "previewText": "取经终点。MVP 中仅作为远景目标。",
+      "thumbnail": "/assets/map/nodes/lingshan.jpg"
+    }
+  ]
+}
+
