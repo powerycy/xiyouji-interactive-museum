@@ -12,8 +12,9 @@
 6. [ART_DIRECTION.md](./ART_DIRECTION.md)：原创暗黑东方神魔漫画风美术规范
 7. [ASSET_LIST.md](./ASSET_LIST.md)：开发前需要生成的美术资源清单
 8. [assets/CHAPTER_027_ASSET_PROMPTS.md](./assets/CHAPTER_027_ASSET_PROMPTS.md)：三打白骨精 demo 核心美术生成提示词
-9. [AI_CONTENT_PIPELINE.md](./AI_CONTENT_PIPELINE.md)：AI 辅助内容生产与人工确认流程
-10. [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md)：开发任务拆解和验收顺序
+9. [assets/STYLE_TESTS.md](./assets/STYLE_TESTS.md)：首轮美术风格测试记录
+10. [AI_CONTENT_PIPELINE.md](./AI_CONTENT_PIPELINE.md)：AI 辅助内容生产与人工确认流程
+11. [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md)：开发任务拆解和验收顺序
 
 ## 开发交接
 

@@ -19,3 +19,14 @@
 - `badges/chapter-027-locked.png`
 - `badges/chapter-027-unlocked.png`
 
+## 风格测试
+
+当前已生成首轮风格测试图，保存于：
+
+- `style-tests/baihuling-main-style-test-01.png`
+- `style-tests/baigu-furen-style-test-01.png`
+- `style-tests/journey-map-style-test-01.png`
+
+说明见：
+
+- `docs/assets/STYLE_TESTS.md`
