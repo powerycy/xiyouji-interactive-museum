@@ -11,6 +11,7 @@
 - 三打白骨精 demo 的结构化 seed 数据已生成
 - 大地图 seed 节点已生成
 - 主角基础设定和大地图路线的全文证据候选已生成
+- 主角基础设定草案、第二七回角色状态草案、55 节点路线草案已生成
 
 ## 下一位开发者先读
 
@@ -24,14 +25,16 @@
 6. `docs/FULL_TEXT_EVIDENCE_WORKFLOW.md`
 7. `content/chapters/chapter-027.seed.json`
 8. `content/map/map-nodes.seed.json`
-9. `content/map/route-canon.candidates.json`
-10. `content/characters/sun-wukong.base.candidates.json`
-11. `content/characters/tang-seng.base.candidates.json`
-12. `content/characters/zhu-bajie.base.candidates.json`
-13. `content/characters/sha-seng.base.candidates.json`
-14. `content/characters/bailongma.base.candidates.json`
-15. `content/map/route-canon.seed.json`
-16. `docs/IMPLEMENTATION_PLAN.md`
+9. `content/map/route-canon.seed.json`
+10. `content/characters/sun-wukong.base.json`
+11. `content/characters/tang-seng.base.json`
+12. `content/characters/zhu-bajie.base.json`
+13. `content/characters/sha-seng.base.json`
+14. `content/characters/bailongma.base.json`
+15. `content/chapters/027/characters/sun-wukong.state.json`
+16. `content/map/route-canon.candidates.json`
+17. `docs/assets/CHAPTER_027_ASSET_PROMPTS.md`
+18. `docs/IMPLEMENTATION_PLAN.md`
 
 ## 核心约束
 
@@ -77,14 +80,18 @@
 - `data/processed/xiyouji/chapters/chapter-001.txt` 到 `chapter-100.txt`
 - `content/map/route-canon.candidates.json`
 - `content/characters/*.base.candidates.json`
+- `content/characters/*.base.json`
+- `content/chapters/027/characters/*.state.json`
+- `content/map/route-canon.seed.json`
 
 可复跑脚本：
 
 ```bash
 python3 scripts/extract_xiyouji_fulltext.py
+python3 scripts/build_xiyouji_curated_drafts.py
 ```
 
-路线开发时优先审核 `route-canon.candidates.json` 的 `priorityNodes`。`autoNodes` 只是补漏搜索池，可能有噪声，不能直接变成地图节点。
+路线开发时优先读取 `route-canon.seed.json`。需要追溯时审核 `route-canon.candidates.json` 的 `priorityNodes`。`autoNodes` 只是补漏搜索池，可能有噪声，不能直接变成地图节点。
 
 提示词见：
 
@@ -103,7 +110,7 @@ python3 scripts/extract_xiyouji_fulltext.py
 
 `map-nodes.seed.json` 是 MVP 演示节点，不是全书考据路线。正式大地图应以后续 `route-canon.seed.json` 的全书抽取结果为准。
 
-`*.base.candidates.json` 是人物证据候选，不是最终人物设定。正式美术资源生成前，需要从候选证据中整理出 `*.base.json`，再叠加章节状态。
+`*.base.json` 是第一版人物基础设定草案，已经比候选文件更适合开发和美术生产，但仍需人工复核。正式人物图必须叠加 `content/chapters/027/characters/*.state.json`。
 
 ## 验收目标
 

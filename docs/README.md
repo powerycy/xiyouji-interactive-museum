@@ -24,8 +24,10 @@
 - [../HANDOFF.md](../HANDOFF.md)
 - [../content/chapters/chapter-027.seed.json](../content/chapters/chapter-027.seed.json)
 - [../content/map/map-nodes.seed.json](../content/map/map-nodes.seed.json)
+- [../content/map/route-canon.seed.json](../content/map/route-canon.seed.json)
 - [../content/map/route-canon.candidates.json](../content/map/route-canon.candidates.json)
-- [../content/characters/sun-wukong.base.candidates.json](../content/characters/sun-wukong.base.candidates.json)
+- [../content/characters/sun-wukong.base.json](../content/characters/sun-wukong.base.json)
+- [../content/chapters/027/characters/sun-wukong.state.json](../content/chapters/027/characters/sun-wukong.state.json)
 
 ## 原著来源
 

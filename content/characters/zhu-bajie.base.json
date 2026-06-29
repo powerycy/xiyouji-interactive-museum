@@ -1,0 +1,87 @@
+{
+  "id": "zhu-bajie",
+  "name": "豬八戒",
+  "aliases": [
+    "天蓬元帥",
+    "豬剛鬣",
+    "豬悟能",
+    "悟能",
+    "豬八戒",
+    "八戒",
+    "獃子",
+    "老豬",
+    "淨壇使者"
+  ],
+  "status": "curated-draft-requires-human-review",
+  "sourceCandidates": "content/characters/zhu-bajie.base.candidates.json",
+  "identityArc": [
+    "原为天河里天蓬元帅。",
+    "因酒后戏弄嫦娥被贬下界，错投猪胎。",
+    "在福陵山云栈洞、高老庄作怪，后被收服。",
+    "受戒法名猪悟能，唐僧又称猪八戒。",
+    "取经途中挑担、涉水有功，功成净坛使者。"
+  ],
+  "appearanceEvidence": [
+    {
+      "chapterNumber": 18,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt",
+      "excerptTraditional": "初來時是一條黑胖漢，後來就變做一個長嘴大耳朵的獃子，腦後又有一溜鬃毛，身體粗糙怕人，頭臉就像個豬的模樣。",
+      "plainSimplified": "八戒基础外形是黑胖、长嘴大耳、脑后鬃毛、猪脸特征。"
+    }
+  ],
+  "clothingAndProps": [
+    "取经阶段多穿直裰，颜色可随章节出现青锦、皂锦等变化。",
+    "九齿钉钯为主要武器。",
+    "常挑担，承担行李负重。"
+  ],
+  "weaponsOrTools": [
+    "九齿钉钯",
+    "天罡数变化",
+    "挑担行李"
+  ],
+  "personality": [
+    "贪吃、怕苦、好色、爱抱怨，是喜剧性很强的角色。",
+    "战斗时有力，也常在关键时出力。",
+    "会退缩、分行李，但并非完全无用。",
+    "语言可市井、滑稽，但不要脱离原著。"
+  ],
+  "relationships": [
+    "师父：唐三藏。",
+    "师兄：孙悟空；师弟：沙悟净。",
+    "高老庄曾为高家女婿。",
+    "受观音劝善，归入取经队伍。"
+  ],
+  "canonicalEvidence": [
+    {
+      "chapterNumber": 8,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+      "note": "天蓬元帅被贬与猪悟能受戒。"
+    },
+    {
+      "chapterNumber": 18,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt",
+      "note": "高老庄外貌描述。"
+    },
+    {
+      "chapterNumber": 19,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt",
+      "note": "九齿钉钯、猪刚鬣和入队。"
+    },
+    {
+      "chapterNumber": 100,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+      "note": "功成净坛使者。"
+    }
+  ],
+  "visualPrinciples": [
+    "保留长嘴大耳、粗糙身体、鬃毛和黑胖感。",
+    "漫画化可以增强表情，但不能变成可爱宠物。",
+    "九齿钉钯和行李担是高频识别物。",
+    "体型应明显重于悟空、沙僧。"
+  ],
+  "avoid": [
+    "不要画成单纯粉色小猪。",
+    "不要弱化到完全不能战斗。",
+    "不要套用影视版固定服装比例。"
+  ]
+}

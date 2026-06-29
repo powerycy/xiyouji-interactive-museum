@@ -1,35 +1,2180 @@
 {
   "version": 1,
-  "status": "scaffold-pending-human-confirmation",
+  "status": "curated-draft-requires-human-review",
   "source": {
     "work": "西遊記",
-    "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt"
+    "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
+    "candidateFile": "content/map/route-canon.candidates.json"
   },
   "notes": [
-    "本文件用于保存从全书抽取并人工确认后的取经路线节点。",
-    "全文路线候选已生成到 content/map/route-canon.candidates.json。",
-    "当前只是结构骨架，不能作为最终路线地图依据。",
-    "正式大地图必须基于本文件的确认节点生成。"
+    "本文件是从 priorityNodes 整理出的正式路线草案，已经带有全文证据，但仍需人工考据确认。",
+    "routeOrder 是产品地图顺序草案，不等于真实地理距离。",
+    "phase 用于区分前史、队伍形成、取经劫难和佛土终点。",
+    "mapRole 用于 MVP 显示优先级；major 节点优先做视觉资源。"
   ],
   "schema": {
     "id": "string",
     "name": "string",
-    "aliases": ["string"],
+    "aliases": [
+      "string"
+    ],
     "routeOrder": "number",
+    "phase": "prelude|departure-and-team-formation|westward-trials|buddhist-land-and-return",
     "chapterStart": "number",
     "chapterEnd": "number",
     "locationType": "mountain|river|kingdom|cave|temple|monastery|heaven|buddhist-land|other",
-    "keyEvents": ["string"],
+    "keyEvents": [
+      "string"
+    ],
     "evidence": [
       {
         "chapterNumber": "number",
         "excerptTraditional": "string",
         "plainSimplified": "string",
-        "sourceFile": "string"
+        "sourceFile": "string",
+        "rawLine": "number"
       }
     ],
     "mapRole": "major|minor|preview|background",
-    "artNotes": "string"
+    "artNotes": "string",
+    "candidateStatus": "string"
   },
-  "nodes": []
+  "nodes": [
+    {
+      "id": "route-001",
+      "name": "花果山",
+      "aliases": [
+        "花果山"
+      ],
+      "routeOrder": 1,
+      "phase": "prelude",
+      "chapterStart": 1,
+      "chapterEnd": 7,
+      "locationType": "mountain",
+      "keyEvents": [
+        "悟空出生和群猴前史。",
+        "美猴王势力根基，后续多次回返。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "曰西牛賀洲，曰南贍部洲，曰北俱蘆洲。這部書單表東勝神洲。海外有一國土，\n名曰傲來國。國近大海，海中有一座名山，喚為花果山。此山乃十洲之祖脈，三\n島之來龍，自開清濁而立，鴻濛判後而成。真個好山！有詞賦為證。賦曰：勢鎮",
+          "plainSimplified": "原文证据显示“花果山”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 69
+        },
+        {
+          "chapterNumber": 2,
+          "excerptTraditional": "，滿眼墮淚道：「師父，教我往那裏去？」祖師道：「你從那裏來，便從那裏去\n就是了。」悟空頓然醒悟道：「我自東勝神洲傲來國花果山水簾洞來的。」祖師\n道：「你快回去，全你性命﹔若在此間，斷然不可。」悟空領罪，上告尊師：",
+          "plainSimplified": "原文证据显示“花果山”在第 2 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt",
+          "rawLine": 480
+        },
+        {
+          "chapterNumber": 3,
+          "excerptTraditional": "卻說那花果山大小猴兒，正在那洞門外頑耍，忽聽得風聲響處，見半空中丫丫叉\n叉，無邊無岸的猴精，諕得都亂跑亂躲。少時，美猴王按落雲頭，收了雲霧，將",
+          "plainSimplified": "原文证据显示“花果山”在第 3 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt",
+          "rawLine": 615
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-002",
+      "name": "水簾洞",
+      "aliases": [
+        "水簾洞"
+      ],
+      "routeOrder": 2,
+      "phase": "prelude",
+      "chapterStart": 1,
+      "chapterEnd": 7,
+      "locationType": "cave",
+      "keyEvents": [
+        "悟空发现洞天并成为猴王。",
+        "悟空旧居，真假猴王等事件也回到此处。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "看罷多時，跳過橋中間，左右觀看。只見正當中有一石碣，碣上有一行楷書大字\n，鐫著「花果山福地，水簾洞洞天」。",
+          "plainSimplified": "原文证据显示“水簾洞”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 125
+        },
+        {
+          "chapterNumber": 2,
+          "excerptTraditional": "，滿眼墮淚道：「師父，教我往那裏去？」祖師道：「你從那裏來，便從那裏去\n就是了。」悟空頓然醒悟道：「我自東勝神洲傲來國花果山水簾洞來的。」祖師\n道：「你快回去，全你性命﹔若在此間，斷然不可。」悟空領罪，上告尊師：",
+          "plainSimplified": "原文证据显示“水簾洞”在第 2 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-002.txt",
+          "rawLine": 480
+        },
+        {
+          "chapterNumber": 3,
+          "excerptTraditional": "留名！上仙留名！」猴王道：「你既認不得我，怎麼差人來勾我？」十王道：\n「不敢，不敢。想是差人差了。」猴王道：「我本是花果山水簾洞天生聖人孫悟\n空。你等是甚麼官位？」十王躬身道：「我等是陰間天子十代冥王。」悟空道：",
+          "plainSimplified": "原文证据显示“水簾洞”在第 3 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt",
+          "rawLine": 749
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-003",
+      "name": "靈臺方寸山",
+      "aliases": [
+        "靈臺方寸山",
+        "靈台方寸山"
+      ],
+      "routeOrder": 3,
+      "phase": "prelude",
+      "chapterStart": 1,
+      "chapterEnd": 2,
+      "locationType": "mountain",
+      "keyEvents": [
+        "悟空访道学仙。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "猴王道：「據你說起來，乃是一個行孝的君子，向後必有好處。但望你指與我那\n神仙住處，卻好拜訪去也。」樵夫道：「不遠，不遠。此山叫做靈臺方寸山，山\n中有座斜月三星洞，那洞中有一個神仙，稱名須菩提祖師。那祖師出去的徒弟，",
+          "plainSimplified": "原文证据显示“靈臺方寸山”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 245
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-004",
+      "name": "斜月三星洞",
+      "aliases": [
+        "斜月三星洞"
+      ],
+      "routeOrder": 4,
+      "phase": "prelude",
+      "chapterStart": 1,
+      "chapterEnd": 2,
+      "locationType": "cave",
+      "keyEvents": [
+        "菩提祖师传授悟空法名与本领。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "神仙住處，卻好拜訪去也。」樵夫道：「不遠，不遠。此山叫做靈臺方寸山，山\n中有座斜月三星洞，那洞中有一個神仙，稱名須菩提祖師。那祖師出去的徒弟，\n也不計其數，見今還有三四十人從他修行。你順那條小路兒，向南行七八里遠近",
+          "plainSimplified": "原文证据显示“斜月三星洞”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 246
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-005",
+      "name": "東海龍宮",
+      "aliases": [
+        "東海龍宮",
+        "龍宮"
+      ],
+      "routeOrder": 5,
+      "phase": "prelude",
+      "chapterStart": 3,
+      "chapterEnd": 3,
+      "locationType": "heaven",
+      "keyEvents": [
+        "悟空索取如意金箍棒和披挂。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 3,
+          "excerptTraditional": "月無影，入金石無礙﹔水不能溺，火不能焚。那些兒去不得？」四猴道：「大王\n既有此神通，我們這鐵板橋下，水通東海龍宮。大王若肯下去，尋著老龍王，問\n他要件甚麼兵器，卻不趁心？」悟空聞言，甚喜道：「等我去來。」",
+          "plainSimplified": "原文证据显示“東海龍宮”在第 3 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt",
+          "rawLine": 634
+        },
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "瑞靄漫天竺，虹光擁世尊。西方稱第一，無相法王門。常見玄猿獻果，麋鹿啣花\n﹔青鸞舞，彩鳳鳴﹔靈龜捧壽，仙鶴噙芝。安享淨土祗園，受用龍宮法界。日日\n花開，時時果熟。習靜歸真，參禪果正。不滅不生，不增不減。煙霞縹緲隨來往",
+          "plainSimplified": "原文证据显示“東海龍宮”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1805
+        },
+        {
+          "chapterNumber": 9,
+          "excerptTraditional": "卻說劉洪殺死的家僮屍首，順水流去。惟有陳光蕊的屍首，沉在水底不動。有洪\n江口巡海夜叉見了，星飛報入龍宮，正值龍王升殿，夜叉報道：「今洪江口不知\n甚人把一個讀書士子打死，將屍撇在水底。」龍王叫將屍抬來，放在面前，仔細",
+          "plainSimplified": "原文证据显示“東海龍宮”在第 9 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt",
+          "rawLine": 2087
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-006",
+      "name": "南天門",
+      "aliases": [
+        "南天門"
+      ],
+      "routeOrder": 6,
+      "phase": "prelude",
+      "chapterStart": 4,
+      "chapterEnd": 7,
+      "locationType": "other",
+      "keyEvents": [
+        "天界出入关口，大闹天宫前史节点。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "仁者玉皇大天尊玄穹高上帝，駕座金闕雲宮靈霄寶殿，聚集仙卿，見有金光燄燄\n，即命千里眼、順風耳開南天門觀看。二將果奉旨出門外，看的真，聽的明。須\n臾回報道：「臣奉旨觀聽金光之處，乃東勝神洲海東傲來小國之界，有一座花果",
+          "plainSimplified": "原文证据显示“南天門”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 85
+        },
+        {
+          "chapterNumber": 3,
+          "excerptTraditional": "金星領了旨，出南天門外，按下祥雲，直至花果山水簾洞，對眾小猴道：「我\n乃天差天使，有聖旨在此，請你大王上界。快快報知。」洞外小猴一層層傳至",
+          "plainSimplified": "原文证据显示“南天門”在第 3 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt",
+          "rawLine": 815
+        },
+        {
+          "chapterNumber": 4,
+          "excerptTraditional": "那太白金星與美猴王同出了洞天深處，一齊駕雲而起。原來悟空觔斗雲比眾不\n同，十分快疾，把個金星撇在腦後，先至南天門外。正欲收雲前進，被增長天\n王領著龐、劉、苟、畢、鄧、辛、張、陶一路大力天丁，槍刀劍戟，擋住天門",
+          "plainSimplified": "原文证据显示“南天門”在第 4 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-004.txt",
+          "rawLine": 837
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-007",
+      "name": "靈霄寶殿",
+      "aliases": [
+        "靈霄寶殿"
+      ],
+      "routeOrder": 7,
+      "phase": "prelude",
+      "chapterStart": 4,
+      "chapterEnd": 7,
+      "locationType": "heaven",
+      "keyEvents": [
+        "天宫权力中心，大闹天宫前史节点。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 1,
+          "excerptTraditional": "皆全。便就學爬學走，拜了四方。目運兩道金光，射沖斗府。驚動高天上聖大慈\n仁者玉皇大天尊玄穹高上帝，駕座金闕雲宮靈霄寶殿，聚集仙卿，見有金光燄燄\n，即命千里眼、順風耳開南天門觀看。二將果奉旨出門外，看的真，聽的明。須",
+          "plainSimplified": "原文证据显示“靈霄寶殿”在第 1 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+          "rawLine": 84
+        },
+        {
+          "chapterNumber": 4,
+          "excerptTraditional": "。玉簪珠履，紫綬金章。金鐘撞動，三曹神表進丹墀﹔天鼓鳴時，萬聖朝王參\n玉帝。又至那靈霄寶殿，金釘攢玉戶，彩鳳舞朱門。復道迴廊，處處玲瓏剔透\n﹔三簷四簇，層層龍鳳翱翔。上面有個紫巍巍，明幌幌，圓丟丟，亮灼灼，大",
+          "plainSimplified": "原文证据显示“靈霄寶殿”在第 4 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-004.txt",
+          "rawLine": 860
+        },
+        {
+          "chapterNumber": 6,
+          "excerptTraditional": "俱在此，迎著菩薩，即道玉帝煩惱，調遣天兵，擒怪未回等因。菩薩道：「我\n要見見玉帝，煩為轉奏。」天師丘弘濟即入靈霄寶殿，啟知宣入。時有太上老\n君在上，王母娘娘在後。",
+          "plainSimplified": "原文证据显示“靈霄寶殿”在第 6 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-006.txt",
+          "rawLine": 1329
+        }
+      ],
+      "mapRole": "background",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-008",
+      "name": "五行山",
+      "aliases": [
+        "五行山"
+      ],
+      "routeOrder": 8,
+      "phase": "prelude",
+      "chapterStart": 7,
+      "chapterEnd": 14,
+      "locationType": "mountain",
+      "keyEvents": [
+        "悟空被压五百年，后归入取经队伍。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 7,
+          "excerptTraditional": "第七回     八卦爐中逃大聖　五行山下定心猿",
+          "plainSimplified": "原文证据显示“五行山”在第 7 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt",
+          "rawLine": 1559
+        },
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "觔斗雲，一去十萬八千里。我與他打了個賭賽，他出不得我手，卻將他一把抓住\n，指化五行山，封壓他在那裏。玉帝大開金闕瑤宮，請我坐了首席，立安天大會\n謝我，卻方辭駕而回。」大眾聽言喜悅，極口稱揚。",
+          "plainSimplified": "原文证据显示“五行山”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1800
+        },
+        {
+          "chapterNumber": 14,
+          "excerptTraditional": "的必是那山腳下石匣中老猿。」太保道：「是他，是他。」三藏問：「是甚麼老\n猿？」太保道：「這山舊名五行山，因我大唐王征西定國，改名兩界山。先年間\n曾聞得老人家說：王莽篡漢之時，天降此山，下壓著一個神猴，不怕寒暑，不吃",
+          "plainSimplified": "原文证据显示“五行山”在第 14 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt",
+          "rawLine": 3488
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-009",
+      "name": "長安",
+      "aliases": [
+        "長安"
+      ],
+      "routeOrder": 9,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 8,
+      "chapterEnd": 13,
+      "locationType": "other",
+      "keyEvents": [
+        "唐僧受命取经，最后携经回东土。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "第八回     我佛造經傳極樂　觀音奉旨上長安",
+          "plainSimplified": "原文证据显示“長安”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1782
+        },
+        {
+          "chapterNumber": 9,
+          "excerptTraditional": "話表陝西大國長安城，乃歷代帝王建都之地。自周、秦、漢以來，三州花似錦，\n八水繞城流，真個是名勝之邦。彼時是大唐太宗皇帝登基，改元貞觀，已登極十",
+          "plainSimplified": "原文证据显示“長安”在第 9 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt",
+          "rawLine": 2031
+        },
+        {
+          "chapterNumber": 10,
+          "excerptTraditional": "且不題光蕊盡職，玄奘修行。卻說長安城外涇河岸邊，有兩個賢人：一個是漁翁\n，名喚張稍﹔一個是樵子，名喚李定。他兩個是不登科的進士，能識字的山人。",
+          "plainSimplified": "原文证据显示“長安”在第 10 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-010.txt",
+          "rawLine": 2277
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-010",
+      "name": "雙叉嶺",
+      "aliases": [
+        "雙叉嶺"
+      ],
+      "routeOrder": 10,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 13,
+      "chapterEnd": 13,
+      "locationType": "mountain",
+      "keyEvents": [
+        "雙叉嶺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 13,
+          "excerptTraditional": "第一三回     陷虎穴金星解厄　　雙叉嶺伯欽留僧",
+          "plainSimplified": "原文证据显示“雙叉嶺”在第 13 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-013.txt",
+          "rawLine": 3230
+        },
+        {
+          "chapterNumber": 99,
+          "excerptTraditional": "出城逢虎第五難。折從落坑第六難。\n　　　　雙叉嶺上第七難。兩界山頭第八難。\n　　　　陡澗換馬第九難。夜被火燒第十難。",
+          "plainSimplified": "原文证据显示“雙叉嶺”在第 99 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-099.txt",
+          "rawLine": 26409
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-011",
+      "name": "蛇盤山",
+      "aliases": [
+        "蛇盤山"
+      ],
+      "routeOrder": 11,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 15,
+      "chapterEnd": 15,
+      "locationType": "mountain",
+      "keyEvents": [
+        "蛇盤山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 15,
+          "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+          "plainSimplified": "原文证据显示“蛇盤山”在第 15 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt",
+          "rawLine": 3763
+        },
+        {
+          "chapterNumber": 75,
+          "excerptTraditional": "正此悽愴，忽想起：「菩薩當年在蛇盤山曾賜我三根救命毫毛，不知有無，且\n等我尋一尋看。」即伸手渾身摸了一把，只見腦後有三根毫毛，十分挺硬。忽",
+          "plainSimplified": "原文证据显示“蛇盤山”在第 75 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-075.txt",
+          "rawLine": 20240
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "原是流沙河作怪者，也蒙菩薩勸善，秉教沙門。那匹馬不是主公所賜者。”太宗\n道：“毛片相同，如何不是？”三藏道：“臣到蛇盤山鷹愁澗涉水，原馬被此馬\n吞之。虧行者請菩薩問此馬來歷，原是西海龍王之子，因有罪，也蒙菩薩救解，",
+          "plainSimplified": "原文证据显示“蛇盤山”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26652
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-012",
+      "name": "鷹愁澗",
+      "aliases": [
+        "鷹愁澗"
+      ],
+      "routeOrder": 12,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 15,
+      "chapterEnd": 15,
+      "locationType": "river",
+      "keyEvents": [
+        "鷹愁澗相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 15,
+          "excerptTraditional": "第一五回     蛇盤山諸神暗佑　鷹愁澗意馬收韁",
+          "plainSimplified": "原文证据显示“鷹愁澗”在第 15 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt",
+          "rawLine": 3763
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "原是流沙河作怪者，也蒙菩薩勸善，秉教沙門。那匹馬不是主公所賜者。”太宗\n道：“毛片相同，如何不是？”三藏道：“臣到蛇盤山鷹愁澗涉水，原馬被此馬\n吞之。虧行者請菩薩問此馬來歷，原是西海龍王之子，因有罪，也蒙菩薩救解，",
+          "plainSimplified": "原文证据显示“鷹愁澗”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26652
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-013",
+      "name": "觀音院",
+      "aliases": [
+        "觀音院"
+      ],
+      "routeOrder": 13,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 16,
+      "chapterEnd": 17,
+      "locationType": "other",
+      "keyEvents": [
+        "觀音院相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 16,
+          "excerptTraditional": "第十六回     觀音院僧謀寶貝　黑風山怪竊袈裟",
+          "plainSimplified": "原文证据显示“觀音院”在第 16 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt",
+          "rawLine": 4018
+        },
+        {
+          "chapterNumber": 17,
+          "excerptTraditional": "話說孫行者一觔斗跳將起去，諕得那觀音院大小和尚並頭陀、幸童、道人等一個\n個朝天禮拜道：「爺爺呀，原來是騰雲駕霧的神聖下界，怪道火不能傷。恨我那",
+          "plainSimplified": "原文证据显示“觀音院”在第 17 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-017.txt",
+          "rawLine": 4300
+        },
+        {
+          "chapterNumber": 18,
+          "excerptTraditional": "第十八回     觀音院唐僧脫難　高老莊大聖除魔",
+          "plainSimplified": "原文证据显示“觀音院”在第 18 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt",
+          "rawLine": 4617
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-014",
+      "name": "黑風山",
+      "aliases": [
+        "黑風山"
+      ],
+      "routeOrder": 14,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 16,
+      "chapterEnd": 17,
+      "locationType": "mountain",
+      "keyEvents": [
+        "黑風山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 16,
+          "excerptTraditional": "第十六回     觀音院僧謀寶貝　黑風山怪竊袈裟",
+          "plainSimplified": "原文证据显示“黑風山”在第 16 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt",
+          "rawLine": 4018
+        },
+        {
+          "chapterNumber": 17,
+          "excerptTraditional": "第一七回     孫行者大鬧黑風山　觀世音收伏熊羆怪",
+          "plainSimplified": "原文证据显示“黑風山”在第 17 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-017.txt",
+          "rawLine": 4298
+        },
+        {
+          "chapterNumber": 26,
+          "excerptTraditional": "空，那裏去？」行者抬頭喝道：「你這個熊羆，悟空可是你叫的？當初不是老孫\n饒了你，你已是做了黑風山的屍鬼矣。今日跟了菩薩，受了善果，居此仙山，常\n聽法教，你叫不得我一聲『老爺』？」那黑熊真個得了正果，在菩薩處鎮守普",
+          "plainSimplified": "原文证据显示“黑風山”在第 26 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-026.txt",
+          "rawLine": 6910
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-015",
+      "name": "高老莊",
+      "aliases": [
+        "高老莊"
+      ],
+      "routeOrder": 15,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 18,
+      "chapterEnd": 19,
+      "locationType": "village",
+      "keyEvents": [
+        "高老莊相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 18,
+          "excerptTraditional": "第十八回     觀音院唐僧脫難　高老莊大聖除魔",
+          "plainSimplified": "原文证据显示“高老莊”在第 18 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt",
+          "rawLine": 4617
+        },
+        {
+          "chapterNumber": 19,
+          "excerptTraditional": "三字。見那怪不出，天又大明，心卻思量：「恐師父等候，且回去見他一見，再\n來捉此怪不遲。」隨踏雲點一點，早到高老莊。",
+          "plainSimplified": "原文证据显示“高老莊”在第 19 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt",
+          "rawLine": 4879
+        },
+        {
+          "chapterNumber": 20,
+          "excerptTraditional": "，把這一家兒嚇得七損八傷，都替我身造罪哩。」八戒道：「不瞞師父說，老豬\n自從跟了你，這些時俊了許多哩。若像往常在高老莊時，把嘴朝前一掬，把耳兩\n頭一擺，常嚇殺二三十人哩。」行者笑道：「獃子不要亂說，把那醜也收拾起些",
+          "plainSimplified": "原文证据显示“高老莊”在第 20 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt",
+          "rawLine": 5180
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-016",
+      "name": "雲棧洞",
+      "aliases": [
+        "雲棧洞"
+      ],
+      "routeOrder": 16,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 18,
+      "chapterEnd": 19,
+      "locationType": "cave",
+      "keyEvents": [
+        "雲棧洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "占了山場，吃人度日。不期撞著菩薩，萬望拔救拔救。」菩薩道：「此山叫做甚\n麼山？」怪物道：「叫做福陵山。山中有一洞，叫做雲棧洞。洞裏原有個卵二姐\n，他見我有些武藝，招我做了家長，又喚做倒蹅門。不上一年，他死了，將一洞",
+          "plainSimplified": "原文证据显示“雲棧洞”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1955
+        },
+        {
+          "chapterNumber": 18,
+          "excerptTraditional": "陋，若要俊，卻也不難。我一來時，曾與他講過，他願意方才招我。今日怎麼又\n說起這話？我家住在福陵山雲棧洞。我以相貌為姓，故姓豬，官名叫做豬剛鬣。\n他若再來問你，你就以此話與他說便了。」",
+          "plainSimplified": "原文证据显示“雲棧洞”在第 18 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-018.txt",
+          "rawLine": 4801
+        },
+        {
+          "chapterNumber": 19,
+          "excerptTraditional": "第十九回     雲棧洞悟空收八戒　浮屠山玄奘受心經",
+          "plainSimplified": "原文证据显示“雲棧洞”在第 19 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt",
+          "rawLine": 4826
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-017",
+      "name": "黃風嶺",
+      "aliases": [
+        "黃風嶺"
+      ],
+      "routeOrder": 17,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 20,
+      "chapterEnd": 21,
+      "locationType": "mountain",
+      "keyEvents": [
+        "黃風嶺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 20,
+          "excerptTraditional": "第二○回     黃風嶺唐僧有難　半山中八戒爭先",
+          "plainSimplified": "原文证据显示“黃風嶺”在第 20 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-020.txt",
+          "rawLine": 5102
+        },
+        {
+          "chapterNumber": 22,
+          "excerptTraditional": "話說唐僧師徒三眾脫難前來，不一日行過了黃風嶺，進西卻是一脈平陽之地。光\n陰迅速，歷夏經秋，見了些寒蟬鳴敗柳，大火向西流。正行處，只見一道大水狂",
+          "plainSimplified": "原文证据显示“黃風嶺”在第 22 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt",
+          "rawLine": 5639
+        },
+        {
+          "chapterNumber": 59,
+          "excerptTraditional": "怎麼就把老孫送到這裏來了？我當年曾記得在此處告求靈吉菩薩降黃風怪救\n我師父。那黃風嶺至此直南上有三千餘里，今在西路轉來，乃東南方隅，不\n知有幾萬里。等我下去問靈吉菩薩一個消息，好回舊路。」",
+          "plainSimplified": "原文证据显示“黃風嶺”在第 59 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-059.txt",
+          "rawLine": 15920
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-018",
+      "name": "流沙河",
+      "aliases": [
+        "流沙河"
+      ],
+      "routeOrder": 18,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 22,
+      "chapterEnd": 22,
+      "locationType": "river",
+      "keyEvents": [
+        "收沙悟净，弱水难渡。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "師徒二人正走間，忽然見弱水三千，乃是流沙河界。菩薩道：「徒弟呀，此處卻\n是難行。取經人濁骨凡胎，如何得渡？」惠岸道：「師父，你看河有多遠？」那",
+          "plainSimplified": "原文证据显示“流沙河”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1880
+        },
+        {
+          "chapterNumber": 22,
+          "excerptTraditional": "第二二回     八戒大戰流沙河　木叉奉法收悟淨",
+          "plainSimplified": "原文证据显示“流沙河”在第 22 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt",
+          "rawLine": 5637
+        },
+        {
+          "chapterNumber": 32,
+          "excerptTraditional": "八戒看見，連忙叫：「沙和尚，歇下擔子，拿出行李來，我兩個分了罷。」沙僧\n道：「二哥，分怎的？」八戒道：「分了罷，你往流沙河還做妖怪，老豬往高老\n莊上盼盼渾家。把白馬賣了，買口棺木，與師父送老。大家散火，還往西天去",
+          "plainSimplified": "原文证据显示“流沙河”在第 32 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-032.txt",
+          "rawLine": 8428
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-019",
+      "name": "萬壽山",
+      "aliases": [
+        "萬壽山"
+      ],
+      "routeOrder": 19,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 24,
+      "chapterEnd": 26,
+      "locationType": "mountain",
+      "keyEvents": [
+        "萬壽山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 24,
+          "excerptTraditional": "第二四回     萬壽山大仙留故友　五莊觀行者竊人參",
+          "plainSimplified": "原文证据显示“萬壽山”在第 24 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt",
+          "rawLine": 6179
+        },
+        {
+          "chapterNumber": 25,
+          "excerptTraditional": "飛魄散。有詩為證。詩曰：\n　　　　三藏西臨萬壽山，悟空斷送草還丹。\n　　　　枒開葉落仙根露，明月清風心膽寒。",
+          "plainSimplified": "原文证据显示“萬壽山”在第 25 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt",
+          "rawLine": 6474
+        },
+        {
+          "chapterNumber": 26,
+          "excerptTraditional": "在半路，有些兒阻滯，特來小事欲干，不知肯否？」福星道：「是甚地方？因何\n阻滯？乞為明示，吾好裁處。」行者道：「因路過萬壽山五莊觀有阻。」三老驚\n訝道：「五莊觀是鎮元大仙的仙宮，你莫不是把他人參果偷吃了？」行者笑道：",
+          "plainSimplified": "原文证据显示“萬壽山”在第 26 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-026.txt",
+          "rawLine": 6759
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-020",
+      "name": "五莊觀",
+      "aliases": [
+        "五莊觀"
+      ],
+      "routeOrder": 20,
+      "phase": "departure-and-team-formation",
+      "chapterStart": 24,
+      "chapterEnd": 26,
+      "locationType": "temple",
+      "keyEvents": [
+        "五莊觀相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 24,
+          "excerptTraditional": "第二四回     萬壽山大仙留故友　五莊觀行者竊人參",
+          "plainSimplified": "原文证据显示“五莊觀”在第 24 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-024.txt",
+          "rawLine": 6179
+        },
+        {
+          "chapterNumber": 25,
+          "excerptTraditional": "第二五回     鎮元仙趕捉取經僧　孫行者大鬧五莊觀",
+          "plainSimplified": "原文证据显示“五莊觀”在第 25 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-025.txt",
+          "rawLine": 6443
+        },
+        {
+          "chapterNumber": 26,
+          "excerptTraditional": "好猴王，急縱觔斗雲，別了五莊觀，徑上東洋大海。在半空中，快如掣電，疾如\n流星，早到蓬萊仙境。按雲頭，往下仔細觀看，真個好去處。有詩為證。詩曰：",
+          "plainSimplified": "原文证据显示“五莊觀”在第 26 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-026.txt",
+          "rawLine": 6746
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-021",
+      "name": "白虎嶺",
+      "aliases": [
+        "白虎嶺",
+        "白虎岭"
+      ],
+      "routeOrder": 21,
+      "phase": "westward-trials",
+      "chapterStart": 27,
+      "chapterEnd": 27,
+      "locationType": "mountain",
+      "keyEvents": [
+        "白骨夫人三次变化，悟空被逐。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 27,
+          "excerptTraditional": "他來歷，他立地就起個虛情，花言巧語，來賺哄道：「師父，此山叫做蛇回獸怕\n的白虎嶺，正西下面是我家。我父母在堂，看經好善，廣齋方上遠近僧人。只因\n無子，求神作福，生了奴奴。欲扳門第，配嫁他人，又恐老來無倚，只得將奴招",
+          "plainSimplified": "原文证据显示“白虎嶺”在第 27 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+          "rawLine": 7059
+        },
+        {
+          "chapterNumber": 28,
+          "excerptTraditional": "卻說唐僧聽信狡性，縱放心猿，攀鞍上馬。八戒前邊開路，沙僧挑著行李西\n行。過了白虎嶺，忽見一帶林坵，真個是藤攀葛繞，柏翠松青。三藏叫道：\n「徒弟呀，山路崎嶇，甚是難走，卻又松林叢簇，樹木森羅，切須仔細，恐有",
+          "plainSimplified": "原文证据显示“白虎嶺”在第 28 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt",
+          "rawLine": 7353
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-022",
+      "name": "黑松林",
+      "aliases": [
+        "黑松林"
+      ],
+      "routeOrder": 22,
+      "phase": "westward-trials",
+      "chapterStart": 28,
+      "chapterEnd": 31,
+      "locationType": "other",
+      "keyEvents": [
+        "黑松林相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 19,
+          "excerptTraditional": "行來摩耳巖，側著腳蹤步。\n　　　　仔細黑松林，妖狐多截路。\n　　　　精靈滿國城，魔主盈山住。",
+          "plainSimplified": "原文证据显示“黑松林”在第 19 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-019.txt",
+          "rawLine": 5077
+        },
+        {
+          "chapterNumber": 28,
+          "excerptTraditional": "第二八回     花果山群妖聚義　黑松林三藏逢魔",
+          "plainSimplified": "原文证据显示“黑松林”在第 28 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-028.txt",
+          "rawLine": 7248
+        },
+        {
+          "chapterNumber": 31,
+          "excerptTraditional": "八戒道：「實不瞞哥哥說，自你回後，我與沙僧保師父前行，只見一座黑松林，\n師父下馬，教我化齋。我因許遠，無一個人家，辛苦了，略在草裏睡睡。不想沙",
+          "plainSimplified": "原文证据显示“黑松林”在第 31 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-031.txt",
+          "rawLine": 8057
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-023",
+      "name": "寶象國",
+      "aliases": [
+        "寶象國"
+      ],
+      "routeOrder": 23,
+      "phase": "westward-trials",
+      "chapterStart": 29,
+      "chapterEnd": 31,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "寶象國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 29,
+          "excerptTraditional": "問怎的？」那婦人道：「我不是吃人的。我家離此西下有三百餘里，那裏有座\n城，叫做寶象國。我是那國王的第三個公主，乳名叫做百花羞。只因十三年前八\n月十五日夜，玩月中間，被這妖魔一陣狂風攝將來，與他做了十三年夫妻，在此",
+          "plainSimplified": "原文证据显示“寶象國”在第 29 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-029.txt",
+          "rawLine": 7523
+        },
+        {
+          "chapterNumber": 30,
+          "excerptTraditional": "書來，你這等枉他，要害他性命？我們來此問你要公主，有個緣故。只因你把我\n師父捉在洞中，我師父曾看見公主的模樣動靜。及至寶象國，倒換關文，那皇帝\n將公主畫影圖形，前後訪問，因將公主的形影，問我師父沿途可曾看見，我師父",
+          "plainSimplified": "原文证据显示“寶象國”在第 30 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-030.txt",
+          "rawLine": 7762
+        },
+        {
+          "chapterNumber": 31,
+          "excerptTraditional": "我與沙僧回尋，止見白馬、行囊，不見師父。隨尋至洞口，與那怪廝殺。師父在\n洞，幸虧了一個救星。原是寶象國王第三個公主，被那怪攝來者。他修了一封家\n書，託師父寄去，遂說方便，解放了師父。到了國中，遞了書子，那國王就請師",
+          "plainSimplified": "原文证据显示“寶象國”在第 31 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-031.txt",
+          "rawLine": 8062
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-024",
+      "name": "平頂山",
+      "aliases": [
+        "平頂山"
+      ],
+      "routeOrder": 24,
+      "phase": "westward-trials",
+      "chapterStart": 32,
+      "chapterEnd": 35,
+      "locationType": "mountain",
+      "keyEvents": [
+        "平頂山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 32,
+          "excerptTraditional": "第三二回     平頂山功曹傳信　蓮花洞木母逢災",
+          "plainSimplified": "原文证据显示“平頂山”在第 32 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-032.txt",
+          "rawLine": 8330
+        },
+        {
+          "chapterNumber": 34,
+          "excerptTraditional": "洋叫一聲：「開門！開門！」早驚動那把門的一個女怪，將那半扇兒開了，道：\n「你是那裏來的？」行者道：「我是平頂山蓮花洞裏差來請老奶奶的。」女怪\n道：「進去。」到了二層門下，閃著頭，往裏觀看，又見那正當中坐著一個老媽",
+          "plainSimplified": "原文证据显示“平頂山”在第 34 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-034.txt",
+          "rawLine": 8972
+        },
+        {
+          "chapterNumber": 35,
+          "excerptTraditional": "喚狐阿七大王。因聞得哨山的妖兵報道，他姐姐被孫行者打死，假變姐形，盜了\n外甥寶貝，連日在平頂山拒敵，他即帥本洞妖兵二百餘名，特來助陣，故此先攏\n姐家問信。才進門，見老魔掛了孝服，二人大哭。哭久，老魔拜下，備言前事。",
+          "plainSimplified": "原文证据显示“平頂山”在第 35 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-035.txt",
+          "rawLine": 9374
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-025",
+      "name": "蓮花洞",
+      "aliases": [
+        "蓮花洞"
+      ],
+      "routeOrder": 25,
+      "phase": "westward-trials",
+      "chapterStart": 32,
+      "chapterEnd": 35,
+      "locationType": "cave",
+      "keyEvents": [
+        "蓮花洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 32,
+          "excerptTraditional": "第三二回     平頂山功曹傳信　蓮花洞木母逢災",
+          "plainSimplified": "原文证据显示“蓮花洞”在第 32 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-032.txt",
+          "rawLine": 8330
+        },
+        {
+          "chapterNumber": 33,
+          "excerptTraditional": "行者明知故問道：「你二位從那裏來的？」那怪道：「自蓮花洞來的。」「要往\n那裏去？」那怪道：「奉我大王教命，拿孫行者去的。」行者道：「拿那個？」",
+          "plainSimplified": "原文证据显示“蓮花洞”在第 33 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-033.txt",
+          "rawLine": 8812
+        },
+        {
+          "chapterNumber": 34,
+          "excerptTraditional": "洋叫一聲：「開門！開門！」早驚動那把門的一個女怪，將那半扇兒開了，道：\n「你是那裏來的？」行者道：「我是平頂山蓮花洞裏差來請老奶奶的。」女怪\n道：「進去。」到了二層門下，閃著頭，往裏觀看，又見那正當中坐著一個老媽",
+          "plainSimplified": "原文证据显示“蓮花洞”在第 34 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-034.txt",
+          "rawLine": 8972
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-026",
+      "name": "烏雞國",
+      "aliases": [
+        "烏雞國"
+      ],
+      "routeOrder": 26,
+      "phase": "westward-trials",
+      "chapterStart": 37,
+      "chapterEnd": 39,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "烏雞國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 37,
+          "excerptTraditional": "正西，離此只有四十里遠近。那廂有座城池，便是興基之處。」三藏道：「叫做\n甚麼地名？」那人道：「不瞞師父說，便是朕當時創立家邦，改號烏雞國。」三\n藏道：「陛下這等驚慌，卻因甚事至此？」那人道：「師父呵，我這裏五年前，",
+          "plainSimplified": "原文证据显示“烏雞國”在第 37 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-037.txt",
+          "rawLine": 9745
+        },
+        {
+          "chapterNumber": 38,
+          "excerptTraditional": "卻說那烏雞國王太子自別大聖，不多時，回至城中。果然不奔朝門，不敢報傳宣\n詔，徑至後宰門首，見幾個太監在那裏把守。見太子來，不敢阻滯，讓他進去",
+          "plainSimplified": "原文证据显示“烏雞國”在第 38 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-038.txt",
+          "rawLine": 9999
+        },
+        {
+          "chapterNumber": 39,
+          "excerptTraditional": "按座。只見那本寺的僧人整頓了早齋，卻欲來奉獻，忽見那個水衣皇帝，個個驚\n張，人人疑說。孫行者跳出來道：「那和尚不要這等驚疑。這本是烏雞國王，乃\n汝之真主也。三年前被怪害了性命，是老孫今夜救活。如今進他城去，要辨明邪",
+          "plainSimplified": "原文证据显示“烏雞國”在第 39 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-039.txt",
+          "rawLine": 10342
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-027",
+      "name": "號山",
+      "aliases": [
+        "號山"
+      ],
+      "routeOrder": 27,
+      "phase": "westward-trials",
+      "chapterStart": 40,
+      "chapterEnd": 42,
+      "locationType": "mountain",
+      "keyEvents": [
+        "號山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 13,
+          "excerptTraditional": "綠樹能攀折，知寒善諭時。\n　　　　准靈惟顯處，故此號山君。\n　　又見那後邊來的是一條胖漢。你道怎生模樣：",
+          "plainSimplified": "原文证据显示“號山”在第 13 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-013.txt",
+          "rawLine": 3287
+        },
+        {
+          "chapterNumber": 40,
+          "excerptTraditional": "山前，叫：「大聖，山神、土地來見。」行者道：「怎麼就有許多山神、土\n地？」眾神叩頭道：「上告大聖：此山喚做六百里鑽頭號山。我等是十里一山\n神，十里一土地，共該三十名山神、三十名土地。昨日已此聞大聖來了，只因一",
+          "plainSimplified": "原文证据显示“號山”在第 40 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-040.txt",
+          "rawLine": 10767
+        },
+        {
+          "chapterNumber": 41,
+          "excerptTraditional": "將近行到門前，見有一座石碣，上鐫八個大字，乃是「號山枯松澗火雲洞」。\n那壁廂一群小妖，在那裏掄槍舞劍的跳風頑耍。",
+          "plainSimplified": "原文证据显示“號山”在第 41 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-041.txt",
+          "rawLine": 10826
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-028",
+      "name": "枯松澗",
+      "aliases": [
+        "枯松澗"
+      ],
+      "routeOrder": 28,
+      "phase": "westward-trials",
+      "chapterStart": 40,
+      "chapterEnd": 42,
+      "locationType": "river",
+      "keyEvents": [
+        "枯松澗相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 40,
+          "excerptTraditional": "有多少妖精哩。」行者道：「這妖精在山前住，是山後住？」眾神道：「他也不\n在山前山後。這山中有一條澗，叫做枯松澗。澗邊有一座洞，叫做火雲洞。那洞\n裏有一個魔王，神通廣大，常常的把我們山神、土地拿了去，燒火頂門，黑夜與",
+          "plainSimplified": "原文证据显示“枯松澗”在第 40 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-040.txt",
+          "rawLine": 10773
+        },
+        {
+          "chapterNumber": 41,
+          "excerptTraditional": "卻說那孫大聖引八戒別了沙僧，跳過枯松澗，徑來到那怪石崖前。果見有一座\n洞府，真個也景致非凡。但見：",
+          "plainSimplified": "原文证据显示“枯松澗”在第 41 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-041.txt",
+          "rawLine": 10817
+        },
+        {
+          "chapterNumber": 42,
+          "excerptTraditional": "菩薩倒身下拜。菩薩道：「悟空，你不領金蟬子西方求經去，卻來此何幹？」\n行者道：「上告菩薩：弟子保護唐僧前行，至一方，乃號山枯松澗火雲洞。有\n一個紅孩兒妖精，喚作聖嬰大王，把我師父攝去。是弟子與豬悟能等尋至門",
+          "plainSimplified": "原文证据显示“枯松澗”在第 42 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-042.txt",
+          "rawLine": 11238
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-029",
+      "name": "火雲洞",
+      "aliases": [
+        "火雲洞"
+      ],
+      "routeOrder": 29,
+      "phase": "westward-trials",
+      "chapterStart": 40,
+      "chapterEnd": 42,
+      "locationType": "cave",
+      "keyEvents": [
+        "火雲洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 40,
+          "excerptTraditional": "有多少妖精哩。」行者道：「這妖精在山前住，是山後住？」眾神道：「他也不\n在山前山後。這山中有一條澗，叫做枯松澗。澗邊有一座洞，叫做火雲洞。那洞\n裏有一個魔王，神通廣大，常常的把我們山神、土地拿了去，燒火頂門，黑夜與",
+          "plainSimplified": "原文证据显示“火雲洞”在第 40 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-040.txt",
+          "rawLine": 10773
+        },
+        {
+          "chapterNumber": 41,
+          "excerptTraditional": "將近行到門前，見有一座石碣，上鐫八個大字，乃是「號山枯松澗火雲洞」。\n那壁廂一群小妖，在那裏掄槍舞劍的跳風頑耍。",
+          "plainSimplified": "原文证据显示“火雲洞”在第 41 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-041.txt",
+          "rawLine": 10826
+        },
+        {
+          "chapterNumber": 42,
+          "excerptTraditional": "跪下道：「老大王爺爺在這裏也。」那雲裏霧、霧裏雲、急如火、快如風都是\n肉眼凡胎，那裏認得真假，也就一同跪倒，磕頭道：「爺爺，小的們是火雲洞\n聖嬰大王處差來，請老大王爺爺去吃唐僧肉，壽延千紀哩。」行者借口答道：",
+          "plainSimplified": "原文证据显示“火雲洞”在第 42 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-042.txt",
+          "rawLine": 11138
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-030",
+      "name": "黑水河",
+      "aliases": [
+        "黑水河"
+      ],
+      "routeOrder": 30,
+      "phase": "westward-trials",
+      "chapterStart": 43,
+      "chapterEnd": 43,
+      "locationType": "river",
+      "keyEvents": [
+        "黑水河相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 43,
+          "excerptTraditional": "知節令，灘頭花草鬥青奇。湖泊江河天下有，溪源澤洞世間多。人生皆有相逢\n處，誰見西方黑水河？",
+          "plainSimplified": "原文证据显示“黑水河”在第 43 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-043.txt",
+          "rawLine": 11484
+        },
+        {
+          "chapterNumber": 44,
+          "excerptTraditional": "話說唐三藏幸虧龍子降妖，黑水河神開路，師徒們過了黑水河，找大路一直西\n來。真個是迎風冒雪，戴月披星。行勾多時，又值早春天氣。但見：",
+          "plainSimplified": "原文证据显示“黑水河”在第 44 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-044.txt",
+          "rawLine": 11736
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-031",
+      "name": "車遲國",
+      "aliases": [
+        "車遲國"
+      ],
+      "routeOrder": 31,
+      "phase": "westward-trials",
+      "chapterStart": 44,
+      "chapterEnd": 46,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "車遲國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 44,
+          "excerptTraditional": "行者道：「原來這般。你們都走了便罷。」眾僧道：「老爺，走不脫。那仙長奏\n准君王，把我們畫了影身圖，四下裏長川張掛。他這車遲國地界也寬，各府州縣\n鄉村店集之方，都有一張和尚圖，上面是御筆親題。若有官職的，拿得一個和",
+          "plainSimplified": "原文证据显示“車遲國”在第 44 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-044.txt",
+          "rawLine": 11838
+        },
+        {
+          "chapterNumber": 45,
+          "excerptTraditional": "第四五回     三清觀大聖留名　車遲國猴王顯法",
+          "plainSimplified": "原文证据显示“車遲國”在第 45 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-045.txt",
+          "rawLine": 12010
+        },
+        {
+          "chapterNumber": 47,
+          "excerptTraditional": "行者道：「要吃童男女麼？」老者道：「正是。」行者道：「想必輪到你家了？」\n老者道：「今年正到舍下。我們這裏有百家人家居住。此處屬車遲國元會縣所\n管，喚做陳家莊。這大王一年一次祭賽，要一個童男、一個童女、豬羊牲醴供獻",
+          "plainSimplified": "原文证据显示“車遲國”在第 47 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-047.txt",
+          "rawLine": 12756
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-032",
+      "name": "通天河",
+      "aliases": [
+        "通天河"
+      ],
+      "routeOrder": 32,
+      "phase": "westward-trials",
+      "chapterStart": 47,
+      "chapterEnd": 49,
+      "locationType": "river",
+      "keyEvents": [
+        "通天河相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 47,
+          "excerptTraditional": "他去來。」拿了鐵棒，兩三步，跑到面前看處，呀！不是人，是一面石碑。碑上\n有三個篆文大字，下邊兩行有十個小字。三個大字乃「通天河」，十個小字乃\n「徑過八百里，亙古少行人」。行者叫：「師父，你來看看。」三藏看見，滴淚",
+          "plainSimplified": "原文证据显示“通天河”在第 47 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-047.txt",
+          "rawLine": 12631
+        },
+        {
+          "chapterNumber": 48,
+          "excerptTraditional": "極易。」那怪道：「你且將極易之功，講來我聽。」鱖婆道：「今夜有三更天\n氣，大王不必遲疑，趁早作法，起一陣寒風，下一陣大雪，把通天河盡皆凍結。\n著我等善變化者，變作幾個人形，在於路口，背包持傘，擔擔推車，不住的在冰",
+          "plainSimplified": "原文证据显示“通天河”在第 48 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-048.txt",
+          "rawLine": 12921
+        },
+        {
+          "chapterNumber": 49,
+          "excerptTraditional": "沙僧剖開水路，弟兄們同入通天河內。向水底下行有百十里遠近，那獃子要捉弄\n行者。行者隨即拔下一根毫毛，變做假身，伏在八戒背上﹔真身變作一個豬虱",
+          "plainSimplified": "原文证据显示“通天河”在第 49 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-049.txt",
+          "rawLine": 13115
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-033",
+      "name": "金山金洞",
+      "aliases": [
+        "金山金洞",
+        "金山",
+        "金洞"
+      ],
+      "routeOrder": 33,
+      "phase": "westward-trials",
+      "chapterStart": 50,
+      "chapterEnd": 52,
+      "locationType": "cave",
+      "keyEvents": [
+        "金山金洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 9,
+          "excerptTraditional": "卻說此子在木板上順水流去，一直流到金山寺腳下停住。那金山寺長老叫做法明\n和尚，修真悟道，已得無生妙訣。正當打坐參禪，忽聞得小兒啼哭之聲，一時心",
+          "plainSimplified": "原文证据显示“金山金洞”在第 9 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt",
+          "rawLine": 2124
+        },
+        {
+          "chapterNumber": 12,
+          "excerptTraditional": "出身命犯落江星，順水隨波逐浪泱。\n　　　　海島金山有大緣，遷安和尚將他養。\n　　　　年方十八認親娘，特赴京都求外長。",
+          "plainSimplified": "原文证据显示“金山金洞”在第 12 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+          "rawLine": 2982
+        },
+        {
+          "chapterNumber": 37,
+          "excerptTraditional": "卻與我相類。當時我父曾被水賊傷生﹔我母被水賊欺占，經三個月，分娩了我。\n我在水中逃了性命，幸金山寺恩師救養成人。記得我幼年無父母，此間那太子失\n雙親，真個可憐！」",
+          "plainSimplified": "原文证据显示“金山金洞”在第 37 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-037.txt",
+          "rawLine": 9796
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-034",
+      "name": "西梁女國",
+      "aliases": [
+        "西梁女國"
+      ],
+      "routeOrder": 34,
+      "phase": "westward-trials",
+      "chapterStart": 53,
+      "chapterEnd": 55,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "西梁女國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 48,
+          "excerptTraditional": "上有人行走。三藏問道：「施主，那些人上冰往那裏去？」陳老道：「河那邊乃\n西梁女國。這起人都是做買賣的。我這邊百錢之物，到那邊可值萬錢﹔那邊百錢\n之物，到這邊亦可值萬錢。利重本輕，所以人不顧死生而去。常年家有五七人一",
+          "plainSimplified": "原文证据显示“西梁女國”在第 48 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-048.txt",
+          "rawLine": 13015
+        },
+        {
+          "chapterNumber": 54,
+          "excerptTraditional": "話說三藏師徒別了村舍人家，依路西進，不上三四十里，早到西梁國界。唐僧在\n馬上指道：「悟空，前面城池相近，市井上人語喧嘩，想是西梁女國。汝等須要\n仔細，謹慎規矩，切休放蕩情懷，紊亂法門教旨。」三人聞言，謹遵嚴命。",
+          "plainSimplified": "原文证据显示“西梁女國”在第 54 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-054.txt",
+          "rawLine": 14479
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "三年九月望前三日給。太宗笑道：“久勞遠涉，今已貞觀二十七年矣。”牒文上\n有寶象國印、烏雞國印、車遲國印、西梁女國印、祭賽國印、朱紫國印、比丘國\n印、滅法國印，又有鳳仙郡印、玉華州印、金平府印。太宗覽畢，收了。",
+          "plainSimplified": "原文证据显示“西梁女國”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26662
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-035",
+      "name": "火焰山",
+      "aliases": [
+        "火焰山"
+      ],
+      "routeOrder": 35,
+      "phase": "westward-trials",
+      "chapterStart": 59,
+      "chapterEnd": 61,
+      "locationType": "mountain",
+      "keyEvents": [
+        "三调芭蕉扇。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 59,
+          "excerptTraditional": "第五九回     唐三藏路阻火焰山　孫行者一調芭蕉扇",
+          "plainSimplified": "原文证据显示“火焰山”在第 59 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-059.txt",
+          "rawLine": 15761
+        },
+        {
+          "chapterNumber": 60,
+          "excerptTraditional": "土地說：「大力王即牛魔王也。」行者道：「這山本是牛魔王放的火，假名\n火焰山？」土地道：「不是，不是。大聖若肯赦小神之罪，方敢直言。」行\n者道：「你有何罪？直說無妨。」土地道：「這火原是大聖放的。」行者怒",
+          "plainSimplified": "原文证据显示“火焰山”在第 60 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-060.txt",
+          "rawLine": 16037
+        },
+        {
+          "chapterNumber": 61,
+          "excerptTraditional": "且不說他兩個相鬥難分。卻表唐僧坐在途中，一則火氣蒸人，二來心焦口\n渴，對火焰山土地道：「敢問尊神，那牛魔王法力如何？」土地道：「那牛\n王神通不小，法力無邊，正是孫大聖的敵手。」三藏道：「悟空是個會走路",
+          "plainSimplified": "原文证据显示“火焰山”在第 61 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-061.txt",
+          "rawLine": 16331
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-036",
+      "name": "祭賽國",
+      "aliases": [
+        "祭賽國"
+      ],
+      "routeOrder": 36,
+      "phase": "westward-trials",
+      "chapterStart": 62,
+      "chapterEnd": 63,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "祭賽國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 62,
+          "excerptTraditional": "三藏聞言，大喜道：「你這裏是何地方？有何冤屈？」眾僧跪告：「爺爺，\n此城名喚祭賽國，乃西邦大去處。當年有四夷朝貢：南，月陀國；北，高昌\n國；東，西梁國；西，本缽國。年年進貢美玉、明珠、嬌妃、駿馬。我這裏",
+          "plainSimplified": "原文证据显示“祭賽國”在第 62 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-062.txt",
+          "rawLine": 16641
+        },
+        {
+          "chapterNumber": 63,
+          "excerptTraditional": "卻說祭賽國王與大小公卿見孫大聖與八戒騰雲駕霧，提著兩個小妖飄然而\n去，一個個朝天禮拜道：「話不虛傳，今日方知有此輩神仙活佛。」又見他",
+          "plainSimplified": "原文证据显示“祭賽國”在第 63 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-063.txt",
+          "rawLine": 16843
+        },
+        {
+          "chapterNumber": 64,
+          "excerptTraditional": "話表祭賽國王謝了唐三藏師徒獲寶擒怪之恩，所贈金玉，分毫不受。卻命當駕官\n照依四位常穿的衣服各做兩套，鞋襪各做兩雙，絛環各做兩條，外備乾糧烘炒，",
+          "plainSimplified": "原文证据显示“祭賽國”在第 64 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-064.txt",
+          "rawLine": 17112
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-037",
+      "name": "荊棘嶺",
+      "aliases": [
+        "荊棘嶺"
+      ],
+      "routeOrder": 37,
+      "phase": "westward-trials",
+      "chapterStart": 64,
+      "chapterEnd": 64,
+      "locationType": "mountain",
+      "keyEvents": [
+        "荊棘嶺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 64,
+          "excerptTraditional": "第六四回     荊棘嶺悟能努力　木仙庵三藏談詩",
+          "plainSimplified": "原文证据显示“荊棘嶺”在第 64 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-064.txt",
+          "rawLine": 17110
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-038",
+      "name": "小雷音寺",
+      "aliases": [
+        "小雷音寺"
+      ],
+      "routeOrder": 38,
+      "phase": "westward-trials",
+      "chapterStart": 65,
+      "chapterEnd": 66,
+      "locationType": "buddhist-land",
+      "keyEvents": [
+        "小雷音寺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 65,
+          "excerptTraditional": "「師父莫惱，你再看看。山門上乃四個字，你怎麼只念出三個來，倒還怪我？」\n長老戰兢兢的爬起來再看，真個是四個字，乃「小雷音寺」。三藏道：「就是小\n雷音寺，必定也有個佛祖在內。經上言三千諸佛，想是不在一方：似觀音在南",
+          "plainSimplified": "原文证据显示“小雷音寺”在第 65 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-065.txt",
+          "rawLine": 17460
+        },
+        {
+          "chapterNumber": 66,
+          "excerptTraditional": "到太和宮。行者作禮道：「我有一事奉勞。」問：「何事？」行者道：「保唐僧\n西天取經，路遭險難。至西牛賀洲，有座山喚小西天，小雷音寺有一妖魔。我師\n父進得山門，見有阿羅、揭諦、比丘、聖僧排列，以為真佛，倒身才拜，忽被他",
+          "plainSimplified": "原文证据显示“小雷音寺”在第 66 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-066.txt",
+          "rawLine": 17685
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-039",
+      "name": "駝羅莊",
+      "aliases": [
+        "駝羅莊"
+      ],
+      "routeOrder": 39,
+      "phase": "westward-trials",
+      "chapterStart": 67,
+      "chapterEnd": 67,
+      "locationType": "village",
+      "keyEvents": [
+        "駝羅莊相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 67,
+          "excerptTraditional": "打死蛇？」遂此收了兵器，抓著尾巴，倒拉將來。\n　　卻說那駝羅莊上李老兒與眾等對唐僧道：「你那兩個徒弟一夜不回，斷然傾\n了命也。」三藏道：「決不妨事。我們出去看看。」須臾間，只見行者與八戒拖",
+          "plainSimplified": "原文证据显示“駝羅莊”在第 67 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-067.txt",
+          "rawLine": 18108
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-040",
+      "name": "朱紫國",
+      "aliases": [
+        "朱紫國"
+      ],
+      "routeOrder": 40,
+      "phase": "westward-trials",
+      "chapterStart": 68,
+      "chapterEnd": 71,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "朱紫國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 68,
+          "excerptTraditional": "第六八回     朱紫國唐僧論前世　孫行者施為三折肱",
+          "plainSimplified": "原文证据显示“朱紫國”在第 68 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-068.txt",
+          "rawLine": 18171
+        },
+        {
+          "chapterNumber": 70,
+          "excerptTraditional": "聖，搖身一變，變做個猛蟲兒，輕輕的飛在他書包之上。只聽得那妖精敲著，緒\n緒聒聒的自念自誦道：「我家大王忒也心毒。三年前到朱紫國強奪了金聖皇后，\n一向無緣，未得沾身，只苦了要來的宮女頂缸。兩個來弄殺了，四個來也弄殺",
+          "plainSimplified": "原文证据显示“朱紫國”在第 70 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-070.txt",
+          "rawLine": 18766
+        },
+        {
+          "chapterNumber": 71,
+          "excerptTraditional": "不出，逼得打門也。」那妖道：「且休開門。你去問他是那裏來的？姓甚名誰？\n快來回報。」小妖急出去，隔門問道：「打門的是誰？」行者道：「我是朱紫國\n拜請來的外公，來取聖宮娘娘回國哩。」那小妖聽得，即以此言回報。那妖隨往",
+          "plainSimplified": "原文证据显示“朱紫國”在第 71 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-071.txt",
+          "rawLine": 19079
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-041",
+      "name": "盤絲洞",
+      "aliases": [
+        "盤絲洞"
+      ],
+      "routeOrder": 41,
+      "phase": "westward-trials",
+      "chapterStart": 72,
+      "chapterEnd": 73,
+      "locationType": "cave",
+      "keyEvents": [
+        "盤絲洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 72,
+          "excerptTraditional": "第七二回     盤絲洞七情迷本　濯垢泉八戒忘形",
+          "plainSimplified": "原文证据显示“盤絲洞”在第 72 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-072.txt",
+          "rawLine": 19264
+        },
+        {
+          "chapterNumber": 73,
+          "excerptTraditional": "原來那盤絲洞七個女怪與這道士同堂學藝。自從穿了舊衣，喚出兒子，徑來此\n處。正在後面裁剪衣服，忽見那童子看茶，便問道：「童兒，有甚客來了，這般",
+          "plainSimplified": "原文证据显示“盤絲洞”在第 73 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-073.txt",
+          "rawLine": 19589
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-042",
+      "name": "濯垢泉",
+      "aliases": [
+        "濯垢泉"
+      ],
+      "routeOrder": 42,
+      "phase": "westward-trials",
+      "chapterStart": 72,
+      "chapterEnd": 73,
+      "locationType": "other",
+      "keyEvents": [
+        "濯垢泉相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 72,
+          "excerptTraditional": "第七二回     盤絲洞七情迷本　濯垢泉八戒忘形",
+          "plainSimplified": "原文证据显示“濯垢泉”在第 72 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-072.txt",
+          "rawLine": 19264
+        },
+        {
+          "chapterNumber": 73,
+          "excerptTraditional": "子道：「我們久聞人說，唐僧乃十世修行的真體，有人吃他一塊肉，延壽長生，\n故此拿了他。後被那個長嘴大耳朵的和尚把我們攔在濯垢泉裏，先搶了衣服，後\n弄本事，強要同我等洗浴，也止他不住。他就跳下水，變作一個魚，在我們腿襠",
+          "plainSimplified": "原文证据显示“濯垢泉”在第 73 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-073.txt",
+          "rawLine": 19614
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-043",
+      "name": "獅駝嶺",
+      "aliases": [
+        "獅駝嶺"
+      ],
+      "routeOrder": 43,
+      "phase": "westward-trials",
+      "chapterStart": 74,
+      "chapterEnd": 77,
+      "locationType": "mountain",
+      "keyEvents": [
+        "獅駝嶺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 74,
+          "excerptTraditional": "公公拄著杖，對八戒說：「此山叫做八百里獅駝嶺。中間有座獅駝洞。洞裏有\n三個魔頭。」八戒啐了一聲：「你這老兒卻也多心，三個妖魔也費心勞力的來",
+          "plainSimplified": "原文证据显示“獅駝嶺”在第 74 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-074.txt",
+          "rawLine": 19953
+        },
+        {
+          "chapterNumber": 85,
+          "excerptTraditional": "四瀆、普天神將，也不曾惹得他過，你怎敢要吃唐僧？」老妖道：「你怎麼知\n得他這等詳細？」小妖道：「我當初在獅駝嶺獅駝洞與那大王居住，那大王不\n知好歹，要吃唐僧，被孫行者使一條金箍棒，打進門來，可憐就打得犯了骨牌",
+          "plainSimplified": "原文证据显示“獅駝嶺”在第 85 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-085.txt",
+          "rawLine": 23000
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-044",
+      "name": "比丘國",
+      "aliases": [
+        "比丘國"
+      ],
+      "routeOrder": 44,
+      "phase": "westward-trials",
+      "chapterStart": 78,
+      "chapterEnd": 79,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "比丘國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 78,
+          "excerptTraditional": "此，不知地名，問你一聲的。」那老軍聞言，卻才正了心，打個呵欠，爬起\n來，伸伸腰道：「長老，長老，恕小人之罪。此處地方，原喚比丘國，今改作\n小子城。」行者道：「國中有帝王否？」老軍道：「有有有。」行者卻轉身對",
+          "plainSimplified": "原文证据显示“比丘國”在第 78 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-078.txt",
+          "rawLine": 21048
+        },
+        {
+          "chapterNumber": 79,
+          "excerptTraditional": "官魂魄飛，嬪妃繡女容顏改。諕得那比丘昏主亂身藏，戰戰兢兢沒佈擺。棒起\n猶如虎出山，拐掄卻似龍離海。今番大鬧比丘國，致令邪正分明白。",
+          "plainSimplified": "原文证据显示“比丘國”在第 79 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-079.txt",
+          "rawLine": 21306
+        },
+        {
+          "chapterNumber": 80,
+          "excerptTraditional": "卻說比丘國君臣黎庶送唐僧四眾出城，有二十里之遠，還不肯捨。三藏勉強下\n輦，乘馬辭別而行，目送者直至望不見蹤影方回。四眾行勾多時，又過了冬殘",
+          "plainSimplified": "原文证据显示“比丘國”在第 80 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-080.txt",
+          "rawLine": 21506
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-045",
+      "name": "鎮海寺",
+      "aliases": [
+        "鎮海寺"
+      ],
+      "routeOrder": 45,
+      "phase": "westward-trials",
+      "chapterStart": 81,
+      "chapterEnd": 81,
+      "locationType": "monastery",
+      "keyEvents": [
+        "鎮海寺相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 81,
+          "excerptTraditional": "第八一回     鎮海寺心猿知怪　黑松林三眾尋師",
+          "plainSimplified": "原文证据显示“鎮海寺”在第 81 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-081.txt",
+          "rawLine": 21762
+        },
+        {
+          "chapterNumber": 82,
+          "excerptTraditional": "那妖精聽見，笑唏唏的跑近跟前道：「妙人哥哥，有甚話說？」三藏道：「娘\n子，我出了長安，一路西來，無日不山，無日不水。昨在鎮海寺投宿，偶得傷風\n重疾，今日出了汗，略才好些。又蒙娘子盛情，攜入仙府。只是坐了這一日，又",
+          "plainSimplified": "原文证据显示“鎮海寺”在第 82 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-082.txt",
+          "rawLine": 22207
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-046",
+      "name": "陷空山",
+      "aliases": [
+        "陷空山"
+      ],
+      "routeOrder": 46,
+      "phase": "westward-trials",
+      "chapterStart": 81,
+      "chapterEnd": 83,
+      "locationType": "mountain",
+      "keyEvents": [
+        "陷空山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 81,
+          "excerptTraditional": "而去。這卻不是三藏的災星？他便徑撞到方丈裏，把唐三藏攝將去雲頭上，杳杳\n冥冥，霎霎眼，就到了陷空山，進了無底洞，叫小的們安排素筵席成親不題。",
+          "plainSimplified": "原文证据显示“陷空山”在第 81 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-081.txt",
+          "rawLine": 21949
+        },
+        {
+          "chapterNumber": 82,
+          "excerptTraditional": "剔透細妝花、堆五采、三簷四簇的牌樓。他與八戒、沙僧近前觀看，上有六個大\n字，乃「陷空山無底洞」。行者道：「兄弟呀，這妖精把個架子支在這裏，還不\n知門向那裏開哩。」沙僧說：「不遠，不遠，好生尋。」都轉身看時，牌樓下，",
+          "plainSimplified": "原文证据显示“陷空山”在第 82 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-082.txt",
+          "rawLine": 22072
+        },
+        {
+          "chapterNumber": 83,
+          "excerptTraditional": "「告狀人孫悟空，年甲在牒，係東土唐朝西天取經僧唐三藏徒弟。告為假妖攝陷\n人口事：今有托塔天王李靖同男哪吒太子，閨門不謹，走出親女，在下方陷空山\n無底洞變化妖邪，迷害人命無數。今將吾師攝陷曲邃之所，渺無尋處。若不狀",
+          "plainSimplified": "原文证据显示“陷空山”在第 83 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-083.txt",
+          "rawLine": 22367
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-047",
+      "name": "無底洞",
+      "aliases": [
+        "無底洞"
+      ],
+      "routeOrder": 47,
+      "phase": "westward-trials",
+      "chapterStart": 81,
+      "chapterEnd": 83,
+      "locationType": "cave",
+      "keyEvents": [
+        "無底洞相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 81,
+          "excerptTraditional": "而去。這卻不是三藏的災星？他便徑撞到方丈裏，把唐三藏攝將去雲頭上，杳杳\n冥冥，霎霎眼，就到了陷空山，進了無底洞，叫小的們安排素筵席成親不題。",
+          "plainSimplified": "原文证据显示“無底洞”在第 81 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-081.txt",
+          "rawLine": 21949
+        },
+        {
+          "chapterNumber": 82,
+          "excerptTraditional": "剔透細妝花、堆五采、三簷四簇的牌樓。他與八戒、沙僧近前觀看，上有六個大\n字，乃「陷空山無底洞」。行者道：「兄弟呀，這妖精把個架子支在這裏，還不\n知門向那裏開哩。」沙僧說：「不遠，不遠，好生尋。」都轉身看時，牌樓下，",
+          "plainSimplified": "原文证据显示“無底洞”在第 82 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-082.txt",
+          "rawLine": 22072
+        },
+        {
+          "chapterNumber": 83,
+          "excerptTraditional": "人口事：今有托塔天王李靖同男哪吒太子，閨門不謹，走出親女，在下方陷空山\n無底洞變化妖邪，迷害人命無數。今將吾師攝陷曲邃之所，渺無尋處。若不狀\n告，切思伊父子不仁，故縱女氏成精害眾。伏乞憐准，行拘至案，收邪救師，明",
+          "plainSimplified": "原文证据显示“無底洞”在第 83 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-083.txt",
+          "rawLine": 22368
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-048",
+      "name": "滅法國",
+      "aliases": [
+        "滅法國"
+      ],
+      "routeOrder": 48,
+      "phase": "westward-trials",
+      "chapterStart": 84,
+      "chapterEnd": 84,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "滅法國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 84,
+          "excerptTraditional": "『海闊從魚躍，天空任鳥飛。』怎麼西進便沒路了？」那老母用手朝西指道：\n「那裏去有五六里遠近，乃是滅法國。那國王前生那世裏結下冤仇，今世裏無端\n造罪。二年前許下一個羅天大願，要殺一萬個和尚。這兩年陸陸續續，殺勾了九",
+          "plainSimplified": "原文证据显示“滅法國”在第 84 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-084.txt",
+          "rawLine": 22539
+        },
+        {
+          "chapterNumber": 99,
+          "excerptTraditional": "松林救怪六十七難。僧房臥病六十八難。\n　　　　無底洞遭困六十九難。滅法國難行七十難。\n　　　　隱霧山遇魔七十一難。鳳仙郡求雨七十二難。",
+          "plainSimplified": "原文证据显示“滅法國”在第 99 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-099.txt",
+          "rawLine": 26440
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "有寶象國印、烏雞國印、車遲國印、西梁女國印、祭賽國印、朱紫國印、比丘國\n印、滅法國印，又有鳳仙郡印、玉華州印、金平府印。太宗覽畢，收了。",
+          "plainSimplified": "原文证据显示“滅法國”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26663
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-049",
+      "name": "隱霧山",
+      "aliases": [
+        "隱霧山"
+      ],
+      "routeOrder": 49,
+      "phase": "westward-trials",
+      "chapterStart": 86,
+      "chapterEnd": 87,
+      "locationType": "mountain",
+      "keyEvents": [
+        "隱霧山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 86,
+          "excerptTraditional": "行者見了，兩三步跳到門前看處，那石門緊閉，門上橫安著一塊石版，石版上\n有八個大字，乃「隱霧山折岳連環洞」。行者道：「八戒，動手呵。此間乃妖\n精住處，師父必在他家也。」那獃子仗勢行兇，舉釘鈀盡力築將去，把他那石",
+          "plainSimplified": "原文证据显示“隱霧山”在第 86 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-086.txt",
+          "rawLine": 23096
+        },
+        {
+          "chapterNumber": 87,
+          "excerptTraditional": "卻說三藏師徒四眾，別樵子下了隱霧山，奔上大路。行經數日，忽見一座城池\n相近。三藏道：“悟空，你看那前面城池，可是天竺國么？”行者搖手道：“不",
+          "plainSimplified": "原文证据显示“隱霧山”在第 87 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-087.txt",
+          "rawLine": 23360
+        },
+        {
+          "chapterNumber": 99,
+          "excerptTraditional": "無底洞遭困六十九難。滅法國難行七十難。\n　　　　隱霧山遇魔七十一難。鳳仙郡求雨七十二難。\n　　　　失落兵器七十三難。會慶釘鈀七十四難。",
+          "plainSimplified": "原文证据显示“隱霧山”在第 99 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-099.txt",
+          "rawLine": 26441
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-050",
+      "name": "玉華州",
+      "aliases": [
+        "玉華州"
+      ],
+      "routeOrder": 50,
+      "phase": "westward-trials",
+      "chapterStart": 88,
+      "chapterEnd": 90,
+      "locationType": "other",
+      "keyEvents": [
+        "玉華州相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 89,
+          "excerptTraditional": "懸崖下，麋鹿雙雙；峭壁前，獾狐對對。一起一伏遠來龍，九曲九灣潛地脈。\n埂頭相接玉華州，萬古千秋興勝處。",
+          "plainSimplified": "原文证据显示“玉華州”在第 89 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-089.txt",
+          "rawLine": 23888
+        },
+        {
+          "chapterNumber": 90,
+          "excerptTraditional": "卻說孫大聖出了那九曲盤桓洞，跨祥雲，徑轉玉華州。但見那城頭上各方的土\n地、神祗與城隍之神迎空拜接。行者道：「汝等怎麼今夜才見？」城隍道：",
+          "plainSimplified": "原文证据显示“玉華州”在第 90 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-090.txt",
+          "rawLine": 24214
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "有寶象國印、烏雞國印、車遲國印、西梁女國印、祭賽國印、朱紫國印、比丘國\n印、滅法國印，又有鳳仙郡印、玉華州印、金平府印。太宗覽畢，收了。",
+          "plainSimplified": "原文证据显示“玉華州”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26663
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-051",
+      "name": "金平府",
+      "aliases": [
+        "金平府"
+      ],
+      "routeOrder": 51,
+      "phase": "westward-trials",
+      "chapterStart": 91,
+      "chapterEnd": 92,
+      "locationType": "city",
+      "keyEvents": [
+        "金平府相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 91,
+          "excerptTraditional": "第九一回     金平府元夜觀燈　玄英洞唐僧供狀",
+          "plainSimplified": "原文证据显示“金平府”在第 91 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-091.txt",
+          "rawLine": 24328
+        },
+        {
+          "chapterNumber": 92,
+          "excerptTraditional": "話。他見行者來，都慌忙施禮道：「大聖那裏去？」行者道：「因保唐僧行至天\n竺國東界金平府旻天縣，我師被本縣慈雲寺僧留賞元宵。比至金燈橋，有金燈三\n盞，點燈用酥合香油，價貴白金五萬餘兩，年年有諸佛降祥受用。正看時，果有",
+          "plainSimplified": "原文证据显示“金平府”在第 92 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-092.txt",
+          "rawLine": 24663
+        },
+        {
+          "chapterNumber": 100,
+          "excerptTraditional": "有寶象國印、烏雞國印、車遲國印、西梁女國印、祭賽國印、朱紫國印、比丘國\n印、滅法國印，又有鳳仙郡印、玉華州印、金平府印。太宗覽畢，收了。",
+          "plainSimplified": "原文证据显示“金平府”在第 100 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+          "rawLine": 26663
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-052",
+      "name": "青龍山",
+      "aliases": [
+        "青龍山"
+      ],
+      "routeOrder": 52,
+      "phase": "westward-trials",
+      "chapterStart": 91,
+      "chapterEnd": 92,
+      "locationType": "mountain",
+      "keyEvents": [
+        "青龍山相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 91,
+          "excerptTraditional": "行者恨恨的要打，見有此意，卻就免之，收了棒，回嗔作喜道：「這座山可是\n妖精之處？」功曹道：「正是，正是。此山名青龍山，內有洞，名玄英洞。洞\n中有三個妖精：大的個名辟寒大王，第二個號辟暑大王，第三個號辟塵大王。",
+          "plainSimplified": "原文证据显示“青龍山”在第 91 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-091.txt",
+          "rawLine": 24476
+        },
+        {
+          "chapterNumber": 92,
+          "excerptTraditional": "第九二回     三僧大戰青龍山　四星挾捉犀牛怪",
+          "plainSimplified": "原文证据显示“青龍山”在第 92 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-092.txt",
+          "rawLine": 24577
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-053",
+      "name": "天竺國",
+      "aliases": [
+        "天竺國"
+      ],
+      "routeOrder": 53,
+      "phase": "westward-trials",
+      "chapterStart": 93,
+      "chapterEnd": 95,
+      "locationType": "kingdom",
+      "keyEvents": [
+        "天竺國相关劫难或旅途节点，待人工细化。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 12,
+          "excerptTraditional": "的是小乘教法，度不得亡者昇天。我有大乘佛法三藏，可以度亡脫苦，壽身無壞\n。」太宗正色喜問道：「你那大乘佛法在於何處？」菩薩道：「在大西天天竺國\n大雷音寺我佛如來處，能解百冤之結，能消無妄之災。」太宗道：「你可記得麼",
+          "plainSimplified": "原文证据显示“天竺國”在第 12 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+          "rawLine": 3166
+        },
+        {
+          "chapterNumber": 14,
+          "excerptTraditional": "問道：「你是那裏來的長老，孤孤恓恓獨行於此？」三藏道：「弟子乃東土大唐\n奉差往西天拜活佛求真經者。」老母道：「西方佛乃大雷音寺天竺國界，此去有\n十萬八千里路。你這等單人獨馬，又無個伴侶，又無個徒弟，你如何去得？」三",
+          "plainSimplified": "原文证据显示“天竺國”在第 14 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt",
+          "rawLine": 3675
+        },
+        {
+          "chapterNumber": 39,
+          "excerptTraditional": "說不了，只聽得那魔王開口問道：「那和尚是那方來的？」行者昂然答道：「我\n是南贍部洲東土大唐國奉欽差前往西域天竺國大雷音寺拜活佛求真經者。今到此\n方，不敢空度，特來倒換通關文牒。」那魔王聞說，心中作怒道：「你東土便怎",
+          "plainSimplified": "原文证据显示“天竺國”在第 39 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-039.txt",
+          "rawLine": 10399
+        }
+      ],
+      "mapRole": "preview",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-054",
+      "name": "靈山",
+      "aliases": [
+        "靈山"
+      ],
+      "routeOrder": 54,
+      "phase": "buddhist-land-and-return",
+      "chapterStart": 98,
+      "chapterEnd": 98,
+      "locationType": "buddhist-land",
+      "keyEvents": [
+        "取经队伍抵达佛土。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 7,
+          "excerptTraditional": "那二聖得了旨，徑到靈山勝境雷音寶剎之前，對四金剛、八菩薩禮畢，即煩轉\n達。眾神隨至寶蓮臺下啟知，如來召請。二聖禮佛三匝，侍立臺下。如來問：",
+          "plainSimplified": "原文证据显示“靈山”在第 7 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-007.txt",
+          "rawLine": 1625
+        },
+        {
+          "chapterNumber": 8,
+          "excerptTraditional": "千諸佛、五百阿羅、八大金剛、無邊菩薩，一個個都執著幢幡寶蓋、異寶仙花，\n擺列在靈山仙境娑羅雙林之下接迎。如來駕住祥雲，對眾道：「我以甚深般若，\n遍觀三界。根本性原，畢竟寂滅。同虛空相，一無所有。殄伏乖猴，是事莫識。",
+          "plainSimplified": "原文证据显示“靈山”在第 8 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+          "rawLine": 1791
+        },
+        {
+          "chapterNumber": 14,
+          "excerptTraditional": "祝道：「弟子陳玄奘，特奉旨意求經。果有徒弟之分，揭得金字，救出神猴，同\n證靈山；若無徒弟之分，此輩是個兇頑怪物，哄賺弟子，不成吉慶，便揭不得起\n。」祝罷又拜。拜畢，上前將六個金字輕輕揭下。只聞得一陣香風，劈手把壓帖",
+          "plainSimplified": "原文证据显示“靈山”在第 14 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt",
+          "rawLine": 3518
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    },
+    {
+      "id": "route-055",
+      "name": "雷音寺",
+      "aliases": [
+        "雷音寺"
+      ],
+      "routeOrder": 55,
+      "phase": "buddhist-land-and-return",
+      "chapterStart": 98,
+      "chapterEnd": 98,
+      "locationType": "buddhist-land",
+      "keyEvents": [
+        "拜见如来，取得真经。"
+      ],
+      "evidence": [
+        {
+          "chapterNumber": 12,
+          "excerptTraditional": "。」太宗正色喜問道：「你那大乘佛法在於何處？」菩薩道：「在大西天天竺國\n大雷音寺我佛如來處，能解百冤之結，能消無妄之災。」太宗道：「你可記得麼\n？」菩薩道：「我記得。」太宗大喜道：「教法師引去，請上臺開講。」",
+          "plainSimplified": "原文证据显示“雷音寺”在第 12 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+          "rawLine": 3167
+        },
+        {
+          "chapterNumber": 14,
+          "excerptTraditional": "問道：「你是那裏來的長老，孤孤恓恓獨行於此？」三藏道：「弟子乃東土大唐\n奉差往西天拜活佛求真經者。」老母道：「西方佛乃大雷音寺天竺國界，此去有\n十萬八千里路。你這等單人獨馬，又無個伴侶，又無個徒弟，你如何去得？」三",
+          "plainSimplified": "原文证据显示“雷音寺”在第 14 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt",
+          "rawLine": 3675
+        },
+        {
+          "chapterNumber": 16,
+          "excerptTraditional": "三藏見了，侍立門傍，道個問訊。那和尚連忙答禮，笑道：「失瞻。」問：「是\n那裏來的？請入方丈獻茶。」三藏道：「我弟子乃東土欽差，上雷音寺拜佛求經\n。至此處天色將晚，欲借上剎一宵。」那和尚道：「請進裏坐，請進裏坐。」三",
+          "plainSimplified": "原文证据显示“雷音寺”在第 16 回出现；需人工确认其地图层级和事件摘要。",
+          "sourceFile": "data/processed/xiyouji/chapters/chapter-016.txt",
+          "rawLine": 4039
+        }
+      ],
+      "mapRole": "major",
+      "artNotes": "正式绘制前需结合本节点相关章节再生成地点美术 brief。",
+      "candidateStatus": "draft-from-full-text-candidates-requires-human-review"
+    }
+  ]
 }

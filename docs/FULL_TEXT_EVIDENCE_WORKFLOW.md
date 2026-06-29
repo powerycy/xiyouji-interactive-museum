@@ -60,6 +60,16 @@ python3 scripts/extract_xiyouji_fulltext.py
 
 这些候选文件只做证据池，不能直接当最终设定。
 
+当前已生成第一版整理草案：
+
+- `content/characters/sun-wukong.base.json`
+- `content/characters/tang-seng.base.json`
+- `content/characters/zhu-bajie.base.json`
+- `content/characters/sha-seng.base.json`
+- `content/characters/bailongma.base.json`
+
+这些草案可用于 MVP 开发和美术提示词拼装，但仍需人工复核。
+
 每个角色基础设定包含：
 
 - 常用姓名和称谓
@@ -121,10 +131,12 @@ python3 scripts/extract_xiyouji_fulltext.py
 当前已生成：
 
 - `content/map/route-canon.candidates.json`
+- `content/map/route-canon.seed.json`
 
 其中：
 
-- `priorityNodes`：重点路线候选，所有节点已扫描全文证据，适合作为人工确认主表
+- `route-canon.seed.json`：路线草案主表，包含 55 个节点、phase、mapRole、主事件章节和证据
+- `priorityNodes`：重点路线候选，所有节点已扫描全文证据，适合作为追溯证据
 - `autoNodes`：宽泛地点候选池，可能有噪声，只用于补漏
 
 ## 6. 地图节点分层

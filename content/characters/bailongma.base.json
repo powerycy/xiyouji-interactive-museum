@@ -1,0 +1,78 @@
+{
+  "id": "bailongma",
+  "name": "白龍馬",
+  "aliases": [
+    "玉龍",
+    "小龍",
+    "白馬",
+    "龍馬",
+    "意馬",
+    "八部天龍馬"
+  ],
+  "status": "curated-draft-requires-human-review",
+  "sourceCandidates": "content/characters/bailongma.base.candidates.json",
+  "identityArc": [
+    "原为西海龙王之子，在空中受罪。",
+    "受观音救解，等待取经人。",
+    "蛇盘山鹰愁涧吞唐僧原马，后变作白马。",
+    "取经途中驮唐僧西去、驮经东回。",
+    "功成八部天龙马。"
+  ],
+  "appearanceEvidence": [
+    {
+      "chapterNumber": 15,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt",
+      "excerptTraditional": "教他就變做我原騎的白馬，毛片俱同，馱我上西天拜佛。",
+      "plainSimplified": "白龙马取经阶段外观与唐僧原来的白马相同，重点是马形而非长期龙形。"
+    }
+  ],
+  "clothingAndProps": [
+    "白马形态为常态。",
+    "第十五回后有鞍轡、韁籠等马具。",
+    "龙形可用于揭示前史、奖励图或特殊动画，不宜常驻探索主画面。"
+  ],
+  "weaponsOrTools": [
+    "龙身变化",
+    "马具",
+    "驮负唐僧与经卷"
+  ],
+  "personality": [
+    "取经阶段沉默承担脚力职责。",
+    "原有龙子前史和罪责，后皈依沙门。",
+    "视觉表现应有神性和清洁感，但不要喧宾夺主。"
+  ],
+  "relationships": [
+    "脚力：驮唐三藏。",
+    "与观音救解有关。",
+    "与蛇盘山、鹰愁涧强关联。",
+    "与西海龙王有身世关系。"
+  ],
+  "canonicalEvidence": [
+    {
+      "chapterNumber": 8,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+      "note": "西海龙子受罪，观音安排为取经脚力。"
+    },
+    {
+      "chapterNumber": 15,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-015.txt",
+      "note": "鹰愁涧吞马、变白马、得鞍轡。"
+    },
+    {
+      "chapterNumber": 100,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+      "note": "功成八部天龙马。"
+    }
+  ],
+  "visualPrinciples": [
+    "常态画成白马，不画成人形队友。",
+    "可以在鬃毛、眼神、马具纹样中暗示龙性。",
+    "白马应服务唐僧动线和地图旅途感。",
+    "龙形只在回忆、转场、奖励或特殊章节中使用。"
+  ],
+  "avoid": [
+    "不要长期画成人形白龙王子。",
+    "不要让龙形盖过取经队伍主视觉。",
+    "不要把白马画成普通无神性的坐骑。"
+  ]
+}

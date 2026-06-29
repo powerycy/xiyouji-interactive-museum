@@ -1,0 +1,37 @@
+{
+  "id": "sun-wukong",
+  "chapterNumber": 27,
+  "status": "curated-draft-requires-human-review",
+  "currentLocation": "白虎嶺",
+  "chapterRole": "识破并三次打杀白骨夫人变化，最终被唐僧逐走。",
+  "currentAppearance": [
+    "取经阶段行者形象，头戴紧箍。",
+    "可使用赭黄袍、蓝田带、步云履、如意金箍棒作为他自述前史视觉回声，但当前不应全程天宫重甲。",
+    "动作应敏捷、警觉、带强烈护师意图。"
+  ],
+  "emotion": [
+    "警觉",
+    "急切辩白",
+    "委屈",
+    "被逐后的不甘"
+  ],
+  "props": [
+    "如意金箍棒",
+    "紧箍",
+    "行者衣装"
+  ],
+  "evidence": [
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "excerptTraditional": "怕你念甚麼緊箍兒咒，故意的使個障眼法兒，變做這等樣東西。",
+      "plainSimplified": "悟空说明白骨夫人用障眼法变化，自己是识妖而打。"
+    },
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "excerptTraditional": "頭戴的是紫金冠，身穿的是赭黃袍，腰繫的是藍田帶，足踏的是步雲履，手執的是如意金箍棒。",
+      "plainSimplified": "悟空自述旧日花果山/齐天大圣时期的装束，可作回忆或图纸元素。"
+    }
+  ]
+}

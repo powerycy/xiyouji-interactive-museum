@@ -1,0 +1,27 @@
+{
+  "id": "bailongma",
+  "chapterNumber": 27,
+  "status": "curated-draft-requires-human-review",
+  "currentLocation": "白虎嶺",
+  "chapterRole": "驮唐僧行经白虎岭，是旅途动线和场景构图的重要元素。",
+  "currentAppearance": [
+    "白马形态，配鞍轡。",
+    "不作为人形角色出现。"
+  ],
+  "emotion": [
+    "警觉",
+    "受惊"
+  ],
+  "props": [
+    "鞍轡",
+    "缰绳"
+  ],
+  "evidence": [
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "excerptTraditional": "聖僧歇馬在山巖，忽見裙釵女近前。",
+      "plainSimplified": "本章场景中唐僧骑马/歇马进入白虎岭事件。"
+    }
+  ]
+}

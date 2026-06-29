@@ -1,0 +1,30 @@
+{
+  "id": "zhu-bajie",
+  "chapterNumber": 27,
+  "status": "curated-draft-requires-human-review",
+  "currentLocation": "白虎嶺",
+  "chapterRole": "被白骨精变化的斋饭吸引，并多次挑动唐僧责怪悟空。",
+  "currentAppearance": [
+    "取经僧徒形象，长嘴大耳，携九齿钉钯。",
+    "可表现贪吃、摇摆、插话的喜剧姿态。"
+  ],
+  "emotion": [
+    "贪食",
+    "猜疑",
+    "挑拨",
+    "自保"
+  ],
+  "props": [
+    "九齿钉钯",
+    "直裰",
+    "行李担"
+  ],
+  "evidence": [
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "excerptTraditional": "那獃子放下釘鈀，整整直裰，擺擺搖搖，充作個斯文氣象，一直的靦面相迎。",
+      "plainSimplified": "八戒看到女子送斋时放下武器、整理衣服，喜剧性和贪念明显。"
+    }
+  ]
+}

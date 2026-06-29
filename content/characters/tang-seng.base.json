@@ -1,0 +1,95 @@
+{
+  "id": "tang-seng",
+  "name": "唐三藏",
+  "aliases": [
+    "江流",
+    "陳玄奘",
+    "玄奘",
+    "唐僧",
+    "唐三藏",
+    "御弟",
+    "聖僧",
+    "金蟬子",
+    "旃檀功德佛"
+  ],
+  "status": "curated-draft-requires-human-review",
+  "sourceCandidates": "content/characters/tang-seng.base.candidates.json",
+  "identityArc": [
+    "乳名江流，金山寺法明长老救养。",
+    "削发修行，法名玄奘。",
+    "被选为水陆大会高僧，得唐太宗认可。",
+    "受锦襕袈裟、九环锡杖、通关文牒，奉旨西行取经。",
+    "原为金蝉子转生，功成后为旃檀功德佛。"
+  ],
+  "appearanceEvidence": [
+    {
+      "chapterNumber": 12,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+      "excerptTraditional": "賜五彩織金袈裟一件、毘盧帽一頂。",
+      "plainSimplified": "唐僧正式出行前得到五彩织金袈裟和毘卢帽。"
+    },
+    {
+      "chapterNumber": 12,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+      "excerptTraditional": "長老遂將袈裟抖開，披在身上，手持錫杖，侍立階前。",
+      "plainSimplified": "核心视觉为袈裟、毘卢帽、九环锡杖和僧人威仪。"
+    }
+  ],
+  "clothingAndProps": [
+    "锦襕异宝袈裟。",
+    "毘卢帽。",
+    "九环锡杖。",
+    "通关文牒、紫金钵盂、行李。"
+  ],
+  "weaponsOrTools": [
+    "九环锡杖",
+    "通关文牒",
+    "紫金钵盂",
+    "经卷"
+  ],
+  "personality": [
+    "守戒、慈悯、重礼法。",
+    "容易受妖怪幻象触动，常因慈悲误会悟空。",
+    "面对色诱、恐吓时强调取经初心和清净戒行。",
+    "不应塑造成战斗型角色。"
+  ],
+  "relationships": [
+    "徒弟：孙悟空、猪八戒、沙悟净；脚力：白龙马。",
+    "与唐太宗有御弟关系。",
+    "受观音点化取经。",
+    "前世为如来二徒金蝉子。"
+  ],
+  "canonicalEvidence": [
+    {
+      "chapterNumber": 9,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-009.txt",
+      "note": "江流身世和玄奘法名。"
+    },
+    {
+      "chapterNumber": 12,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-012.txt",
+      "note": "水陆大会、袈裟、锡杖、御弟、三藏称号和通关文牒。"
+    },
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "note": "慈悯误认白骨精变化，逐走悟空。"
+    },
+    {
+      "chapterNumber": 100,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+      "note": "金蝉子身份与旃檀功德佛果位。"
+    }
+  ],
+  "visualPrinciples": [
+    "保持端正僧相和礼仪感。",
+    "以袈裟、毘卢帽、锡杖、文牒为主要识别点。",
+    "脸部气质应清秀、克制、慈悯，而非帝王或武将。",
+    "章节状态可表现疲惫、惊惧、疑虑，但不改变基本僧人身份。"
+  ],
+  "avoid": [
+    "不要画成武僧或法术攻击角色。",
+    "不要使用影视版固定脸谱。",
+    "不要把袈裟做成西式教袍或重甲披风。"
+  ]
+}

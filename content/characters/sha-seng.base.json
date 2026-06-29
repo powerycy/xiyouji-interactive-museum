@@ -1,0 +1,78 @@
+{
+  "id": "sha-seng",
+  "name": "沙悟淨",
+  "aliases": [
+    "捲簾大將",
+    "沙悟淨",
+    "悟淨",
+    "沙僧",
+    "沙和尚",
+    "金身羅漢"
+  ],
+  "status": "curated-draft-requires-human-review",
+  "sourceCandidates": "content/characters/sha-seng.base.candidates.json",
+  "identityArc": [
+    "原为灵霄殿下侍銮舆的卷帘大将。",
+    "蟠桃会上失手打碎玻璃盏，被贬流沙河。",
+    "在流沙河为怪，后受观音安排归顺唐僧。",
+    "取经路上牵马、护持行李，功成金身罗汉。"
+  ],
+  "appearanceEvidence": [
+    {
+      "chapterNumber": 22,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt",
+      "excerptTraditional": "一頭紅燄髮蓬鬆，兩隻圓睛亮似燈。不黑不青藍靛臉，如雷如鼓老龍聲。身披一領鵝黃氅，腰束雙攢露白藤。項下骷髏懸九個，手持寶杖甚崢嶸。",
+      "plainSimplified": "沙僧早期形象有红焰蓬发、圆眼、蓝靛脸、鹅黄氅、九个骷髅、宝杖。"
+    }
+  ],
+  "clothingAndProps": [
+    "早期流沙河形象有鹅黄氅、白藤腰束、项下九个骷髅。",
+    "归队后常以和尚/行脚僧形象出现，仍持降妖宝杖。",
+    "可表现牵马、看守行李等稳定职责。"
+  ],
+  "weaponsOrTools": [
+    "降妖宝杖",
+    "九个骷髅",
+    "法船相关葫芦"
+  ],
+  "personality": [
+    "沉稳、听命、忠厚。",
+    "存在罪业前史，但取经阶段更像队伍中的稳定支点。",
+    "战斗力不应被忽略，降妖宝杖是重要武器。",
+    "台词和行为比悟空、八戒更克制。"
+  ],
+  "relationships": [
+    "师父：唐三藏。",
+    "师兄：孙悟空、猪八戒。",
+    "受观音与木叉安排归顺。",
+    "与流沙河、弱水、骷髅法船有强关联。"
+  ],
+  "canonicalEvidence": [
+    {
+      "chapterNumber": 8,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-008.txt",
+      "note": "卷帘大将被贬前史。"
+    },
+    {
+      "chapterNumber": 22,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-022.txt",
+      "note": "流沙河外貌、降妖杖、骷髅法船和归顺。"
+    },
+    {
+      "chapterNumber": 100,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+      "note": "功成金身罗汉。"
+    }
+  ],
+  "visualPrinciples": [
+    "保留蓝靛脸、红发、宝杖等原著识别点。",
+    "取经阶段可以弱化骷髅恐怖感，但不要完全删除其前史证据。",
+    "整体气质沉稳可靠，不做夸张喜剧角色。",
+    "体型可高大结实，但不应覆盖唐僧、悟空、八戒的识别差异。"
+  ],
+  "avoid": [
+    "不要直接变成普通光头和尚。",
+    "不要把沙僧画成纯背景搬运工。",
+    "不要使用影视版单一棕红脸谱作为唯一依据。"
+  ]
+}

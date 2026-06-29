@@ -1,0 +1,29 @@
+{
+  "id": "sha-seng",
+  "chapterNumber": 27,
+  "status": "curated-draft-requires-human-review",
+  "currentLocation": "白虎嶺",
+  "chapterRole": "随队护持，在本章不是主要冲突发动者。",
+  "currentAppearance": [
+    "沉稳僧徒形象，携降妖宝杖。",
+    "可弱化流沙河骷髅恐怖元素，但图纸中应保留其前史。"
+  ],
+  "emotion": [
+    "谨慎",
+    "沉默",
+    "跟随"
+  ],
+  "props": [
+    "降妖宝杖",
+    "行李",
+    "白马缰绳"
+  ],
+  "evidence": [
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "excerptTraditional": "八戒、沙僧雖沒甚麼大本事，然八戒是天蓬元帥，沙僧是捲簾大將。",
+      "plainSimplified": "本章白骨精也承认沙僧有卷帘大将前史，只是本章戏份相对少。"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "sun-wukong",
+  "name": "孫悟空",
+  "aliases": [
+    "石猴",
+    "美猴王",
+    "孫悟空",
+    "孫行者",
+    "行者",
+    "大聖",
+    "齊天大聖",
+    "鬥戰勝佛"
+  ],
+  "status": "curated-draft-requires-human-review",
+  "sourceCandidates": "content/characters/sun-wukong.base.candidates.json",
+  "identityArc": [
+    "花果山仙石化生的石猴。",
+    "入水簾洞後被群猴拜為王，稱美猴王。",
+    "拜菩提祖師學道，得名孫悟空。",
+    "曾得如意金箍棒與披掛，大鬧天宮，後被壓五行山。",
+    "取經路上皈依唐僧，頭戴緊箍，稱孫行者。",
+    "功成後受封鬥戰勝佛。"
+  ],
+  "appearanceEvidence": [
+    {
+      "chapterNumber": 1,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+      "excerptTraditional": "因見風，化作一個石猴，五官俱備，四肢皆全。便就學爬學走，拜了四方。目運兩道金光，射沖斗府。",
+      "plainSimplified": "悟空本体是石猴，五官四肢俱全，出生时双眼金光直冲天府。"
+    },
+    {
+      "chapterNumber": 83,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-083.txt",
+      "excerptTraditional": "高低面賽馬鞍，眼放金光如火亮。渾身毛硬似鋼針，虎皮裙繫明花響。",
+      "plainSimplified": "后期原文仍强调猴相、金光眼、硬毛和虎皮裙，不应画成纯人类武将。"
+    }
+  ],
+  "clothingAndProps": [
+    "早期天宫披挂包含紫金冠、赭黄袍、蓝田带、步云履。",
+    "取经路上常见组合为直裰、虎皮裙、紧箍、金箍棒。",
+    "第十四回后戴紧箍，紧箍不应被省略为普通发箍。",
+    "服饰会随章节变化：可有布直裰、锦直裰、虎皮裙、临时变化伪装。"
+  ],
+  "weaponsOrTools": [
+    "如意金箍棒",
+    "觔斗雲",
+    "毫毛变化",
+    "火眼金睛",
+    "紧箍"
+  ],
+  "personality": [
+    "机敏好胜，遇妖怪常主动试探。",
+    "保护唐僧是取经阶段核心职责。",
+    "易怒、敢辩，也会因被误解而委屈。",
+    "讲义气，但不宜画成阴郁反英雄。"
+  ],
+  "relationships": [
+    "师父：唐三藏。",
+    "师弟：猪八戒、沙悟净。",
+    "受观音安排护送取经。",
+    "与花果山群猴、水帘洞旧部有前史关系。"
+  ],
+  "canonicalEvidence": [
+    {
+      "chapterNumber": 1,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-001.txt",
+      "note": "石猴出生、花果山水簾洞前史。"
+    },
+    {
+      "chapterNumber": 3,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-003.txt",
+      "note": "取得如意金箍棒和披挂。"
+    },
+    {
+      "chapterNumber": 14,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-014.txt",
+      "note": "皈依唐僧、穿直裰、戴紧箍。"
+    },
+    {
+      "chapterNumber": 27,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
+      "note": "三打白骨精章节状态与被逐事件。"
+    },
+    {
+      "chapterNumber": 100,
+      "sourceFile": "data/processed/xiyouji/chapters/chapter-100.txt",
+      "note": "功成受封鬥戰勝佛。"
+    }
+  ],
+  "visualPrinciples": [
+    "保持猴相：毛脸、雷公嘴、金光眼、灵活身形。",
+    "取经阶段优先表现行者身份，而不是天宫全甲常驻。",
+    "战斗姿态可以强，但身体不应变成厚重写实肌肉武士。",
+    "色彩可随章节气氛变化，但人物识别点必须来自原文。"
+  ],
+  "avoid": [
+    "不要直接套用影视、动画、漫画里的悟空造型。",
+    "不要把紫金冠黄金甲当作取经全程常服。",
+    "不要做成无猴相的美型人类少年或纯暗黑铠甲战士。"
+  ]
+}

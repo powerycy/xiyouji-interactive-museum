@@ -18,3 +18,21 @@ python3 scripts/extract_xiyouji_fulltext.py
 - `content/characters/*.base.candidates.json`
 
 脚本只做机械抽取和候选生成，不做白话改写，不生成最终人物设定，也不替代人工考据。
+
+## `build_xiyouji_curated_drafts.py`
+
+从已经抽取的候选证据生成第一版人工整理草案。
+
+运行：
+
+```bash
+python3 scripts/build_xiyouji_curated_drafts.py
+```
+
+输出：
+
+- `content/characters/*.base.json`
+- `content/chapters/027/characters/*.state.json`
+- `content/map/route-canon.seed.json`
+
+这些文件已经比候选数据更适合开发和美术生产，但状态仍是 `curated-draft-requires-human-review`，正式上线前需要人工复核。
