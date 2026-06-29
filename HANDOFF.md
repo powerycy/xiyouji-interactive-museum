@@ -19,9 +19,11 @@
 3. `docs/TECH_SPEC.md`
 4. `docs/CONTENT_MODEL.md`
 5. `docs/CHAPTER_027_DESIGN.md`
-6. `content/chapters/chapter-027.seed.json`
-7. `content/map/map-nodes.seed.json`
-8. `docs/IMPLEMENTATION_PLAN.md`
+6. `docs/FULL_TEXT_EVIDENCE_WORKFLOW.md`
+7. `content/chapters/chapter-027.seed.json`
+8. `content/map/map-nodes.seed.json`
+9. `content/map/route-canon.seed.json`
+10. `docs/IMPLEMENTATION_PLAN.md`
 
 ## 核心约束
 
@@ -48,7 +50,9 @@
 
 ## 资源注意事项
 
-真实美术资源尚未生成。开发前应先生成 MVP 核心包，至少包括：
+首轮美术风格测试图已经生成，保存于 `public/assets/style-tests`。这些图只用于气质测试，不是原著考据最终资源。
+
+真实美术资源尚未生成。开发前应先基于全书证据和第二七回状态生成 MVP 核心包，至少包括：
 
 - 大地图
 - 白虎岭主探索场景
@@ -56,6 +60,8 @@
 - 五张人物图纸
 - 白虎岭 360 全景或动画
 - 章节徽章
+
+主角基础形象必须从全书提取，不能只依据第二七回生成。大地图也必须从全书路线线索提取，不能让 AI 自由画路线。
 
 提示词见：
 
@@ -71,6 +77,8 @@
 `chapter-027.seed.json` 中热点坐标是开发前草案，字段 `coordinateStatus` 已标明为 `draft-before-final-art`。真实白虎岭主场景图确定后，需要在 `/studio` 中重新校准热点坐标。
 
 展签和小游戏内容是第一版 seed，开发时可以先直接使用；上线前应人工复核原文摘录和白话解释。
+
+`map-nodes.seed.json` 是 MVP 演示节点，不是全书考据路线。正式大地图应以后续 `route-canon.seed.json` 的全书抽取结果为准。
 
 ## 验收目标
 
@@ -88,4 +96,3 @@ MVP 完成时必须做到：
 - 徽章点亮并保存到本地进度
 - 刷新页面后进度不丢失
 - `/studio` 可预览章节数据、热点、展签、小游戏和奖励资源
-

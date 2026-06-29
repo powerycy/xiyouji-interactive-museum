@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "scaffold-pending-full-text-extraction",
+  "source": {
+    "work": "西遊記",
+    "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt"
+  },
+  "notes": [
+    "本文件用于保存从全书抽取并人工确认后的取经路线节点。",
+    "当前只是结构骨架，不能作为最终路线地图依据。",
+    "正式大地图必须基于本文件的确认节点生成。"
+  ],
+  "schema": {
+    "id": "string",
+    "name": "string",
+    "aliases": ["string"],
+    "routeOrder": "number",
+    "chapterStart": "number",
+    "chapterEnd": "number",
+    "locationType": "mountain|river|kingdom|cave|temple|monastery|heaven|buddhist-land|other",
+    "keyEvents": ["string"],
+    "evidence": [
+      {
+        "chapterNumber": "number",
+        "excerptTraditional": "string",
+        "plainSimplified": "string",
+        "sourceFile": "string"
+      }
+    ],
+    "mapRole": "major|minor|preview|background",
+    "artNotes": "string"
+  },
+  "nodes": []
+}
+

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Journey to the West Character Base Schema",
+  "type": "object",
+  "required": ["id", "name", "aliases", "canonicalEvidence", "visualPrinciples"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "identityArc": { "type": "array", "items": { "type": "string" } },
+    "appearanceEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chapterNumber": { "type": "number" },
+          "excerptTraditional": { "type": "string" },
+          "plainSimplified": { "type": "string" }
+        }
+      }
+    },
+    "clothingAndProps": { "type": "array", "items": { "type": "string" } },
+    "weaponsOrTools": { "type": "array", "items": { "type": "string" } },
+    "personality": { "type": "array", "items": { "type": "string" } },
+    "relationships": { "type": "array", "items": { "type": "string" } },
+    "canonicalEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chapterNumber": { "type": "number" },
+          "sourceFile": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "visualPrinciples": { "type": "array", "items": { "type": "string" } },
+    "avoid": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

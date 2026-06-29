@@ -4,7 +4,8 @@
   "coordinateSystem": "percentage",
   "notes": [
     "节点坐标为大地图开发前草案，需在真实大地图资源确定后通过 /studio 精修。",
-    "MVP 只有 chapter-027 完整开放，其他节点用于锁定或预览空壳。"
+    "MVP 只有 chapter-027 完整开放，其他节点用于锁定或预览空壳。",
+    "本文件是产品演示节点，不是全书考据路线。正式路线应以 route-canon.seed.json 完成抽取后的数据为准。"
   ],
   "nodes": [
     {
@@ -82,4 +83,3 @@
     }
   ]
 }
-
