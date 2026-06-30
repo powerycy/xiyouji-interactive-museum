@@ -382,3 +382,52 @@ button:disabled {
   border: 1px solid var(--line);
   background: #090806;
 }
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.studio-panel {
+  padding: 16px;
+}
+
+.studio-scene {
+  position: relative;
+  overflow: hidden;
+}
+
+.studio-scene img {
+  width: 100%;
+  display: block;
+}
+
+.studio-scene span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: rgba(18, 15, 13, 0.78);
+  border: 1px solid var(--gold);
+  padding: 2px 5px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.studio-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(111, 84, 51, 0.45);
+}
+
+.studio-badge {
+  width: 140px;
+  max-width: 100%;
+}
+
+@media (max-width: 840px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
