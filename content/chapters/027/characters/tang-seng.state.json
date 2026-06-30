@@ -24,7 +24,9 @@
     {
       "chapterNumber": 27,
       "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
-      "excerptTraditional": "原來這唐僧是個慈憫的聖僧，他見行者哀告，卻也回心轉意。",
+      "rawLineStart": 7111,
+      "rawLineEnd": 7113,
+      "excerptTraditional": "原來這唐僧是個慈憫的聖僧，他見行者哀告，卻也回心轉意道：「既如此說，且饒你這一次，再休無禮。如若仍前作惡，這咒語顛倒就念二十遍。」",
       "plainSimplified": "本章唐僧的核心误判来自慈悯和戒杀，不是单纯愚蠢。"
     }
   ]

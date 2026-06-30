@@ -22,7 +22,9 @@
     {
       "chapterNumber": 27,
       "sourceFile": "data/processed/xiyouji/chapters/chapter-027.txt",
-      "excerptTraditional": "八戒、沙僧雖沒甚麼大本事，然八戒是天蓬元帥，沙僧是捲簾大將。",
+      "rawLineStart": 7028,
+      "rawLineEnd": 7029,
+      "excerptTraditional": "八戒、沙僧雖沒甚麼大本事，然八戒是天蓬元帥，沙僧是捲簾大將，他的威氣尚不曾泄，故不敢攏身。",
       "plainSimplified": "本章白骨精也承认沙僧有卷帘大将前史，只是本章戏份相对少。"
     }
   ]

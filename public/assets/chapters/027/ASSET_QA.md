@@ -26,7 +26,7 @@
 - `zhu-bajie-v1.png`：长嘴大耳、鬃毛、九齿钉钯明确，可用。
 - `sha-seng-v1.png`：蓝靛脸、红发、降妖宝杖明确；骷髅元素偏重，若想更温和可重生成。
 - `baigu-furen-v1.png`：伪装、骨相、妖气都明确，适合 demo。
-- `baihuling-360-v1.png`：可做奖励页全景视觉，比例接近 2:1；不是严格工程级 equirectangular，正式 360 建议重做。
+- `baihuling-360-v1.png`：可做奖励页静态全景预览，比例接近 2:1；不是严格工程级 equirectangular，当前 seed 不应接 360 viewer，正式 360 建议重做。
 - `baihuling-360-thumb.jpg`：由当前全景图裁切生成，用于奖励入口缩略图。
 - `chapter-027-badges-v1.png`：徽章合图可用作视觉参考；`locked-v1` 已裁切左侧锁定徽章，`unlocked-v1` 已裁切右侧发光解锁徽章。
 

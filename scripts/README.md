@@ -39,7 +39,7 @@ python3 scripts/build_xiyouji_curated_drafts.py
 
 ## `validate_asset_references.mjs`
 
-检查交接文档、产品文档和资源 QA 文档中的资产路径是否能落到真实文件。
+检查交接文档、产品文档、资源 QA 文档和运行时 JSON seed 中的资产路径是否能落到真实文件。
 
 运行：
 
@@ -52,5 +52,6 @@ node scripts/validate_asset_references.mjs
 - `HANDOFF.md`
 - `docs/**/*.md`
 - `public/assets/**/*.md`
+- `content/**/*.json`
 
-脚本会检查 `public/assets/...`、`/assets/...` 和 `public/assets/map/nodes/*.jpg` 这类通配路径。
+脚本会检查 Markdown 中的 `public/assets/...`、`/assets/...` 和 `public/assets/map/nodes/*.jpg` 这类通配路径，也会解析 JSON 中的 `/assets/...` 运行时路径。

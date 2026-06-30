@@ -6,11 +6,13 @@
   "notes": [
     "节点坐标为大地图开发前草案，需在真实大地图资源确定后通过 /studio 精修。",
     "MVP 只有 chapter-027 完整开放，其他节点用于锁定或预览空壳。",
-    "本文件是产品演示节点，不是全书考据路线。正式路线应以 route-canon.seed.json 完成抽取后的数据为准。"
+    "本文件是产品演示节点，不是全书考据路线。正式路线应以 route-canon.seed.json 完成抽取后的数据为准。",
+    "id 是 MVP 前端节点 ID 和本地进度 ID；canonicalRouteId 用于映射 route-canon.seed.json 的正式路线节点。"
   ],
   "nodes": [
     {
       "id": "chang-an",
+      "canonicalRouteId": "route-009",
       "name": "长安",
       "chapterId": null,
       "position": { "x": 12, "y": 64 },
@@ -20,6 +22,7 @@
     },
     {
       "id": "wuzhuang-guan",
+      "canonicalRouteId": "route-020",
       "name": "五庄观",
       "chapterId": null,
       "position": { "x": 36, "y": 49 },
@@ -29,6 +32,7 @@
     },
     {
       "id": "baihuling",
+      "canonicalRouteId": "route-021",
       "name": "白虎岭",
       "chapterId": "chapter-027",
       "position": { "x": 48, "y": 55 },
@@ -38,6 +42,7 @@
     },
     {
       "id": "heisonglin",
+      "canonicalRouteId": "route-022",
       "name": "黑松林",
       "chapterId": "chapter-028-preview",
       "position": { "x": 57, "y": 50 },
@@ -48,6 +53,7 @@
     },
     {
       "id": "baoxiangguo",
+      "canonicalRouteId": "route-023",
       "name": "宝象国",
       "chapterId": null,
       "position": { "x": 66, "y": 57 },
@@ -57,6 +63,7 @@
     },
     {
       "id": "chechiguo",
+      "canonicalRouteId": "route-031",
       "name": "车迟国",
       "chapterId": null,
       "position": { "x": 76, "y": 45 },
@@ -66,6 +73,7 @@
     },
     {
       "id": "nuer-guo",
+      "canonicalRouteId": "route-034",
       "name": "女儿国",
       "chapterId": null,
       "position": { "x": 84, "y": 60 },
@@ -75,6 +83,7 @@
     },
     {
       "id": "lingshan",
+      "canonicalRouteId": "route-054",
       "name": "灵山",
       "chapterId": null,
       "position": { "x": 93, "y": 38 },

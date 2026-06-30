@@ -15,7 +15,7 @@
 可选库：
 
 - `@dnd-kit/core`：小游戏拖拽排序
-- `Photo Sphere Viewer` 或 `Pannellum`：360 全景展示
+- `Photo Sphere Viewer` 或 `Pannellum`：仅在资源为严格 equirectangular `panorama` 时使用
 - `Framer Motion`：章节过渡、徽章点亮、展签动效
 - `React Flow`：后续人物关系图或事件图
 - `sharp` 或脚本工具：资源尺寸整理
@@ -27,7 +27,7 @@
 - `/`：大地图
 - `/chapter/027`：三打白骨精章节
 - `/chapter/027/game`：章节小游戏
-- `/chapter/027/reward`：360 全景或动画奖励
+- `/chapter/027/reward`：静态全景预览、360 全景或动画奖励
 - `/studio`：本地内容工作台
 
 ## 3. 用户端模块
@@ -77,7 +77,7 @@
 
 职责：
 
-- 展示 360 全景或内置动画
+- 展示静态全景预览、360 全景或内置动画
 - 点亮徽章
 - 保存章节完成状态
 - 更新大地图节点
@@ -117,6 +117,14 @@ MVP 可以先只读 JSON，不一定提供写回功能。若要写回，可后�
 
 - `xiyouji.progress.v1`
 
+MVP 版本策略：
+
+- 当前进度结构版本为 `1`
+- 读取进度时必须校验 `version`
+- 若进度缺失、JSON 解析失败或版本不匹配，重置为干净的 v1 空进度
+- `/studio` 或开发调试入口提供“重置本地进度”
+- 多章节正式扩展前再补充迁移策略，不在 MVP 内做复杂迁移
+
 ## 6. 资源策略
 
 美术资源在开发前生成 MVP 核心包。
@@ -125,18 +133,19 @@ MVP 可以先只读 JSON，不一定提供写回功能。若要写回，可后�
 
 ## 7. 360/动画策略
 
-MVP 预生成 360 图或动画，不做实时生成。
+MVP 预生成静态全景预览、360 图或动画，不做实时生成。当前三打白骨精 v1 资源按静态全景预览展示。
 
 实现上把奖励抽象为资源类型：
 
 ```ts
 type RewardAsset =
+  | { type: "static-panorama-preview"; src: string; thumbnail?: string }
   | { type: "panorama"; src: string; thumbnail?: string }
   | { type: "video"; src: string; poster?: string }
   | { type: "image-sequence"; frames: string[] };
 ```
 
-后续如果用户提供新动画，只需替换章节 JSON 中的奖励资源。
+当前 `baihuling-360-v1.png` 只按 `static-panorama-preview` 展示，不接 360 viewer。后续如果用户提供合格 360 图或新动画，只需替换章节 JSON 中的奖励资源。
 
 ## 8. AI 使用边界
 
@@ -158,7 +167,7 @@ AI 只用于离线生产：
 - 三打白骨精可进入
 - 热点点击位置准确
 - 展签打开、关闭、已读状态正常
-- 探索度 69%、70%、71% 以及“线索展签未读完/已读完”组合下，小游戏入口状态正确
+- 探索度 69%、70%、71% 以及“核心线索展签未读完/已读完”组合下，小游戏入口状态正确
 - 小游戏排序和证据匹配能判定
 - 奖励资源能播放或展示
 - 进度刷新页面后仍存在

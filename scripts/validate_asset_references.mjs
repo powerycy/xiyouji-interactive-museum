@@ -7,6 +7,9 @@ const markdownRoots = [
   path.join(root, 'docs'),
   path.join(root, 'public/assets')
 ];
+const jsonRoots = [
+  path.join(root, 'content')
+];
 
 const assetRefPattern = /(^|[\s`"'([{])((?:\/assets\/|public\/assets\/)[^\s`'")\]}，、。；：]+)/g;
 const trailingPunctuationPattern = /[.,;:!?]+$/;
@@ -22,6 +25,20 @@ function walkMarkdown(entryPath) {
   return fs.readdirSync(entryPath, { withFileTypes: true }).flatMap((entry) => {
     const fullPath = path.join(entryPath, entry.name);
     return entry.isDirectory() ? walkMarkdown(fullPath) : walkMarkdown(fullPath);
+  });
+}
+
+function walkJson(entryPath) {
+  if (!fs.existsSync(entryPath)) return [];
+
+  const stat = fs.statSync(entryPath);
+  if (stat.isFile()) {
+    return entryPath.endsWith('.json') ? [entryPath] : [];
+  }
+
+  return fs.readdirSync(entryPath, { withFileTypes: true }).flatMap((entry) => {
+    const fullPath = path.join(entryPath, entry.name);
+    return entry.isDirectory() ? walkJson(fullPath) : walkJson(fullPath);
   });
 }
 
@@ -61,10 +78,12 @@ function lineNumber(text, index) {
 }
 
 const markdownFiles = [...new Set(markdownRoots.flatMap(walkMarkdown))].sort();
+const jsonFiles = [...new Set(jsonRoots.flatMap(walkJson))].sort();
 const publicAssetFiles = walkFiles(path.join(root, 'public/assets'))
   .map((file) => path.relative(root, file).split(path.sep).join('/'));
 
-let checkedCount = 0;
+let checkedMarkdownCount = 0;
+let checkedJsonCount = 0;
 const missing = [];
 
 for (const file of markdownFiles) {
@@ -72,7 +91,7 @@ for (const file of markdownFiles) {
 
   for (const match of text.matchAll(assetRefPattern)) {
     const ref = match[2].replace(trailingPunctuationPattern, '');
-    checkedCount += 1;
+    checkedMarkdownCount += 1;
 
     const exists = ref.includes('*')
       ? wildcardExists(ref, publicAssetFiles)
@@ -88,6 +107,45 @@ for (const file of markdownFiles) {
   }
 }
 
+function collectAssetRefsFromJson(value, refs = []) {
+  if (Array.isArray(value)) {
+    for (const item of value) collectAssetRefsFromJson(item, refs);
+    return refs;
+  }
+
+  if (value && typeof value === 'object') {
+    for (const item of Object.values(value)) collectAssetRefsFromJson(item, refs);
+    return refs;
+  }
+
+  if (typeof value === 'string' && value.startsWith('/assets/')) {
+    refs.push(value);
+  }
+
+  return refs;
+}
+
+for (const file of jsonFiles) {
+  const text = fs.readFileSync(file, 'utf8');
+  const data = JSON.parse(text);
+
+  for (const ref of collectAssetRefsFromJson(data)) {
+    checkedJsonCount += 1;
+
+    const exists = ref.includes('*')
+      ? wildcardExists(ref, publicAssetFiles)
+      : fs.existsSync(toAbsolute(ref));
+
+    if (!exists) {
+      missing.push({
+        file: path.relative(root, file),
+        line: lineNumber(text, text.indexOf(ref)),
+        ref
+      });
+    }
+  }
+}
+
 if (missing.length > 0) {
   for (const item of missing) {
     console.error(`${item.file}:${item.line} missing asset reference: ${item.ref}`);
@@ -95,4 +153,4 @@ if (missing.length > 0) {
   process.exit(1);
 }
 
-console.log(`markdown asset references ok (${checkedCount} refs in ${markdownFiles.length} files)`);
+console.log(`asset references ok (${checkedMarkdownCount} markdown refs in ${markdownFiles.length} files, ${checkedJsonCount} json refs in ${jsonFiles.length} files)`);

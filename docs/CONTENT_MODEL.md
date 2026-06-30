@@ -26,6 +26,7 @@
   "originalTitle": "屍魔三戲唐三藏　聖僧恨逐美猴王",
   "chapterNumber": 27,
   "mapNodeId": "baihuling",
+  "canonicalRouteId": "route-021",
   "status": "available",
   "unlockRequirement": null,
   "explorationThreshold": 70,
@@ -42,14 +43,17 @@
 ```json
 {
   "id": "baihuling",
+  "canonicalRouteId": "route-021",
   "name": "白虎岭",
   "chapterId": "chapter-027",
-  "position": { "x": 48, "y": 62 },
+  "position": { "x": 48, "y": 55 },
   "state": "available",
-  "previewText": "白骨夫人三次变化，师徒关系出现裂痕。",
+  "previewText": "屍魔三戲唐三藏，聖僧恨逐美猴王。",
   "thumbnail": "/assets/map/nodes/baihuling.jpg"
 }
 ```
+
+`id` 是 MVP 前端节点和本地进度使用的 appNodeId；`canonicalRouteId` 映射到 `content/map/route-canon.seed.json` 的正式路线节点，用于考据、路线扩展和证据回查。
 
 节点状态：
 
@@ -73,12 +77,12 @@
 
 ```json
 {
-  "id": "hotspot-baigufuren",
+  "id": "hotspot-baigu-furen",
   "type": "character",
   "title": "白骨夫人",
-  "position": { "x": 63, "y": 48 },
-  "radius": 6,
-  "labelIds": ["label-027-baigufuren-01"],
+  "position": { "x": 72, "y": 48 },
+  "radius": 8,
+  "labelIds": ["label-027-demon-motive", "label-027-final-kill"],
   "isKey": true
 }
 ```
@@ -97,22 +101,22 @@
 
 ```json
 {
-  "id": "label-027-baigufuren-01",
-  "title": "白骨夫人",
+  "id": "label-027-demon-motive",
+  "title": "妖怪为何盯上唐僧",
   "type": "character",
   "source": {
     "work": "西遊記",
     "chapterNumber": 27,
     "chapterTitle": "屍魔三戲唐三藏　聖僧恨逐美猴王",
     "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
-    "rawLineStart": 7193,
-    "rawLineEnd": 7196
+    "rawLineStart": 7023,
+    "rawLineEnd": 7026
   },
   "originalTraditional": "繁体原文摘录放这里。",
   "plainSimplified": "简体白话解释放这里。",
-  "explorationWeight": 10,
+  "explorationWeight": 8,
   "requiredForGame": true,
-  "relatedIds": ["hotspot-baigufuren"]
+  "relatedIds": ["hotspot-baigu-furen"]
 }
 ```
 
@@ -133,6 +137,8 @@ explorationPercent =
 - 关键展签权重大
 - 彩蛋展签权重小
 - 小游戏入口必须同时满足：探索度达到 70%（即 >= 70%），且 `minigame.unlockRequirement.requiredReadLabelIds` 全部已读
+- `explorationPercentGte` 是最低探索度门槛，不等于“只要 70% 就一定解锁”。若必读核心展签权重合计超过 70%，实际解锁以“核心线索全读完”为准
+- `requiredReadLabelEffectiveWeight` 可记录当前必读核心展签权重合计，方便 UI 和 QA 明确实际解锁口径
 
 ## 8. 小游戏
 
@@ -145,7 +151,19 @@ explorationPercent =
   "unlockRequirement": {
     "type": "exploration-and-read-labels",
     "explorationPercentGte": 70,
-    "requiredReadLabelIds": ["label-027-example"]
+    "requiredReadLabelEffectiveWeight": 89,
+    "copy": "探索度至少 70%，并读完 9 个核心线索展签后解锁小游戏。",
+    "requiredReadLabelIds": [
+      "label-027-hunger",
+      "label-027-demon-motive",
+      "label-027-first-disguise",
+      "label-027-wukong-eyes",
+      "label-027-bajie-instigation",
+      "label-027-second-disguise",
+      "label-027-third-disguise",
+      "label-027-final-kill",
+      "label-027-curse-banish"
+    ]
   },
   "eventCards": [
     {
@@ -159,25 +177,25 @@ explorationPercent =
     {
       "id": "evidence-1",
       "text": "来自已读展签的简体白话线索。",
-      "sourceLabelId": "label-027-example"
+      "sourceLabelId": "label-027-demon-motive"
     }
   ]
 }
 ```
 
-小游戏内容使用简体白话，但每张证据卡必须能回到展签和原文。前端显示小游戏入口前，应校验所有 `evidenceCards[].sourceLabelId` 都在已读展签集合中。
+小游戏内容使用简体白话，但每张证据卡必须能回到展签和原文。前端显示小游戏入口前，应校验所有 `evidenceCards[].sourceLabelId` 都在已读展签集合中，且这些 source label 与 `requiredReadLabelIds` 保持一致。当前三打白骨精 demo 的核心线索权重合计为 89%，因此实际按钮文案应强调“核心线索全读完”，不要只显示“70% 解锁”。
 
 ## 9. 奖励资源
 
 ```json
 {
-  "type": "panorama",
+  "type": "static-panorama-preview",
   "src": "/assets/chapters/027/rewards/baihuling-360-v1.png",
   "thumbnail": "/assets/chapters/027/rewards/baihuling-360-thumb.jpg"
 }
 ```
 
-如果后续替换为动画，必须先生成真实视频和封面文件，再把奖励对象改为 `video` 类型；seed 中不要引用尚未落盘的资源。
+当前 `baihuling-360-v1.png` 是 2:1 全景视觉预览，不是严格工程级 equirectangular 资源，MVP 应按静态图奖励展示。后续如果替换为合格 360 图，可把奖励对象改为 `panorama` 类型并接入全景 viewer；如果替换为动画，必须先生成真实视频和封面文件，再把奖励对象改为 `video` 类型。seed 中不要引用尚未落盘的资源。
 
 ## 10. 本地进度
 
@@ -186,7 +204,7 @@ explorationPercent =
   "version": 1,
   "chapters": {
     "chapter-027": {
-      "readLabelIds": ["label-027-baigufuren-01"],
+      "readLabelIds": ["label-027-demon-motive"],
       "explorationPercent": 72,
       "gameCompleted": true,
       "rewardViewed": true,
@@ -194,7 +212,14 @@ explorationPercent =
     }
   },
   "map": {
-    "unlockedNodeIds": ["baihuling", "next-preview-node"]
+    "unlockedNodeIds": ["baihuling", "heisonglin"]
   }
 }
 ```
+
+MVP 进度版本策略：
+
+- 当前版本号为 `1`，localStorage key 为 `xiyouji.progress.v1`
+- 若读取到缺失、格式错误或 `version` 不匹配的进度，前端应重置为干净的 v1 空进度
+- `/studio` 或开发调试 UI 应提供“重置本地进度”入口
+- 正式扩展多章节前，再补充跨版本迁移脚本

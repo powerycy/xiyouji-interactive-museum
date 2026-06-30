@@ -5,6 +5,7 @@
   "originalTitle": "屍魔三戲唐三藏　聖僧恨逐美猴王",
   "chapterNumber": 27,
   "mapNodeId": "baihuling",
+  "canonicalRouteId": "route-021",
   "status": "available",
   "explorationThreshold": 70,
   "source": {
@@ -160,7 +161,7 @@
       "title": "妖怪为何盯上唐僧",
       "type": "character",
       "source": { "chapterNumber": 27, "rawLineStart": 7023, "rawLineEnd": 7026 },
-      "originalTraditional": "他在雲端裏踏著陰風，看見長老坐在地下，就不勝歡喜道：「造化，造化。幾年家人都講東土的唐和尚取大乘，他本是金蟬子化身，十世修行的原體，有人吃他一塊肉，長壽長生。」",
+      "originalTraditional": "他在雲端裏踏著陰風，看見長老坐在地下，就不勝歡喜道：「造化，造化。幾年家人都講東土的唐和尚取大乘，他本是金蟬子化身，十世修行的原體，有人吃他一塊肉，長壽長生。真個今日到了。」",
       "plainSimplified": "白骨精看见唐僧后大喜，因为她知道唐僧是金蝉子化身，传说吃他一块肉可以长寿长生。这就是她三次变化、反复接近唐僧的动机。",
       "explorationWeight": 8,
       "requiredForGame": true,
@@ -171,7 +172,7 @@
       "title": "第一次变化：送斋女子",
       "type": "event",
       "source": { "chapterNumber": 27, "rawLineStart": 7031, "rawLineEnd": 7033 },
-      "originalTraditional": "好妖精，停下陰風，在那山凹裏搖身一變，變做個月貌花容的女兒，說不盡那眉清目秀，齒白唇紅。左手提著一個青砂罐兒，右手提著一個綠磁瓶兒，從西向東，徑奔唐僧。",
+      "originalTraditional": "好妖精，停下陰風，在那山凹裏搖身一變，變做個月貌花容的女兒，說不盡那眉清目秀，齒白唇紅。左手提著一個青砂罐兒，右手提著一個綠磁瓶兒，從西向東，徑奔唐僧：",
       "plainSimplified": "白骨精第一次变成漂亮女子，手里提着饭罐和瓶子，假装来斋僧。她利用唐僧饥饿和八戒贪吃的弱点，制造接近唐僧的机会。",
       "explorationWeight": 12,
       "requiredForGame": true,
@@ -192,8 +193,8 @@
       "id": "label-027-bajie-instigation",
       "title": "八戒挑唆唐僧",
       "type": "character",
-      "source": { "chapterNumber": 27, "rawLineStart": 7095, "rawLineEnd": 7099 },
-      "originalTraditional": "怎禁豬八戒氣不忿，在傍漏八分兒唆嘴道：「師父，說起這個女子，他是此間農婦，因為送飯下田，路遇我等，卻怎麼栽他是個妖怪？」",
+      "source": { "chapterNumber": 27, "rawLineStart": 7094, "rawLineEnd": 7099 },
+      "originalTraditional": "沙僧攙著長老，近前看時，那裏是甚香米飯，卻是一罐子拖尾巴的長蛆﹔也不是麵觔，卻是幾個青蛙、癩蝦蟆，滿地亂跳。長老才有三分兒信了。怎禁豬八戒氣不忿，在傍漏八分兒唆嘴道：「師父，說起這個女子，他是此間農婦，因為送飯下田，路遇我等，卻怎麼栽他是個妖怪？哥哥的棍重，走將來試手打他一下，不期就打殺了。怕你念甚麼緊箍兒咒，故意的使個障眼法兒，變做這等樣東西，演幌你眼，使不念咒哩。」",
       "plainSimplified": "悟空打倒假尸后，饭菜现出蛆虫和青蛙，唐僧已有几分相信。但八戒在旁边挑唆，说这是悟空怕念咒而变出的障眼法，使唐僧再次动摇。",
       "explorationWeight": 9,
       "requiredForGame": true,
@@ -237,7 +238,7 @@
       "title": "唐僧写下贬书",
       "type": "event",
       "source": { "chapterNumber": 27, "rawLineStart": 7217, "rawLineEnd": 7219 },
-      "originalTraditional": "唐僧見他言言語語，越添惱怒，滾鞍下馬來，叫沙僧包袱內取出紙筆，即於澗下取水，石上磨墨，寫了一紙貶書，遞於行者道：「猴頭，執此為照，再不要你做徒弟了。」",
+      "originalTraditional": "唐僧見他言言語語，越添惱怒，滾鞍下馬來，叫沙僧包袱內取出紙筆，即於澗下取水，石上磨墨，寫了一紙貶書，遞於行者道：「猴頭，執此為照，再不要你做徒弟了﹔如再與你相見，我就墮了阿鼻地獄。」",
       "plainSimplified": "虽然白骨夫人已经现出本相，唐僧仍因八戒挑唆和对悟空连杀三人的恐惧，最终写下贬书，逐走悟空。这也是本回题目“圣僧恨逐美猴王”的落点。",
       "explorationWeight": 12,
       "requiredForGame": true,
@@ -248,7 +249,7 @@
       "title": "沙僧的被动见证",
       "type": "character",
       "source": { "chapterNumber": 27, "rawLineStart": 7227, "rawLineEnd": 7229 },
-      "originalTraditional": "大聖跳起來，把身一抖，收上毫毛，卻又吩咐沙僧道：「賢弟，你是個好人，卻只要留心防著八戒詀言詀語，途中更要仔細。」",
+      "originalTraditional": "大聖跳起來，把身一抖，收上毫毛，卻又吩咐沙僧道：「賢弟，你是個好人，卻只要留心防著八戒詀言詀語，途中更要仔細。倘一時有妖精拿住師父，你就說老孫是他大徒弟，西方毛怪聞我的手段，不敢傷我師父。」",
       "plainSimplified": "沙僧在本回不是冲突中心，但悟空临走前专门嘱咐他防着八戒搬弄是非、路上多加小心。这让沙僧成为师徒矛盾的见证者。",
       "explorationWeight": 3,
       "requiredForGame": false,
@@ -263,8 +264,11 @@
     "unlockRequirement": {
       "type": "exploration-and-read-labels",
       "explorationPercentGte": 70,
+      "requiredReadLabelEffectiveWeight": 89,
+      "copy": "探索度至少 70%，并读完 9 个核心线索展签后解锁小游戏。",
       "requiredReadLabelIds": [
         "label-027-hunger",
+        "label-027-demon-motive",
         "label-027-first-disguise",
         "label-027-wukong-eyes",
         "label-027-bajie-instigation",
@@ -285,9 +289,9 @@
       },
       {
         "id": "event-027-02",
-        "text": "白骨精第一次变成送饭女子，试图接近唐僧。",
+        "text": "白骨精知道唐僧肉能长生，第一次变成送饭女子接近他。",
         "correctOrder": 2,
-        "requiredEvidenceIds": ["evidence-027-first-disguise"]
+        "requiredEvidenceIds": ["evidence-027-demon-motive", "evidence-027-first-disguise"]
       },
       {
         "id": "event-027-03",
@@ -333,6 +337,11 @@
         "sourceLabelId": "label-027-hunger"
       },
       {
+        "id": "evidence-027-demon-motive",
+        "text": "白骨精知道唐僧是金蝉子化身，想吃唐僧肉求长生。",
+        "sourceLabelId": "label-027-demon-motive"
+      },
+      {
         "id": "evidence-027-first-disguise",
         "text": "白骨精变成女子，提着青砂罐和绿磁瓶来见唐僧。",
         "sourceLabelId": "label-027-first-disguise"
@@ -373,8 +382,8 @@
   },
   "reward": {
     "id": "reward-027-baihuling",
-    "title": "白虎岭全景",
-    "type": "panorama",
+    "title": "白虎岭全景预览",
+    "type": "static-panorama-preview",
     "src": "/assets/chapters/027/rewards/baihuling-360-v1.png",
     "thumbnail": "/assets/chapters/027/rewards/baihuling-360-thumb.jpg"
   },

@@ -22,7 +22,7 @@
     "phase": "prelude|departure-and-team-formation|westward-trials|buddhist-land-and-return",
     "chapterStart": "number",
     "chapterEnd": "number",
-    "locationType": "mountain|river|kingdom|cave|temple|monastery|heaven|buddhist-land|other",
+    "locationType": "mountain|river|kingdom|city|village|cave|temple|monastery|heaven|buddhist-land|other",
     "keyEvents": [
       "string"
     ],

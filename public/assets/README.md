@@ -29,7 +29,7 @@ QA 说明：
 
 - `map/nodes/*.jpg`：v1 已生成并可用于 MVP，正式版可逐节点重绘。
 - `badges/chapter-027-locked-v1.png`、`badges/chapter-027-unlocked-v1.png`：v1 已裁切完成，正式版可按最终 UI 尺寸重制。
-- `chapters/027/rewards/baihuling-360-v1.png`：v1 可做奖励页视觉，正式 360 可重制为严格 equirectangular 资源。
+- `chapters/027/rewards/baihuling-360-v1.png`：v1 可做奖励页静态全景预览，正式 360 可重制为严格 equirectangular 资源。
 
 ## 风格测试
 
