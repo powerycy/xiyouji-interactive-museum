@@ -36,3 +36,21 @@ python3 scripts/build_xiyouji_curated_drafts.py
 - `content/map/route-canon.seed.json`
 
 这些文件已经比候选数据更适合开发和美术生产，但状态仍是 `curated-draft-requires-human-review`，正式上线前需要人工复核。
+
+## `validate_asset_references.mjs`
+
+检查交接文档、产品文档和资源 QA 文档中的资产路径是否能落到真实文件。
+
+运行：
+
+```bash
+node scripts/validate_asset_references.mjs
+```
+
+覆盖：
+
+- `HANDOFF.md`
+- `docs/**/*.md`
+- `public/assets/**/*.md`
+
+脚本会检查 `public/assets/...`、`/assets/...` 和 `public/assets/map/nodes/*.jpg` 这类通配路径。

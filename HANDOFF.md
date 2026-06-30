@@ -70,6 +70,7 @@
 当前已生成可用于 MVP 开发的真实资源：
 
 - `public/assets/map/journey-map-v2.png`
+- `public/assets/map/nodes/*.jpg`
 - `public/assets/chapters/027/cover-v1.png`
 - `public/assets/chapters/027/scenes/baihuling-main-v2.png`
 - `public/assets/chapters/027/characters/sun-wukong-v1.png`
@@ -78,13 +79,14 @@
 - `public/assets/chapters/027/characters/sha-seng-v1.png`
 - `public/assets/chapters/027/characters/baigu-furen-v1.png`
 - `public/assets/chapters/027/rewards/baihuling-360-v1.png`
+- `public/assets/chapters/027/rewards/baihuling-360-thumb.jpg`
 - `public/assets/badges/chapter-027-locked-v1.png`
 - `public/assets/badges/chapter-027-unlocked-v1.png`
 
-仍需补齐或替换的 MVP 资源：
+v1 已可用于 MVP，正式版可重制或提质的资源：
 
-- 单枚裁切版锁定/解锁徽章
-- 地图节点缩略图
+- 单枚裁切版锁定/解锁徽章：`public/assets/badges/chapter-027-locked-v1.png`、`public/assets/badges/chapter-027-unlocked-v1.png`
+- 地图节点缩略图：`public/assets/map/nodes/*.jpg`
 
 资源 QA 见：
 
@@ -108,6 +110,7 @@
 ```bash
 python3 scripts/extract_xiyouji_fulltext.py
 python3 scripts/build_xiyouji_curated_drafts.py
+node scripts/validate_asset_references.mjs
 ```
 
 路线开发时优先读取 `route-canon.seed.json`。需要追溯时审核 `route-canon.candidates.json` 的 `priorityNodes`。`autoNodes` 只是补漏搜索池，可能有噪声，不能直接变成地图节点。

@@ -11,6 +11,7 @@
 - `/assets/chapters/027/characters/sha-seng-v1.png`
 - `/assets/chapters/027/characters/baigu-furen-v1.png`
 - `/assets/chapters/027/rewards/baihuling-360-v1.png`
+- `/assets/chapters/027/rewards/baihuling-360-thumb.jpg`
 - `/assets/badges/chapter-027-badges-v1.png`
 - `/assets/badges/chapter-027-locked-v1.png`
 - `/assets/badges/chapter-027-unlocked-v1.png`

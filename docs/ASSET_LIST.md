@@ -21,11 +21,8 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
   - 原著驱动东方神魔漫画博物馆风
   - 有路线、山川、国度、妖域层次
 
-- `public/assets/map/nodes/baihuling.jpg`
-  - 白虎岭节点缩略图
-
-- `public/assets/map/nodes/locked-preview-*.jpg`
-  - 其他锁定章节节点预览图，可先做 3 到 5 张
+- `public/assets/map/nodes/*.jpg`
+  - 大地图节点缩略图，当前 v1 已按 `content/map/map-nodes.seed.json` 生成，可用于 MVP
 
 ## 3. 三打白骨精章节资源
 
@@ -54,11 +51,11 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 必需：
 
-- `public/assets/chapters/027/characters/sun-wukong.jpg`
-- `public/assets/chapters/027/characters/tang-seng.jpg`
-- `public/assets/chapters/027/characters/zhu-bajie.jpg`
-- `public/assets/chapters/027/characters/sha-seng.jpg`
-- `public/assets/chapters/027/characters/baigu-furen.jpg`
+- `public/assets/chapters/027/characters/sun-wukong-v1.png`
+- `public/assets/chapters/027/characters/tang-seng-v1.png`
+- `public/assets/chapters/027/characters/zhu-bajie-v1.png`
+- `public/assets/chapters/027/characters/sha-seng-v1.png`
+- `public/assets/chapters/027/characters/baigu-furen-v1.png`
 
 每张人物图纸要求：
 
@@ -72,16 +69,16 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 ## 5. 物件与场景插图
 
-建议：
+后续可选新增：
 
-- `public/assets/chapters/027/items/food.jpg`
-- `public/assets/chapters/027/items/luggage.jpg`
-- `public/assets/chapters/027/items/jingubang.jpg`
-- `public/assets/chapters/027/items/jinguzhou.jpg`
-- `public/assets/chapters/027/locations/mountain-path.jpg`
-- `public/assets/chapters/027/locations/demon-aura.jpg`
+- 斋饭小图，建议命名为 `food-v1.png`
+- 行李小图，建议命名为 `luggage-v1.png`
+- 金箍棒小图，建议命名为 `jingubang-v1.png`
+- 紧箍咒小图，建议命名为 `jinguzhou-v1.png`
+- 山路局部图，建议命名为 `mountain-path-v1.png`
+- 妖气局部图，建议命名为 `demon-aura-v1.png`
 
-这些资源可作为展签小图或工作台预览。物件图也要绑定展签原文，不能只做气氛插图。
+这些资源尚未生成。生成后再放入对应资源目录并写入 seed，可作为展签小图或工作台预览。物件图也要绑定展签原文，不能只做气氛插图。
 
 ## 6. 徽章资源
 

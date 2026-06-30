@@ -64,7 +64,7 @@
 {
   "id": "baihuling-main",
   "title": "白虎岭",
-  "image": "/assets/chapters/027/scenes/baihuling-main.jpg",
+  "image": "/assets/chapters/027/scenes/baihuling-main-v2.png",
   "hotspots": []
 }
 ```

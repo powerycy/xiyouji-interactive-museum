@@ -25,7 +25,7 @@
 
 用途：
 
-- `public/assets/map/journey-map.jpg`
+- `public/assets/map/journey-map-v2.png`
 
 提示词：
 
@@ -42,7 +42,7 @@
 
 用途：
 
-- `public/assets/chapters/027/cover.jpg`
+- `public/assets/chapters/027/cover-v1.png`
 
 提示词：
 
@@ -54,7 +54,7 @@
 
 用途：
 
-- `public/assets/chapters/027/scenes/baihuling-main.jpg`
+- `public/assets/chapters/027/scenes/baihuling-main-v2.png`
 
 提示词：
 
@@ -72,7 +72,7 @@
 
 用途：
 
-- `public/assets/chapters/027/characters/sun-wukong.jpg`
+- `public/assets/chapters/027/characters/sun-wukong-v1.png`
 
 提示词：
 
@@ -84,7 +84,7 @@
 
 用途：
 
-- `public/assets/chapters/027/characters/tang-seng.jpg`
+- `public/assets/chapters/027/characters/tang-seng-v1.png`
 
 提示词：
 
@@ -96,7 +96,7 @@
 
 用途：
 
-- `public/assets/chapters/027/characters/zhu-bajie.jpg`
+- `public/assets/chapters/027/characters/zhu-bajie-v1.png`
 
 提示词：
 
@@ -108,7 +108,7 @@
 
 用途：
 
-- `public/assets/chapters/027/characters/sha-seng.jpg`
+- `public/assets/chapters/027/characters/sha-seng-v1.png`
 
 提示词：
 
@@ -120,7 +120,7 @@
 
 用途：
 
-- `public/assets/chapters/027/characters/baigu-furen.jpg`
+- `public/assets/chapters/027/characters/baigu-furen-v1.png`
 
 提示词：
 
@@ -132,8 +132,8 @@
 
 用途：
 
-- `public/assets/badges/chapter-027-locked.png`
-- `public/assets/badges/chapter-027-unlocked.png`
+- `public/assets/badges/chapter-027-locked-v1.png`
+- `public/assets/badges/chapter-027-unlocked-v1.png`
 
 提示词：
 
@@ -145,7 +145,7 @@
 
 用途：
 
-- `public/assets/chapters/027/rewards/baihuling-360.jpg`
+- `public/assets/chapters/027/rewards/baihuling-360-v1.png`
 
 提示词：
 

@@ -3,7 +3,7 @@
 ## 当前资源
 
 - `journey-map-v2.png`：当前推荐开发用版本，长安在左、佛土在右，与 `content/map/map-nodes.seed.json` 更接近。
-- `nodes/*.jpg`：由 `journey-map-v2.png` 按 `content/map/map-nodes.seed.json` 的节点坐标裁切生成，用于开发期节点缩略图。正式版可按节点重新绘制更高完成度缩略图。
+- `nodes/*.jpg`：v1 已生成，由 `journey-map-v2.png` 按 `content/map/map-nodes.seed.json` 的节点坐标裁切得到，可用于开发期节点缩略图。正式版可按节点重新绘制更高完成度缩略图。
 
 ## 已废弃删除
 
