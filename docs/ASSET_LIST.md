@@ -16,7 +16,7 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 必需：
 
-- `public/assets/map/journey-map.jpg`
+- `public/assets/map/journey-map-v2.png`
   - 取经大地图背景
   - 原著驱动东方神魔漫画博物馆风
   - 有路线、山川、国度、妖域层次
@@ -31,21 +31,24 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 必需：
 
-- `public/assets/chapters/027/cover.jpg`
+- `public/assets/chapters/027/cover-v1.png`
   - 章节入口图
 
-- `public/assets/chapters/027/scenes/baihuling-main.jpg`
+- `public/assets/chapters/027/scenes/baihuling-main-v2.png`
   - 白虎岭主探索场景
   - 必须可放热点
 
-- `public/assets/chapters/027/rewards/baihuling-360.jpg`
+- `public/assets/chapters/027/rewards/baihuling-360-v1.png`
   - 360 全景图
   - 若先做动画，则改为视频资源
 
+- `public/assets/chapters/027/rewards/baihuling-360-thumb.jpg`
+  - 奖励页入口缩略图，由当前全景图裁切生成
+
 可选：
 
-- `public/assets/chapters/027/rewards/baihuling-ending.mp4`
-  - 章节完成内置动画
+- 章节完成内置动画
+  - 后续生成真实视频文件后，再写入章节 seed 的奖励资源
 
 ## 4. 人物图纸
 
@@ -84,8 +87,8 @@ MVP 开发前必须生成核心视觉资源，不使用纯占位图完成体验�
 
 必需：
 
-- `public/assets/badges/chapter-027-locked.png`
-- `public/assets/badges/chapter-027-unlocked.png`
+- `public/assets/badges/chapter-027-locked-v1.png`
+- `public/assets/badges/chapter-027-unlocked-v1.png`
 
 徽章风格：
 

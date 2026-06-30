@@ -105,8 +105,8 @@
     "chapterNumber": 27,
     "chapterTitle": "屍魔三戲唐三藏　聖僧恨逐美猴王",
     "rawFile": "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt",
-    "lineStart": null,
-    "lineEnd": null
+    "rawLineStart": 7193,
+    "rawLineEnd": 7196
   },
   "originalTraditional": "繁体原文摘录放这里。",
   "plainSimplified": "简体白话解释放这里。",
@@ -132,7 +132,7 @@ explorationPercent =
 - 总权重建议为 100
 - 关键展签权重大
 - 彩蛋展签权重小
-- 达到 70% 解锁小游戏
+- 小游戏入口必须同时满足：探索度达到 70%（即 >= 70%），且 `minigame.unlockRequirement.requiredReadLabelIds` 全部已读
 
 ## 8. 小游戏
 
@@ -142,6 +142,11 @@ explorationPercent =
   "type": "timeline-evidence-match",
   "title": "白虎岭真相时间线",
   "unlockExplorationPercent": 70,
+  "unlockRequirement": {
+    "type": "exploration-and-read-labels",
+    "explorationPercentGte": 70,
+    "requiredReadLabelIds": ["label-027-example"]
+  },
   "eventCards": [
     {
       "id": "event-1",
@@ -160,27 +165,19 @@ explorationPercent =
 }
 ```
 
-小游戏内容使用简体白话，但每张证据卡必须能回到展签和原文。
+小游戏内容使用简体白话，但每张证据卡必须能回到展签和原文。前端显示小游戏入口前，应校验所有 `evidenceCards[].sourceLabelId` 都在已读展签集合中。
 
 ## 9. 奖励资源
 
 ```json
 {
   "type": "panorama",
-  "src": "/assets/chapters/027/rewards/baihuling-360.jpg",
+  "src": "/assets/chapters/027/rewards/baihuling-360-v1.png",
   "thumbnail": "/assets/chapters/027/rewards/baihuling-360-thumb.jpg"
 }
 ```
 
-或：
-
-```json
-{
-  "type": "video",
-  "src": "/assets/chapters/027/rewards/baihuling-ending.mp4",
-  "poster": "/assets/chapters/027/rewards/baihuling-ending-poster.jpg"
-}
-```
+如果后续替换为动画，必须先生成真实视频和封面文件，再把奖励对象改为 `video` 类型；seed 中不要引用尚未落盘的资源。
 
 ## 10. 本地进度
 
@@ -201,4 +198,3 @@ explorationPercent =
   }
 }
 ```
-
