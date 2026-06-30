@@ -320,3 +320,52 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+}
+
+.game-board,
+.evidence-panel,
+.game-locked {
+  padding: 16px;
+}
+
+.timeline-list,
+.evidence-list {
+  display: grid;
+  gap: 10px;
+}
+
+.timeline-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+.timeline-card-selected,
+.evidence-selected {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(214, 167, 86, 0.22);
+}
+
+.timeline-card em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.86rem;
+}
+
+.evidence-list button {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+}
