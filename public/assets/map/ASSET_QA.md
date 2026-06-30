@@ -2,8 +2,11 @@
 
 ## 当前资源
 
-- `journey-map-v1.png`：第一版，视觉可用但方向与当前 map seed 不一致，佛土在左、长安在右。
 - `journey-map-v2.png`：当前推荐开发用版本，长安在左、佛土在右，与 `content/map/map-nodes.seed.json` 更接近。
+
+## 已废弃删除
+
+- `journey-map-v1.png`：第一版方向错误，佛土在左、长安在右，已删除，后续开发不再引用。
 
 ## 注意
 

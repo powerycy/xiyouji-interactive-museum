@@ -16,7 +16,7 @@
   },
   "assets": {
     "cover": "/assets/chapters/027/cover-v1.png",
-    "mainScene": "/assets/chapters/027/scenes/baihuling-main-v1.png",
+    "mainScene": "/assets/chapters/027/scenes/baihuling-main-v2.png",
     "characters": {
       "sunWukong": "/assets/chapters/027/characters/sun-wukong-v1.png",
       "tangSeng": "/assets/chapters/027/characters/tang-seng-v1.png",
@@ -28,8 +28,8 @@
   "scene": {
     "id": "baihuling-main",
     "title": "白虎岭",
-    "image": "/assets/chapters/027/scenes/baihuling-main-v1.png",
-    "coordinateStatus": "needs-studio-calibration-for-baihuling-main-v1",
+    "image": "/assets/chapters/027/scenes/baihuling-main-v2.png",
+    "coordinateStatus": "needs-studio-calibration-for-baihuling-main-v2",
     "hotspots": [
       {
         "id": "hotspot-baihuling",

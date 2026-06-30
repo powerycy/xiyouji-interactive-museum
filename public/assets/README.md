@@ -8,7 +8,7 @@
 
 - `map/journey-map-v2.png`
 - `chapters/027/cover-v1.png`
-- `chapters/027/scenes/baihuling-main-v1.png`
+- `chapters/027/scenes/baihuling-main-v2.png`
 - `chapters/027/characters/sun-wukong-v1.png`
 - `chapters/027/characters/tang-seng-v1.png`
 - `chapters/027/characters/zhu-bajie-v1.png`
