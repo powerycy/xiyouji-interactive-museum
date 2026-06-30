@@ -12,7 +12,7 @@
 - 大地图 seed 节点已生成
 - 主角基础设定和大地图路线的全文证据候选已生成
 - 主角基础设定草案、第二七回角色状态草案、55 节点路线草案已生成
-- 第一批真实 v1 美术资源已生成并保存到 `public/assets`
+- 第一批真实美术资源已生成并保存到 `public/assets`
 
 ## 下一位开发者先读
 
@@ -67,11 +67,11 @@
 
 首轮美术风格测试图已经生成，保存于 `public/assets/style-tests`。这些图只用于气质测试，不是原著考据最终资源。
 
-当前已生成可用于 MVP 开发的真实 v1 资源：
+当前已生成可用于 MVP 开发的真实资源：
 
 - `public/assets/map/journey-map-v2.png`
 - `public/assets/chapters/027/cover-v1.png`
-- `public/assets/chapters/027/scenes/baihuling-main-v1.png`
+- `public/assets/chapters/027/scenes/baihuling-main-v2.png`
 - `public/assets/chapters/027/characters/sun-wukong-v1.png`
 - `public/assets/chapters/027/characters/tang-seng-v1.png`
 - `public/assets/chapters/027/characters/zhu-bajie-v1.png`
@@ -123,7 +123,7 @@ python3 scripts/build_xiyouji_curated_drafts.py
 
 ## 数据注意事项
 
-`chapter-027.seed.json` 已指向 `baihuling-main-v1.png`，但热点坐标仍是开发前草案，字段 `coordinateStatus` 已标明需按 v1 图片在 `/studio` 中重新校准。
+`chapter-027.seed.json` 已指向 `baihuling-main-v2.png`，但热点坐标仍是开发前草案，字段 `coordinateStatus` 已标明需按 v2 图片在 `/studio` 中重新校准。
 
 展签和小游戏内容是第一版 seed，开发时可以先直接使用；上线前应人工复核原文摘录和白话解释。
 
