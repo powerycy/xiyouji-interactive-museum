@@ -63,7 +63,13 @@
 - 探索权重
 - 是否为小游戏核心线索
 
-用户点击“标记已读”后，把 label id 写入进度。探索度按已读展签权重求和计算。UI 同时显示：
+用户点击“标记已读”后，把 label id 写入进度。探索度按百分比公式计算：
+
+```ts
+sum(readLabel.explorationWeight) / totalExplorationWeight * 100
+```
+
+MVP seed 的展签总权重应为 100。若总权重异常，`/studio` 负责暴露该问题，但用户端仍使用公式计算，避免把“权重和”长期当成百分比。UI 同时显示：
 
 - 探索度百分比
 - 核心线索阅读进度，例如 `7/9`
@@ -99,6 +105,8 @@
 ### `/chapter/027/reward`
 
 奖励只支持当前 seed 的 `static-panorama-preview`。
+
+若 `gameCompleted !== true` 时直接访问 `/chapter/027/reward`，奖励页显示“小游戏尚未完成”的状态，并提供返回小游戏或章节探索的入口。此状态不得写入 `rewardViewed`、`badgeUnlocked` 或地图解锁进度。
 
 页面显示：
 
@@ -154,6 +162,8 @@ MVP 信任已有 seed，但在 `/studio` 中暴露异常，例如：
 ### 进度模块
 
 进度模块是 localStorage 的唯一读写入口。页面和组件不直接拼 localStorage。
+
+如果 localStorage 不可用，进度模块内部启用内存中的 session fallback。页面仍只调用 progress API；fallback 只保证当前 session 可继续游玩，不承诺刷新后恢复。
 
 动作包括：
 
