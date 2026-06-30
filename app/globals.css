@@ -276,6 +276,7 @@ button:disabled {
   top: calc(100% + 4px);
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none;
   white-space: nowrap;
   background: rgba(18, 15, 13, 0.82);
   border: 1px solid rgba(246, 234, 211, 0.25);
@@ -285,6 +286,17 @@ button:disabled {
 
 .hotspot-key {
   background: rgba(183, 68, 53, 0.36);
+}
+
+.hotspot-label-switcher {
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.label-tab-active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(214, 167, 86, 0.22);
 }
 
 .label-panel {
@@ -429,5 +441,21 @@ button:disabled {
 @media (max-width: 840px) {
   .studio-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hotspot span {
+    display: none;
+  }
+
+  .studio-scene span {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 999px;
+    color: transparent;
+    background: var(--gold);
   }
 }

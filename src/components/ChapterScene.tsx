@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import type { ChapterLabel } from "@/content/types";
 import { chapter027, getLabelById } from "@/content/xiyouji";
 import { getChapterProgress } from "@/progress/progress";
 import { useProgress } from "@/progress/useProgress";
@@ -11,8 +12,13 @@ import { MuseumLabelPanel } from "./MuseumLabelPanel";
 export function ChapterScene() {
   const { progress, manager } = useProgress();
   const chapterProgress = getChapterProgress(progress, chapter027.id);
+  const [selectedHotspotId, setSelectedHotspotId] = useState<string | null>(chapter027.scene.hotspots[0]?.id ?? null);
   const [selectedLabelId, setSelectedLabelId] = useState<string | null>(chapter027.scene.hotspots[0]?.labelIds[0] ?? null);
+  const selectedHotspot = selectedHotspotId ? chapter027.scene.hotspots.find((hotspot) => hotspot.id === selectedHotspotId) ?? null : null;
   const selectedLabel = selectedLabelId ? getLabelById(chapter027, selectedLabelId) ?? null : null;
+  const selectedHotspotLabels = selectedHotspot?.labelIds
+    .map((labelId) => getLabelById(chapter027, labelId))
+    .filter((label): label is ChapterLabel => Boolean(label)) ?? [];
   const read = useMemo(() => new Set(chapterProgress.readLabelIds), [chapterProgress.readLabelIds]);
 
   return (
@@ -31,13 +37,32 @@ export function ChapterScene() {
                 width: `${Math.max(28, hotspot.radius * 6)}px`,
                 height: `${Math.max(28, hotspot.radius * 6)}px`
               }}
-              onClick={() => setSelectedLabelId(hotspot.labelIds[0] ?? null)}
+              onClick={() => {
+                setSelectedHotspotId(hotspot.id);
+                setSelectedLabelId(hotspot.labelIds[0] ?? null);
+              }}
               aria-label={hotspot.title}
             >
               <span>{hotspot.title}</span>
             </button>
           ))}
         </div>
+        {selectedHotspotLabels.length > 1 ? (
+          <div className="hotspot-label-switcher surface">
+            <span className="small-text">{selectedHotspot?.title} 展签</span>
+            <div className="action-row">
+              {selectedHotspotLabels.map((label) => (
+                <button
+                  key={label.id}
+                  className={selectedLabelId === label.id ? "label-tab-active" : ""}
+                  onClick={() => setSelectedLabelId(label.id)}
+                >
+                  {label.title}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
         <MinigameGate chapter={chapter027} progress={progress} />
       </div>
 
