@@ -224,3 +224,99 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+.chapter-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+}
+
+.scene-column {
+  display: grid;
+  gap: 14px;
+}
+
+.exploration-status {
+  display: flex;
+  gap: 14px;
+  padding: 12px;
+}
+
+.exploration-status div {
+  display: grid;
+}
+
+.exploration-status strong {
+  font-size: 1.5rem;
+}
+
+.scene-stage {
+  position: relative;
+  overflow: hidden;
+}
+
+.scene-image {
+  width: 100%;
+  display: block;
+}
+
+.hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(214, 167, 86, 0.28);
+  border-color: rgba(246, 234, 211, 0.9);
+}
+
+.hotspot span {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: rgba(18, 15, 13, 0.82);
+  border: 1px solid rgba(246, 234, 211, 0.25);
+  padding: 2px 5px;
+  font-size: 0.78rem;
+}
+
+.hotspot-key {
+  background: rgba(183, 68, 53, 0.36);
+}
+
+.label-panel {
+  padding: 16px;
+  align-self: start;
+  max-height: 760px;
+  overflow: auto;
+}
+
+.label-panel h2,
+.label-panel h3 {
+  margin-bottom: 8px;
+}
+
+.traditional-text {
+  line-height: 1.8;
+}
+
+.key-clue {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.gate-link,
+.gate-locked {
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .chapter-layout {
+    grid-template-columns: 1fr;
+  }
+}
