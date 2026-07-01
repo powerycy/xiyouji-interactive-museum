@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { createProgressManager, type StorageLike, type XiyoujiProgress } from "./progress";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { createEmptyProgress, createProgressManager, type StorageLike, type XiyoujiProgress } from "./progress";
 
 function getBrowserStorage(): StorageLike | null {
   if (typeof window === "undefined") {
@@ -19,32 +19,37 @@ function getBrowserStorage(): StorageLike | null {
 }
 
 export function useProgress() {
-  const [baseManager] = useState(() => createProgressManager(getBrowserStorage()));
-  const [progress, setProgress] = useState<XiyoujiProgress>(() => baseManager.getSnapshot());
+  const managerRef = useRef(createProgressManager(null));
+  const [progress, setProgress] = useState<XiyoujiProgress>(() => createEmptyProgress());
+
+  useEffect(() => {
+    managerRef.current = createProgressManager(getBrowserStorage());
+    setProgress(managerRef.current.getSnapshot());
+  }, []);
 
   const manager = useMemo(() => {
-    const refresh = () => setProgress(baseManager.getSnapshot());
+    const refresh = () => setProgress(managerRef.current.getSnapshot());
 
     return {
-      getSnapshot: baseManager.getSnapshot,
+      getSnapshot: () => managerRef.current.getSnapshot(),
       reset: () => {
-        baseManager.reset();
+        managerRef.current.reset();
         refresh();
       },
       markLabelRead: (chapterId: string, labelId: string) => {
-        baseManager.markLabelRead(chapterId, labelId);
+        managerRef.current.markLabelRead(chapterId, labelId);
         refresh();
       },
       markGameCompleted: (chapterId: string) => {
-        baseManager.markGameCompleted(chapterId);
+        managerRef.current.markGameCompleted(chapterId);
         refresh();
       },
-      markRewardViewed: (...args: Parameters<typeof baseManager.markRewardViewed>) => {
-        baseManager.markRewardViewed(...args);
+      markRewardViewed: (...args: Parameters<ReturnType<typeof createProgressManager>["markRewardViewed"]>) => {
+        managerRef.current.markRewardViewed(...args);
         refresh();
       }
     };
-  }, [baseManager]);
+  }, []);
 
   return { progress, manager };
 }
