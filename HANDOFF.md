@@ -19,26 +19,28 @@
 按顺序阅读：
 
 1. `docs/README.md`
-2. `docs/PRD.md`
-3. `docs/TECH_SPEC.md`
-4. `docs/CONTENT_MODEL.md`
-5. `docs/CHAPTER_027_DESIGN.md`
-6. `docs/FULL_TEXT_EVIDENCE_WORKFLOW.md`
-7. `content/chapters/chapter-027.seed.json`
-8. `content/map/map-nodes.seed.json`
-9. `content/map/route-canon.seed.json`
-10. `content/characters/sun-wukong.base.json`
-11. `content/characters/tang-seng.base.json`
-12. `content/characters/zhu-bajie.base.json`
-13. `content/characters/sha-seng.base.json`
-14. `content/characters/bailongma.base.json`
-15. `content/chapters/027/characters/sun-wukong.state.json`
-16. `content/map/route-canon.candidates.json`
-17. `docs/assets/CHAPTER_027_ASSET_PROMPTS.md`
-18. `public/assets/README.md`
-19. `public/assets/chapters/027/ASSET_QA.md`
-20. `public/assets/map/ASSET_QA.md`
-21. `docs/IMPLEMENTATION_PLAN.md`
+2. `docs/review/2026-07-01-mvp-effect-audit/REVISION_REQUIREMENTS.md`
+3. `docs/review/2026-07-01-mvp-effect-audit/*.png`
+4. `docs/PRD.md`
+5. `docs/TECH_SPEC.md`
+6. `docs/CONTENT_MODEL.md`
+7. `docs/CHAPTER_027_DESIGN.md`
+8. `docs/FULL_TEXT_EVIDENCE_WORKFLOW.md`
+9. `content/chapters/chapter-027.seed.json`
+10. `content/map/map-nodes.seed.json`
+11. `content/map/route-canon.seed.json`
+12. `content/characters/sun-wukong.base.json`
+13. `content/characters/tang-seng.base.json`
+14. `content/characters/zhu-bajie.base.json`
+15. `content/characters/sha-seng.base.json`
+16. `content/characters/bailongma.base.json`
+17. `content/chapters/027/characters/sun-wukong.state.json`
+18. `content/map/route-canon.candidates.json`
+19. `docs/assets/CHAPTER_027_ASSET_PROMPTS.md`
+20. `public/assets/README.md`
+21. `public/assets/chapters/027/ASSET_QA.md`
+22. `public/assets/map/ASSET_QA.md`
+23. `docs/IMPLEMENTATION_PLAN.md`
 
 ## 核心约束
 
@@ -82,6 +84,8 @@
 - `public/assets/chapters/027/rewards/baihuling-360-thumb.jpg`
 - `public/assets/badges/chapter-027-locked-v1.png`
 - `public/assets/badges/chapter-027-unlocked-v1.png`
+
+注意：以上是当前 v1/MVP 闭环资源。下一版视觉场景链需要新增 10 张第二七回 v2 主线场景资源，详见 `docs/review/2026-07-01-mvp-effect-audit/REVISION_REQUIREMENTS.md` 的 4.1、4.3、5.6。若这些资源尚未落盘，开发对话应先补齐或请求资源，不能用同一张 `baihuling-main-v2.png` 或占位图假装多场景。
 
 v1 已可用于 MVP，正式版可重制或提质的资源：
 

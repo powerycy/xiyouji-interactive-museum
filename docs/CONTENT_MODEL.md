@@ -1,5 +1,7 @@
 # 内容模型
 
+> 最新 v2 场景链契约以 `docs/review/2026-07-01-mvp-effect-audit/REVISION_REQUIREMENTS.md` 为准。本文件保留 v1 基础内容模型和共用字段说明；下一版章节页应优先使用 `sceneNodes` / `sceneNavigation`，旧 `scene` 单场景字段只作为 Studio 对比、回退和迁移参考。
+
 ## 1. 总体原则
 
 内容模型必须让每个产品内容都能追溯到原著证据。
@@ -31,12 +33,20 @@
   "unlockRequirement": null,
   "explorationThreshold": 70,
   "scene": {},
+  "sceneNavigation": {},
+  "sceneNodes": [],
   "labels": [],
   "minigame": {},
   "reward": {},
   "badge": {}
 }
 ```
+
+说明：
+
+- `scene` 是 v1 单场景模型，保留给当前闭环、Studio 对比和兼容回退。
+- `sceneNavigation` 与 `sceneNodes` 是 v2 视觉场景链模型。若 seed 中存在 `sceneNodes`，章节页必须以它作为权威渲染数据。
+- `labels`、`minigame`、`reward`、`badge` 继续复用，不把原著文字烘焙进图片。
 
 ## 3. 地图节点
 
@@ -64,6 +74,8 @@
 
 ## 4. 场景
 
+### 4.1 v1 单场景模型
+
 ```json
 {
   "id": "baihuling-main",
@@ -72,6 +84,65 @@
   "hotspots": []
 }
 ```
+
+### 4.2 v2 场景链模型
+
+v2 不再把所有热点堆在一张白虎岭主图上，而是把章节拆成多个主线 scene node。三打白骨精 v2 固定为 10 个主线场景，完整清单、命名、资源前置条件和导航规则见 `REVISION_REQUIREMENTS.md`。
+
+示意结构：
+
+```json
+{
+  "sceneNavigation": {
+    "initialSceneId": "scene-027-01-baihuling-road",
+    "mainlineSceneIds": [
+      "scene-027-01-baihuling-road",
+      "scene-027-02-demon-motive",
+      "scene-027-03-first-disguise",
+      "scene-027-04-wukong-returns",
+      "scene-027-05-bajie-instigation",
+      "scene-027-06-second-disguise",
+      "scene-027-07-third-disguise",
+      "scene-027-08-skeleton-reveal",
+      "scene-027-09-banish-wukong",
+      "scene-027-10-chapter-review"
+    ],
+    "gameGateSceneId": "scene-027-10-chapter-review",
+    "allowCycles": false
+  },
+  "sceneNodes": [
+    {
+      "id": "scene-027-01-baihuling-road",
+      "kind": "main",
+      "order": 1,
+      "title": "白虎岭山路",
+      "entryCopy": "险山生怪，唐僧饥饿，悟空离队去化斋。",
+      "source": {
+        "chapterNumber": 27,
+        "rawLineStart": 6997,
+        "rawLineEnd": 7007,
+        "labelIds": ["label-027-baihuling", "label-027-hunger"]
+      },
+      "asset": {
+        "type": "image",
+        "src": "chapters/027/scenes/v2/scene-027-01-baihuling-road-v2.png",
+        "alt": "白虎岭山路主视觉"
+      },
+      "previousSceneId": null,
+      "nextSceneIds": ["scene-027-02-demon-motive"],
+      "hotspots": [],
+      "unlock": { "type": "chapter-available" }
+    }
+  ]
+}
+```
+
+v2 导航约束：
+
+- 主线场景按 `sceneNavigation.mainlineSceneIds` 线性推进。
+- 细节场景必须有 `parentSceneId`，从父场景热点进入。
+- `next` / `previous` 沿主线移动；`back` 弹出浏览栈回到上一层。
+- 场景访问状态与探索度分开：`visitedSceneIds`、`openedHotspotIds` 不直接增加探索度，探索度仍只按唯一已读展签权重计算。
 
 ## 5. 热点
 
