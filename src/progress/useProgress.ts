@@ -40,6 +40,23 @@ export function useProgress() {
         managerRef.current.markLabelRead(chapterId, labelId);
         refresh();
       },
+      markSceneVisited: (chapterId: string, sceneId: string) => {
+        managerRef.current.markSceneVisited(chapterId, sceneId);
+        refresh();
+      },
+      openSceneHotspot: (chapterId: string, hotspotId: string) => {
+        managerRef.current.openSceneHotspot(chapterId, hotspotId);
+        refresh();
+      },
+      navigateToScene: (...args: Parameters<ReturnType<typeof createProgressManager>["navigateToScene"]>) => {
+        managerRef.current.navigateToScene(...args);
+        refresh();
+      },
+      goBackScene: (...args: Parameters<ReturnType<typeof createProgressManager>["goBackScene"]>) => {
+        const targetSceneId = managerRef.current.goBackScene(...args);
+        refresh();
+        return targetSceneId;
+      },
       markGameCompleted: (chapterId: string) => {
         managerRef.current.markGameCompleted(chapterId);
         refresh();

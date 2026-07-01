@@ -28,4 +28,12 @@ describe("xiyouji content selectors", () => {
   it("reports no seed integrity issues for the current MVP data", () => {
     expect(getContentIssues(chapter027, mapSeed)).toEqual([]);
   });
+
+  it("keeps rejected v2 scene drafts out of the current runtime seed", () => {
+    expect(chapter027.version).toBe(1);
+    expect(chapter027.scene.hotspots).toHaveLength(11);
+    expect(chapter027.sceneNavigation).toBeUndefined();
+    expect(chapter027.sceneNodes).toBeUndefined();
+    expect(JSON.stringify(chapter027)).not.toContain("/assets/chapters/027/scenes/v2/");
+  });
 });

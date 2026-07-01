@@ -51,4 +51,30 @@ describe("progress manager", () => {
     manager.markLabelRead("chapter-027", "label-027-hunger");
     expect(getChapterProgress(manager.getSnapshot(), "chapter-027").readLabelIds).toContain("label-027-hunger");
   });
+
+  it("tracks scene visits, current scene, opened hotspots, and back stack without changing exploration", () => {
+    const manager = createProgressManager(createMemoryStorage());
+
+    manager.markSceneVisited("chapter-027", "scene-027-01-baihuling-road");
+    manager.openSceneHotspot("chapter-027", "scene-hotspot-027-01-hunger");
+    manager.navigateToScene("chapter-027", "scene-027-02-demon-motive", {
+      fromSceneId: "scene-027-01-baihuling-road",
+      pushStack: true
+    });
+
+    const chapterProgress = getChapterProgress(manager.getSnapshot(), "chapter-027");
+    expect(chapterProgress.currentSceneId).toBe("scene-027-02-demon-motive");
+    expect(chapterProgress.visitedSceneIds).toEqual([
+      "scene-027-01-baihuling-road",
+      "scene-027-02-demon-motive"
+    ]);
+    expect(chapterProgress.openedHotspotIds).toEqual(["scene-hotspot-027-01-hunger"]);
+    expect(chapterProgress.sceneStack).toEqual(["scene-027-01-baihuling-road"]);
+    expect(getGameGate(chapter027, manager.getSnapshot()).explorationPercent).toBe(0);
+
+    const backTarget = manager.goBackScene("chapter-027");
+    expect(backTarget).toBe("scene-027-01-baihuling-road");
+    expect(getChapterProgress(manager.getSnapshot(), "chapter-027").currentSceneId).toBe("scene-027-01-baihuling-road");
+    expect(getChapterProgress(manager.getSnapshot(), "chapter-027").sceneStack).toEqual([]);
+  });
 });

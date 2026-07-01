@@ -1,6 +1,6 @@
 import chapter027Json from "../../content/chapters/chapter-027.seed.json";
 import mapSeedJson from "../../content/map/map-nodes.seed.json";
-import type { ChapterLabel, ChapterSeed, MapSeed } from "./types";
+import type { ChapterLabel, ChapterSeed, MapSeed, SceneNode } from "./types";
 
 export const mapSeed = mapSeedJson as MapSeed;
 export const chapter027 = chapter027Json as ChapterSeed;
@@ -43,6 +43,20 @@ export function getRequiredReadCount(chapter: ChapterSeed, readLabelIds: readonl
   return getRequiredLabelIds(chapter).filter((labelId) => read.has(labelId)).length;
 }
 
+export function getSceneNodeById(chapter: ChapterSeed, sceneId: string): SceneNode | undefined {
+  return chapter.sceneNodes?.find((scene) => scene.id === sceneId);
+}
+
+export function getMainlineSceneNodes(chapter: ChapterSeed): SceneNode[] {
+  if (!chapter.sceneNavigation || !chapter.sceneNodes) {
+    return [];
+  }
+
+  return chapter.sceneNavigation.mainlineSceneIds
+    .map((sceneId) => getSceneNodeById(chapter, sceneId))
+    .filter((scene): scene is SceneNode => Boolean(scene));
+}
+
 export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
   const issues: string[] = [];
   const labelIds = new Set(chapter.labels.map((label) => label.id));
@@ -77,6 +91,68 @@ export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
     for (const evidenceId of eventCard.requiredEvidenceIds) {
       if (!evidenceIds.has(evidenceId)) {
         issues.push(`Event ${eventCard.id} requires missing evidence ${evidenceId}.`);
+      }
+    }
+  }
+
+  if (chapter.sceneNavigation || chapter.sceneNodes) {
+    if (!chapter.sceneNavigation) {
+      issues.push(`Chapter ${chapter.id} has sceneNodes but no sceneNavigation.`);
+    }
+    if (!chapter.sceneNodes) {
+      issues.push(`Chapter ${chapter.id} has sceneNavigation but no sceneNodes.`);
+    }
+  }
+
+  if (chapter.sceneNavigation && chapter.sceneNodes) {
+    const sceneIds = new Set<string>();
+    for (const scene of chapter.sceneNodes) {
+      if (sceneIds.has(scene.id)) {
+        issues.push(`Scene ${scene.id} is duplicated.`);
+      }
+      sceneIds.add(scene.id);
+
+      for (const labelId of scene.source.labelIds) {
+        if (!labelIds.has(labelId)) {
+          issues.push(`Scene ${scene.id} source references missing label ${labelId}.`);
+        }
+      }
+
+      if (!scene.asset.src || !scene.asset.alt) {
+        issues.push(`Scene ${scene.id} asset src or alt is empty.`);
+      }
+
+      for (const nextSceneId of scene.nextSceneIds) {
+        if (!sceneIds.has(nextSceneId) && !chapter.sceneNodes.some((candidate) => candidate.id === nextSceneId)) {
+          issues.push(`Scene ${scene.id} nextSceneIds references missing scene ${nextSceneId}.`);
+        }
+      }
+
+      for (const hotspot of scene.hotspots) {
+        for (const labelId of hotspot.labelIds) {
+          if (!labelIds.has(labelId)) {
+            issues.push(`Scene hotspot ${hotspot.id} references missing label ${labelId}.`);
+          }
+        }
+        if (
+          hotspot.action.targetSceneId &&
+          !sceneIds.has(hotspot.action.targetSceneId) &&
+          !chapter.sceneNodes.some((candidate) => candidate.id === hotspot.action.targetSceneId)
+        ) {
+          issues.push(`Scene hotspot ${hotspot.id} targets missing scene ${hotspot.action.targetSceneId}.`);
+        }
+      }
+    }
+
+    if (!sceneIds.has(chapter.sceneNavigation.initialSceneId)) {
+      issues.push(`Scene navigation initialSceneId references missing scene ${chapter.sceneNavigation.initialSceneId}.`);
+    }
+    if (!sceneIds.has(chapter.sceneNavigation.gameGateSceneId)) {
+      issues.push(`Scene navigation gameGateSceneId references missing scene ${chapter.sceneNavigation.gameGateSceneId}.`);
+    }
+    for (const mainlineSceneId of chapter.sceneNavigation.mainlineSceneIds) {
+      if (!sceneIds.has(mainlineSceneId)) {
+        issues.push(`Scene navigation mainline references missing scene ${mainlineSceneId}.`);
       }
     }
   }

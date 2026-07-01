@@ -30,9 +30,24 @@
 - `baihuling-360-thumb.jpg`：由当前全景图裁切生成，用于奖励入口缩略图。
 - `chapter-027-badges-v1.png`：徽章合图可用作视觉参考；`locked-v1` 已裁切左侧锁定徽章，`unlocked-v1` 已裁切右侧发光解锁徽章。
 
+## v2 场景链资源
+
+第一轮 v2 场景链图已拒绝，不能作为正式资源接入：
+
+- 审查位置：`docs/review/2026-07-01-v2-scene-rejected-drafts/`
+- 拒绝原因：孙悟空、唐僧、猪八戒、沙僧等核心角色未稳定继承现有角色图纸和原著设定，部分服饰、装备和体态偏离过大。
+- 处理结果：这些图片已从章节 027 的 v2 scenes 运行时资源目录移出；`chapter-027.seed.json` 不得引用它们。
+
+下一轮 v2 场景资源必须先通过角色一致性 QA：
+
+1. 以 `public/assets/chapters/027/characters/*-v1.png` 作为强角色参考。
+2. 同时读取 `content/characters/*.base.json` 与 `content/chapters/027/characters/*.state.json`。
+3. 若生成模型无法稳定保留角色形象，应改用“背景场景 + 已审核角色图层/剪影/局部特写 + 气氛/物件图”的组合方式。
+4. 通过逐张 QA 后，才能重新落盘到章节 027 的 v2 scenes 运行时资源目录并写入 `sceneNodes`。
+
 ## 开发注意
 
-`chapter-027.seed.json` 已指向 `baihuling-main-v2.png`，但热点坐标仍需在 `/studio` 里按真实图片重新校准。
+`chapter-027.seed.json` 当前仍保持 v1 单场景字段，指向 `baihuling-main-v2.png`。v2 章节页在 10 张主线场景图通过角色一致性 QA 前，不应正式接入 `sceneNodes`。
 
 ## 已替换删除资源
 

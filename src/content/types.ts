@@ -51,6 +51,69 @@ export interface Hotspot {
   isKey: boolean;
 }
 
+export type SceneNodeKind = "main" | "detail" | "summary";
+export type SceneAssetType = "image" | "video" | "image-sequence";
+export type SceneHotspotKind = "character" | "object" | "location" | "event" | "detail" | "advance";
+export type SceneHotspotActionType = "open-popover" | "open-label" | "open-detail-scene" | "advance-scene";
+
+export interface SceneAsset {
+  type: SceneAssetType;
+  src: string;
+  poster?: string;
+  frames?: string[];
+  alt: string;
+}
+
+export interface SceneHotspot {
+  id: string;
+  title: string;
+  kind: SceneHotspotKind;
+  position: { x: number; y: number };
+  radius?: number;
+  polygon?: Array<{ x: number; y: number }>;
+  labelIds: string[];
+  action: {
+    type: SceneHotspotActionType;
+    targetSceneId?: string;
+    popoverTitle?: string;
+    popoverCopy?: string;
+  };
+  requiredForGame?: boolean;
+  initiallyVisible?: boolean;
+}
+
+export interface SceneNode {
+  id: string;
+  kind: SceneNodeKind;
+  order: number;
+  title: string;
+  subtitle?: string;
+  entryCopy: string;
+  source: {
+    chapterNumber: number;
+    rawLineStart?: number;
+    rawLineEnd?: number;
+    labelIds: string[];
+  };
+  asset: SceneAsset;
+  parentSceneId?: string;
+  previousSceneId?: string;
+  nextSceneIds: string[];
+  hotspots: SceneHotspot[];
+  unlock: {
+    type: "chapter-available" | "scene-visited" | "labels-read" | "always";
+    sceneId?: string;
+    labelIds?: string[];
+  };
+}
+
+export interface ChapterSceneNavigation {
+  initialSceneId: string;
+  mainlineSceneIds: string[];
+  gameGateSceneId: string;
+  allowCycles: false;
+}
+
 export interface EventCard {
   id: string;
   text: string;
@@ -120,4 +183,12 @@ export interface ChapterSeed {
     nodeId: string;
     stateAfterCompletion: MapNodeState;
   };
+  sceneNavigation?: ChapterSceneNavigation;
+  sceneNodes?: SceneNode[];
+}
+
+export interface ChapterSeedV2 extends ChapterSeed {
+  version: 2;
+  sceneNavigation: ChapterSceneNavigation;
+  sceneNodes: SceneNode[];
 }

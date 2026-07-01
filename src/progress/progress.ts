@@ -9,6 +9,11 @@ export interface ChapterProgress {
   gameCompleted: boolean;
   rewardViewed: boolean;
   badgeUnlocked: boolean;
+  visitedSceneIds: string[];
+  openedHotspotIds: string[];
+  currentSceneId: string | null;
+  sceneStack: string[];
+  mainlineUnlockedSceneIds: string[];
 }
 
 export interface XiyoujiProgress {
@@ -34,12 +39,26 @@ export interface GameGate {
   missingRequiredLabelIds: string[];
 }
 
+export interface NavigateToSceneOptions {
+  fromSceneId?: string;
+  pushStack?: boolean;
+}
+
+function unique(values: readonly string[]): string[] {
+  return Array.from(new Set(values));
+}
+
 export function createEmptyChapterProgress(): ChapterProgress {
   return {
     readLabelIds: [],
     gameCompleted: false,
     rewardViewed: false,
-    badgeUnlocked: false
+    badgeUnlocked: false,
+    visitedSceneIds: [],
+    openedHotspotIds: [],
+    currentSceneId: null,
+    sceneStack: [],
+    mainlineUnlockedSceneIds: []
   };
 }
 
@@ -74,7 +93,9 @@ export function parseProgress(raw: string | null): XiyoujiProgress {
     }
     return {
       version: PROGRESS_VERSION,
-      chapters: parsed.chapters,
+      chapters: Object.fromEntries(
+        Object.entries(parsed.chapters).map(([chapterId, chapter]) => [chapterId, normalizeChapterProgress(chapter)])
+      ),
       map: {
         unlockedNodeIds: Array.isArray(parsed.map.unlockedNodeIds) ? parsed.map.unlockedNodeIds : []
       }
@@ -84,8 +105,29 @@ export function parseProgress(raw: string | null): XiyoujiProgress {
   }
 }
 
+export function normalizeChapterProgress(chapter: Partial<ChapterProgress> | undefined): ChapterProgress {
+  const empty = createEmptyChapterProgress();
+  if (!chapter) {
+    return empty;
+  }
+
+  return {
+    readLabelIds: Array.isArray(chapter.readLabelIds) ? unique(chapter.readLabelIds) : empty.readLabelIds,
+    gameCompleted: Boolean(chapter.gameCompleted),
+    rewardViewed: Boolean(chapter.rewardViewed),
+    badgeUnlocked: Boolean(chapter.badgeUnlocked),
+    visitedSceneIds: Array.isArray(chapter.visitedSceneIds) ? unique(chapter.visitedSceneIds) : empty.visitedSceneIds,
+    openedHotspotIds: Array.isArray(chapter.openedHotspotIds) ? unique(chapter.openedHotspotIds) : empty.openedHotspotIds,
+    currentSceneId: typeof chapter.currentSceneId === "string" ? chapter.currentSceneId : empty.currentSceneId,
+    sceneStack: Array.isArray(chapter.sceneStack) ? chapter.sceneStack.filter((sceneId) => typeof sceneId === "string") : empty.sceneStack,
+    mainlineUnlockedSceneIds: Array.isArray(chapter.mainlineUnlockedSceneIds)
+      ? unique(chapter.mainlineUnlockedSceneIds)
+      : empty.mainlineUnlockedSceneIds
+  };
+}
+
 export function getChapterProgress(progress: XiyoujiProgress, chapterId: string): ChapterProgress {
-  return progress.chapters[chapterId] ?? createEmptyChapterProgress();
+  return normalizeChapterProgress(progress.chapters[chapterId]);
 }
 
 export function getGameGate(chapter: ChapterSeed, progress: XiyoujiProgress): GameGate {
@@ -142,8 +184,51 @@ export function createProgressManager(storage: StorageLike | null | undefined) {
     markLabelRead: (chapterId: string, labelId: string) => {
       updateChapter(chapterId, (chapter) => ({
         ...chapter,
-        readLabelIds: Array.from(new Set([...chapter.readLabelIds, labelId]))
+        readLabelIds: unique([...chapter.readLabelIds, labelId])
       }));
+    },
+    markSceneVisited: (chapterId: string, sceneId: string) => {
+      updateChapter(chapterId, (chapter) => ({
+        ...chapter,
+        currentSceneId: chapter.currentSceneId ?? sceneId,
+        visitedSceneIds: unique([...chapter.visitedSceneIds, sceneId]),
+        mainlineUnlockedSceneIds: unique([...chapter.mainlineUnlockedSceneIds, sceneId])
+      }));
+    },
+    openSceneHotspot: (chapterId: string, hotspotId: string) => {
+      updateChapter(chapterId, (chapter) => ({
+        ...chapter,
+        openedHotspotIds: unique([...chapter.openedHotspotIds, hotspotId])
+      }));
+    },
+    navigateToScene: (chapterId: string, sceneId: string, options: NavigateToSceneOptions = {}) => {
+      updateChapter(chapterId, (chapter) => ({
+        ...chapter,
+        currentSceneId: sceneId,
+        visitedSceneIds: unique([...chapter.visitedSceneIds, sceneId]),
+        mainlineUnlockedSceneIds: unique([...chapter.mainlineUnlockedSceneIds, sceneId]),
+        sceneStack:
+          options.pushStack && options.fromSceneId
+            ? [...chapter.sceneStack, options.fromSceneId]
+            : chapter.sceneStack
+      }));
+    },
+    goBackScene: (chapterId: string) => {
+      const chapterProgress = getChapterProgress(snapshot, chapterId);
+      const nextStack = chapterProgress.sceneStack.slice(0, -1);
+      const targetSceneId = chapterProgress.sceneStack.at(-1) ?? chapterProgress.currentSceneId;
+
+      if (targetSceneId) {
+        updateChapter(chapterId, (chapter) => ({
+          ...chapter,
+          currentSceneId: targetSceneId,
+          visitedSceneIds: unique([...chapter.visitedSceneIds, targetSceneId]),
+          mainlineUnlockedSceneIds: unique([...chapter.mainlineUnlockedSceneIds, targetSceneId]),
+          sceneStack: nextStack
+        }));
+      }
+
+      return targetSceneId ?? null;
     },
     markGameCompleted: (chapterId: string) => {
       updateChapter(chapterId, (chapter) => ({
