@@ -11,6 +11,7 @@
 - 桌面端悬浮玻璃信息窗与移动端底部信息面板
 - 探索进度、线索解锁、事件时间线小游戏和章节奖励
 - WebGL 失败时的静态图回退
+- Gemini 3.5 Flash 多模态文化导览：同时分析当前全景画面与对应原著证据
 
 ## 本地运行
 
@@ -21,7 +22,15 @@ pnpm install
 pnpm dev
 ```
 
-打开 `http://localhost:3000`，在地图中选择“白虎岭”，或直接访问 `http://localhost:3000/chapter/027`。
+打开 `http://localhost:3000`，在地图中选择“白虎岭”，或直接访问 `http://localhost:3000/chapter/027`。评审或录屏环境也可打开 `http://localhost:3000/gemini-demo`，在不依赖 WebGL 的静态场景中核验同一套真实 Gemini API。
+
+### 启用 Gemini 多模态导览
+
+1. 在 [Google AI Studio](https://aistudio.google.com/apikey) 创建 Gemini API Key。
+2. 复制 `.env.example` 为 `.env.local`，填写 `GEMINI_API_KEY`。
+3. 重启 `pnpm dev`，打开任意白色文化热点，在展签内向 Gemini 提问。
+
+API Key 只由 Next.js 服务端路由读取，不会发送到浏览器或提交到 GitHub。浏览器只提交热点 ID、当前语言和访客问题；原著证据与全景路径由服务端从白名单内容模型解析，避免客户端伪造来源。
 
 生产验证：
 
@@ -31,21 +40,26 @@ pnpm typecheck
 pnpm build
 ```
 
+当前提交验证结果：16 个测试文件、63 项测试通过，TypeScript 检查和 Next.js 生产构建通过。
+
 ## 技术与内容结构
 
 - Next.js、React、TypeScript
 - Photo Sphere Viewer（360° 全景、热点和场景跳转）
+- Google Gen AI SDK `@google/genai` + Gemini 3.5 Flash（图像与原文联合解读、结构化 JSON 输出）
 - 本地 JSON 内容模型与原著行号证据
 - localStorage 保存探索与奖励进度
 - 响应式桌面 / 移动端交互
 
 核心全景数据见 `src/content/panoramaTour.ts`，原著章节和展签内容见 `content/chapters/chapter-027.seed.json`，美术提示词与约束见 `docs/assets/CHAPTER_027_ASSET_PROMPTS.md`。
 
-## AI 使用披露
+## Google AI 与生成式 AI 使用披露
 
-当前版本的运行时没有接入 Google AI、Gemini API 或其他在线生成式 AI 服务。视觉资产在开发阶段使用图像生成工具辅助产出，经人工筛选、裁切、热点定位和内容校对；首页地图景深使用 Depth Anything V2 Small 生成。原著证据、三语展签、交互逻辑和代码均作为本地静态内容运行。
+当前版本已接入 Google Gen AI SDK 和 Gemini 3.5 Flash。用户在文化热点中提问时，服务端把当前 360° 全景图、该热点经人工校对的繁体原文、简体解释、英文导览和原文行号共同提交给 Gemini；模型以结构化 JSON 返回画面观察、文化语境、原文引句和解读边界。提示词明确把访客问题视为不可信文本，要求不得绕过证据或虚构引文。
 
-本披露用于准确说明当前实现，不把未完成的 Google AI 集成写成已实现功能。
+Gemini 功能需要服务端设置 `GEMINI_API_KEY`。没有 Key 时，其余本地博物馆体验仍可运行，界面会给出明确配置提示。
+
+视觉资产在开发阶段使用图像生成工具辅助产出，经人工筛选、裁切、热点定位和内容校对；首页地图景深使用 Depth Anything V2 Small 生成。
 
 ## 版权与第三方依赖
 
