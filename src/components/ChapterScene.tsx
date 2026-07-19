@@ -3,14 +3,37 @@
 import { useMemo, useState } from "react";
 import type { ChapterLabel } from "@/content/types";
 import { chapter027, getLabelById } from "@/content/xiyouji";
-import { getChapterProgress } from "@/progress/progress";
+import { getChapterProgress, getGameGate } from "@/progress/progress";
 import { useProgress } from "@/progress/useProgress";
 import { ExplorationStatus } from "./ExplorationStatus";
 import { MinigameGate } from "./MinigameGate";
 import { MuseumLabelPanel } from "./MuseumLabelPanel";
+import { PanoramaExperience } from "./PanoramaExperience";
 
 export function ChapterScene() {
   const { progress, manager } = useProgress();
+  const gameGate = getGameGate(chapter027, progress);
+
+  return (
+    <PanoramaExperience
+      onMarkLabelRead={(labelId) => manager.markLabelRead(chapter027.id, labelId)}
+      progressSummary={{
+        explorationPercent: gameGate.explorationPercent,
+        requiredReadCount: gameGate.requiredReadCount,
+        requiredTotal: gameGate.requiredTotal,
+        gameUnlocked: gameGate.unlocked
+      }}
+    />
+  );
+}
+
+function ChapterSceneV1({
+  progress,
+  manager
+}: {
+  progress: ReturnType<typeof useProgress>["progress"];
+  manager: ReturnType<typeof useProgress>["manager"];
+}) {
   const chapterProgress = getChapterProgress(progress, chapter027.id);
   const [selectedHotspotId, setSelectedHotspotId] = useState<string | null>(chapter027.scene.hotspots[0]?.id ?? null);
   const [selectedLabelId, setSelectedLabelId] = useState<string | null>(chapter027.scene.hotspots[0]?.labelIds[0] ?? null);

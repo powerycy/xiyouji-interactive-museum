@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "chapterId": "chapter-027",
+  "assetDirectory": "chapters/027/scenes/v2",
+  "runtimeDirectory": "assets/chapters/027/scenes/v2",
+  "approvalRule": "Only approved evidence-space assets with existing runtime files may receive runtimeSrc and be copied into public/assets.",
+  "scenes": [
+    {
+      "order": 1,
+      "sceneId": "scene-027-01-baihuling-road",
+      "title": "白虎岭山路",
+      "fileName": "scene-027-01-baihuling-road-v2.png",
+      "status": "approved",
+      "visualMode": "evidence-space",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-baihuling",
+          "label-027-hunger"
+        ],
+        "rawLineStart": 6997,
+        "rawLineEnd": 7007,
+        "originalExcerpt": "峰巖重疊，澗壑彎環。虎狼成陣走，麂鹿作群行。這等半山之中，前不巴村，後不著店，有錢也沒買處。",
+        "imageBrief": "白虎嶺不是普通山路，畫面要先交代險山、荒路、缽盂與行李，讓唐僧饑餓和悟空離隊有可點擊的空間理由。"
+      },
+      "evidenceFocus": [
+        "险山山路",
+        "钵盂与行李",
+        "无村店空路"
+      ],
+      "roleRisk": "low",
+      "qaNotes": [
+        "不得复用 baihuling-main-v2.png；主焦点是路与饥饿证据。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-01-baihuling-road-v2.png"
+    },
+    {
+      "order": 2,
+      "sceneId": "scene-027-02-demon-motive",
+      "title": "妖怪起意",
+      "fileName": "scene-027-02-demon-motive-v2.png",
+      "status": "approved",
+      "visualMode": "evidence-space",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-demon-motive"
+        ],
+        "rawLineStart": 7023,
+        "rawLineEnd": 7026,
+        "originalExcerpt": "他在雲端裏踏著陰風，看見長老坐在地下，就不勝歡喜道：「造化，造化。」",
+        "imageBrief": "妖怪在雲端踏陰風看見唐僧，戲劇點是覬覦與不敢近身；可用陰風、遠處坐地聖僧、護持輪廓表現，不畫成現代妖女特寫。"
+      },
+      "evidenceFocus": [
+        "阴风",
+        "远路",
+        "白骨洞影"
+      ],
+      "roleRisk": "none",
+      "qaNotes": [
+        "不画白骨夫人正脸；用妖气方向表达觊觎唐僧。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-02-demon-motive-v2.png"
+    },
+    {
+      "order": 3,
+      "sceneId": "scene-027-03-first-disguise",
+      "title": "送斋女子",
+      "fileName": "scene-027-03-first-disguise-v2.png",
+      "status": "approved",
+      "visualMode": "silhouette",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-first-disguise"
+        ],
+        "rawLineStart": 7031,
+        "rawLineEnd": 7033,
+        "originalExcerpt": "變做個月貌花容的女兒，說不盡那眉清目秀，齒白唇紅。左手提著一個青砂罐兒，右手提著一個綠磁瓶兒，從西向東，徑奔唐僧。",
+        "imageBrief": "第一變的核心物證是青砂罐和綠磁瓶；女子可以用遠景或剪影，避免靠臉部表情講故事。"
+      },
+      "evidenceFocus": [
+        "青砂罐",
+        "绿磁瓶",
+        "女子剪影",
+        "唐僧方向的道路"
+      ],
+      "roleRisk": "medium",
+      "qaNotes": [
+        "不要依赖女子面部表情；罐瓶必须是可点击主证据。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-03-first-disguise-v2.png"
+    },
+    {
+      "order": 4,
+      "sceneId": "scene-027-04-wukong-returns",
+      "title": "悟空归来",
+      "fileName": "scene-027-04-wukong-returns-v2.png",
+      "status": "approved",
+      "visualMode": "silhouette",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-wukong-eyes",
+          "label-027-first-disguise"
+        ],
+        "rawLineStart": 7075,
+        "rawLineEnd": 7077,
+        "originalExcerpt": "只見那行者自南山頂上摘了幾個桃子，托著缽盂，一觔斗，點將回來，睜火眼金睛觀看，認得那女子是個妖精。",
+        "imageBrief": "悟空從南山摘桃歸來，火眼金睛識破女子；畫面可把桃、缽盂、金箍棒、罐瓶作為連續可點證據。"
+      },
+      "evidenceFocus": [
+        "火眼金睛光束",
+        "金箍棒影",
+        "变质饭食"
+      ],
+      "roleRisk": "medium",
+      "qaNotes": [
+        "孙悟空不得重甲武将化；用眼光轮廓与棒影识别。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-04-wukong-returns-v2.png"
+    },
+    {
+      "order": 5,
+      "sceneId": "scene-027-05-bajie-instigation",
+      "title": "八戒挑唆",
+      "fileName": "scene-027-05-bajie-instigation-v2.png",
+      "status": "approved",
+      "visualMode": "approved-character-layer",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-bajie-instigation",
+          "label-027-wukong-eyes"
+        ],
+        "rawLineStart": 7094,
+        "rawLineEnd": 7099,
+        "originalExcerpt": "那裏是甚香米飯，卻是一罐子拖尾巴的長蛆；也不是麵觔，卻是幾個青蛙、癩蝦蟆，滿地亂跳。怎禁豬八戒氣不忿，在傍漏八分兒唆嘴道。",
+        "imageBrief": "第一棒後的張力來自變壞的飯食和八戒唆嘴；壞飯食、釘鈀、唐僧方向的動搖比表情更重要。"
+      },
+      "evidenceFocus": [
+        "坏饭食",
+        "九齿钉钯轮廓",
+        "唐僧锡杖旁摇摆构图"
+      ],
+      "roleRisk": "high",
+      "qaNotes": [
+        "猪八戒只能用已审核图层、背影或钉钯轮廓；不画可爱粉色猪。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-05-bajie-instigation-v2.png"
+    },
+    {
+      "order": 6,
+      "sceneId": "scene-027-06-second-disguise",
+      "title": "老妇寻女",
+      "fileName": "scene-027-06-second-disguise-v2.png",
+      "status": "approved",
+      "visualMode": "silhouette",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-second-disguise"
+        ],
+        "rawLineStart": 7122,
+        "rawLineEnd": 7123,
+        "originalExcerpt": "按落陰雲，在那前山坡下搖身一變，變作個老婦人，年滿八旬，手拄著一根彎頭竹杖，一步一聲的哭著走來。",
+        "imageBrief": "第二變用前山坡、陰雲、彎頭竹杖和一步一聲哭來建立誤認，不把重點放在老婦正臉。"
+      },
+      "evidenceFocus": [
+        "竹杖",
+        "老妇背影",
+        "山坡哭声路径"
+      ],
+      "roleRisk": "medium",
+      "qaNotes": [
+        "老妇不靠脸部表演；竹杖和哭声路径是主证据。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-06-second-disguise-v2.png"
+    },
+    {
+      "order": 7,
+      "sceneId": "scene-027-07-third-disguise",
+      "title": "老公公寻亲",
+      "fileName": "scene-027-07-third-disguise-v2.png",
+      "status": "approved",
+      "visualMode": "silhouette",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-third-disguise"
+        ],
+        "rawLineStart": 7162,
+        "rawLineEnd": 7166,
+        "originalExcerpt": "變做一個老公公，真個是：白髮如彭祖，蒼髯賽壽星。耳中鳴玉磬，眼裏幌金星。手拄龍頭拐，身穿鶴氅輕。數珠掐在手，口誦南無經。",
+        "imageBrief": "第三變以龍頭拐、數珠、口誦經和山路收緊作為證據；不要把它畫成普通路人或提前畫出粉骷髏。"
+      },
+      "evidenceFocus": [
+        "老公公背影",
+        "包袱",
+        "骨影",
+        "收紧山路"
+      ],
+      "roleRisk": "medium",
+      "qaNotes": [
+        "人物正脸不是戏剧核心；通过路与骨影收紧骗局。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-07-third-disguise-v2.png"
+    },
+    {
+      "order": 8,
+      "sceneId": "scene-027-08-skeleton-reveal",
+      "title": "粉骷髅现形",
+      "fileName": "scene-027-08-skeleton-reveal-v2.png",
+      "status": "approved",
+      "visualMode": "evidence-space",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-final-kill"
+        ],
+        "rawLineStart": 7193,
+        "rawLineEnd": 7196,
+        "originalExcerpt": "卻是一堆粉骷髏在那裏。唐僧大驚道：「悟空，這個人才死了，怎麼就化作一堆骷髏？」行者道：「他是個潛靈作怪的僵尸，在此迷人敗本，被我打殺，他就現了本相。他那脊梁上有一行字，叫做『白骨夫人』。」",
+        "imageBrief": "粉骷髏現形是物證場景，師徒仍在現場；脊梁題名“白骨夫人”可以作為唯一可讀圖內文字，點擊後打開展簽。"
+      },
+      "evidenceFocus": [
+        "粉骷髅",
+        "散开的妖气",
+        "金箍棒影",
+        "唐僧方向的惊惧空间"
+      ],
+      "roleRisk": "low",
+      "qaNotes": [
+        "骷髅和妖气是主体；避免现代性感妖女化。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-08-skeleton-reveal-v2.png"
+    },
+    {
+      "order": 9,
+      "sceneId": "scene-027-09-banish-wukong",
+      "title": "贬书逐猴王",
+      "fileName": "scene-027-09-banish-wukong-v2.png",
+      "status": "approved",
+      "visualMode": "approved-character-layer",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-curse-banish",
+          "label-027-sha-seng"
+        ],
+        "rawLineStart": 7217,
+        "rawLineEnd": 7229,
+        "originalExcerpt": "叫沙僧包袱內取出紙筆，即於澗下取水，石上磨墨，寫了一紙貶書，遞於行者道：「猴頭，執此為照，再不要你做徒弟了。」大聖見長老三番兩復，不肯轉意回心，沒奈何才去。",
+        "imageBrief": "只有這一幕表現逐走悟空；紙筆、澗水磨墨、貶書、沙僧包袱和分路承擔戲劇張力。"
+      },
+      "evidenceFocus": [
+        "纸笔",
+        "贬书",
+        "分路",
+        "悟空背影或棒影",
+        "沙僧行李"
+      ],
+      "roleRisk": "high",
+      "qaNotes": [
+        "不画失控正脸表情；贬书和分路承担戏剧张力。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-09-banish-wukong-v2.png"
+    },
+    {
+      "order": 10,
+      "sceneId": "scene-027-10-chapter-review",
+      "title": "章节回望",
+      "fileName": "scene-027-10-chapter-review-v2.png",
+      "status": "approved",
+      "visualMode": "evidence-space",
+      "sourceEvidence": {
+        "labelIds": [
+          "label-027-hunger",
+          "label-027-demon-motive",
+          "label-027-first-disguise",
+          "label-027-wukong-eyes",
+          "label-027-bajie-instigation",
+          "label-027-second-disguise",
+          "label-027-third-disguise",
+          "label-027-final-kill",
+          "label-027-curse-banish"
+        ],
+        "rawLineStart": 7005,
+        "rawLineEnd": 7219,
+        "originalExcerpt": "悟空摘桃離隊、妖精三番來戲弄、粉骷髏現本相、唐僧寫下一紙貶書，都是第二七回原文中的連續證據。",
+        "imageBrief": "章節回望不是新情節，而是把三次偽裝、粉骷髏、貶書和白虎嶺路徑整理成博物館式證據桌。"
+      },
+      "evidenceFocus": [
+        "三次伪装证据",
+        "粉骷髅",
+        "贬书",
+        "白虎岭路径"
+      ],
+      "roleRisk": "none",
+      "qaNotes": [
+        "做博物馆式证据总览；不新增探索权重。"
+      ],
+      "runtimeSrc": "/assets/chapters/027/scenes/v2/scene-027-10-chapter-review-v2.png"
+    }
+  ]
+}

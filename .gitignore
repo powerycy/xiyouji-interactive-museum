@@ -6,3 +6,8 @@ node_modules/
 out/
 tsconfig.tsbuildinfo
 next-env.d.ts
+
+# Local competition submission bundles and oversized source archives
+submission/**/private/
+submission/*.zip
+xiyou-video-pitch-deck/

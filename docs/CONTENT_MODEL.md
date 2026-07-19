@@ -47,6 +47,10 @@
 - `scene` 是 v1 单场景模型，保留给当前闭环、Studio 对比和兼容回退。
 - `sceneNavigation` 与 `sceneNodes` 是 v2 视觉场景链模型。若 seed 中存在 `sceneNodes`，章节页必须以它作为权威渲染数据。
 - `labels`、`minigame`、`reward`、`badge` 继续复用，不把原著文字烘焙进图片。
+- 所有章节文案都必须有场景热点入口。`labels[].originalTraditional`、`labels[].plainSimplified`、人物/事件/物件说明和原著物证解释不能只存在于列表或后台数据里；用户必须能通过点击画面热点打开对应轻量说明和完整展签。
+- 图片可以表现原著明确写出的物证文字，例如第二七回脊梁题名“白骨夫人”，但场景图片里的所有可读文字都必须使用繁体/原文形态；不得出现简体中文、伪字、乱码、现代广告字或非原著 UI 字。
+- 结构化原文仍以 JSON/DOM 展签为准，便于检索、校验、探索度计算和小游戏引用。
+- v2 美术资源先记录在 `content/chapters/027/scene-assets.v2.manifest.json`。每个资源条目必须有 `sourceEvidence`，包含关联展签、原文行号、原文摘录和图像 brief；没有这些证据字段的图片不能进入运行时资源目录。
 
 ## 3. 地图节点
 
@@ -143,6 +147,8 @@ v2 导航约束：
 - 细节场景必须有 `parentSceneId`，从父场景热点进入。
 - `next` / `previous` 沿主线移动；`back` 弹出浏览栈回到上一层。
 - 场景访问状态与探索度分开：`visitedSceneIds`、`openedHotspotIds` 不直接增加探索度，探索度仍只按唯一已读展签权重计算。
+- v2 不允许孤儿展签：每个 `labels[].id` 必须至少出现在一个 `sceneNodes[].hotspots[].labelIds` 中；每个 `scene.source.labelIds` 也必须能从该 scene 的某个热点打开。
+- v2 资产 manifest 的 `sourceEvidence.labelIds` 必须引用现有展签；`sourceEvidence.originalExcerpt` 是生成提示词和审稿的原文依据，不能被改写成泛化剧情梗概。
 
 ## 5. 热点
 
@@ -167,6 +173,12 @@ v2 导航约束：
 - `detail`
 
 位置使用百分比坐标，方便响应式缩放。
+
+热点内容要求：
+
+- 热点是所有文案的入口。用户点击人物、物件、道路、尸骨、题名、纸笔、行李等视觉细节后，先出现轻量说明浮层，再按需展开完整博物馆展签。
+- 多展签热点必须明确展示该热点包含几条展签、每条是否已读、是否核心线索和探索权重。
+- 如果图片中出现原著物证文字，该文字所在区域必须是热点，不能只是装饰。
 
 ## 6. 展签
 
