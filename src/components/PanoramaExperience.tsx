@@ -8,6 +8,7 @@ import {
   type PanoramaLanguage
 } from "@/content/panoramaTour";
 import { PanoramaInfoDrawer, type PanoramaOverlayPlacement } from "./PanoramaInfoDrawer";
+import { PanoramaEvidenceGuide } from "./PanoramaEvidenceGuide";
 import {
   createPhotoSphereRuntime,
   type PanoramaRuntimeFactory
@@ -32,10 +33,12 @@ export function PanoramaExperience({
   const viewerContainerRef = useRef<HTMLDivElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
   const markLabelReadRef = useRef(onMarkLabelRead);
+  const guideContentRef = useRef<string | null>(null);
   const [currentNodeId, setCurrentNodeId] = useState(baihulingPanoramaTour.startNodeId);
   const [activeContentId, setActiveContentId] = useState<string | null>(null);
   const [overlayPlacement, setOverlayPlacement] = useState<PanoramaOverlayPlacement>("right");
   const [runtimeFailed, setRuntimeFailed] = useState(false);
+  const [evidenceGuideOpen, setEvidenceGuideOpen] = useState(false);
   const activeContent: PanoramaCulturalContent | null = useMemo(
     () => (activeContentId ? baihulingPanoramaTour.content[activeContentId] ?? null : null),
     [activeContentId]
@@ -47,9 +50,28 @@ export function PanoramaExperience({
     [currentNode.id]
   );
 
+  function openEvidence(nodeId: string, contentId: string, labelId: string) {
+    guideContentRef.current = contentId;
+    setCurrentNodeId(nodeId);
+    setActiveContentId(contentId);
+    setOverlayPlacement("right");
+    setEvidenceGuideOpen(false);
+    onMarkLabelRead?.(labelId);
+  }
+
   useEffect(() => {
     markLabelReadRef.current = onMarkLabelRead;
   }, [onMarkLabelRead]);
+
+  useEffect(() => {
+    if (!activeContentId || guideContentRef.current !== activeContentId) {
+      return;
+    }
+    const timer = window.setTimeout(() => {
+      guideContentRef.current = null;
+    }, 700);
+    return () => window.clearTimeout(timer);
+  }, [activeContentId]);
 
   useEffect(() => {
     if (!viewerContainerRef.current || runtimeFailed) {
@@ -90,7 +112,12 @@ export function PanoramaExperience({
             nodeChangeTimer = window.setTimeout(() => {
               if (!cancelled) {
                 setCurrentNodeId(nodeId);
-                setActiveContentId(null);
+                if (guideContentRef.current) {
+                  setActiveContentId(guideContentRef.current);
+                  guideContentRef.current = null;
+                } else {
+                  setActiveContentId(null);
+                }
               }
             }, 120);
           },
@@ -131,7 +158,21 @@ export function PanoramaExperience({
           <button type="button" onClick={() => setRuntimeFailed(false)} aria-label="重新载入全景">
             重新载入全景
           </button>
+          <p className="small-text">即使设备不支持 WebGL，原著展签、小游戏和奖励仍可完整体验。</p>
         </div>
+        <PanoramaEvidenceGuide
+          open={evidenceGuideOpen}
+          onOpenChange={setEvidenceGuideOpen}
+          onSelect={openEvidence}
+        />
+        {activeContent ? (
+          <PanoramaInfoDrawer
+            content={activeContent}
+            initialLanguage={language}
+            placement="right"
+            onClose={() => setActiveContentId(null)}
+          />
+        ) : null}
       </section>
     );
   }
@@ -159,6 +200,12 @@ export function PanoramaExperience({
         <span><i className="panorama-legend-info" aria-hidden="true" />文化展签</span>
         <span><i className="panorama-legend-link" aria-hidden="true" />场景入口</span>
       </div>
+
+      <PanoramaEvidenceGuide
+        open={evidenceGuideOpen}
+        onOpenChange={setEvidenceGuideOpen}
+        onSelect={openEvidence}
+      />
 
       {progressSummary ? (
         <nav className="panorama-chapter-progress psv--capture-event" aria-label="章节探索进度">

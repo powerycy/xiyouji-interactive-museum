@@ -66,6 +66,20 @@ describe("PanoramaExperience", () => {
     trigger.remove();
   });
 
+  it("offers an ordered evidence guide without requiring the hotspot to be in view", async () => {
+    const user = userEvent.setup();
+    const harness = createRuntimeHarness();
+    const markLabelRead = vi.fn();
+    render(<PanoramaExperience runtimeFactory={harness.factory} onMarkLabelRead={markLabelRead} />);
+
+    await user.click(screen.getByRole("button", { name: "原著证据导览 · 11 条" }));
+    expect(screen.getByRole("complementary", { name: "原著证据导览" })).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "白骨夫人现出本相" }));
+
+    expect(screen.getByTestId("panorama-info-drawer")).toBeInTheDocument();
+    expect(markLabelRead).toHaveBeenCalledWith("label-027-final-kill");
+  });
+
   it("places the floating label opposite the hotspot so the scene remains visible", () => {
     const harness = createRuntimeHarness();
     const trigger = document.createElement("button");
@@ -103,6 +117,10 @@ describe("PanoramaExperience", () => {
 
     expect(screen.getByRole("img", { name: "白虎岭山路静态回退图" })).toBeInTheDocument();
     expect(screen.queryByText("图像场景链")).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "原著证据导览 · 11 条" }));
+    await user.click(screen.getByRole("button", { name: "白虎岭：险山生怪" }));
+    expect(screen.getByTestId("panorama-info-drawer")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "关闭文化说明" }));
     await user.click(screen.getByRole("button", { name: "重新载入全景" }));
     expect(screen.getByTestId("panorama-viewer")).toBeInTheDocument();
   });

@@ -24,6 +24,11 @@ interface GeminiGuideResult {
   };
 }
 
+interface GeminiGuideError {
+  error?: string;
+  code?: string;
+}
+
 const sectionForLanguage: Record<PanoramaLanguage, DrawerSection> = {
   "zh-Hant": "original",
   "zh-Hans": "explanation",
@@ -115,9 +120,14 @@ export function PanoramaInfoDrawer({
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ contentId: content.id, language: geminiLanguage, question })
       });
-      const payload = (await response.json()) as GeminiGuideResult | { error?: string };
+      const payload = (await response.json()) as GeminiGuideResult | GeminiGuideError;
       if (!response.ok || !("answer" in payload)) {
-        throw new Error("error" in payload && payload.error ? payload.error : "Gemini 暂时无法完成解读。");
+        const message = "code" in payload && payload.code === "GEMINI_NOT_CONFIGURED"
+          ? "AI 导览是可选功能，当前无需它也能完成全部博物馆体验。"
+          : "error" in payload && payload.error
+            ? payload.error
+            : "AI 导览暂时无法完成解读。";
+        throw new Error(message);
       }
       setGeminiResult(payload);
     } catch (error) {

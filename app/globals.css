@@ -1713,6 +1713,134 @@ button:disabled {
   box-shadow: 0 0 0 4px rgba(169, 78, 63, 0.15);
 }
 
+.panorama-evidence-guide {
+  position: absolute;
+  z-index: 88;
+  left: 18px;
+  bottom: 66px;
+}
+
+.panorama-evidence-guide-toggle {
+  min-height: 38px;
+  padding: 8px 13px;
+  color: #fffaf0;
+  background: rgba(145, 65, 47, 0.86);
+  border-color: rgba(255, 250, 240, 0.56);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(55, 39, 24, 0.2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.panorama-evidence-guide-panel {
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+  width: min(340px, calc(100vw - 36px));
+  max-height: min(610px, calc(100svh - 170px));
+  overflow: auto;
+  padding: 16px;
+  color: var(--museum-ink);
+  background: rgba(255, 250, 240, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(55, 39, 24, 0.24);
+  backdrop-filter: blur(24px) saturate(1.06);
+}
+
+.panorama-evidence-guide-panel header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panorama-evidence-guide-panel header p,
+.panorama-evidence-guide-panel header h2,
+.panorama-evidence-guide-panel li > p {
+  margin: 0;
+}
+
+.panorama-evidence-guide-panel header p {
+  color: var(--museum-cinnabar-strong);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+
+.panorama-evidence-guide-panel header h2 {
+  margin-top: 3px;
+  font-size: 1.08rem;
+}
+
+.panorama-evidence-guide-panel header button {
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0;
+  color: var(--museum-muted);
+  background: transparent;
+  border-color: rgba(91, 69, 45, 0.18);
+  border-radius: 999px;
+}
+
+.panorama-evidence-guide-intro {
+  margin: 11px 0 12px;
+  color: var(--museum-muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.panorama-evidence-guide-panel ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.panorama-evidence-guide-panel li {
+  padding-top: 10px;
+  border-top: 1px solid rgba(91, 69, 45, 0.14);
+}
+
+.panorama-evidence-guide-panel li > p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.panorama-evidence-guide-panel li > p span {
+  color: var(--museum-cinnabar-strong);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.panorama-evidence-guide-panel li > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 7px;
+}
+
+.panorama-evidence-guide-panel li button {
+  min-height: 34px;
+  padding: 6px 9px;
+  color: var(--museum-ink);
+  background: rgba(255, 255, 255, 0.52);
+  border-color: rgba(91, 69, 45, 0.16);
+  border-radius: 9px;
+  font-size: 0.74rem;
+  text-align: left;
+}
+
+.panorama-evidence-guide-panel li button:hover,
+.panorama-evidence-guide-panel li button:focus-visible {
+  color: var(--museum-cinnabar-strong);
+  border-color: rgba(169, 78, 63, 0.45);
+}
+
 .panorama-chapter-progress {
   position: absolute;
   z-index: 24;
@@ -2335,6 +2463,21 @@ button:disabled {
     padding: 7px 9px;
   }
 
+  .panorama-evidence-guide {
+    left: 10px;
+    bottom: 62px;
+  }
+
+  .panorama-evidence-guide-panel {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: auto;
+    max-height: none;
+  }
+
   .panorama-placeholder-status {
     left: 10px;
     bottom: 62px;
@@ -2367,6 +2510,162 @@ button:disabled {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.hackathon-guide {
+  width: min(1080px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 54px 0 72px;
+  color: var(--museum-ink);
+}
+
+.hackathon-guide-hero {
+  max-width: 780px;
+  padding: clamp(28px, 6vw, 64px);
+  background: rgba(255, 250, 240, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 28px;
+  box-shadow: 0 26px 72px rgba(55, 39, 24, 0.12);
+}
+
+.hackathon-guide-hero > p:first-child,
+.hackathon-guide-heading > p,
+.hackathon-guide-grid article > p:first-child {
+  margin: 0;
+  color: var(--museum-cinnabar-strong);
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+}
+
+.hackathon-guide-hero h1 {
+  margin: 10px 0 0;
+  font-size: clamp(2.8rem, 8vw, 6rem);
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.hackathon-guide-hero h2 {
+  margin: 5px 0 20px;
+  color: var(--museum-cinnabar-strong);
+  font-size: clamp(1.05rem, 2.4vw, 1.55rem);
+  font-weight: 550;
+}
+
+.hackathon-guide-hero > p:last-of-type,
+.hackathon-guide-grid article > p:last-child {
+  color: var(--museum-muted);
+  line-height: 1.85;
+}
+
+.hackathon-guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.hackathon-guide-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 16px;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.hackathon-guide-secondary {
+  border: 1px solid rgba(91, 69, 45, 0.2);
+}
+
+.hackathon-guide-section {
+  margin-top: 60px;
+}
+
+.hackathon-guide-heading h2 {
+  margin: 6px 0 24px;
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+}
+
+.hackathon-guide-steps {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(91, 69, 45, 0.12);
+  border: 1px solid rgba(91, 69, 45, 0.12);
+  border-radius: 22px;
+  list-style: none;
+}
+
+.hackathon-guide-steps li {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 18px;
+  padding: 20px 22px;
+  background: rgba(255, 250, 240, 0.7);
+}
+
+.hackathon-guide-steps li > span {
+  color: var(--museum-cinnabar-strong);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.hackathon-guide-steps h3,
+.hackathon-guide-steps p {
+  margin: 0;
+}
+
+.hackathon-guide-steps h3 {
+  font-size: 1rem;
+}
+
+.hackathon-guide-steps p {
+  margin-top: 5px;
+  color: var(--museum-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.hackathon-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 60px;
+}
+
+.hackathon-guide-grid article {
+  padding: 24px;
+  background: rgba(255, 250, 240, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 20px;
+}
+
+.hackathon-guide-grid h2 {
+  margin: 7px 0 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 720px) {
+  .hackathon-guide {
+    padding: 24px 0 48px;
+  }
+
+  .hackathon-guide-grid {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+
+  .hackathon-guide-section {
+    margin-top: 40px;
+  }
+
+  .hackathon-guide-steps li {
+    grid-template-columns: 36px 1fr;
+    gap: 10px;
+    padding: 17px;
   }
 }
 
