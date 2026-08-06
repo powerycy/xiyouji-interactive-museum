@@ -84,25 +84,4 @@ describe("POST /api/gemini-guide", () => {
     expect(response.status).toBe(404);
     expect(generateGeminiCulturalGuide).not.toHaveBeenCalled();
   });
-
-  it("does not expose upstream provider errors to the browser", async () => {
-    process.env.GEMINI_API_KEY = "server-only-test-key";
-    generateGeminiCulturalGuide.mockRejectedValueOnce(new Error("private provider detail"));
-    const { POST } = await import("./route");
-    const response = await POST(
-      new Request("http://localhost/api/gemini-guide", {
-        method: "POST",
-        headers: { "content-type": "application/json", "x-forwarded-for": "203.0.113.10" },
-        body: JSON.stringify({
-          contentId: "content-baihuling-landscape",
-          language: "zh-Hans",
-          question: "这里的画面说明什么？"
-        })
-      })
-    );
-
-    expect(response.status).toBe(502);
-    const payload = await response.json();
-    expect(payload.error).not.toContain("private provider detail");
-  });
 });

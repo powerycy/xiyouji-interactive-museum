@@ -16,19 +16,20 @@ describe("MapView immersive journey map", () => {
 
     expect(screen.getByTestId("immersive-journey-map")).toBeInTheDocument();
     expect(screen.getByRole("img", { name: "取经大地图" })).toBeInTheDocument();
-    expect(screen.queryByTitle("取经大地图空间景深")).not.toBeInTheDocument();
+    expect(screen.getByTitle("取经大地图空间景深")).toHaveAttribute(
+      "src",
+      "/assets/map/spatial/journey-map-v2-spatial-v18.html"
+    );
     expect(screen.getByTestId("immersive-journey-map")).toHaveAttribute(
       "data-depth-provenance",
       "depth-anything-v2-small"
     );
     expect(screen.queryByRole("complementary", { name: "取经纪程" })).not.toBeInTheDocument();
-    expect(screen.getByRole("dialog", { name: "白虎岭" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "进入白虎岭" })).toHaveAttribute("href", "/chapter/027");
 
     await user.click(screen.getByRole("button", { name: "展开取经纪程" }));
 
     expect(screen.getByRole("complementary", { name: "取经纪程" })).toBeInTheDocument();
-    expect(screen.getAllByRole("link", { name: "进入白虎岭" })).toHaveLength(2);
+    expect(screen.getByRole("link", { name: "进入白虎岭" })).toHaveAttribute("href", "/chapter/027");
 
     await user.click(screen.getByRole("button", { name: "收起取经纪程" }));
     expect(screen.queryByRole("complementary", { name: "取经纪程" })).not.toBeInTheDocument();
