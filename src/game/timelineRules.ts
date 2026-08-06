@@ -37,6 +37,15 @@ export function getInitialTimelineState(minigame: Minigame): TimelineState {
   };
 }
 
+export function getSolvedTimelineState(minigame: Minigame): TimelineState {
+  return {
+    orderedEventIds: getCorrectEventOrder(minigame),
+    evidenceByEventId: Object.fromEntries(
+      minigame.eventCards.map((eventCard) => [eventCard.id, eventCard.requiredEvidenceIds[0]])
+    )
+  };
+}
+
 export function moveEvent(orderedEventIds: string[], eventId: string, direction: "up" | "down"): string[] {
   const currentIndex = orderedEventIds.indexOf(eventId);
   if (currentIndex === -1) {

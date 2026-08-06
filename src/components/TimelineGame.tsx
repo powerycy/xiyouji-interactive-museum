@@ -3,7 +3,13 @@
 import Link from "next/link";
 import { useState } from "react";
 import { chapter027 } from "@/content/xiyouji";
-import { evaluateTimelineGame, getInitialTimelineState, moveEvent, type TimelineEvaluation } from "@/game/timelineRules";
+import {
+  evaluateTimelineGame,
+  getInitialTimelineState,
+  getSolvedTimelineState,
+  moveEvent,
+  type TimelineEvaluation
+} from "@/game/timelineRules";
 import { getGameGate } from "@/progress/progress";
 import { useProgress } from "@/progress/useProgress";
 
@@ -92,6 +98,16 @@ export function TimelineGame() {
           <button className="primary-button" onClick={check}>
             校验时间线
           </button>
+          <button
+            onClick={() => {
+              const solved = getSolvedTimelineState(chapter027.minigame);
+              setState(solved);
+              setSelectedEventId(solved.orderedEventIds[0] ?? null);
+              setResult(null);
+            }}
+          >
+            加载演示答案
+          </button>
           {result?.complete ? (
             <Link href="/chapter/027/reward" className="primary-button gate-link">
               查看奖励
@@ -99,6 +115,7 @@ export function TimelineGame() {
           ) : null}
         </div>
         {result ? <p>{result.message}</p> : null}
+        <p className="small-text">评委可加载演示答案，再点“校验时间线”快速查看奖励闭环。</p>
       </section>
 
       <aside className="surface evidence-panel">

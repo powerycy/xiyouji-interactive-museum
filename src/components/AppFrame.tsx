@@ -11,7 +11,7 @@ export function AppFrame({ children, variant = "default" }: { children: ReactNod
         <nav className="nav-links" aria-label="主导航">
           <Link href="/">大地图</Link>
           <Link href="/chapter/027">白虎岭</Link>
-          <Link href="/studio">Studio</Link>
+          <Link href="/guide">使用手册</Link>
         </nav>
       </header>
       {children}

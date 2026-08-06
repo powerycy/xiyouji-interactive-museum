@@ -11,6 +11,27 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const supportedLanguages = new Set<PanoramaLanguage>(["zh-Hant", "zh-Hans", "en"]);
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX_REQUESTS = 8;
+const requestBuckets = new Map<string, { count: number; resetAt: number }>();
+
+function getClientKey(request: Request) {
+  return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim()
+    ?? request.headers.get("x-real-ip")
+    ?? "anonymous";
+}
+
+function isRateLimited(request: Request) {
+  const now = Date.now();
+  const key = getClientKey(request);
+  const bucket = requestBuckets.get(key);
+  if (!bucket || bucket.resetAt <= now) {
+    requestBuckets.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  bucket.count += 1;
+  return bucket.count > RATE_LIMIT_MAX_REQUESTS;
+}
 
 function resolvePanoramaContext(contentId: string) {
   const content = baihulingPanoramaTour.content[contentId];
@@ -59,10 +80,17 @@ export async function POST(request: Request) {
   if (!apiKey) {
     return NextResponse.json(
       {
-        error: "Gemini 尚未配置。请在服务器环境变量中设置 GEMINI_API_KEY。",
+        error: "AI 导览当前未开放；原著展签、全景、小游戏和奖励仍可完整体验。",
         code: "GEMINI_NOT_CONFIGURED"
       },
       { status: 503 }
+    );
+  }
+
+  if (isRateLimited(request)) {
+    return NextResponse.json(
+      { error: "AI 导览请求过于频繁，请一分钟后再试。", code: "RATE_LIMITED" },
+      { status: 429, headers: { "retry-after": "60" } }
     );
   }
 
@@ -81,10 +109,9 @@ export async function POST(request: Request) {
     return NextResponse.json(result, {
       headers: { "cache-control": "no-store" }
     });
-  } catch (error) {
-    const message = error instanceof Error ? error.message : "Gemini 请求失败。";
+  } catch {
     return NextResponse.json(
-      { error: `Gemini 暂时无法完成解读：${message}`, code: "GEMINI_REQUEST_FAILED" },
+      { error: "AI 导览暂时无法完成解读，请稍后再试。", code: "GEMINI_REQUEST_FAILED" },
       { status: 502 }
     );
   }

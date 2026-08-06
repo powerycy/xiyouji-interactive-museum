@@ -9,7 +9,7 @@ import { useProgress } from "@/progress/useProgress";
 export function MapView() {
   const { progress } = useProgress();
   const [isJourneyOpen, setIsJourneyOpen] = useState(false);
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>("baihuling");
   const selectedNode = mapSeed.nodes.find((node) => node.id === selectedNodeId) ?? null;
   const selectedState = selectedNode ? getNodeState(selectedNode, progress) : null;
 
@@ -22,13 +22,6 @@ export function MapView() {
     >
       <div className="journey-map-depth-scene">
         <img src={mapSeed.backgroundImage} alt="取经大地图" className="journey-map-depth-image" />
-        <iframe
-          src="/assets/map/spatial/journey-map-v2-spatial-v18.html"
-          title="取经大地图空间景深"
-          className="journey-map-spatial-frame"
-          loading="eager"
-          tabIndex={-1}
-        />
         <div className="journey-map-atmosphere" aria-hidden="true" />
       </div>
 
