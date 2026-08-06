@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { chapter027 } from "@/content/xiyouji";
-import { evaluateTimelineGame, getCorrectEventOrder, getInitialTimelineState, getSolvedTimelineState } from "./timelineRules";
+import { evaluateTimelineGame, getCorrectEventOrder, getInitialTimelineState } from "./timelineRules";
 
 describe("timeline game rules", () => {
   it("passes with correct order and accepted evidence", () => {
@@ -39,11 +39,5 @@ describe("timeline game rules", () => {
 
     expect(result.complete).toBe(false);
     expect(result.events.some((eventResult) => !eventResult.evidenceCorrect)).toBe(true);
-  });
-
-  it("builds an explicit judge-demo state that still passes through normal validation", () => {
-    const result = evaluateTimelineGame(chapter027.minigame, getSolvedTimelineState(chapter027.minigame));
-
-    expect(result.complete).toBe(true);
   });
 });

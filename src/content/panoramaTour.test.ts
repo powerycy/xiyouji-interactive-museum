@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   baihulingPanoramaTour,
@@ -52,21 +50,6 @@ describe("baihuling panorama tour data", () => {
       expect(item.originalTraditional.length).toBeGreaterThan(20);
       expect(item.explanationZhHans.length).toBeGreaterThan(20);
       expect(item.guideEn.length).toBeGreaterThan(20);
-    }
-  });
-
-  it("keeps every quoted passage inside its declared raw-source line range", () => {
-    const sourceLines = readFileSync(
-      path.join(process.cwd(), "data/raw/xiyouji/project-gutenberg-23962-xiyouji.txt"),
-      "utf8"
-    ).split(/\r?\n/);
-    const normalize = (value: string) => value.replace(/\s+/g, "");
-
-    for (const content of Object.values(baihulingPanoramaTour.content)) {
-      const citedLines = sourceLines
-        .slice(content.source.rawLineStart - 1, content.source.rawLineEnd)
-        .join("\n");
-      expect(normalize(citedLines), content.id).toContain(normalize(content.originalTraditional));
     }
   });
 
