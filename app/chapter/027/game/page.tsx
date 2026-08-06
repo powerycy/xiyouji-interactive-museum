@@ -3,8 +3,8 @@ import { TimelineGame } from "@/components/TimelineGame";
 
 export default function Chapter027GamePage() {
   return (
-    <AppFrame>
-      <main className="page-shell">
+    <AppFrame variant="museum-light">
+      <main className="page-shell page-shell-museum-flow">
         <section className="section-heading">
           <div>
             <p className="small-text">小游戏</p>

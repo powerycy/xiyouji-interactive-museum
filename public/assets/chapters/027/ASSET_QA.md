@@ -42,8 +42,11 @@
 
 1. 以 `public/assets/chapters/027/characters/*-v1.png` 作为强角色参考。
 2. 同时读取 `content/characters/*.base.json` 与 `content/chapters/027/characters/*.state.json`。
-3. 若生成模型无法稳定保留角色形象，应改用“背景场景 + 已审核角色图层/剪影/局部特写 + 气氛/物件图”的组合方式。
-4. 通过逐张 QA 后，才能重新落盘到章节 027 的 v2 scenes 运行时资源目录并写入 `sceneNodes`。
+3. 逐张读取 `content/chapters/027/scene-assets.v2.manifest.json` 的 `sourceEvidence`，确认候选图能对应原文摘录、展签和物证空间。
+4. 若生成模型无法稳定保留角色形象，应改用“背景场景 + 已审核角色图层/剪影/局部特写 + 气氛/物件图”的组合方式。
+5. 通过逐张 QA 后，才能重新落盘到章节 027 的 v2 scenes 运行时资源目录并写入 `sceneNodes`。
+
+详细逐张准入清单见 `docs/assets/CHAPTER_027_V2_EVIDENCE_SPACE_ASSET_CHECKLIST.md`。v2 的优先美术策略为“剧情证据空间”：剪影、物证、道路、妖气、尸骨、贬书承担叙事；未经审核的角色正脸表情不能作为剧情核心。
 
 ## 开发注意
 

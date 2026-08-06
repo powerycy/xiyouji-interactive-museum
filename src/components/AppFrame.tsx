@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export function AppFrame({ children }: { children: ReactNode }) {
+export function AppFrame({ children, variant = "default" }: { children: ReactNode; variant?: "default" | "museum-light" }) {
   return (
-    <div className="app-bg">
+    <div className={`app-bg ${variant === "museum-light" ? "app-bg-museum-light" : ""}`}>
       <header className="topbar">
         <Link href="/" className="brand">
           西游记互动博物馆

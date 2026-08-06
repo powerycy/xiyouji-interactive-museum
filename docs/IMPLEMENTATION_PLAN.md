@@ -15,14 +15,16 @@
 5. 如果生成式整图无法稳定保持角色一致性，改用“背景场景 + 已审核角色图层/剪影/局部特写 + 物件/气氛图”的组合方案。
 6. 第一轮 v2 场景图已因角色偏离被拒绝，留档于 `docs/review/2026-07-01-v2-scene-rejected-drafts/`，不得作为正式资源引用。
 7. 原著展签、繁体原文、简体白话解释继续复用现有 `labels`；探索度只按唯一已读展签权重计算，访问场景、点击热点、打开轻量浮层本身不增加探索度。
-8. 进度层可继续使用当前 progress API，并在章节进度中追加 `visitedSceneIds`、`openedHotspotIds`、`currentSceneId`、`sceneStack`、`mainlineUnlockedSceneIds` 等可选字段。页面仍只调用 progress API，不直接读写 storage。
+8. 所有章节文案必须通过画面热点触达：每条 `labels` 原文/白话解释、人物/事件/物件说明和原著物证解释，都要绑定到至少一个场景热点。允许画面表现原著物证文字，但完整文案必须在轻量浮层/展签里出现，不能只烘焙在图片里。
+9. 场景图片中的所有可读文字都必须是繁体/原文形态，包括脊梁题名、贬书、碑刻、牌额、书信和物件题名；不得出现简体中文、伪字、乱码、现代 UI 字或广告字。
+10. 进度层可继续使用当前 progress API，并在章节进度中追加 `visitedSceneIds`、`openedHotspotIds`、`currentSceneId`、`sceneStack`、`mainlineUnlockedSceneIds` 等可选字段。页面仍只调用 progress API，不直接读写 storage。
 
 ### 页面改造顺序
 
 1. 先完成 v2 场景资源落盘和资源 QA，记录每张图的尺寸、用途、是否重复、是否满足主线叙事和角色一致性。
 2. 再定义 `sceneNodes` / `sceneNavigation` 类型、selector 和内容完整性校验。
 3. 扩展 progress API，保证旧进度可读，新增场景访问状态不会影响探索度。
-4. 将 `/chapter/027` 改为 v2 全屏场景浏览器：默认显示场景图，热点贴合画面，长文展签收进按需打开的浮层或抽屉。
+4. 将 `/chapter/027` 改为 v2 全屏场景浏览器：默认显示场景图，热点贴合画面，长文展签收进按需打开的浮层或抽屉，并保证没有孤儿文案或孤儿展签。
 5. 保留小游戏上移/下移排序和证据选择，只升级进入包装和完成反馈。
 6. 奖励页继续使用 `static-panorama-preview`，不声称是真 360 viewer。
 7. `/studio` 第一版只读预览，但必须能看到场景链、每个 scene 的主视觉资源、热点、关联展签、小游戏数据和奖励资源。

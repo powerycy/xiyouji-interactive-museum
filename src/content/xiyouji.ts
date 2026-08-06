@@ -1,6 +1,11 @@
 import chapter027Json from "../../content/chapters/chapter-027.seed.json";
 import mapSeedJson from "../../content/map/map-nodes.seed.json";
-import type { ChapterLabel, ChapterSeed, MapSeed, SceneNode } from "./types";
+import type { Chapter027V2AssetManifest, ChapterLabel, ChapterSeed, MapSeed, SceneNode } from "./types";
+import {
+  chapter027V2AssetManifest,
+  getChapter027V2AssetReadiness,
+  requiredChapter027V2SceneIds
+} from "./chapter027V2Assets";
 
 export const mapSeed = mapSeedJson as MapSeed;
 export const chapter027 = chapter027Json as ChapterSeed;
@@ -57,9 +62,25 @@ export function getMainlineSceneNodes(chapter: ChapterSeed): SceneNode[] {
     .filter((scene): scene is SceneNode => Boolean(scene));
 }
 
+export function canEnableChapter027V2SceneNodes(chapter: ChapterSeed, manifest: Chapter027V2AssetManifest): boolean {
+  if (chapter.id !== "chapter-027") {
+    return true;
+  }
+
+  const readiness = getChapter027V2AssetReadiness(manifest);
+  const manifestIds = manifest.scenes.map((scene) => scene.sceneId);
+
+  return (
+    readiness.readyToEnableSceneNodes &&
+    manifestIds.length === requiredChapter027V2SceneIds.length &&
+    requiredChapter027V2SceneIds.every((sceneId, index) => manifestIds[index] === sceneId)
+  );
+}
+
 export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
   const issues: string[] = [];
   const labelIds = new Set(chapter.labels.map((label) => label.id));
+  const legacyHotspotLabelIds = new Set(chapter.scene.hotspots.flatMap((hotspot) => hotspot.labelIds));
   const evidenceIds = new Set(chapter.minigame.evidenceCards.map((evidence) => evidence.id));
   const mapNodeIds = new Set(map.nodes.map((node) => node.id));
 
@@ -72,6 +93,12 @@ export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
       if (!labelIds.has(labelId)) {
         issues.push(`Hotspot ${hotspot.id} references missing label ${labelId}.`);
       }
+    }
+  }
+
+  for (const labelId of labelIds) {
+    if (!legacyHotspotLabelIds.has(labelId)) {
+      issues.push(`Label ${labelId} is not reachable from a v1 hotspot.`);
     }
   }
 
@@ -104,8 +131,13 @@ export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
     }
   }
 
+  if (chapter.id === "chapter-027" && chapter.sceneNodes && !canEnableChapter027V2SceneNodes(chapter, chapter027V2AssetManifest)) {
+    issues.push("Chapter 027 sceneNodes are present before all v2 assets are approved.");
+  }
+
   if (chapter.sceneNavigation && chapter.sceneNodes) {
     const sceneIds = new Set<string>();
+    const sceneHotspotLabelIds = new Set<string>();
     for (const scene of chapter.sceneNodes) {
       if (sceneIds.has(scene.id)) {
         issues.push(`Scene ${scene.id} is duplicated.`);
@@ -130,6 +162,7 @@ export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
 
       for (const hotspot of scene.hotspots) {
         for (const labelId of hotspot.labelIds) {
+          sceneHotspotLabelIds.add(labelId);
           if (!labelIds.has(labelId)) {
             issues.push(`Scene hotspot ${hotspot.id} references missing label ${labelId}.`);
           }
@@ -141,6 +174,19 @@ export function getContentIssues(chapter: ChapterSeed, map: MapSeed): string[] {
         ) {
           issues.push(`Scene hotspot ${hotspot.id} targets missing scene ${hotspot.action.targetSceneId}.`);
         }
+      }
+
+      const sceneLocalHotspotLabelIds = new Set(scene.hotspots.flatMap((hotspot) => hotspot.labelIds));
+      for (const labelId of scene.source.labelIds) {
+        if (!sceneLocalHotspotLabelIds.has(labelId)) {
+          issues.push(`Scene ${scene.id} source label ${labelId} is not reachable from one of its hotspots.`);
+        }
+      }
+    }
+
+    for (const labelId of labelIds) {
+      if (!sceneHotspotLabelIds.has(labelId)) {
+        issues.push(`Label ${labelId} is not reachable from a v2 scene hotspot.`);
       }
     }
 

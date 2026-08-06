@@ -192,3 +192,37 @@ export interface ChapterSeedV2 extends ChapterSeed {
   sceneNavigation: ChapterSceneNavigation;
   sceneNodes: SceneNode[];
 }
+
+export type Chapter027V2AssetStatus = "missing" | "rejected" | "qa-pending" | "approved";
+export type Chapter027V2VisualMode = "evidence-space" | "approved-character-layer" | "silhouette";
+
+export interface Chapter027V2SceneSourceEvidence {
+  labelIds: string[];
+  rawLineStart: number;
+  rawLineEnd: number;
+  originalExcerpt: string;
+  imageBrief: string;
+}
+
+export interface Chapter027V2SceneAssetManifestItem {
+  order: number;
+  sceneId: string;
+  title: string;
+  fileName: string;
+  status: Chapter027V2AssetStatus;
+  visualMode: Chapter027V2VisualMode;
+  sourceEvidence: Chapter027V2SceneSourceEvidence;
+  evidenceFocus: string[];
+  roleRisk: "none" | "low" | "medium" | "high";
+  qaNotes: string[];
+  runtimeSrc?: string;
+}
+
+export interface Chapter027V2AssetManifest {
+  version: 1;
+  chapterId: "chapter-027";
+  assetDirectory: string;
+  runtimeDirectory: string;
+  approvalRule: string;
+  scenes: Chapter027V2SceneAssetManifestItem[];
+}
